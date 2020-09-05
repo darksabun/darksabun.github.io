@@ -1,0 +1,4 @@
+User-agent: *
+Disallow : /
+Allow : /Mary_Sue/
+Allow : /event/

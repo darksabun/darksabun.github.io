@@ -1,0 +1,6 @@
+{
+  "name": "Stella DLC",
+  "symbol": "DLC",
+  "level_order":["0","0.5","1","1.5","2","2.5","3","3.5","4","4.5","5","5.5","6","6.5","7","7.5"],
+  "data_url": "https://script.google.com/macros/s/AKfycbztcR2Eu2KGyOUFBZzZCb_gQi_AUlKnjxdfA1DT_S4YpXGTxg/exec?table=stelladlc"
+}

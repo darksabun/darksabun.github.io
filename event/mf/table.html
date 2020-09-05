@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Mutual Fumen | Table - DARKSABUN</title>
+    <meta charset="utf-8">
+    <meta name="bmstable" content="header.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css">
+    <link rel="stylesheet" href="/assets/css/table.css">
+    <link rel="stylesheet" href="/assets/css/venue.css">
+</head>
+
+<body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header" class="wrapper">
+
+            <!-- Logo -->
+            <div id="logo">
+                <h1><a href="/">DARKSABUN</a></h1>
+                <p>KUSO BMS ARCHIVE</p>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li>
+                        <a href="#">Table</a>
+                        <ul>
+                            <li><a href="/table/">27,934B-JOY</a></li>
+                            <li><a href="/table/stelladlc.html">Stella DLC</a></li>
+                            <li><a href="/table/tablelist.html">Table List</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Mary_Sue/">Mary_Sue</a></li>
+                    <li>
+                        <a href="#">Event</a>
+                        <ul>
+                            <li><a href="https://trfce.github.io/wtf.html">World Training Festival</a></li>
+                            <li><a href="/event/wtf2/">World Training Festival 2</a></li>
+                            <li>
+                                <a href="#">Mutual Fumen</a>
+                                <ul>
+                                    <li><a href="/event/mf/">Main</a></li>
+                                    <li><a href="/event/mf/venue/">Event Venue</a></li>
+                                    <li><a href="/event/mf/table.html">Table & Download</a></li>
+                                    <li><a href="/event/mf/result/">Result</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style2">
+            <div class="title">Mutual Fumen</div>
+            <div class="container">
+
+                <!-- Content -->
+                <div id="content">
+                    <article class="box post">
+                        <header class="style1">
+                            <h2>Mutual Fumen</h2>
+                            <p>Alias Duo Sabun Making Event</p>
+                        </header>
+                        <br>
+                        <br>
+                        <h2 class="venue-title-small">Sabun Pack</h2>
+                        <br>
+                        <section id="highlights" class="style2">
+                            <div class="container">
+                                <div class="row aln-center">
+                                    <div class="col-4 col-12-medium">
+                                        <section class="highlight">
+                                            <h2>Download All</h2>
+                                            <ul class="actions">
+                                                <li><a href="./sabun/MF_all_20200821.zip" class="button style3">Download</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="table_diff table-wrapper">
+                            <table id="table_int" class="display"></table>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div id="copyright" style="text-align:center">
+                <br>
+                <ul>
+                    <li>Organizer: <a href="https://fsrs.github.io/">LuvTek</a></li>
+                    <li>Translator(JP): <a href="https://darksabun.github.io/Mary_Sue/">Mary_Sue</a></li>
+                    <li>Translator(EN): <a href="https://seraphin.xyz/">Seraphin</a></li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.dropotron.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/natural.js"></script>
+    <script src="/assets/js/table.js"></script>
+    <script>
+        var tableColumns = [
+        {
+            "title": "Level",
+            "width": "1%",
+            "data": "level",
+            "type": "natural-nohtml",
+            "render": tableData.tableLevel
+        },
+        {
+            "title": "<i class='fas fa-music'></i>",
+            "width": "1%",
+            "data": "md5",
+            "orderable": false,
+            "searchable": false,
+            "render": tableData.tableScore
+        },
+        {
+            "title": "<i class='fas fa-play'></i>",
+            "width": "1%",
+            "data": "movie_link",
+            "orderable": false,
+            "searchable": false,
+            "render": tableData.tableMovie
+        },
+        {
+            "title": "Title<br>(IR)",
+            "width": "25%",
+            "data": "title",
+            "render": tableData.tableTitle
+        },
+        {
+            "title": "Artist<br>(Song DL)",
+            "width": "25%",
+            "data": "artist",
+            "render": tableData.tableArtist
+        },
+        {
+            "title": "Team<br>(Download)",
+            "width": "25%",
+            "data": "name_diff",
+            "orderable": false,
+            "searchable": false,
+            "render": tableData.tablePattern
+        },
+        {
+            "title": "Comment",
+            "width": "25%",
+            "data": "comment"
+        },
+    ];
+    </script>
+
+</body>
+
+</html>

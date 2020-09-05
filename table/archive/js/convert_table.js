@@ -1,0 +1,51 @@
+$(document).ready(function() {
+    $.getJSON($("meta[name=bmstable]").attr("content"), function(header) {
+        $("title").text(header.name + " - DARKSABUN");
+        $("#big-c-title").text(header.name);
+        $("#small-c-title").text(header.name);
+        $("#small-c-title").attr("href", header.original_url);
+    });
+});
+
+var tableColumns = [
+    {
+        "title": "Level",
+        "width": "1%",
+        "data": "level",
+        "type": "natural-nohtml",
+        "render": tableData.tableLevel
+    },
+    {
+        "title": "Score",
+        "width": "1%",
+        "data": "md5",
+        "orderable": false,
+        "searchable": false,
+        "render": tableData.tableScore
+    },
+    {
+        "title": "Title<br>(IR)",
+        "width": "30%",
+        "data": "title",
+        "render": tableData.tableTitle
+    },
+    {
+        "title": "Artist<br>(Song DL)",
+        "width": "30%",
+        "data": "artist",
+        "render": tableData.tableArtist
+    },
+    {
+        "title": "DL",
+        "width": "1%",
+        "data": "name_diff",
+        "orderable": false,
+        "searchable": false,
+        "render": tableData.tablePattern
+    },
+    {
+        "title": "Comment",
+        "width": "30%",
+        "data": "comment"
+    },
+];
