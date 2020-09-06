@@ -408,6 +408,10 @@ table a {
   display: none;
 }
 
+.text-secret {
+  display: none;
+}
+
 #update {
   font-size: 1.25em;
   font-weight: 700;

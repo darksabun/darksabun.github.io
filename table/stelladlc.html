@@ -75,81 +75,8 @@
                             <h2>Stella DLC</h2>
                             <p>Stella DLC</p>
                         </header>
-                        <!--
-                        <div class="table-wrapper">
-                            <table class="diffflame">
-                                <colgroup>
-                                    <col style="width: 125px">
-                                    <col style="width: 125px">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <th colspan="2" class="diff_head">難易度換算表</th>
-                                    </tr>
-                                    <tr>
-                                        <td>B-7</td>
-                                        <td>EASY</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B-6</td>
-                                        <td>☆1~12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B-5</td>
-                                        <td>★0~4</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B-4</td>
-                                        <td>★5~8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B-3</td>
-                                        <td>★9~12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B-2</td>
-                                        <td>★13~16</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B-1</td>
-                                        <td>★17~20</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B0</td>
-                                        <td>個人差</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B1~3</td>
-                                        <td>st1~3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B4-~4+</td>
-                                        <td>st4~6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B5-~5+</td>
-                                        <td>st7~9</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B6</td>
-                                        <td>st10~11</td>
-                                    </tr>
-                                    <tr>
-                                        <td>B7</td>
-                                        <td>???</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div><br>
-                        <p>
-                            <button class="style2" id="show_log">VIEW CHANGELOG</button>
-                        </p>
-                        <p>
-                            <textarea name="changelog" id="changelog" cols="50" rows="8" readonly></textarea>
-                        </p>
-                        -->
-                        <p>Stellaway와 Walkure의 리커멘드를 이용해 st0~st7을 세분화한 난이도표입니다. 업데이트는 비정기적입니다.<br>
-                           StellawayとWalkureのリコメンドを利用してst0~st7を細分化した難易度表です。 更新は不定期です。</p>
+                        <p class="lang-ko text-secret">Stellaway와 Walkure의 리커멘드를 이용해 st0~st7을 세분화한 난이도표입니다. 업데이트는 비정기적입니다.
+                        <p class="lang-jp lang-en text-secret">StellawayとWalkureのリコメンドを利用してst0~st7を細分化した難易度表です。 更新は不定期です。</p>
                         <div class="table_diff table-wrapper">
                             <table id="table_int" class="display"></table>
                         </div>
@@ -172,6 +99,7 @@
 
     <!-- Scripts -->
     <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/multi_lang.js"></script>
     <script src="/assets/js/jquery.dropotron.min.js"></script>
     <script src="/assets/js/browser.min.js"></script>
     <script src="/assets/js/breakpoints.min.js"></script>
@@ -180,6 +108,27 @@
     <script src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/natural.js"></script>
     <script src="/assets/js/table.js"></script>
+    <script>
+        var tableColumns = [
+        {
+            "title": "Level",
+            "data": "level",
+            "render": tableData.tableLevel
+        },
+        {
+            "title": "Score",
+            "data": "md5",
+            "orderable": false,
+            "searchable": false,
+            "render": tableData.tableScore
+        },
+        {
+            "title": "Title<br>(IR)",
+            "data": "title",
+            "render": tableData.tableTitle
+        },
+    ];
+    </script>
 
 </body>
 
