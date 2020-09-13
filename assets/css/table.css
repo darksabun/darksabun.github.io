@@ -13,14 +13,14 @@
 
 @media screen and (max-width: 760px) {
   #changelog {
-  display: none;
-  color: #000;
-  overflow: auto;
-  width: 100%;
-  padding: 10px;
-  background-color: #82828287;
-  margin: left;
-  border-radius: 0.375em;
+    display: none;
+    color: #000;
+    overflow: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: #82828287;
+    margin: left;
+    border-radius: 0.375em;
   }
 }
 
@@ -40,6 +40,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 0.375em;
 }
 
 #shortcut_table {
