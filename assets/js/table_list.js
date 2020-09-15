@@ -4,8 +4,8 @@ $(document).ready(function() {
         $.fn.dataTable.enum(header.enum_tag1_order);
         $.fn.dataTable.enum(header.enum_tag2_order);
         makeTablelist(header);
-    })
-    new ClipboardJS('#urlbtn')
+    });
+    new ClipboardJS("#urlbtn");
 });
 
 function makeTablelist(header) {
@@ -34,7 +34,7 @@ function makeTablelist(header) {
             "width": "5%",
             "data": "name",
             "render": function(data, type, row) {
-                return "<a href='" + row.url + "'>" + data + "</a>"
+                return "<a href='" + row.url + "'>" + data + "</a>";
             },
         }, {
             "title": "Type",
@@ -49,7 +49,28 @@ function makeTablelist(header) {
             "width": "5%",
             "data": "comment"
         }, ],
-        
+
+        createdRow: function(row, data) {
+            if (data.state == 1) {
+                $(row).addClass("state1");
+            }
+            if (data.state == 2) {
+                $(row).addClass("state2");
+            }
+            if (data.state == 3) {
+                $(row).addClass("state3");
+            }
+            if (data.state == 4) {
+                $(row).addClass("state4");
+            }
+            if (data.state == 5) {
+                $(row).addClass("state5");
+            }
+            if (data.state == 6) {
+                $(row).addClass("state6");
+            }
+        },
+
         initComplete: function() {
             this.api().columns(3).every(function() {
                 var column = this;
