@@ -7,11 +7,14 @@
 <html>
 
 <head>
-    <title>DARKSABUN</title>
+    <title>Satellite DLC - DARKSABUN</title>
     <meta charset="utf-8">
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="bmstable" content="header_satellitedlc.json">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.css">
+    <link rel="stylesheet" href="/assets/css/table.css">
 </head>
 
 <body class="no-sidebar is-preload">
@@ -22,7 +25,7 @@
 
             <!-- Logo -->
             <div id="logo">
-                <h1><a href="./">DARKSABUN</a></h1>
+                <h1><a href="/">DARKSABUN</a></h1>
                 <p>KUSO BMS ARCHIVE</p>
             </div>
 
@@ -69,17 +72,21 @@
 
         <!-- Main -->
         <div id="main" class="wrapper style2">
-            <div class="title">H E L L O</div>
+            <div class="title">Stella DLC</div>
             <div class="container">
 
                 <!-- Content -->
                 <div id="content">
-                    <article id="highlights" class="box post">
+                    <article class="box post">
                         <header class="style1">
-                            <h2>Welcome to DARKSABUN</h2>
-                            <p>Fun and Kuso Pattern Archive</p>
+                            <h2>Satellite DLC</h2>
+                            <p>Satellite DLC</p>
                         </header>
-                        <div class="highlight"><a href="table/" class="button style3">Go 27,934B-JOY</a></div>
+                        <p class="lang-ko text-secret">Stellaway와 Walkure의 리커멘드를 이용해 Satellite를 세분화한 난이도표입니다. 업데이트는 비정기적입니다.
+                        <p class="lang-jp lang-en text-secret">StellawayとWalkureのリコメンドを利用してSatelliteを細分化した難易度表です。 更新は不定期です。</p>
+                        <div class="table_diff table-wrapper">
+                            <table id="table_int" class="display"></table>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -98,12 +105,37 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/multi_lang.js"></script>
+    <script src="/assets/js/jquery.dropotron.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/natural.js"></script>
+    <script src="/assets/js/table.js"></script>
+    <script>
+        var tableColumns = [
+        {
+            "title": "Level",
+            "data": "level",
+            "render": tableData.tableLevel
+        },
+        {
+            "title": "Score",
+            "data": "md5",
+            "orderable": false,
+            "searchable": false,
+            "render": tableData.tableScore
+        },
+        {
+            "title": "Title<br>(IR)",
+            "data": "title",
+            "render": tableData.tableTitle
+        },
+    ];
+    </script>
 
 </body>
 
