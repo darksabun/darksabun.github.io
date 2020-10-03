@@ -2,8 +2,8 @@ $(document).ready(function() {
     $.getJSON($("meta[name=bmstable]").attr("content"), function(header) {
         $("title").text(header.name + " - DARKSABUN");
         $("#big-c-title").text(header.name);
+        $("#big-c-title").attr("href", header.original_url);
         $("#small-c-title").text(header.name);
-        $("#small-c-title").attr("href", header.original_url);
     });
 });
 

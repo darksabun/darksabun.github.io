@@ -52,29 +52,26 @@ function makeTablelist(header) {
 
         createdRow: function(row, data) {
             if (data.state == 1) {
-                $(row).addClass("state1");
+                $(row).addClass("table-primary");
             }
             if (data.state == 2) {
-                $(row).addClass("state2");
+                $(row).addClass("table-warning");
             }
             if (data.state == 3) {
-                $(row).addClass("state3");
+                $(row).addClass("table-success");
             }
             if (data.state == 4) {
-                $(row).addClass("state4");
+                $(row).addClass("table-secondary");
             }
             if (data.state == 5) {
-                $(row).addClass("state5");
-            }
-            if (data.state == 6) {
-                $(row).addClass("state6");
+                $(row).addClass("table-info");
             }
         },
 
         initComplete: function() {
             this.api().columns(3).every(function() {
                 var column = this;
-                var select = $("<div class='dataTables_length'>Filter by Tag: <select class='filter-level'><option value=''>All</option></select></div>").prependTo($("#table_int_wrapper")).on("change", function() {
+                var select = $("<div class='dataTables_length' style='float:left'>Filter by Tag: <select><option value=''>All</option></select></div>").prependTo($("#table_int_wrapper")).on("change", function() {
                     var val = $.fn.dataTable.util.escapeRegex($(this).find("select").val());
                     column.sort(function(a, b) {
                         return a - b
