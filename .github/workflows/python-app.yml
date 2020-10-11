@@ -21,4 +21,4 @@ jobs:
         python-version: 3.8
     - name: sabun list making
       run: |
-        python /apindex/apindex.py ./sabun
+        python ./apindex/apindex.py ./sabun
