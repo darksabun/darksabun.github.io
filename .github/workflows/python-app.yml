@@ -21,7 +21,7 @@ jobs:
         python-version: 3.8
     - name: sabun list making
       run: |
-        python ./apindex/apindex.py ./sabun
+        python ./.apindex/apindex.py ./sabun
     - name: Commit files
       run: |
         git config --local user.email "62116388+darksabun@users.noreply.github.com"
