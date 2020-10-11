@@ -22,3 +22,12 @@ jobs:
     - name: sabun list making
       run: |
         python ./apindex/apindex.py ./sabun
+    - name: Commit files
+      run: |
+        git config --local user.email "62116388+darksabun@users.noreply.github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Sabun List Updated" -a
+    - name: Push changes
+      uses: darksabun/darksabun.github.io@master
+      with:
+        github_token: ${{ secrets.GITHUBTOKEN }}
