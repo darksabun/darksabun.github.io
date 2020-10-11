@@ -7,6 +7,7 @@ on:
   push:
     paths:
     - 'sabun/**'
+    - 'songs/**'
 
 jobs:
   build:
@@ -22,6 +23,7 @@ jobs:
     - name: sabun list making
       run: |
         python ./.apindex/apindex.py ./sabun
+        python ./.apindex/apindex.py ./songs
     - name: Commit files
       run: |
         git config --local user.email "62116388+darksabun@users.noreply.github.com"
