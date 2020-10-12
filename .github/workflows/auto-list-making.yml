@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Python application
+name: Auto list making with python
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
-    - name: sabun list making
+    - name: Auto list making
       run: |
         python ./.apindex/apindex.py ./sabun
         python ./.apindex/apindex.py ./songs
