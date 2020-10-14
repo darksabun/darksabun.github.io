@@ -71,7 +71,7 @@ function makeTablelist(header) {
         initComplete: function() {
             this.api().columns(3).every(function() {
                 var column = this;
-                var select = $("<div class='dataTables_length' style='float:left'>Filter by Tag: <select><option value=''>All</option></select></div>").prependTo($("#table_int_wrapper")).on("change", function() {
+                var select = $("<div class='dataTables_length' style='float:left'><i class='fas fa-table mr-1''></i> Filter by Tag: <select><option value=''>All</option></select></div>").prependTo($(".card-header")).on("change", function() {
                     var val = $.fn.dataTable.util.escapeRegex($(this).find("select").val());
                     column.sort(function(a, b) {
                         return a - b
