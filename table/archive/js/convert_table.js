@@ -3,7 +3,7 @@ $(document).ready(function() {
         $("title").text(header.name + " - DARKSABUN");
         $("#big-c-title").text(header.name);
         $("#big-c-title").attr("href", header.original_url);
-        $("#small-c-title").text(header.name);
+        $("#small-c-title").html("<i class='fas fa-table mr-1'></i> " + header.name);
     });
 });
 
