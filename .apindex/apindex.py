@@ -35,7 +35,7 @@ from xml.dom.minidom import parseString
 import time
 
 VERSION = "2.2"
-PREFIX = "./.apindex"
+PREFIX = "../.apindex"
 
 class Icon:
     def __init__(self, file):
