@@ -6,8 +6,8 @@ name: Auto list making with python
 on:
   push:
     paths:
-    - 'sabun/**'
-    - 'songs/**'
+    - 'docs/sabun/**'
+    - 'docs/songs/**'
 
 jobs:
   build:
@@ -22,8 +22,9 @@ jobs:
         python-version: 3.8
     - name: Auto list making
       run: |
-        python ./.apindex/apindex.py ./sabun
-        python ./.apindex/apindex.py ./songs
+        cd docs
+        python ../.apindex/apindex.py ./sabun
+        python ../.apindex/apindex.py ./songs
     - name: Commit files
       run: |
         git config --local user.email "62116388+darksabun@users.noreply.github.com"
@@ -32,4 +33,4 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUBTOKEN }}
+        github_token: ${{ secrets.FORACTION }}
