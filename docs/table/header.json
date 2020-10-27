@@ -5,7 +5,7 @@
   "enum_level_order":["B-7","B-6","B-5","B-4","B-3","B-2","B-1","B0","B1","B2","B3","B4-","B4","B4+","B5-","B5","B5+","B6","B7"],
   "data_url": "https://script.google.com/macros/s/AKfycbztcR2Eu2KGyOUFBZzZCb_gQi_AUlKnjxdfA1DT_S4YpXGTxg/exec?table=darksabun",
   "changelog_url": "change.txt",
-  "last_update": "2020.10.17",
+  "last_update": "2020.10.28",
   "compat_prefix": "B",
   "course": [
     [
