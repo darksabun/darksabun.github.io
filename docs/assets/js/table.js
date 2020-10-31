@@ -59,7 +59,7 @@ function makeBMSTable(header) {
         initComplete: function() {
             this.api().columns(0).every(function() {
                 var column = this;
-                var select = $("<div class='dataTables_length' style='float:left'>Filter by Level: <select><option value=''>Level</option></select></div>")
+                var select = $("<div class='dataTables_length' style='float:left'>Filter by Level: <select><option value=''>All</option></select></div>")
                     .prependTo($("#table_int_wrapper"))
                     .on("change", function() {
                         var val = $.fn.dataTable.util.escapeRegex(

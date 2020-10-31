@@ -36,7 +36,13 @@
                         <li class="breadcrumb-item"><a href="/event/bofxvi/">M-SPIN's BOFXVI Diary</a></li>
                         <li class="breadcrumb-item active">Table</li>
                     </ol>
-
+                    <!--
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <a href="./sabun/BOFXVI_Diary_all.zip" class="btn btn-dark btn-icon">Download All Charts (2020.12.20)</a>
+                        </div>
+                    </div>
+                    -->
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table mr-1"></i>
@@ -50,6 +56,8 @@
                     </div>
                 </div>
             </main>
+            <footer class="py-4 bg-light mt-auto" include-html="/assets/components/footer.html">
+            </footer>
         </div>
     </div>
     <!-- Scripts -->
@@ -61,7 +69,56 @@
     <script src="/assets/js/scripts.js"></script>
     <script src="/assets/js/include_html.js"></script>
     <script src="/assets/js/table.js"></script>
-
+    <script>
+        var tableColumns = [
+            {
+                "title": "Day",
+                "width": "1%",
+                "data": "level",
+                "type": "natural-nohtml",
+                "render": tableData.tableLevel
+            },
+            {
+                "title": "<i class='fas fa-lg fa-music'></i>",
+                "width": "1%",
+                "data": "md5",
+                "orderable": false,
+                "searchable": false,
+                "render": tableData.tableScore
+            },
+            {
+                "title": "<i class='fas fa-lg fa-play'></i>",
+                "width": "1%",
+                "data": "movie_link",
+                "orderable": false,
+                "searchable": false,
+                "render": tableData.tableMovie
+            },
+            {
+                "title": "Title<br>(IR)",
+                "width": "25%",
+                "data": "title",
+                "render": tableData.tableTitle
+            },
+            {
+                "title": "Artist<br>(Song DL)",
+                "width": "25%",
+                "data": "artist",
+                "render": tableData.tableArtist
+            },
+            {
+                "title": "Maker<br>(Download)",
+                "width": "1%",
+                "data": "name_diff",
+                "render": tableData.tablePattern
+            },
+            {
+                "title": "Comment",
+                "width": "25%",
+                "data": "comment"
+            },
+        ];
+    </script>
     <script>
         includeHTML();
     </script>
