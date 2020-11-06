@@ -1,3 +1,4 @@
+// Table List
 $(document).ready(function() {
     $.getJSON($("meta[name=customtable]").attr("content"), function(header) {
         $("#update").text("Last Update : " + header.last_update);
@@ -68,6 +69,7 @@ function makeTablelist(header) {
             }
         },
 
+        // Filter by Tag
         initComplete: function() {
             this.api().columns(3).every(function() {
                 var column = this;

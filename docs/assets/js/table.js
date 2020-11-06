@@ -1,3 +1,4 @@
+// Difficulty Table
 $(document).ready(function() {
     $.getJSON($("meta[name=bmstable]").attr("content"), function(header) {
         mark = header.symbol;
@@ -8,6 +9,7 @@ $(document).ready(function() {
     });
 });
 
+// Changelog
 function makeChangelog(url) {
     $("#changelog").load(url);
     $("#show_log").click(function() {
@@ -21,6 +23,7 @@ function makeChangelog(url) {
     });
 }
 
+// BMS Table
 function makeBMSTable(header) {
     table = $("#table_int").DataTable({
         paging: false,
@@ -56,6 +59,7 @@ function makeBMSTable(header) {
             }
         },
 
+        // Filter by Level
         initComplete: function() {
             this.api().columns(0).every(function() {
                 var column = this;
