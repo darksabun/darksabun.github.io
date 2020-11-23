@@ -1,7 +1,7 @@
 // for Multiple Language
 var getLanguage = navigator.language;
 
-if (getLanguage === "ko-KR" || getLanguage === "ko") {
+if (getLanguage === "ko-KR" || getLanguage === "ko-kr" || getLanguage === "ko") {
     $(".lang-ko").show();
 } else if (getLanguage === "ja-JP" || getLanguage === "ja") {
     $(".lang-jp").show();
