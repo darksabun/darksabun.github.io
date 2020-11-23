@@ -155,7 +155,7 @@
                 var minutes = Math.floor((distDt % _hour) / _minute);
                 var seconds = Math.floor((distDt % _minute) / _second);
 
-                if (getLanguage === "ko-KR" || getLanguage === "ko") {
+                if (getLanguage === "ko-KR" || getLanguage === "ko-kr" || getLanguage === "ko") {
                     document.getElementById(id).textContent = "신청 마감까지 남은 시간 : " + days + "일 ";
                     document.getElementById(id).textContent += hours + "시간 ";
                     document.getElementById(id).textContent += minutes + "분 ";
