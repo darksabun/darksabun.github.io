@@ -25,7 +25,7 @@ function makeChangelog(url) {
 
 // BMS Table
 function makeBMSTable(header) {
-    table = $("#table_int").DataTable({
+    $("#table_int").DataTable({
         paging: false,
         info: false,
         lengthChange: false,
@@ -69,18 +69,18 @@ function makeBMSTable(header) {
                         var val = $.fn.dataTable.util.escapeRegex(
                             $(this).find("select").val()
                         );
-
-                        column
-                            .sort(function(a, b) {
-                                return a - b;
-                            })
-                            .search(val ? "^" + val + "$" : "", true, false)
-                            .draw();
+                        column.search(val ? "^" + val + "$" : "", true, false).draw();
                     });
 
-                column.data().unique().each(function(d, j) {
-                    select.find("select").append("<option value='" + mark + d + "'>" + d + "</option>")
-                });
+                column
+                    .data()
+                    .unique()
+                    .sort(function(a, b) {
+                        return parseInt(a) - parseInt(b);
+                    })
+                    .each(function(d, j) {
+                        select.find("select").append("<option value='" + mark + d + "'>" + d + "</option>")
+                    });
             });
         }
     });
@@ -99,7 +99,7 @@ var tableData = {
     tableScore: function(data, type, row) {
         return "<a href='http://www.ribbit.xyz/bms/score/view?md5=" + data + "' target='_blank'><i class='fas fa-lg fa-music'></i></a>";
     },
-    
+
     tableMovie: function(data, type, row) {
         if (data != "" && data != null) {
             return "<a href='" + data + "' target='_blank'><i class='fas fa-lg fa-play'></i></a>";
@@ -150,7 +150,7 @@ var tableData = {
             }
         }
     },
-    
+
     tableDate: function(data, type, row) {
         if (data != "" && data != null) {
             var addDate = new Date(data);

@@ -1,4 +1,4 @@
-table = $("#table_int").DataTable({
+$("#table_int").DataTable({
     searching: false,
     autoWidth: false,
     paging: true,

@@ -41,3 +41,9 @@ var countDownTimer = function(id, date) {
 
     timer = setInterval(showRemaining, 1000);
 }
+
+// Usage
+// <script src="/assets/js/countdown_timer.js"></script>
+// <script>countDownTimer("Timer", "MM/DD/YYYY");</script>
+// and put this
+// <p id="Timer"></p>

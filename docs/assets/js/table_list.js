@@ -1,4 +1,3 @@
-// Table List
 $(document).ready(function() {
     $.getJSON($("meta[name=customtable]").attr("content"), function(header) {
         $("#update").text("Last Update : " + header.last_update);
@@ -10,7 +9,7 @@ $(document).ready(function() {
 });
 
 function makeTablelist(header) {
-    table = $("#table_int").DataTable({
+    $("#table_int").DataTable({
         autoWidth: false,
         paging: true,
         order: [
@@ -50,7 +49,6 @@ function makeTablelist(header) {
             "width": "5%",
             "data": "comment"
         }, ],
-
         createdRow: function(row, data) {
             if (data.state == 1) {
                 $(row).addClass("table-primary");
@@ -68,19 +66,17 @@ function makeTablelist(header) {
                 $(row).addClass("table-info");
             }
         },
-
-        // Filter by Tag
         initComplete: function() {
             this.api().columns(3).every(function() {
                 var column = this;
                 var select = $("<div class='dataTables_length' style='float:left'><i class='fas fa-table mr-1'></i> Filter by Tag: <select><option value=''>All</option></select></div>").prependTo($(".card-header")).on("change", function() {
                     var val = $.fn.dataTable.util.escapeRegex($(this).find("select").val());
-                    column.sort(function(a, b) {
-                        return a - b
-                    }).search(val ? "^" + val + "$" : "", true, false).draw()
+                    column.search(val ? "^" + val + "$" : "", !0, false).draw();
                 });
-                column.data().unique().each(function(d, j) {
-                    select.find("select").append("<option value='" + d + "'>" + d + "</option>")
+                column.data().unique().sort(function(a, b) {
+                    return parseInt(a) - parseInt(b);
+                }).each(function(d, j) {
+                    select.find("select").append("<option value='" + d + "'>" + d + "</option>");
                 })
             })
         }
