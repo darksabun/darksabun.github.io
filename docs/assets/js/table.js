@@ -11,14 +11,16 @@ $(document).ready(function() {
 
 // Changelog
 function makeChangelog(url) {
-    $("#changelog").load(url);
-    $("#show_log").click(function() {
-        if ($("#changelog").css("display") == "none" && $(this).html() == "View Changelog") {
-            $("#changelog").show();
-            $(this).html("Hide Changelog");
+    var $changelog = $("#changelog");
+    var $show_log = $("#show_log");
+    $changelog.load(url);
+    $show_log.click(function() {
+        if ($changelog.css("display") == "none" && $show_log.html() == "View Changelog") {
+            $changelog.show();
+            $show_log.html("Hide Changelog");
         } else {
-            $("#changelog").hide();
-            $(this).html("View Changelog");
+            $changelog.hide();
+            $show_log.html("View Changelog");
         }
     });
 }
