@@ -1,28 +1,31 @@
 // for Multiple Language
 var getLanguage = navigator.language;
+var $ko = $(".lang-ko");
+var $jp = $(".lang-jp");
+var $en = $(".lang-en");
 
 if (getLanguage === "ko-KR" || getLanguage === "ko-kr" || getLanguage === "ko") {
-    $(".lang-ko").show();
+    $ko.show();
 } else if (getLanguage === "ja-JP" || getLanguage === "ja") {
-    $(".lang-jp").show();
+    $jp.show();
 } else {
-    $(".lang-en").show();
+    $en.show();
 }
 
 function changeLangKO() {
-    $(".lang-jp").hide();
-    $(".lang-en").hide();
-    $(".lang-ko").show();
+    $jp.hide();
+    $en.hide();
+    $ko.show();
 }
 
 function changeLangJP() {
-    $(".lang-ko").hide();
-    $(".lang-en").hide();
-    $(".lang-jp").show();
+    $ko.hide();
+    $en.hide();
+    $jp.show();
 }
 
 function changeLangEN() {
-    $(".lang-ko").hide();
-    $(".lang-jp").hide();
-    $(".lang-en").show();
+    $ko.hide();
+    $jp.hide();
+    $en.show();
 }
