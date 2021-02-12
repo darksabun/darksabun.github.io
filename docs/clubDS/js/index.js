@@ -47,13 +47,13 @@ async function fetchJson() {
         image.classList.add("ds-table-medal-image");
         const medal = i[j];
         if (medal === "gold") {
-          image.src = "./image/gold.png";
+          image.src = "./images/gold.png";
         } else if (medal === "silver") {
-          image.src = "./image/silver.png";
+          image.src = "./images/silver.png";
         } else if (medal === "bronze") {
-          image.src = "./image/bronze.png";
+          image.src = "./images/bronze.png";
         } else if (medal === "") {
-          image.src = "./image/blank.png";
+          image.src = "./images/blank.png";
         }
 
         if (person === "lt") {
