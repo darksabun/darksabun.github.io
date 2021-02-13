@@ -23,12 +23,12 @@ async function fetchJson() {
     songTitleCell.classList.add("ds-table-song-title");
     const songTitleLink = document.createElement("a");
     songTitleLink.href= i.url;
-    songTitleLink.textContent = i.title + " ";
+    songTitleLink.textContent = i.title;
     songTitleCell.appendChild(songTitleLink);
-    const songByCell = document.createTextNode("by");
+    const songByCell = document.createTextNode(" by ");
     const songArtistCell = document.createElement("span");
     songArtistCell.classList.add("ds-table-song-artist");
-    songArtistCell.textContent = " " + i.artist;
+    songArtistCell.textContent = i.artist;
     songCell.appendChild(songGenreCell);
     songCell.appendChild(songTitleCell);
     songCell.appendChild(songByCell);
@@ -52,10 +52,10 @@ async function fetchJson() {
           image.src = "./images/silver.png";
         } else if (medal === "bronze") {
           image.src = "./images/bronze.png";
-        } else if (medal === "") {
-          image.src = "./images/blank.png";
         } else if (medal === "notyet") {
           image.src = "./images/notyet.png";
+        } else if (medal === "") {
+          image.src = "./images/blank.png";
         }
 
         if (person === "lt") {
@@ -76,6 +76,7 @@ async function fetchJson() {
     tbody.appendChild(tr);
   });
   document.querySelector(".ds-table").appendChild(tbody);
+  document.querySelector(".ds-loading").remove();
 }
 
 fetchJson();
