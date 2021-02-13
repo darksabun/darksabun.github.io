@@ -12,11 +12,6 @@ body {
   color: #000;
 }
 
-address {
-  font-style: normal;
-  margin-left: 6px;
-}
-
 .ds-backward {
   margin-top: 6px;
   margin-left: 6px;
@@ -115,4 +110,9 @@ address {
 .ds-table tbody .ds-table-medal .ds-table-medal-image {
   width: 32px;
   height: 56px;
+}
+
+.ds-footer {
+  margin-left: 6px;
+  padding-bottom: 6px;
 }
