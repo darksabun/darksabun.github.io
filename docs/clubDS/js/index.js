@@ -1,5 +1,7 @@
 async function fetchJson() {
-  const result = await fetch("https://script.google.com/macros/s/AKfycby0BjvUTPhWcovgWvXGghxdJykga-rvu1ceiveIFihAWZct86hEAA0/exec?table=clubds");
+  const result = await fetch(
+    "https://script.google.com/macros/s/AKfycby0BjvUTPhWcovgWvXGghxdJykga-rvu1ceiveIFihAWZct86hEAA0/exec?table=clubds"
+  );
   const json = await result.json();
   console.log(json);
 
@@ -22,7 +24,7 @@ async function fetchJson() {
     const songTitleCell = document.createElement("span");
     songTitleCell.classList.add("ds-table-song-title");
     const songTitleLink = document.createElement("a");
-    songTitleLink.href= i.url;
+    songTitleLink.href = i.url;
     songTitleLink.textContent = i.title;
     songTitleCell.appendChild(songTitleLink);
     const songByCell = document.createTextNode(" by ");
@@ -35,48 +37,32 @@ async function fetchJson() {
     songCell.appendChild(songArtistCell);
     tr.appendChild(songCell);
 
-    const medalArray = [];
-    for (let n = 1; n <= 4; n += 1) {
+    const medals = Object.keys(i.medal).sort();
+    medals.forEach((j) => {
       const medalCell = document.createElement("td");
-      medalArray.push(medalCell);
-    }
-    Object.keys(i).forEach((j) => {
-      if (j.indexOf("medal_") >= 0) {
-        const person = j.slice(6);
-        const image = document.createElement("img");
-        image.classList.add("ds-table-medal-image");
-        const medal = i[j];
-        if (medal === "gold") {
-          image.src = "./images/gold.png";
-        } else if (medal === "silver") {
-          image.src = "./images/silver.png";
-        } else if (medal === "bronze") {
-          image.src = "./images/bronze.png";
-        } else if (medal === "notyet") {
-          image.src = "./images/notyet.png";
-        } else if (medal === "") {
-          image.src = "./images/blank.png";
-        }
-
-        if (person === "lt") {
-          medalArray[0].appendChild(image);
-        } else if (person === "parksu") {
-          medalArray[1].appendChild(image);
-        } else if (person === "ms") {
-          medalArray[2].appendChild(image);
-        } else if (person === "luxury") {
-          medalArray[3].appendChild(image);
-        }
+      medalCell.classList.add("ds-table-medal");
+      const image = document.createElement("img");
+      image.classList.add("ds-table-medal-image");
+      const medal = i.medal[j];
+      console.log(medals);
+      if (medal === "gold") {
+        image.src = "./images/gold.png";
+      } else if (medal === "silver") {
+        image.src = "./images/silver.png";
+      } else if (medal === "bronze") {
+        image.src = "./images/bronze.png";
+      } else if (medal === "notyet") {
+        image.src = "./images/notyet.png";
+      } else if (medal === "") {
+        image.src = "./images/blank.png";
       }
-    });
-    medalArray.forEach((j, index1) => {
-      j.classList.add("ds-table-medal");
-      tr.appendChild(j);
+      medalCell.appendChild(image);
+      tr.appendChild(medalCell);
     });
     tbody.appendChild(tr);
   });
   document.querySelector(".ds-table").appendChild(tbody);
-  document.querySelector(".ds-loading").remove();
+  document.querySelector(".ds-load").remove();
 }
 
 fetchJson();

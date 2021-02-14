@@ -45,11 +45,16 @@ body {
   color: blue;
 }
 
-.ds-loading {
-  font-size: 24px;
-  font-weight: 100;
-  text-align: center;
+.ds-load {
   margin-bottom: 48px;
+  text-align: center;
+}
+
+.ds-load > .ds-load-image {
+  margin: 0 auto;
+  width: 400px;
+  height: 71px;
+  text-align: center;
 }
 
 .ds-table {
@@ -115,4 +120,8 @@ body {
 .ds-footer {
   margin-left: 6px;
   padding-bottom: 6px;
+}
+
+.ds-footer a {
+  color: #000;
 }
