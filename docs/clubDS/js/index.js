@@ -51,6 +51,8 @@ async function fetchJson() {
         image.src = "./images/silver.png";
       } else if (medal === "bronze") {
         image.src = "./images/bronze.png";
+      } else if (medal === "warn") {
+        image.src = "./images/warn.png";
       } else if (medal === "notyet") {
         image.src = "./images/notyet.png";
       } else if (medal === "") {
