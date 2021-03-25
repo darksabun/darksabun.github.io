@@ -1,7 +1,6 @@
 async function fetchJson() {
-  const result = await fetch(
-    "https://script.google.com/macros/s/AKfycby0BjvUTPhWcovgWvXGghxdJykga-rvu1ceiveIFihAWZct86hEAA0/exec?table=clubds"
-  );
+  const jsonBaseURL = "https://script.google.com/macros/s/AKfycby0BjvUTPhWcovgWvXGghxdJykga-rvu1ceiveIFihAWZct86hEAA0/exec?table=";
+  const result = await fetch(jsonBaseURL + jsonLoad);
   const json = await result.json();
   console.log(json);
 
