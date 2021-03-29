@@ -1,6 +1,5 @@
 async function fetchJson() {
-  const jsonBaseURL = "https://script.google.com/macros/s/AKfycby0BjvUTPhWcovgWvXGghxdJykga-rvu1ceiveIFihAWZct86hEAA0/exec?table=";
-  const result = await fetch(jsonBaseURL + jsonLoad);
+  const result = await fetch("https://script.google.com/macros/s/AKfycbwtPeSvNExqbCCNmUZF2qbpFEYWAd22qzJdThEH_R6lNw-XOtNBXQcoUhnyRjVYmEk/exec?table=clubdslist");
   const json = await result.json();
   console.log(json);
 
@@ -15,51 +14,26 @@ async function fetchJson() {
     numberCell.textContent = `${i.number}`;
     tr.appendChild(numberCell);
 
-    const songCell = document.createElement("td");
-    songCell.classList.add("ds-table-song");
-    const songGenreCell = document.createElement("div");
-    songGenreCell.classList.add("ds-table-song-genre");
-    songGenreCell.textContent = i.genre;
-    const songTitleCell = document.createElement("span");
-    songTitleCell.classList.add("ds-table-song-title");
-    const songTitleLink = document.createElement("a");
-    songTitleLink.href = i.url;
-    songTitleLink.textContent = i.title;
-    songTitleCell.appendChild(songTitleLink);
-    const songByCell = document.createTextNode(" by ");
-    const songArtistCell = document.createElement("span");
-    songArtistCell.classList.add("ds-table-song-artist");
-    songArtistCell.textContent = i.artist;
-    songCell.appendChild(songGenreCell);
-    songCell.appendChild(songTitleCell);
-    songCell.appendChild(songByCell);
-    songCell.appendChild(songArtistCell);
-    tr.appendChild(songCell);
-
-    const medals = Object.keys(i.medal).sort();
-    medals.forEach((j) => {
-      const medalCell = document.createElement("td");
-      medalCell.classList.add("ds-table-medal");
-      const image = document.createElement("img");
-      image.classList.add("ds-table-medal-image");
-      const medal = i.medal[j];
-      console.log(medals);
-      if (medal === "gold") {
-        image.src = "./images/gold.png";
-      } else if (medal === "silver") {
-        image.src = "./images/silver.png";
-      } else if (medal === "bronze") {
-        image.src = "./images/bronze.png";
-      } else if (medal === "warn") {
-        image.src = "./images/warn.png";
-      } else if (medal === "notyet") {
-        image.src = "./images/notyet.png";
-      } else if (medal === "") {
-        image.src = "./images/blank.png";
-      }
-      medalCell.appendChild(image);
-      tr.appendChild(medalCell);
-    });
+    const eventNameCell = document.createElement("td");
+    eventNameCell.classList.add("ds-table-song");
+    const eventDateCell = document.createElement("div");
+    eventDateCell.classList.add("ds-table-song-genre");
+    eventDateCell.textContent = i.date;
+    const eventTitleCell = document.createElement("span");
+    eventTitleCell.classList.add("ds-table-song-title");
+    const eventTitleLink = document.createElement("a");
+    eventTitleLink.href = i.link;
+    eventTitleLink.textContent = i.name;
+    eventTitleCell.appendChild(eventTitleLink);
+    const eventByCell = document.createTextNode(" by ");
+    const eventAdminCell = document.createElement("span");
+    eventAdminCell.classList.add("ds-table-song-artist");
+    eventAdminCell.textContent = i.admin;
+    eventNameCell.appendChild(eventDateCell);
+    eventNameCell.appendChild(eventTitleCell);
+    eventNameCell.appendChild(eventByCell);
+    eventNameCell.appendChild(eventAdminCell);
+    tr.appendChild(eventNameCell);
     tbody.appendChild(tr);
   });
   document.querySelector(".ds-table").appendChild(tbody);
