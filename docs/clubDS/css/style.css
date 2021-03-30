@@ -117,6 +117,14 @@ body {
   height: 56px;
 }
 
+.ds-table tbody .ds-table-song-imprelist * {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  color: #5f5fcf;
+  vertical-align: middle;
+}
+
 .ds-footer {
   margin-left: 6px;
   padding-bottom: 6px;

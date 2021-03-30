@@ -1,6 +1,9 @@
 async function fetchJson() {
   const result = await fetch("https://script.google.com/macros/s/AKfycbwtPeSvNExqbCCNmUZF2qbpFEYWAd22qzJdThEH_R6lNw-XOtNBXQcoUhnyRjVYmEk/exec?table=clubdslist");
   const json = await result.json();
+  json.sort(function (a, b) {
+        return b.number - a.number;
+  });
   console.log(json);
 
   document.querySelector(".ds-count").textContent = json.length;
@@ -22,7 +25,7 @@ async function fetchJson() {
     const eventTitleCell = document.createElement("span");
     eventTitleCell.classList.add("ds-table-song-title");
     const eventTitleLink = document.createElement("a");
-    eventTitleLink.href = i.link;
+    eventTitleLink.href = i.event_url;
     eventTitleLink.textContent = i.name;
     eventTitleCell.appendChild(eventTitleLink);
     const eventByCell = document.createTextNode(" by ");
@@ -34,6 +37,30 @@ async function fetchJson() {
     eventNameCell.appendChild(eventByCell);
     eventNameCell.appendChild(eventAdminCell);
     tr.appendChild(eventNameCell);
+      
+    const eventImpreCell = document.createElement("td");
+    eventImpreCell.classList.add("ds-table-medal");
+    eventImpreCell.classList.add("ds-table-song-imprelist");
+    const image = document.createElement("img");
+    image.classList.add("ds-table-medal-image");
+    image.src = "/clubDS/images/gold.png";
+    const image2 = document.createElement("img");
+    image2.classList.add("ds-table-medal-image");
+    image2.src = "/clubDS/images/silver.png";
+    const image3 = document.createElement("img");
+    image3.classList.add("ds-table-medal-image");
+    image3.src = "/clubDS/images/bronze.png";
+    const eventImpreMedal = document.createElement("div");
+    const eventImpreCellLink = document.createElement("a");
+    eventImpreCellLink.href = i.impre_url;
+    eventImpreCellLink.textContent = "View Medal";
+    eventImpreMedal.appendChild(image);
+    eventImpreMedal.appendChild(image2);
+    eventImpreMedal.appendChild(image3);
+    eventImpreCell.appendChild(eventImpreMedal);
+    eventImpreCell.appendChild(eventImpreCellLink);
+    tr.appendChild(eventImpreCell);
+
     tbody.appendChild(tr);
   });
   document.querySelector(".ds-table").appendChild(tbody);
