@@ -14,17 +14,12 @@ function makeBattleTable() {
 // Table Data
 var tableData = {
 
-    // Level (IR)
     tablePoint: function(data, type, row) {
         return data;
     },
 
     tablePlayer: function(data, type, row) {
         return "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=mypage&playerid=" + row.lr2id + "' target='_blank'>" + data + "</a>";
-    },
-
-    tableTotalPoint: function(data, type, row) {
-        return parseInt(row.point01) + parseInt(row.point02) + parseInt(row.point03) + parseInt(row.point04) + parseInt(row.point05) + parseInt(row.point06);
     },
 };
 
@@ -70,8 +65,9 @@ var tableColumns = [
         "render": tableData.tablePoint
     },
     {
+        "data": "totalpoint",
         "type": "natural",
-        "render": tableData.tableTotalPoint
+        "render": tableData.tablePoint
     },
 ];
     
