@@ -1,0 +1,19 @@
+{
+    "json_save": "parseData.json",
+    "parsed_md5_list": [
+        "2ae6ffab1595e4164ff098a190e6e0f1",
+        "773c00048c49a0847bca38eba748fba9",
+        "e01344b7d64159e7aa28b29d32ea6351",
+        "dcf8869b8ccdc96f249eeda05f94a2ee",
+        "66aadd30bf41b08556c87561dba2eb1f",
+        "08f754e7cedede0eb031a4e1fbd9d938"
+    ],
+    "score_calculate": [
+        "50*(1-T[5]/T[6])+25*T[3]/T[6]",
+        "100*(1-T[5]/T[6])",
+        "50*T[3]/T[6]",
+        "50*(1-T[5]/T[6])+25*T[3]/T[6]",
+        "100*(1-T[5]/T[6])",
+        "50*T[3]/T[6]"
+    ]
+}
