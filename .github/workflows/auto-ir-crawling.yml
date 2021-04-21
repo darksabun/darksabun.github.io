@@ -10,7 +10,7 @@ name: IR Crawl
 on:
   push:
     paths:
-    - 'docs/event/irbattle/ranking'
+    - 'docs/event/irbattle/ranking/**'
 
 jobs:
   build:
