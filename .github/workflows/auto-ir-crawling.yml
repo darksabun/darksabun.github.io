@@ -3,9 +3,14 @@
 
 name: IR Crawl
 
+#on:
+#  schedule:
+#      - cron: '5 * * * *'
+#
 on:
-  schedule:
-      - cron: '10 9 * * *'
+  push:
+    paths:
+    - 'docs/event/irbattle/ranking'
 
 jobs:
   build:
