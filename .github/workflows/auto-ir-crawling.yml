@@ -27,7 +27,7 @@ jobs:
       run: |
         cd docs/event/irbattle/ranking
         python -m pip install --upgrade pip
-        python3 -m pip install bs4
+        python -m pip install bs4
         python parsedir.py
     - name: Commit files
       run: |
