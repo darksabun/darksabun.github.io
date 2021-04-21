@@ -5,7 +5,7 @@ function makeBattleTable() {
         lengthChange: false,
         order: [7, "desc"],
         ajax: {
-            "url": "parseData.json",
+            "url": "https://parksulab.xyz:6003/parseData.json",
             "dataSrc": ""
         },
         columns: tableColumns,
