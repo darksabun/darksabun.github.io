@@ -29,7 +29,7 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
-                    <h1 class="mt-4">LR2IR Battle (Temp)</h1>
+                    <h1 class="mt-4">LR2IR Battle</h1>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item">Events</li>
@@ -118,6 +118,19 @@
                                 <li>Please include a valid URL of BMS and the estimated difficulty of the charts in a txt file when submitting your chart(s).</li>
                                 <li>Verify charts do not have zure (misalignments) before submission.</li>
                             </ol>
+                        </div>
+                        <hr>
+                        <br>
+                        <div class="container">
+                            <div class="text-center">
+                                <div class="text-center">
+                                    <h2 class="text-center big-title">Registration Page</h2>
+                                    <p id="Timer" class="mftable-button"></p>
+                                    <div>
+                                        <div class="m-4 text-center"><a href="https://docs.google.com/forms/d/e/1FAIpQLScz-iZK4m8xbGsYCLDN-RTi1ILRDE2S1DvyLGguBpkNlNgxEQ/viewform" class="event-button btn-lg btn btn-dark">Register</a></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div><!--
                         <hr>
                         <br>
@@ -158,10 +171,12 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="/assets/js/multi_lang.js"></script>
+    <script src="/assets/js/countdown_timer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="/assets/js/scripts.js"></script>
     <script src="/assets/js/include_html.js"></script>
     <script>
+        countDownTimer("Timer", "07/01/2021");
         includeHTML();
     </script>
 </body>
