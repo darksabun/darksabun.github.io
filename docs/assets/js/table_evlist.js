@@ -25,8 +25,8 @@ function makeEventTableList() {
                 return "<a href='" + row.link + "'>" + data + "</a>"
             },
         }, {
-            "title": "Date",
-            "data": "date",
+            "title": "Start",
+            "data": "start_date",
             "render": function(data, type, row) {
                 if (data != "" && data != null) {
                     var addDate = new Date(data);
@@ -45,8 +45,25 @@ function makeEventTableList() {
                 }
             },
         }, {
-            "title": "Admin",
-            "data": "admin"
+            "title": "End",
+            "data": "end_date",
+            "render": function(data, type, row) {
+                if (data != "" && data != null) {
+                    var addDate = new Date(data);
+                    var year = addDate.getFullYear();
+                    var month = addDate.getMonth() + 1;
+                    var day = addDate.getDate();
+                    if (month < 10) {
+                        month = "0" + month;
+                    }
+                    if (day < 10) {
+                        day = "0" + day;
+                    }
+                    return year + "." + month + "." + day;
+                } else {
+                    return "";
+                }
+            },
         }],
         createdRow: function(row, data) {
             if (data.state == 1) {
