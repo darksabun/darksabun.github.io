@@ -12,7 +12,7 @@ var countDownTimer = function(id, date) {
 
         if (distDt < 0) {
             clearInterval(timer);
-            document.getElementById(id).textContent = "Registration End!";
+            document.getElementById(id).textContent = "Time Over!";
             return;
         }
 
