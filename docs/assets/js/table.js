@@ -137,7 +137,7 @@ var tableData = {
         return astr;
     },
 
-    tablePattern: function(data, type, row) {
+    tableChart: function(data, type, row) {
         if (row.url_diff != "" && row.url_diff != null) {
             if (data != "" && data != null) {
                 return "<a href='" + row.url_diff + "' target='_blank'>" + data + "</a>";
@@ -205,7 +205,7 @@ var defaultColumns = [
         "data": "name_diff",
         "orderable": false,
         "searchable": false,
-        "render": tableData.tablePattern
+        "render": tableData.tableChart
     },
     {
         "title": "Comment",

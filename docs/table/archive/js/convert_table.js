@@ -41,7 +41,7 @@ var tableColumns = [
         "data": "name_diff",
         "orderable": false,
         "searchable": false,
-        "render": tableData.tablePattern
+        "render": tableData.tableChart
     },
     {
         "title": "Comment",
