@@ -3,5 +3,5 @@
   "data_url": "https://script.google.com/macros/s/AKfycbwtPeSvNExqbCCNmUZF2qbpFEYWAd22qzJdThEH_R6lNw-XOtNBXQcoUhnyRjVYmEk/exec?table=tablelist",
   "enum_tag1_order": ["SP","DP","PMS","EVENT","etc"],
   "enum_tag2_order": ["General","Personal","Self-made Chart Only","BMS Event","Chart Event","Uploader"],
-  "last_update" : "2021.02.17"
+  "last_update" : "2021.05.27"
 }
