@@ -1,6 +1,7 @@
-(2020.02.17) Skydive [Another] Added.
-(2020.02.03) Master Sky [Master] Added.
-(2020.02.03) 第三回BMS衆議院選 Charts Added.
+(2021.06.25) 1 Chart Added.
+(2021.02.17) Skydive [Another] Added.
+(2021.02.03) Master Sky [Master] Added.
+(2021.02.03) 第三回BMS衆議院選 Charts Added.
 (2020.12.20) BOFXVI Charts Added.
 (2020.10.28) VG (Darksabun_EZ Edit), 宇宙テレビ [SPACE] Added.
 (2020.10.17) VG (Darksabun Edit) Added.
