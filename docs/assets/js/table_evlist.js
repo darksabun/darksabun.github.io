@@ -10,7 +10,7 @@ function makeEventTableList() {
         lengthChange: false,
         pageLength: 5,
         ajax: {
-            "url": "https://script.google.com/macros/s/AKfycbwtPeSvNExqbCCNmUZF2qbpFEYWAd22qzJdThEH_R6lNw-XOtNBXQcoUhnyRjVYmEk/exec?table=eventlist",
+            "url": "https://script.google.com/macros/s/AKfycbzaQbcI9UZDcDlSHHl2NHilhmePrNrwxRdOFkmIXsfnbfksKKmAB3V65WZ8jPWU-7E/exec?table=eventlist",
             "dataSrc": ""
         },
         columns: [{

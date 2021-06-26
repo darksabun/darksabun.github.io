@@ -1,5 +1,5 @@
 async function fetchJson() {
-  const result = await fetch("https://script.google.com/macros/s/AKfycbwtPeSvNExqbCCNmUZF2qbpFEYWAd22qzJdThEH_R6lNw-XOtNBXQcoUhnyRjVYmEk/exec?table=clubdslist");
+  const result = await fetch("https://script.google.com/macros/s/AKfycbzaQbcI9UZDcDlSHHl2NHilhmePrNrwxRdOFkmIXsfnbfksKKmAB3V65WZ8jPWU-7E/exec?table=clubdslist");
   const json = await result.json();
   json.sort(function (a, b) {
         return b.number - a.number;

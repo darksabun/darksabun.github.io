@@ -3,7 +3,7 @@
   "symbol": "B",
   "level_order":["-7","-6","-5","-4","-3","-2","-1","0","1","2","3","4-","4","4+","5-","5","5+","6","7","DP0","DP1","DP2","DP3"],
   "enum_level_order":["B-7","B-6","B-5","B-4","B-3","B-2","B-1","B0","B1","B2","B3","B4-","B4","B4+","B5-","B5","B5+","B6","B7","BDP0","BDP1","BDP2","BDP3"],
-  "data_url": "https://script.google.com/macros/s/AKfycbwtPeSvNExqbCCNmUZF2qbpFEYWAd22qzJdThEH_R6lNw-XOtNBXQcoUhnyRjVYmEk/exec?table=darksabun",
+  "data_url": "https://script.google.com/macros/s/AKfycbzaQbcI9UZDcDlSHHl2NHilhmePrNrwxRdOFkmIXsfnbfksKKmAB3V65WZ8jPWU-7E/exec?table=darksabun",
   "changelog_url": "change.txt",
   "last_update": "2021.06.25",
   "compat_prefix": "B",
