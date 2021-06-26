@@ -69,16 +69,25 @@ function makeTablelist(header) {
         initComplete: function() {
             this.api().columns(3).every(function() {
                 var column = this;
-                var select = $("<div class='dataTables_length' style='float:left'><i class='fas fa-table me-1'></i> Filter by Tag: <select><option value=''>All</option></select></div>").prependTo($(".card-header")).on("change", function() {
-                    var val = $.fn.dataTable.util.escapeRegex($(this).find("select").val());
-                    column.search(val ? "^" + val + "$" : "", !0, false).draw();
-                });
-                column.data().unique().sort(function(a, b) {
-                    return parseInt(a) - parseInt(b);
-                }).each(function(d, j) {
-                    select.find("select").append("<option value='" + d + "'>" + d + "</option>");
-                })
-            })
+                var select = $("<div class='dataTables_length' style='float:left'><i class='fas fa-table me-1'></i> Filter by Tag: <select><option value=''>All</option></select></div>")
+                    .prependTo($(".card-header"))
+                    .on("change", function() {
+                        var val = $.fn.dataTable.util.escapeRegex(
+                            $(this).find("select").val()
+                        );
+                        column.search(val ? "^" + val + "$" : "", true, false).draw();
+                    });
+
+                column
+                    .data()
+                    .unique()
+                    .sort(function(a, b) {
+                        return parseInt(a) - parseInt(b);
+                    })
+                    .each(function(d, j) {
+                        select.find("select").append("<option value='" + d + "'>" + d + "</option>");
+                    });
+            });
         }
     })
 }
