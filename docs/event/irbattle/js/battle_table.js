@@ -10,7 +10,6 @@ if (getLanguage === "ko-KR" || getLanguage === "ko-kr" || getLanguage === "ko") 
 // Battle Ranking Table
 function makeBattleTable() {
     $("#table_int").DataTable({
-        destroy: true,
         paging: false,
         info: false,
         lengthChange: false,
@@ -81,7 +80,7 @@ var tableColumns = [
         "render": tableData.tablePoint
     },
 ];
-    
+
 makeBattleTable();
 
 // Table Language Change
