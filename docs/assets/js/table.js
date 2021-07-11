@@ -170,6 +170,14 @@ var tableData = {
             return "";
         }
     },
+    
+    tableComment: function(data, type, row) {
+        if (data != "" && data != null) {
+            return data;
+        } else {
+            return "";
+        }
+    },
 };
 
 var defaultColumns = [
@@ -210,6 +218,7 @@ var defaultColumns = [
     {
         "title": "Comment",
         "width": "30%",
-        "data": "comment"
+        "data": "comment",
+        "render": tableData.tableComment
     },
 ];
