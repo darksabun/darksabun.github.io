@@ -46,7 +46,6 @@ var tableColumns = [
     {
         "title": "Comment",
         "width": "30%",
-        "data": "comment",
         "render": tableData.tableComment
     },
 ];
