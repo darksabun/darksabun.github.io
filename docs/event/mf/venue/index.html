@@ -402,6 +402,8 @@
                                 </div>
                             </div>
                         </div>
+                    </section>
+                    <section>
                         <div class="container-fluid px-4">
                             <hr id="mfTeams">
                             <!-- Teams -->
@@ -450,70 +452,73 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <hr id="mfScoring">
-                            <!-- Scoring System -->
-                            <br>
-                            <h2 class="venue-title">Scoring System</h2>
-                            <br>
-                            <h2>Impression Score</h2>
-                            <p class="lang-ko text-secret">
-                                각 차분은 8개의 팀에서 1-10점의 임프레션을 받습니다. (총 8-80점)<br>
-                                추론 시 자신의 팀의 정체를 틀린 팀의 비율을 rate로 합니다. (0-100%)<br>
-                                임프레션 점수의 합에서 rate를 곱하여 최종 Impre 점수를 계산합니다. (총 0-80점)
-                            </p>
-                            <p class="lang-jp text-secret">
-                                各々の差分は八つのチームから1点から10点までのインプレを受けます。(総8－80点)<br>
-                                推論する時、自分のチームの正体を間違ったチームの割合をrateに変換します。(0－100％)<br>
-                                インプレポイントの合計にrateを掛けて最終のインプレポイントを計算します。(総0－80点)
-                            </p>
-                            <p class="lang-en text-secret">
-                                Each team gets an impression from all other teams, including themselves. Each impression is from 1-10 points, totalling 8 to 80 possible points.<br>
-                                Multiply this by the percentage of teams that guessed the identity <strong>incorrectly</strong> (0-100%) to get the impression score for the period.<br>
-                                The total will range from 0 to 80 points.
-                            </p>
-                            <h2>Guess Score</h2>
-                            <p class="lang-ko text-secret">
-                                추론 시 각 팀의 팀원 한 명을 맞출 때 마다 1st Guess에서는 5점, 2nd Guess에서는 10점을 얻습니다. (각각 총 0-80점, 0-160점)<br>
-                                Final Guess에서는 각 제작용 명의를 추론용 명의에 올바르게 대응시킬 때마다 10점을 얻습니다. (총 0-80점)<br>
-                                주최 팀은 최종 점수 계산 시 Guess 점수가 0점이 됩니다.
-                            </p>
-                            <p class="lang-jp text-secret">
-                                推論する時、チームのメンバーの一人一人を明らかにする場合、1st Guessでは5点、2nd Guessでは10点を受けます。<br>
-                                Final Guessでは各々の製作用の名義を、推論用の名義と正しく合わせる場合、正答一つにつき10点を受けます。(総0－80点）<br>
-                                主催チームは最終ポイントを計算する時、Guessポイントが0点になります。
-                            </p>
-                            <p class="lang-en text-secret">
-                                Points are recieved for each member of a team correctly identified, 5 for the first guess period and 10 for the second.<br>
-                                For the final guess period, 10 points are recieved per chart team name correctly matched to voting name.<br>
-                                The hosting team (LuvTek's) will recieve 0 points from guess score.
-                            </p>
-                            <div class="table-responsive tableflame">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>Impre 1</th>
-                                            <th>Impre 2</th>
-                                            <th>Guess 1</th>
-                                            <th>Guess 2</th>
-                                            <th>Final Guess</th>
-                                            <th>TOTAL</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="tr_normal">
-                                            <td class="text-dark fw-bold">MAX PTS</td>
-                                            <td>80</td>
-                                            <td>80</td>
-                                            <td>80</td>
-                                            <td>160</td>
-                                            <td>80</td>
-                                            <td>480</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    </section>
+                    <section>
+                        <hr id="mfScoring">
+                        <!-- Scoring System -->
+                        <br>
+                        <h2 class="venue-title">Scoring System</h2>
+                        <br>
+                        <h2>Impression Score</h2>
+                        <p class="lang-ko text-secret">
+                            각 차분은 8개의 팀에서 1-10점의 임프레션을 받습니다. (총 8-80점)<br>
+                            추론 시 자신의 팀의 정체를 틀린 팀의 비율을 rate로 합니다. (0-100%)<br>
+                            임프레션 점수의 합에서 rate를 곱하여 최종 Impre 점수를 계산합니다. (총 0-80점)
+                        </p>
+                        <p class="lang-jp text-secret">
+                            各々の差分は八つのチームから1点から10点までのインプレを受けます。(総8－80点)<br>
+                            推論する時、自分のチームの正体を間違ったチームの割合をrateに変換します。(0－100％)<br>
+                            インプレポイントの合計にrateを掛けて最終のインプレポイントを計算します。(総0－80点)
+                        </p>
+                        <p class="lang-en text-secret">
+                            Each team gets an impression from all other teams, including themselves. Each impression is from 1-10 points, totalling 8 to 80 possible points.<br>
+                            Multiply this by the percentage of teams that guessed the identity <strong>incorrectly</strong> (0-100%) to get the impression score for the period.<br>
+                            The total will range from 0 to 80 points.
+                        </p>
+                        <h2>Guess Score</h2>
+                        <p class="lang-ko text-secret">
+                            추론 시 각 팀의 팀원 한 명을 맞출 때 마다 1st Guess에서는 5점, 2nd Guess에서는 10점을 얻습니다. (각각 총 0-80점, 0-160점)<br>
+                            Final Guess에서는 각 제작용 명의를 추론용 명의에 올바르게 대응시킬 때마다 10점을 얻습니다. (총 0-80점)<br>
+                            주최 팀은 최종 점수 계산 시 Guess 점수가 0점이 됩니다.
+                        </p>
+                        <p class="lang-jp text-secret">
+                            推論する時、チームのメンバーの一人一人を明らかにする場合、1st Guessでは5点、2nd Guessでは10点を受けます。<br>
+                            Final Guessでは各々の製作用の名義を、推論用の名義と正しく合わせる場合、正答一つにつき10点を受けます。(総0－80点）<br>
+                            主催チームは最終ポイントを計算する時、Guessポイントが0点になります。
+                        </p>
+                        <p class="lang-en text-secret">
+                            Points are recieved for each member of a team correctly identified, 5 for the first guess period and 10 for the second.<br>
+                            For the final guess period, 10 points are recieved per chart team name correctly matched to voting name.<br>
+                            The hosting team (LuvTek's) will recieve 0 points from guess score.
+                        </p>
+                        <div class="table-responsive tableflame">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Impre 1</th>
+                                        <th>Impre 2</th>
+                                        <th>Guess 1</th>
+                                        <th>Guess 2</th>
+                                        <th>Final Guess</th>
+                                        <th>TOTAL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="tr_normal">
+                                        <td class="text-dark fw-bold">MAX PTS</td>
+                                        <td>80</td>
+                                        <td>80</td>
+                                        <td>80</td>
+                                        <td>160</td>
+                                        <td>80</td>
+                                        <td>480</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
+                    </section>
+                </div>
             </main>
             <footer class="py-4 bg-light mt-auto" include-html="/assets/components/footer_mf.html">
             </footer>

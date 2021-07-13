@@ -116,7 +116,8 @@
                         <p>ディレイとソフラン、皿絡みを担当したMary_Sueです。<br>素敵な方たちと一緒にすることになって光栄です。<br>何卒よろしくお願いいたします。</p>
                         <hr>
                         <h5><a href="https://bms.parksulab.xyz" class="text-dark">И</a></h5>
-                        <p>今回のコースでも足りないゴリラさんのために、すごいものを準備しました。</p><a href="#wtfTable" class="text-muted" onclick="showlog()">AND MORE...?</a>
+                        <p>今回のコースでも足りないゴリラさんのために、すごいものを準備しました。</p>
+                        <a href="#wtfTable" id="and-more" class="text-muted" onclick="showlog()">AND MORE...?</a>
                     </div>
             </main>
             <footer class="py-4 bg-light mt-auto" include-html="/assets/components/footer.html">
@@ -131,7 +132,8 @@
     <script src="/assets/js/include_html.js"></script>
     <script>
         function showlog() {
-            $("#secret").toggle()
+            $("#and-more").hide();
+            $("#secret").show();
         };
     </script>
     <script>
