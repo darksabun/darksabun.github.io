@@ -172,10 +172,6 @@ a {
   border: 1px solid #000;
 }
 
-#secret {
-  display: none;
-}
-
 .text-secret {
   display: none;
 }
