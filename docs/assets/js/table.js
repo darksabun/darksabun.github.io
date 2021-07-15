@@ -81,7 +81,7 @@ function makeBMSTable(header) {
                         return parseInt(a) - parseInt(b);
                     })
                     .each(function(d, j) {
-                        select.find("select").append("<option value='" + mark + d + "'>" + d + "</option>")
+                        select.find("select").append("<option value='" + mark + d + "'>" + d + "</option>");
                     });
             });
         }
