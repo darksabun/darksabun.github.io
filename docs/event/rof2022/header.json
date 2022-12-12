@@ -1,0 +1,7 @@
+{
+  "name": "Remilegi of Fighters 2022",
+  "symbol": "ROF ",
+  "level_order": ["NORMAL", "COMEDY"],
+  "data_url": "data.json",
+  "compat_prefix": "ROF "
+}

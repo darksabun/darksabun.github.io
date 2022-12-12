@@ -1,0 +1,7 @@
+{
+  "name": "LR2IR Battle",
+  "symbol": "IR★",
+  "level_order": ["A", "B", "C", "D"],
+  "enum_level_order": ["初級者", "中級者", "上級者", "(^^)"],
+  "data_url": "data.json"
+}

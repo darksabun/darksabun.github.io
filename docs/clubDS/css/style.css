@@ -1,0 +1,135 @@
+* {
+  font-family: Times New Roman;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("./images/bg.jpg");
+  background-color: #fff;
+  color: #000;
+}
+
+.ds-backward {
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.ds-header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ds-header > .ds-header-image {
+  margin: 0 auto;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+}
+
+.ds-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.ds-title > h1 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+.ds-list-header {
+  text-align: center;
+  color: blue;
+}
+
+.ds-load {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.ds-load > .ds-load-image {
+  margin: 0 auto;
+  width: 400px;
+  height: 71px;
+  text-align: center;
+}
+
+.ds-table {
+  margin: 0 auto;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 70%;
+  text-align: center;
+}
+
+.ds-table tr,
+.ds-table td {
+  text-align: center;
+}
+
+.ds-table tbody tr {
+  height: 80px;
+}
+.ds-table tbody tr:nth-child(odd) {
+  background: #eff;
+}
+
+.ds-table tbody tr:nth-child(even) {
+  background: #ffe;
+}
+
+.ds-table tbody .ds-table-number {
+  background: white;
+}
+
+.ds-table tbody .ds-table-song * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ds-table tbody .ds-table-song .ds-table-song-genre {
+  font-size: small;
+}
+
+.ds-table tbody .ds-table-song .ds-table-song-title {
+  font-size: large;
+  font-weight: bold;
+  color: tomato;
+}
+
+.ds-table tbody .ds-table-song .ds-table-song-title a {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.ds-table tbody .ds-table-song .ds-table-song-artist {
+  font-size: large;
+  font-weight: bold;
+  color: #5f5fcf;
+}
+
+.ds-table tbody .ds-table-medal .ds-table-medal-image {
+  width: 32px;
+  height: 56px;
+}
+
+.ds-table tbody .ds-table-song-imprelist * {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  color: #5f5fcf;
+  vertical-align: middle;
+}
+
+.ds-footer {
+  margin-left: 6px;
+  padding-bottom: 6px;
+}
+
+.ds-footer a {
+  color: #000;
+}

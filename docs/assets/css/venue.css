@@ -1,0 +1,31 @@
+/* For Event Page */
+
+.big-title {
+  font-size: 2em !important;
+}
+
+.event-button {
+  font-size: 1.5em;
+}
+
+.venue-title {
+  font-size: 2em !important;
+  text-align: center !important;
+}
+
+.venue-title-small {
+  font-size: 1.75em !important;
+  text-align: center !important;
+}
+
+.mftable-button {
+  font-size: 1.1em;
+}
+
+.shortcut-table {
+  white-space: nowrap;
+}
+
+h4 {
+  word-break: break-word;
+}

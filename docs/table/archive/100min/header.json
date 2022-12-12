@@ -1,0 +1,8 @@
+{
+  "name": "100min Fumen Cooking!!",
+  "symbol": "100m",
+  "level_order": ["AM", "PM"],
+  "data_url": "data.json",
+  "original_url": "http://100min.lapisbms.xyz/",
+  "last_update": "2020.09.28"
+}

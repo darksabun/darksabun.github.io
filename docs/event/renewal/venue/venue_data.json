@@ -1,0 +1,250 @@
+[
+  {
+    "ds_anchor": "1_bms",
+    "ds_h2": "★1",
+    "ds_h4": "Damjoy - The Lady Is A Trump [ABNORMAL]",
+    "ds_video": "-I8VNtmLCMI",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=28&event=61",
+    "url_diff": "../sabun/1_the_lady_is_a_trump_Restia.zip",
+    "nickname": "Restia",
+    "comment": "49~56소절의 딜레이와 96소절의 3노트 계단은 입문 유저들에게는 저질스럽게 느껴질만하고 97소절부터 나오는 드럼 음원 부분도 언급된 두 구간에 비해서는 무난하지만 레벨 1에서 스크래치 처리하기에는 역시 곤란합니다.<br>노멀 게이지 이하로는 원본보다는 어려울수 있으나, 채보의 제목에 어울리게 비정상으로 짜봤습니다.<br>(AnzuTool 기준으로 49소절의 D8 키음 오류 현상이 있으나, 실제 SPA와 같은 음이 정상적으로 적용되어 있으므로 제안시 문제 없습니다.)"
+  },
+  {
+    "ds_anchor": "2_bms",
+    "ds_h2": "★2",
+    "ds_h4": "SHIKI - Lapis [KF]",
+    "ds_video": "bdN6BIgOt90",
+    "url": "http://uploader.bms.ms/data/bof2008/shiki_lapisuq.rar",
+    "url_diff": "../sabun/2_Lapis_reverseN.zip",
+    "nickname": "И",
+    "comment": "연타가 치고 싶어서 만들었습니다.<br><br>나는<br>차분을<br>짰다"
+  },
+  {
+    "ds_anchor": "3_bms",
+    "ds_h2": "★3",
+    "ds_h4": "maklow - Lostlove -BMS ver.- (KF)",
+    "ds_video": "PXInpyT00_0",
+    "url": "https://onedrive.live.com/?cid=FC95A680740CA8C9&id=FC95A680740CA8C9%21111",
+    "url_diff": "../sabun/3_Lostlove_MSPIN.zip",
+    "nickname": "M-SPIN",
+    "comment": "縦連打 to 多要素<br>(딜레이로 인한 의도적 키음, BGA 재배치 존재)"
+  },
+  {
+    "ds_anchor": "4_bms",
+    "ds_h2": "★4",
+    "ds_h4": "wa. - Lieselotte [REDUCTION]",
+    "ds_video": "5s-x83iXmcY",
+    "url": "https://web.archive.org/web/20160506153918/http://creation-records.info/bms/_wa_lieselotte.rar",
+    "url_diff": "../sabun/4_Lieselotte_sera.zip",
+    "nickname": "Seraphin",
+    "comment": "random dependent, meaningless zure with empty keysound, pattern that does not match the song...<br>(...though not like this chart matches the song that well either. generally tried to maintain the same density as the original. no zure from _lieselotte_7x.bme)"
+  },
+  {
+    "ds_anchor": "5_bms",
+    "ds_h2": "★5",
+    "ds_h4": "ぷらすちっくと女の子 - 少女の舞葬 [PARTY]",
+    "ds_video": "0cchuHirbxc",
+    "url": "https://web.archive.org/web/20210708093503/http://sunaneko.iptime.org/BMS_Library/%E5%B0%91%E5%A5%B3%E3%81%AE%E8%88%9E%E8%91%AC%20%28by%20%E3%81%B7%E3%82%89%E3%81%99%E3%81%A1%E3%81%A3%E3%81%8F%E3%81%A8%E5%A5%B3%E3%81%AE%E5%AD%90%29.rar",
+    "url_diff": "../sabun/5_maisou_alt.zip",
+    "nickname": "alt",
+    "comment": "これの物量譜面以外を見てみたい<br>(同梱譜面03_maisou-h.bmeとズレがないことを確認済みです。)"
+  },
+  {
+    "ds_anchor": "6_bms",
+    "ds_h2": "★6",
+    "ds_h4": "猫蟹丸 - 5.1.1(ReMix) [73Another]",
+    "ds_video": "aqZleMg81RE",
+    "url": "https://web.archive.org/web/20070107082819/http://yoshinoya.dnsalias.com:8888/knm/2005_511.lzh",
+    "url_diff": "../sabun/6_5.1.1_ReMix_NASA.zip",
+    "nickname": "NASA",
+    "comment": "良い曲だったので<br>(同梱N、I譜面と音ズレ無し　(※AfotherはA譜面と音ズレ無し))"
+  },
+  {
+    "ds_anchor": "7_bms",
+    "ds_h2": "★7",
+    "ds_h4": "ZUN (Arr.sun3) - 竹取はっぴー -BALANCED AIRTHER-",
+    "ds_video": "3ya-61IYFMU",
+    "url": "https://dl.dropboxusercontent.com/s/6k444o5s5fyxeyv/%E7%AB%B9%E5%8F%96%E3%81%AF%E3%81%A3%E3%81%B4%E3%83%BC.zip",
+    "url_diff": "../sabun/7_taketori_happy_sonic.zip",
+    "nickname": "Sonic",
+    "comment": "There's a huge spike between getting GROOVE CLEAR / HARD CLEAR lamps of this chart. This is a skimmed version of the original chart, making the difficulty spike smaller as well."
+  },
+  {
+    "ds_anchor": "8_bms",
+    "ds_h2": "★8",
+    "ds_h4": "HOUJIROU - 舞姫 ～buki～[7key LOFT]",
+    "ds_video": "3z5GXPlCZhE",
+    "url": "https://houjiroumpbt.wixsite.com/area-hj/bms",
+    "url_diff": "../sabun/8_buki_SANY.zip",
+    "nickname": "SANY",
+    "comment": "違和感があったので<br>難しくなっております"
+  },
+  {
+    "ds_anchor": "9_bms",
+    "ds_h2": "★9",
+    "ds_h4": "裏 吉 川 - A c i - L - W e i r D",
+    "ds_video": "5JJSOrXXuU4",
+    "url": "http://malie.noor.jp/",
+    "url_diff": "../sabun/9_AciL_reverseN.zip",
+    "nickname": "И",
+    "comment": "곡 분위기가 Weird Wave와 유사했기 때문에 이렇게 만들었습니다.<br><br>나는<br>차분을<br>짰다"
+  },
+  {
+    "ds_anchor": "10_bms",
+    "ds_h2": "★10",
+    "ds_h4": "t+pazolite - Little 'Sister' Bitch -Hope-",
+    "ds_video": "EfABPs098TM",
+    "url": "https://www.mediafire.com/file/21t44ddqr0dzwpo/Little_Sister_B%2Atch.zip/file",
+    "url_diff": "../sabun/10_littlesisterbitch_nanami.zip",
+    "nickname": "七海",
+    "comment": "譜面はいいけど、トリルがすごく気になるので作りました<br>(_little_sister_bitch_7_bga.bmeとズレなし、★10よりちょっと易い)"
+  },
+  {
+    "ds_anchor": "11_bms",
+    "ds_h2": "★11",
+    "ds_h4": "Lime - Stargazer [Gaussian prime]",
+    "ds_video": "uaheTY0HCTg",
+    "url": "https://1drv.ms/u/s!AkHILFwfHSyzgQR79BaEn5fK1VVU?e=SbTa1l",
+    "url_diff": "../sabun/11_stargazer_1008.zip",
+    "nickname": "1008",
+    "comment": "ディレイがとてもきれいだったので<br>(ディレイの分だけ同梱とズレがあります。 「再解釈」ということでもともと同時押し譜面だったものを、 ディレイ譜面に再構成させてみました。)"
+  },
+  {
+    "ds_anchor": "12_bms",
+    "ds_h2": "★12",
+    "ds_h4": "void feat. コツキミヤ , Gt. えば - Name of oath [Re: SP EX]",
+    "ds_video": "52YwVmATTUc",
+    "url": "http://mournfinale.com/bof2010/",
+    "url_diff": "../sabun/12_Name_of_oath_BAECON.zip",
+    "nickname": "BAECON",
+    "comment": "約10年前に自分で作った譜面ですが、今見ると色々と粗が目立つのでリメイクしようと思いました。<br>中盤の同時押し地帯以外正直大きな変化はないのですが、色々と微調整して今の自分のスタイルに仕上がっているのではないかと思います。"
+  },
+  {
+    "ds_anchor": "13_bms",
+    "ds_h2": "★13",
+    "ds_h4": "BACO feat. るぜ - 白と臙脂のオモチャバコ [Dead]",
+    "ds_video": "XxFZO0EoEdg",
+    "url": "http://boxism8500.sakura.ne.jp/wp/wp-content/uploads/2016/03/whitelolita.rar",
+    "url_diff": "../sabun/13_omotyabako_mary_sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "★13의 黯이라는 곡을 재해석하려 했으나, 너무 어려워져서 어펜드 패턴으로 가버리는 바람에 아무거나 추천을 받아서 만들었습니다.<br>(곡 본체의 'PLUS'라는 압축파일에 동봉된 ____whitelolita_def.bme(미배치 파일) 기준 즈레없음.)"
+  },
+  {
+    "ds_anchor": "14_bms",
+    "ds_h2": "★14",
+    "ds_h4": "Basso - Fatal Pulse [Hyperpnea]",
+    "ds_video": "V2hwgwZM158",
+    "url": "https://dropbox.bms.ms/u/95913775/files/Fatal_Pulse.rar",
+    "url_diff": "../sabun/14_Fatal_Pulse_th.zip",
+    "nickname": "th",
+    "comment": "原譜面に散見されるキー音選択やノーツ配置が不安定な箇所を解消したかった<br>(区切りの多い微連打物量譜面です。fatal_pulse_template.bmsxxx とズレ抜け無し確認済（重複定義ノーツはそのままにしています）。)"
+  },
+  {
+    "ds_anchor": "15_bms",
+    "ds_h2": "★15",
+    "ds_h4": "wint - REWD 'B159 mix' [Rising]",
+    "ds_video": "9AOVxaWrPoU",
+    "url": "https://web.archive.org/web/20031006164221/http://www.bmsjournal.net/lvo/rewd.rar",
+    "url_diff": "../sabun/15_rewd_hex.zip",
+    "nickname": "hex",
+    "comment": "原譜面は連打が殆ど無い乱打譜面であったが、本曲のリズム感を連打で体感できる譜面をプレイしてみたかったためリメイクしました。<br>(追加音源が同梱されています。)"
+  },
+  {
+    "ds_anchor": "16_bms",
+    "ds_h2": "★16",
+    "ds_h4": "mist-rose - flowers [Persicaria]",
+    "ds_video": "9_Tbj6CXT2o",
+    "url": "http://tm2.toymusical.net/download.html",
+    "url_diff": "../sabun/16_flowers_razryn.zip",
+    "nickname": "Razryn",
+    "comment": "★16의 차분을 처음 접했을 때 랜덤이 너무 쓰레기같았던 기억이 있어서 정/미와 랜덤의 차이를 줄이기 위해 선정했습니다.<br>근데 12빗 자체가 굉장히 빠르다보니, 기존 패턴이 배치차이가 컸다면, 이 차분은 개인차가 큰 쪽이 된 것 같네요.<br>밀도가 마냥 높진 않으므로 빠른것에 익숙해지면 양호할 것 같습니다."
+  },
+  {
+    "ds_anchor": "17_bms",
+    "ds_h2": "★17",
+    "ds_h4": "remixed. by gmtn. - Extreme Z4 (Aggressive HC mix) [183km/h]",
+    "ds_video": "QK-emGQSt8U",
+    "url": "https://extrose.stoicsounds.jp/_data/bms/gmtn/%2310%20%5BHARDCORE%5D%20Extreme%20Z4%20-agressive%20HC%20mix-.zip",
+    "url_diff": "../sabun/17_ExtremeZ4_2RLZ.zip",
+    "nickname": "2RLZ",
+    "comment": "이 곡의 원곡이 수록되어 있는 DJMAX란 게임은 저에겐 참 인연이 깊은 게임입니다. 제가 처음 접한 리듬게임이기도 하였고, 저에게 힘든 시기를 보낼 수 있게 해준 게임이었죠.<br>이 곡 또한 제가 좋아하는 곡입니다만, 원본의 패턴이 저에게는 너무 난해하게 느껴지는지라 제 나름대로 해석을 해보고 싶었습니다. 많이 부족한 패턴이겠지만, 모쪼록 잘 부탁드립니다."
+  },
+  {
+    "ds_anchor": "18_bms",
+    "ds_h2": "★18",
+    "ds_h4": "sa10 - Magus Logos [HARD Remastered]",
+    "ds_video": "xgZg71ELvaY",
+    "url": "https://lobsak.bms.ms/bms/maguslogos_ogg.zip",
+    "url_diff": "../sabun/18_MagusLogos_Triforce.zip",
+    "nickname": "Triforce",
+    "comment": "원본 패턴이 상당히 재미있는 편이라고 생각한다. 다만, 스크래치의 사용이 너무 과도하게 어려운 경향이 있다고 생각하고 이것이 해당 차분의 하드게이지 클리어 난이도를 동 난이도에서 까다롭게 만들었다고 생각한다. 따라서, 스크래치를 일부 조정하고 곡 특유의 난이도적인 긴장감을 유지하는 패턴으로 수정해보았다.<br>- ★18 Magus Logos [HARD]와 엇갈림 없음.<br>- 내가 해봤을때는 ★18같았는데, 중반 이후 와장창이 역시 어렵긴 한듯.<br>- Triforce 차분 많이 욕해주세요"
+  },
+  {
+    "ds_anchor": "19_bms",
+    "ds_h2": "★19",
+    "ds_h4": "noctie* - resta del tramonto",
+    "ds_video": "nQtcGswdMOU",
+    "url": "https://dropbox.bms.ms/u/106790826/resta_del_tramonto.rar",
+    "url_diff": "../sabun/19_resta_del_tramonto_Mallow.zip",
+    "nickname": "Mallow♪",
+    "comment": "ズレすぎてたから<br>(こんなにも簡単になるとは...)"
+  },
+  {
+    "ds_anchor": "20_bms",
+    "ds_h2": "★20",
+    "ds_h4": "Gun-SEKI feat.那珂 - 恋の2-4-11(BMS Edit) [= -13]",
+    "ds_video": "4Lq3fVxSxpk",
+    "url": "https://web.archive.org/web/20141124123150/http://www.linnocence.net/bms/koi_no_2-4-11.zip",
+    "url_diff": "../sabun/20_2411_mees_.zip",
+    "nickname": "MEES_",
+    "comment": "반갑습니다. 아마도? 2년만에 차분을 만들어 보는것 같은데요, (만들다가 만건 두어개 더 있지만..)<br>과거에 2-4-11 패턴을 만들었었는데 맘에 들었으나 만들다가 만것같은 느낌이어서 이번 기회에 완성판 느낌으로 내 봤습니다.<br>★20을 배정받고 노래를 고르다 보니 전체적으로 패턴들이 평범한것 같아서 이런거 하나쯤은 있어도 괜찮지 않을까? 하는 느낌대로 냈습니다. 감사합니다.<br>(딜레이로 인한 즈레 다수.)"
+  },
+  {
+    "ds_anchor": "21_bms",
+    "ds_h2": "★21",
+    "ds_h4": "paraoka - witchcraft [Maryther]",
+    "ds_video": "v7vvrYdEx2c",
+    "url": "https://onedrive.live.com/?cid=26D9698EC1CEC044&id=26D9698EC1CEC044%21212",
+    "url_diff": "../sabun/21_witchcraft_mary_sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "발광난이도표의 대표적인 동시치기곡 Witchcraft를 가지고 딜레이 차분을 만들고 싶었습니다.<br>(동봉 ers_wc7.bme 기준 03레인에 즈레가 하나 있습니다만, 03레인은 BPM 변화와 관련이 있는 레인이므로 패턴상으로는 이상 없습니다.)"
+  },
+  {
+    "ds_anchor": "22_bms",
+    "ds_h2": "★22",
+    "ds_h4": "Airylic - Tears of the Sunrise [No More Tears]",
+    "ds_video": "07ixQjr9Tjg",
+    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=1&event=104",
+    "url_diff": "../sabun/22_Tears_of_the_Sunrise_MSPIN.zip",
+    "nickname": "M-SPIN",
+    "comment": "★22에서 가장 좋아하는 작품입니다. 반복적이면서도 애수적인 신스음과 무기질적인 하이햇의 조합이 매력적입니다.<br>★22에 수록된 패턴은 키음의 사용이 다소 일관적이지 않고, 연타보다는 난타 배치이기에 이를 연타로 배치하여 매력적인 음을 충분히 즐길 수 있도록 구성하였습니다.<br>(제작자 본인이 클리어했으니 아마 ★★5까지는 아닐 것입니다. 동봉 SPN 기준 즈레 없음.)"
+  },
+  {
+    "ds_anchor": "23_bms",
+    "ds_h2": "★23",
+    "ds_h4": "paraoka - L9 -Genocide-",
+    "ds_video": "HG0HuhppnKc",
+    "url": "https://onedrive.live.com/?id=26D9698EC1CEC044%21212&cid=26D9698EC1CEC044",
+    "url_diff": "../sabun/23_L9_selene.zip",
+    "nickname": "selene.",
+    "comment": "普通にムズイガチ押しを作りたかった+以前作ったトータルエクリプスみたいな地力系にもできそうだったので<br>(同梱譜面LIGHT 7と比較して音ズレが無いことを確認しました。)"
+  },
+  {
+    "ds_anchor": "24_bms",
+    "ds_h2": "★24",
+    "ds_h4": "ROKINA - キミとボクへの葬送歌 † Funeral",
+    "ds_video": "5v_dqsZd0Uw",
+    "url": "https://livrenoir.web.fc2.com/bms/",
+    "url_diff": "../sabun/24_excelsior_razryn.zip",
+    "nickname": "Razryn",
+    "comment": "1발광 24에는 각각 특색을 갖고있는 패턴들이 있습니다만, 빠른 지력곡이 부족하다고 생각해서 선정했습니다.<br>근데 욕심이 큰 나머지 좀 굉장한게 나온 것 같네요."
+  },
+  {
+    "ds_anchor": "append_bms",
+    "ds_h2": "And More…?",
+    "ds_h4": "Append Charts",
+    "free_button_name": "Download Charts",
+    "ds_video": "videoseries?list=PLtUH4h63CzEYUDyMSP8WomDz5QmKq5Cv8",
+    "url": "../sabun/GenocideRe_AppendOnly_20210207.zip"
+  }
+]
