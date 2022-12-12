@@ -1,0 +1,194 @@
+﻿/* Changelog */
+#changelog {
+  color: #3d4449;
+  overflow: auto;
+  resize: none;
+}
+
+#changelog:focus {
+  border: 0px #fff;
+  box-shadow: none;
+}
+
+/* Custom accordion box shadow */
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
+}
+
+.accordion-button:focus {
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+/* Table */
+#shortcut_table {
+  color: #222222;
+  font-size: 0.9em;
+  text-align: center;
+  border: solid 2px #000;
+}
+
+#shortcut_table td {
+  border: solid 1px #000;
+}
+
+/* Chart Layout */
+#table_int {
+  width: 100% !important;
+}
+
+#table_int a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#table_int th {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.95em;
+}
+
+/* Normal Table */
+.tableflame table {
+  border: solid 2px #000;
+  margin: 0 0 2em 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  font-size: 14px;
+}
+
+.tableflame table tbody tr {
+  border: solid 1px #000;
+  border-left: 0;
+  border-right: 0;
+  background-color: #e6ebed40;
+  color: #222222;
+}
+
+.tableflame table td {
+  padding: 0.75em 0.75em;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.tableflame table th {
+  font-size: 1.2em;
+  font-weight: bolder;
+  border: solid 2px #000;
+  border-left: 0;
+  border-right: 0;
+  padding: 0.75em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+
+.tableflame table thead {
+  border-bottom: solid 2px #00000026;
+}
+
+.tableflame table tfoot {
+  border-top: solid 2px #ffffff26;
+}
+
+.tableflame .tr_separate {
+  height: 20px;
+  color: #000;
+  background-color: #a0a0a04d;
+}
+
+.tableflame .tr_normal {
+  background-color: #ffffff;
+}
+
+.tableflame .state1 {
+  background-color: #add8e6;
+}
+
+.tableflame .state2 {
+  background-color: #ffc0cb;
+}
+
+.tableflame .state3 {
+  background-color: #afffa7;
+}
+
+.tableflame .state4 {
+  background-color: #ffff00;
+}
+
+.tableflame .state5 {
+  background-color: #808080;
+}
+
+.tableflame .state6 {
+  background-color: #ffa500;
+}
+
+.tableflame tr,
+a {
+  /*Firefox向け*/
+  -moz-transition-property: color, background-color;
+  -moz-transition-duration: 0.2s;
+  /*Chrome、Safari向け*/
+  -webkit-transition-property: color, background-color;
+  -webkit-transition-duration: 0.2s;
+  /*Opera向け*/
+  -o-transition-property: color, background-color;
+  -o-transition-duration: 0.2s;
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+}
+
+.tableflame tr.tr_normal:hover {
+  background-color: #f8f8f8;
+}
+
+/* etc */
+.diffflame {
+  table-layout: fixed;
+  width: 250px;
+  text-align: center;
+  border: 3px solid #000;
+  border-collapse: collapse;
+  float: left;
+}
+
+.diffflame th {
+  border-color: #000000;
+  border-style: solid;
+  border-width: 3px 3px 3px;
+}
+
+.diffflame td {
+  border: 1px solid #000;
+}
+
+.text-secret {
+  display: none;
+}
+
+#update {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #484d55;
+}
+
+#tableLoading {
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #222222;
+}
+
+/* for table vertical-align */
+.table > thead > tr > th {
+  vertical-align: middle;
+}
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+}

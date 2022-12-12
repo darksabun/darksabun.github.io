@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>BMS chart Editors’ League | Result - DARKSABUN</title>
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <link href="/assets/css/table.css" rel="stylesheet" />
+    <link href="/assets/css/venue.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <a class="navbar-brand ps-3" href="/">DARKSABUN</a
+      ><button
+        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+        id="sidebarToggle"
+        href="#"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div id="layoutSidenav">
+      <!-- Nav bar -->
+      <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+          <div
+            class="sb-sidenav-menu"
+            data-include-html="/assets/components/navbar.html"
+          ></div>
+        </nav>
+      </div>
+      <!-- Main Contents -->
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid px-4">
+            <h1 class="mt-4">BMS chart Editors’ League</h1>
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item"><a href="/event/">Events</a></li>
+              <li class="breadcrumb-item">
+                <a href="/event/bcel/">BMS chart Editors’ League</a>
+              </li>
+              <li class="breadcrumb-item active">Result</li>
+            </ol>
+            <!-- Result -->
+            <h2 id="leagueFinalResult" class="mb-4">Result</h2>
+            <h2 class="text-center m-4">Final</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover text-center">
+                <thead>
+                  <tr>
+                    <th>Team</th>
+                    <th>Charter</th>
+                    <th>Score</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="fw-bold">
+                    <td rowspan="4">Light</td>
+                    <td class="table-warning">th</td>
+                    <td class="table-warning">8.9</td>
+                  </tr>
+                  <tr>
+                    <td>rat</td>
+                    <td>8.39</td>
+                  </tr>
+                  <tr>
+                    <td>hex</td>
+                    <td>8.17</td>
+                  </tr>
+                  <tr>
+                    <td>LuvTek</td>
+                    <td>6.4</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="4">Middle</td>
+                    <td class="table-warning">Triforce</td>
+                    <td class="table-warning">8.83</td>
+                  </tr>
+                  <tr>
+                    <td>hex</td>
+                    <td>8.67</td>
+                  </tr>
+                  <tr>
+                    <td>qtp13</td>
+                    <td>8.17</td>
+                  </tr>
+                  <tr>
+                    <td>Kamikaze</td>
+                    <td>6.33</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="4">Heavy</td>
+                    <td class="table-warning">hex</td>
+                    <td class="table-warning">8.17</td>
+                  </tr>
+                  <tr>
+                    <td>LindBlum</td>
+                    <td>7.83</td>
+                  </tr>
+                  <tr>
+                    <td>qtp13</td>
+                    <td>7.5</td>
+                  </tr>
+                  <tr>
+                    <td>YARRRRRRRRRRRRRRRRRRRRRRR</td>
+                    <td>6.5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br />
+            <hr id="leaguePreResult" />
+            <h2 class="text-center m-4">Preliminary</h2>
+            <div class="container-fluid text-center">
+              <div
+                id="showPreResultTableButton"
+                class="btn btn-lg btn-dark btn-icon"
+                onclick="showPreResultTable()"
+              >
+                View Result
+              </div>
+            </div>
+            <div
+              class="table-responsive"
+              id="preResultTable"
+              style="display: none"
+            >
+              <table class="table table-bordered table-hover text-center">
+                <thead>
+                  <tr>
+                    <th>Team</th>
+                    <th>Charter</th>
+                    <th>First Chart Score</th>
+                    <th>Second Chart Score</th>
+                    <th>Sum</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="fw-bold">
+                    <td rowspan="4">Light-1</td>
+                    <td class="table-warning">LuvTek</td>
+                    <td class="table-warning">8.5</td>
+                    <td class="table-warning">7.57</td>
+                    <td class="table-warning">16.07</td>
+                  </tr>
+                  <tr>
+                    <td>Haze</td>
+                    <td>8.17</td>
+                    <td>7.43</td>
+                    <td>15.6</td>
+                  </tr>
+                  <tr>
+                    <td>nozomi</td>
+                    <td>7.17</td>
+                    <td>8</td>
+                    <td>15.17</td>
+                  </tr>
+                  <tr>
+                    <td>Kamikaze</td>
+                    <td>7.61</td>
+                    <td>7.07</td>
+                    <td>14.68</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="4">Light-2</td>
+                    <td class="table-warning">hex</td>
+                    <td class="table-warning">9</td>
+                    <td class="table-warning">8.7</td>
+                    <td class="table-warning">17.7</td>
+                  </tr>
+                  <tr>
+                    <td>Triforce</td>
+                    <td>8.28</td>
+                    <td>8.5</td>
+                    <td>16.78</td>
+                  </tr>
+                  <tr>
+                    <td>Mary_Sue</td>
+                    <td>6.83</td>
+                    <td>7.3</td>
+                    <td>14.13</td>
+                  </tr>
+                  <tr>
+                    <td>YARRRRRRRRRRRRRRRRRRRRRRR</td>
+                    <td>6.63</td>
+                    <td>6.87</td>
+                    <td>13.5</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="3">Light-3</td>
+                    <td class="table-warning">rat</td>
+                    <td class="table-warning">8.68</td>
+                    <td class="table-warning">8.24</td>
+                    <td class="table-warning">16.92</td>
+                  </tr>
+                  <tr>
+                    <td>alt</td>
+                    <td>8</td>
+                    <td>8.12</td>
+                    <td>16.12</td>
+                  </tr>
+                  <tr>
+                    <td>И</td>
+                    <td>5.3</td>
+                    <td>7.62</td>
+                    <td>12.92</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="3">Light-4</td>
+                    <td class="table-warning">th</td>
+                    <td class="table-warning">8.67</td>
+                    <td class="table-warning">9.5</td>
+                    <td class="table-warning">18.17</td>
+                  </tr>
+                  <tr>
+                    <td>七海</td>
+                    <td>8.42</td>
+                    <td>8.56</td>
+                    <td>16.98</td>
+                  </tr>
+                  <tr>
+                    <td>NASA</td>
+                    <td>7.58</td>
+                    <td>8.48</td>
+                    <td>16.07</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="3">Middle-1</td>
+                    <td class="table-warning">Kamikaze</td>
+                    <td class="table-warning">8</td>
+                    <td class="table-warning">9.42</td>
+                    <td class="table-warning">17.42</td>
+                  </tr>
+                  <tr>
+                    <td>tyrcs</td>
+                    <td>7.75</td>
+                    <td>9.33</td>
+                    <td>17.08</td>
+                  </tr>
+                  <tr>
+                    <td>Haze</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="3">Middle-2</td>
+                    <td class="table-warning">hex</td>
+                    <td class="table-warning">9.22</td>
+                    <td class="table-warning">9.11</td>
+                    <td class="table-warning">18.33</td>
+                  </tr>
+                  <tr>
+                    <td>LuvTek</td>
+                    <td>7.83</td>
+                    <td>8.63</td>
+                    <td>16.47</td>
+                  </tr>
+                  <tr>
+                    <td>Mary_Sue</td>
+                    <td>7.17</td>
+                    <td>9</td>
+                    <td>16.17</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="3">Middle-3</td>
+                    <td class="table-warning">Triforce</td>
+                    <td class="table-warning">8</td>
+                    <td class="table-warning">8.4</td>
+                    <td class="table-warning">16.4</td>
+                  </tr>
+                  <tr>
+                    <td>alt</td>
+                    <td>7.92</td>
+                    <td>8.29</td>
+                    <td>16.2</td>
+                  </tr>
+                  <tr>
+                    <td>extra</td>
+                    <td>0</td>
+                    <td>6.88</td>
+                    <td>6.88</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="2">Middle-4</td>
+                    <td class="table-warning">qtp13</td>
+                    <td class="table-warning">8.52</td>
+                    <td class="table-warning">8.6</td>
+                    <td class="table-warning">17.12</td>
+                  </tr>
+                  <tr>
+                    <td>LindBlum</td>
+                    <td>8.4</td>
+                    <td>8.4</td>
+                    <td>16.81</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="2">Heavy-1</td>
+                    <td class="table-warning">YARRRRRRRRRRRRRRRRRRRRRRR</td>
+                    <td class="table-warning">8.37</td>
+                    <td class="table-warning">7.89</td>
+                    <td class="table-warning">16.26</td>
+                  </tr>
+                  <tr>
+                    <td>七海</td>
+                    <td>7.77</td>
+                    <td>8.28</td>
+                    <td>16.04</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="2">Heavy-2</td>
+                    <td class="table-warning">hex</td>
+                    <td class="table-warning">8.13</td>
+                    <td class="table-warning">9.23</td>
+                    <td class="table-warning">17.37</td>
+                  </tr>
+                  <tr>
+                    <td>tyrcs</td>
+                    <td>8.73</td>
+                    <td>7.87</td>
+                    <td>16.6</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="2">Heavy-3</td>
+                    <td class="table-warning">LindBlum</td>
+                    <td class="table-warning">8.63</td>
+                    <td class="table-warning">8.89</td>
+                    <td class="table-warning">17.52</td>
+                  </tr>
+                  <tr>
+                    <td>LuvTek</td>
+                    <td>7.6</td>
+                    <td>8.67</td>
+                    <td>16.27</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td rowspan="2">Heavy-4</td>
+                    <td class="table-warning">qtp13</td>
+                    <td class="table-warning">8.72</td>
+                    <td class="table-warning">9.5</td>
+                    <td class="table-warning">18.22</td>
+                  </tr>
+                  <tr>
+                    <td>qfeileadh</td>
+                    <td>8.5</td>
+                    <td>8.37</td>
+                    <td>16.87</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br />
+            <hr id="leagueFreeResult" />
+            <h2 class="text-center m-4">Freestyle</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover text-center">
+                <thead>
+                  <tr>
+                    <th>Section</th>
+                    <th>Member</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-warning fw-bold">
+                    <td>
+                      Chart<br />
+                      <a href="https://venue.bmssearch.net/bcel_free/2"
+                        >Beat Cannon (KHTP Remix) [SHD]</a
+                      >
+                    </td>
+                    <td>M.H</td>
+                  </tr>
+                  <tr class="table-warning fw-bold">
+                    <td>Editor</td>
+                    <td>LuvTek</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+        <footer
+          class="py-4 bg-light mt-auto"
+          data-include-html="/assets/components/footer_bceleague.html"
+        ></footer>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/multi_lang.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/include_html.js"></script>
+    <script>
+      function showPreResultTable() {
+        document.getElementById("showPreResultTableButton").style.display =
+          "none";
+        document.getElementById("preResultTable").style = "";
+      }
+    </script>
+  </body>
+</html>

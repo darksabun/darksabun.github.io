@@ -1,0 +1,24 @@
+{
+  "name": "BMS chart Editors’ League",
+  "symbol": "BcEL ",
+  "level_order": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "AF",
+    "BF",
+    "CF",
+    "Free"
+  ],
+  "data_url": "data.json",
+  "compat_prefix": "BcEL "
+}
