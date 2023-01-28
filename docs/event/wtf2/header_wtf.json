@@ -1,0 +1,55 @@
+{
+  "name": "World Training Festival",
+  "symbol": "WTF",
+  "data_url": "data.json",
+  "compat_prefix": "WTF",
+  "course": [
+    [
+      {
+        "name": "World Training Festival",
+        "constraint": ["grade_random", "gauge_lr2", "ln"],
+        "trophy": [
+          { "name": "silvermedal", "missrate": 5.0, "scorerate": 70.0 },
+          { "name": "goldmedal", "missrate": 2.5, "scorerate": 85.0 }
+        ],
+        "md5": [
+          "07e5040e7a381f045d8798560ee95b43",
+          "a5920c8d7f79fa3ad8182df4431cec7b",
+          "a9117edc5514902a025fbb5d1fc40b5e",
+          "4724abf1ae1b9a575abc966c22cd331f",
+          "104ed9b6c2bfab985fc721f6b8b7a06c"
+        ]
+      },
+      {
+        "name": "World Training Festival 2",
+        "constraint": ["grade_random", "gauge_lr2", "ln"],
+        "trophy": [
+          { "name": "silvermedal", "missrate": 5.0, "scorerate": 70.0 },
+          { "name": "goldmedal", "missrate": 2.5, "scorerate": 85.0 }
+        ],
+        "md5": [
+          "bc3dc318370357a91a8d89eb3bc73def",
+          "96853c991c3bea248de47f88cd7b7d37",
+          "c6a0afffdd7824b31e76b3a4c6e6ec67",
+          "c6cafba7777a53764e6b4c5befb92b66",
+          "3f2a21a8ee3f2a3ea62ec83865a57104"
+        ]
+      },
+      {
+        "name": "World Training Festival 3",
+        "constraint": ["grade_random", "gauge_lr2", "ln"],
+        "trophy": [
+          { "name": "silvermedal", "missrate": 5.0, "scorerate": 70.0 },
+          { "name": "goldmedal", "missrate": 2.5, "scorerate": 85.0 }
+        ],
+        "md5": [
+          "db246313eeb424a1b26c549f2beac146",
+          "40f91bd0b884a8ae85deab162aeb0083",
+          "17377f10d862aa0e86a528aced4e6390",
+          "897d7a55e09bbe12590a88b0513862e5",
+          "b093953b256886f10e60d067932526b6"
+        ]
+      }
+    ]
+  ]
+}
