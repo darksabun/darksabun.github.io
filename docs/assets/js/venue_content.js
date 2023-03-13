@@ -292,4 +292,29 @@ async function fetchJson() {
 }
 
 // Usage
+// =========================
 // Used header : ds_anchor, ds_h2, ds_h4, ds_video, url, url_diff, nickname, comment, course(if need)
+// -------------------------
+// How to make Course Table
+//
+// [
+//   {
+//     "ds_anchor": "shortcut anchor",
+//     "ds_h2": "Course name",
+//     "ds_h4": "Level of Team name",
+//     "ds_video": "Course autoplay video",
+//     "url": "Download URL",
+//     "course": [
+//       {
+//         "stage": "Stage number",
+//         "video": "Autoplay video link (youtube) | ex -> (o5WcoAckg7U&t=189s)",
+//         "md5": "BMS md5",
+//         "title": "BMS title",
+//         "bms_url": "BMS download URL",
+//         "artist": "Composer",
+//         "maker": "Chart maker"
+//       }
+//     ],
+//     "comment": "Write comment"
+//   }
+// ]

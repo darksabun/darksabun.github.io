@@ -8,7 +8,7 @@ async function fetchJson() {
   });
   console.log(json);
 
-  document.querySelector(".ds-count").textContent = json.length;
+  document.getElementById("ds-count").textContent = json.length;
   const frag = document.createDocumentFragment();
   const tbody = frag.appendChild(document.createElement("tbody"));
   json.forEach((i, index) => {
