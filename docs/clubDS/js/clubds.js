@@ -2,13 +2,13 @@ async function fetchJson() {
   try {
     const result = await fetch("data.json");
     if (!result.ok) {
-      throw new Error("Network ERROR");
+      throw new Error(result.status);
     }
     const json = await result.json();
     console.log(json);
     makeDsTable(json);
   } catch (error) {
-    console.error("data.json is missing.", error);
+    console.error("Can't find data.json.", error);
     const result = await fetch(
       "https://script.google.com/macros/s/AKfycbzaQbcI9UZDcDlSHHl2NHilhmePrNrwxRdOFkmIXsfnbfksKKmAB3V65WZ8jPWU-7E/exec?table=clubds"
     );
@@ -18,7 +18,7 @@ async function fetchJson() {
   }
 
   function makeDsTable(json) {
-    document.querySelector(".ds-count").textContent = json.length;
+    document.getElementById("ds-count").textContent = json.length;
     const frag = document.createDocumentFragment();
     const tbody = frag.appendChild(document.createElement("tbody"));
     json.forEach((i, index) => {
