@@ -301,7 +301,7 @@ async function fetchJson() {
 //   {
 //     "ds_anchor": "shortcut anchor",
 //     "ds_h2": "Course name",
-//     "ds_h4": "Level of Team name",
+//     "ds_h4": "Level or Team name",
 //     "ds_video": "Course autoplay video",
 //     "url": "Download URL",
 //     "course": [
