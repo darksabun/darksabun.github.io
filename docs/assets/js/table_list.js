@@ -27,7 +27,7 @@ clipboard.on("error", function () {
 });
 
 function makeTablelist() {
-  let table = $("#table_int").DataTable({
+  let table = new DataTable("#table_int", {
     autoWidth: false,
     paging: true,
     order: [
