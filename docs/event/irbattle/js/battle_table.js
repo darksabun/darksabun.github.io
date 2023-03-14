@@ -5,7 +5,7 @@ $(function () {
 
 // Battle Ranking Table
 function makeBattleTable() {
-  table = $("#table_int").DataTable({
+  table = new DataTable("#table_int", {
     scrollX: true,
     scrollY: "70vh",
     paging: false,

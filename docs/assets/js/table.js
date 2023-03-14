@@ -17,7 +17,7 @@ $(function () {
 
 // BMS Table
 function makeBMSTable() {
-  $("#table_int").DataTable({
+  new DataTable("#table_int", {
     autoWidth: typeof customAutoWidth === "undefined" ? true : customAutoWidth,
     paging: typeof customPaging === "undefined" ? false : customPaging,
     pageLength:
