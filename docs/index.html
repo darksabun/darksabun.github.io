@@ -5,25 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>DARKSABUN</title>
+    <title>2032 April Fools' Day - DARKSABUN</title>
     <link href="/assets/css/styles.css" rel="stylesheet" />
+    <link href="/assets/css/table.css" rel="stylesheet" />
+    <link href="/assets/css/venue.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
-    <link
-      href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
   </head>
+
   <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-      <a class="navbar-brand ps-3" href="/">DARKSABUN</a>
-      <button
+      <a class="navbar-brand ps-3" href="/">DARKSABUN</a
+      ><button
         class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
         id="sidebarToggle"
         href="#"
@@ -31,8 +29,8 @@
         <i class="fas fa-bars"></i>
       </button>
     </nav>
-    <!-- Nav bar -->
     <div id="layoutSidenav">
+      <!-- Nav bar -->
       <div id="layoutSidenav_nav">
         <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
           <div
@@ -45,40 +43,46 @@
       <div id="layoutSidenav_content">
         <main>
           <div class="container-fluid px-4">
-            <h1 class="mt-4">DARKSABUN</h1>
-            <ol class="breadcrumb mb-4">
-              <li class="breadcrumb-item active">Home</li>
-            </ol>
-            <div class="row">
-              <div class="col-xl-6">
-                <div class="card mb-4">
-                  <div class="card-header">Recent DARKSABUN</div>
-                  <div class="card-body">
-                    <div class="ratio ratio-16x9">
-                      <iframe
-                        class="rounded-3"
-                        src="https://www.youtube.com/embed/videoseries?list=PLtUH4h63CzEZETteqOjHlZDx9PehlSKVf"
-                        frameborder="0"
-                        allowfullscreen
-                      ></iframe>
-                    </div>
+            <h1 class="mt-4">2032 April Fools' Day</h1>
+            <!--<ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item"><a href="/event/">Events</a></li>
+              <li class="breadcrumb-item">
+                <a href="/event/bofet/">2032 April Fools' Day</a>
+              </li>
+              <li class="breadcrumb-item active">Venue</li>
+            </ol>-->
+            <section>
+              <h2 class="text-center m-4">(^^)</h2>
+              <div class="container mt-2">
+                <div class="row mb-4 text-center">
+                  <div class="col-md-12">
+                    <h4>Download</h4>
+                    <p class="lang-ko text-secret">다운로드</p>
+                    <p class="lang-ja text-secret">ダウンロード</p>
+                    <p class="lang-en text-secret">Download</p>
+                    <a
+                      href="https://darksabun.github.io/event/fool2032/sabun/fool2032.zip"
+                      class="mb-4 btn-lg btn btn-dark"
+                      >Download</a
+                    >
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6">
-                <div class="card mb-4">
-                  <div class="card-header">Recent Event</div>
-                  <div class="card-body">
-                    <div class="table-responsive">
-                      <table
-                        id="table_int"
-                        class="table table-bordered table-hover text-gray-900 m-auto"
-                      ></table>
-                    </div>
-                  </div>
+            </section>
+            <section>
+              <!-- Contents -->
+              <section>
+                <div
+                  id="venue-content-load"
+                  class="container-fluid mb-4 text-center"
+                >
+                  <hr />
+                  <img class="img-fluid" src="/clubDS/images/loading.png" />
                 </div>
-              </div>
-            </div>
+                <div class="venue-content"></div>
+              </section>
+            </section>
           </div>
         </main>
         <footer
@@ -89,66 +93,12 @@
     </div>
     <!-- Scripts -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.datatables.net/plug-ins/1.13.2/sorting/natural.js"
       crossorigin="anonymous"
     ></script>
     <script src="/assets/js/multi_lang.js"></script>
     <script src="/assets/js/scripts.js"></script>
     <script src="/assets/js/include_html.js"></script>
-    <script src="/assets/js/table.js"></script>
-    <script>
-      $(function () {
-        makeBMSTable();
-      });
-
-      const customAutoWidth = false;
-      const customOrder = [[0, "desc"]];
-      const customPaging = true;
-      const customPageLength = 5;
-      const customSearching = false;
-
-      data_link =
-        "https://script.google.com/macros/s/AKfycbzaQbcI9UZDcDlSHHl2NHilhmePrNrwxRdOFkmIXsfnbfksKKmAB3V65WZ8jPWU-7E/exec?table=eventlist";
-
-      const tableColumns = [
-        {
-          title: "No.",
-          width: "1%",
-          data: "no",
-          type: "natural",
-        },
-        {
-          title: "Name",
-          data: "name",
-          render: function (data, type, row) {
-            return "<a href='" + row.link + "'>" + data + "</a>";
-          },
-        },
-        {
-          title: "Start",
-          data: "start_date",
-          render: tableData.tableDate,
-        },
-        {
-          title: "End",
-          data: "end_date",
-          render: tableData.tableDate,
-        },
-      ];
-
-      makeBMSLevelFilter = "";
-    </script>
+    <script src="/assets/js/venue_content.js"></script>
   </body>
 </html>
