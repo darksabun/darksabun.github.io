@@ -85,6 +85,7 @@ function makeTablelist() {
 
     initComplete: function () {
       makeLastUpdate(table);
+      $("#small-c-title").empty();
       let filterStr =
         "<div class='mt-2 float-start'>" +
         "<i class='fas fa-table me-1'></i> Filter by Tag: " +
@@ -92,7 +93,7 @@ function makeTablelist() {
         "<option value=''>All</option>" +
         "</select>" +
         "</div>";
-      let whereAppend = $(".card-header");
+      let whereAppend = $("#small-c-title");
       makeFilter(table, 3, filterStr, whereAppend);
       filterStr =
         "<div class='float-none'>" +
