@@ -1110,13 +1110,27 @@
           width: "5%",
           data: "proposer",
           render: function (data, type, row) {
-            return (
-              "<a href='" +
-              row.proposer_url +
-              "' target='_blank'>" +
-              data +
-              "</a>"
-            );
+            if (data.length >= 10) {
+              return (
+                "<a href='" +
+                row.proposer_url +
+                "' title='" +
+                data +
+                "' target='_blank'>" +
+                data.slice(0, 3) +
+                "…" +
+                data.slice(-3) +
+                "</a>"
+              );
+            } else {
+              return (
+                "<a href='" +
+                row.proposer_url +
+                "' target='_blank'>" +
+                data +
+                "</a>"
+              );
+            }
           },
         },
       ];
