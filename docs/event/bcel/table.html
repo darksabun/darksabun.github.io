@@ -155,7 +155,7 @@
           width: "1%",
           data: "name_diff",
           render: function (data, type, row) {
-            if (data.slice(0, 3) === "YAR") {
+            if (data.length >= 10) {
               return (
                 "<a href='" +
                 row.url_diff +
@@ -164,7 +164,9 @@
                 "</a><br>(<a href='" +
                 row.maker_site +
                 "'>" +
-                "YAR…RRR" +
+                data.slice(0, 3) +
+                "…" +
+                data.slice(-3) +
                 "</a>)"
               );
             } else {
