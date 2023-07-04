@@ -8,7 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>LR2IR Battle | Table - DARKSABUN</title>
+    <title>SABUN in the DARK | Table - DARKSABUN</title>
     <link href="/assets/css/styles.css" rel="stylesheet" />
     <link href="/assets/css/table.css" rel="stylesheet" />
     <link
@@ -48,16 +48,16 @@
       <div id="layoutSidenav_content">
         <main>
           <div class="container-fluid px-4">
-            <h1 class="mt-4">LR2IR Battle</h1>
+            <h1 class="mt-4">SABUN in the DARK</h1>
             <ol class="breadcrumb mb-4">
               <li class="breadcrumb-item"><a href="/">Home</a></li>
               <li class="breadcrumb-item"><a href="/event/">Events</a></li>
               <li class="breadcrumb-item">
-                <a href="/event/irbattle/">LR2IR Battle</a>
+                <a href="/event/sd/">SABUN in the DARK</a>
               </li>
               <li class="breadcrumb-item active">Table</li>
             </ol>
-            <div class="card mb-4">
+            <!--<div class="card mb-4">
               <div class="card-body">
                 <a
                   href="https://darksabun.s-ul.eu/irbattle/HMIBlBvw"
@@ -65,11 +65,11 @@
                   >Download All Charts (2021.08.12)</a
                 >
               </div>
-            </div>
+            </div>-->
             <div class="card mb-4">
               <div class="card-header">
                 <i class="fas fa-table me-1"></i>
-                LR2IR Battle
+                SABUN in the DARK
               </div>
               <div class="card-body">
                 <div class="table-responsive">
@@ -115,52 +115,7 @@
           title: "Level",
           width: "1%",
           data: "level",
-          render: function (data) {
-            const levelToTag = {
-              A: "初級者",
-              B: "中級者",
-              C: "上級者",
-              D: "(^^)",
-            };
-            return levelToTag[data];
-          },
-        },
-        {
-          title: "Tag",
-          width: "1%",
-          data: "tag",
-          render: function (data) {
-            const battleTag = {
-              0: "主催",
-              1: "微連打",
-              2: "連打複合",
-              3: "縦連打",
-              4: "ガチ押し",
-              5: "高速乱打",
-              6: "ディレイ",
-              7: "ズレ",
-              8: "スクラッチ",
-              9: "スイング",
-              10: "カーテン",
-              11: "2鍵",
-              12: "ギミック",
-              13: "DARKSABUN",
-              14: "やさしいソフラン",
-              15: "バラエティ",
-              16: "総合力",
-              17: "カオス",
-              18: "NORMAL判定",
-              19: "HARD判定",
-              20: "VERYHARD判定",
-              21: "低BPM",
-              22: "高BPM",
-              23: "長尺",
-              24: "超長尺",
-              25: "キー音アレンジ",
-              26: "Battle",
-            };
-            return battleTag[data];
-          },
+          type: "natural-nohtml",
         },
         {
           title: "<i class='fas fa-music'></i>",
@@ -191,7 +146,7 @@
           render: tableData.tableArtist,
         },
         {
-          title: "Download<br>(Maker)",
+          title: "DL",
           width: "1%",
           data: "name_diff",
           render: tableData.tableChart,
@@ -215,10 +170,9 @@
                 "Filter by Section: " +
                 "<select>" +
                 "<option value=''>All</option>" +
-                "<option value='初級者'>初級者</option>" +
-                "<option value='中級者'>中級者</option>" +
-                "<option value='上級者'>上級者</option>" +
-                "<option value='(^^)'>(^^)</option>" +
+                "<option value='Black'>Black Box</option>" +
+                "<option value='Gray'>Gray Box</option>" +
+                "<option value='Sand'>Sand Box</option>" +
                 "</select>" +
                 "</div>"
             )

@@ -1,0 +1,7 @@
+{
+  "name": "SABUN in the DARK",
+  "symbol": "SiD ",
+  "level_order": ["Black", "Gray", "Sand"],
+  "enum_level_order": ["Black", "Gray", "Sand"],
+  "data_url": "https://script.google.com/macros/s/AKfycbwRseW0wJovdMdWyfxgRWbZ7cKTlvMpPGhBsYrY1kp0md-kW5o0W1GCiGMFUCmdPR05/exec"
+}
