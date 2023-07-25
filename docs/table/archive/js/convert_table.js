@@ -13,7 +13,7 @@ const tableColumns = [
     title: "Level",
     width: "1%",
     data: "level",
-    type: "natural-nohtml",
+    type: "natural",
     render: tableData.tableLevel,
   },
   {
