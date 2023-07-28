@@ -8,7 +8,7 @@ $(function () {
     if (header.data_url) data_link = header.data_url;
     if (header.last_update)
       $("#update").text("Last Update : " + header.last_update);
-    if (header.enum_level_order) $.fn.dataTable.enum(header.enum_level_order);
+    if (header.enum_level_order) DataTable.enum(header.enum_level_order);
     if (typeof makeChangelog === "undefined")
       if (header.changelog_url) $("#changelog").load(header.changelog_url);
     makeBMSTable();
