@@ -1,7 +1,7 @@
 // Difficulty Table List
 $(function () {
-  $.fn.dataTable.enum(["SP", "DP", "PMS", "EVENT", "etc"]);
-  $.fn.dataTable.enum([
+  DataTable.enum(["SP", "DP", "PMS", "EVENT", "etc"]);
+  DataTable.enum([
     "General",
     "Personal",
     "Self-made Chart Only",
