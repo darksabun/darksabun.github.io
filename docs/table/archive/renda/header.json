@@ -1,0 +1,25 @@
+{
+  "name": "連打難易度表",
+  "symbol": "≡",
+  "level_order": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "99",
+    "地力"
+  ],
+  "data_url": "data.json",
+  "original_url" : "http://infinity.s60.xrea.com/bms/renda.html",
+  "last_update": "2015.04.21"
+}
+
