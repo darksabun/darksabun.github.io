@@ -76,11 +76,11 @@ function makeTablelist() {
     ],
 
     createdRow: function (row, data) {
-      if (data.state == 1) $(row).addClass("table-primary");
-      if (data.state == 2) $(row).addClass("table-warning");
-      if (data.state == 3) $(row).addClass("table-success");
-      if (data.state == 4) $(row).addClass("table-secondary");
-      if (data.state == 5) $(row).addClass("table-info");
+      if (data.state == 1) $(row).addClass("bg-primary-subtle");
+      if (data.state == 2) $(row).addClass("bg-warning-subtle");
+      if (data.state == 3) $(row).addClass("bg-success-subtle");
+      if (data.state == 4) $(row).addClass("bg-secondary-subtle");
+      if (data.state == 5) $(row).addClass("bg-info-subtle");
     },
 
     initComplete: function () {
