@@ -121,7 +121,7 @@ async function fetchJson() {
 
     const bmsDownLink = document.createElement("a");
     bmsDownLink.href = i.url;
-    bmsDownLink.classList.add("mt-2", "mb-4", "btn", "btn-dark", "btn-lg");
+    bmsDownLink.classList.add("mt-2", "mb-4", "btn", "btn-secondary", "btn-lg");
     bmsDownLink.textContent = "Download";
     divSongURL.appendChild(bmsDownLink);
 
@@ -137,7 +137,13 @@ async function fetchJson() {
 
       const chartDownLink = document.createElement("a");
       chartDownLink.href = i.url_diff;
-      chartDownLink.classList.add("mt-2", "mb-4", "btn", "btn-dark", "btn-lg");
+      chartDownLink.classList.add(
+        "mt-2",
+        "mb-4",
+        "btn",
+        "btn-secondary",
+        "btn-lg"
+      );
       chartDownLink.textContent = "Download";
       divChartURL.appendChild(chartDownLink);
     } else {
