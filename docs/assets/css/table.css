@@ -56,7 +56,7 @@
 }
 
 #table_int a {
-  color: #007bff;
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
   text-decoration: none;
   background-color: transparent;
 }
@@ -65,104 +65,6 @@
   text-align: center;
   vertical-align: middle;
   font-size: 0.95em;
-}
-
-/* Normal Table */
-.tableflame table {
-  border: solid 2px #000;
-  margin: 0 0 2em 0;
-  text-align: center;
-  vertical-align: middle;
-  width: 100%;
-  font-size: 14px;
-}
-
-.tableflame table tbody tr {
-  border: solid 1px #000;
-  border-left: 0;
-  border-right: 0;
-  background-color: #e6ebed40;
-  color: #222222;
-}
-
-.tableflame table td {
-  padding: 0.75em 0.75em;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 14px;
-}
-
-.tableflame table th {
-  font-size: 1.2em;
-  font-weight: bolder;
-  border: solid 2px #000;
-  border-left: 0;
-  border-right: 0;
-  padding: 0.75em;
-  text-align: center;
-  vertical-align: middle;
-  background-color: #ffffff;
-}
-
-.tableflame table thead {
-  border-bottom: solid 2px #00000026;
-}
-
-.tableflame table tfoot {
-  border-top: solid 2px #ffffff26;
-}
-
-.tableflame .tr_separate {
-  height: 20px;
-  color: #000;
-  background-color: #a0a0a04d;
-}
-
-.tableflame .tr_normal {
-  background-color: #ffffff;
-}
-
-.tableflame .state1 {
-  background-color: #add8e6;
-}
-
-.tableflame .state2 {
-  background-color: #ffc0cb;
-}
-
-.tableflame .state3 {
-  background-color: #afffa7;
-}
-
-.tableflame .state4 {
-  background-color: #ffff00;
-}
-
-.tableflame .state5 {
-  background-color: #808080;
-}
-
-.tableflame .state6 {
-  background-color: #ffa500;
-}
-
-.tableflame tr,
-a {
-  /*Firefox向け*/
-  -moz-transition-property: color, background-color;
-  -moz-transition-duration: 0.2s;
-  /*Chrome、Safari向け*/
-  -webkit-transition-property: color, background-color;
-  -webkit-transition-duration: 0.2s;
-  /*Opera向け*/
-  -o-transition-property: color, background-color;
-  -o-transition-duration: 0.2s;
-  transition-property: color, background-color;
-  transition-duration: 0.2s;
-}
-
-.tableflame tr.tr_normal:hover {
-  background-color: #f8f8f8;
 }
 
 /* etc */
@@ -196,8 +98,6 @@ a {
 }
 
 [data-bs-theme="dark"] #update {
-  font-size: 1.25em;
-  font-weight: 700;
   color: #dee2e6;
 }
 
