@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="bmstable" content="header.json" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>1998 to 2024 | Table - DARKSABUN</title>
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <link href="/assets/css/table.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.datatables.net/v/bs5/dt-1.13.7/datatables.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <a class="navbar-brand ps-3" href="/">DARKSABUN</a
+      ><button
+        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+        id="sidebarToggle"
+        href="#"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div id="layoutSidenav">
+      <!-- Nav bar -->
+      <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+          <div
+            class="sb-sidenav-menu"
+            data-include-html="/assets/components/navbar.html"
+          ></div>
+        </nav>
+      </div>
+      <!-- Main Contents -->
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid px-4">
+            <h1 class="mt-4">1998 to 2024</h1>
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item"><a href="/event/">Events</a></li>
+              <li class="breadcrumb-item">
+                <a href="/event/1998to2024/">1998 to 2024</a>
+              </li>
+              <li class="breadcrumb-item active">Table</li>
+            </ol>
+            <!--
+            <div class="card mb-4">
+              <div class="card-body">
+                <a
+                  href="./sabun/bofnt_sabun_all_20231203.zip"
+                  class="btn btn-secondary btn-icon"
+                  >Download All Charts (2023.12.03)</a
+                >
+              </div>
+            </div>-->
+            <div class="card mb-4">
+              <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                1998 to 2024
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    id="table_int"
+                    class="table table-sm table-striped table-bordered table-hover text-gray-900 text-center m-auto"
+                  ></table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer
+          class="py-4 bg-light-subtle mt-auto"
+          data-include-html="/assets/components/footer_general_venue.html"
+        ></footer>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    <script
+      src="https://cdn.datatables.net/v/bs5/dt-1.13.7/datatables.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/datatables-plugins/1.13.6/sorting/natural.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/multi_lang.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/include_html.js"></script>
+    <script src="/assets/js/table.js"></script>
+    <script>
+      const tableColumns = [
+        {
+          title: "Year",
+          width: "7%",
+          data: "level",
+          type: "natural",
+          render: function (data) {
+            return data + mark;
+          },
+        },
+        {
+          title: "<i class='fas fa-music'></i>",
+          width: "1%",
+          data: "md5",
+          orderable: false,
+          searchable: false,
+          render: tableData.tableScore,
+        },
+        {
+          title: "<i class='fas fa-lg fa-play'></i>",
+          width: "1%",
+          data: "movie_link",
+          orderable: false,
+          searchable: false,
+          render: tableData.tableMovie,
+        },
+        {
+          title: "Title<br>(LR2IR)",
+          width: "25%",
+          data: "title",
+          render: tableData.tableTitle,
+        },
+        {
+          title: "Artist<br>(BMS DL)",
+          width: "25%",
+          data: "artist",
+          render: tableData.tableArtist,
+        },
+        {
+          title: "Maker<br>(Download)",
+          width: "1%",
+          data: "name_diff",
+          render: tableData.tableChart,
+        },
+        {
+          title: "Comment",
+          width: "25%",
+          render: tableData.tableComment,
+        },
+      ];
+
+      makeBMSLevelFilter = "";
+      const makeCustomFilter = function () {
+        $("#table_int")
+          .DataTable()
+          .columns(0)
+          .every(function () {
+            const column = this;
+            let select = $(
+              "<div class='float-start'>" +
+                "Filter by Year: " +
+                "<select>" +
+                "<option value=''>All</option>" +
+                "<option value='1998年'>1998年</option>" +
+                "<option value='1999年'>1999年</option>" +
+                "<option value='2000年'>2000年</option>" +
+                "<option value='2001年'>2001年</option>" +
+                "<option value='2002年'>2002年</option>" +
+                "<option value='2003年'>2003年</option>" +
+                "<option value='2004年'>2004年</option>" +
+                "<option value='2005年'>2005年</option>" +
+                "<option value='2006年'>2006年</option>" +
+                "<option value='2007年'>2007年</option>" +
+                "<option value='2008年'>2008年</option>" +
+                "<option value='2009年'>2009年</option>" +
+                "<option value='2010年'>2010年</option>" +
+                "<option value='2011年'>2011年</option>" +
+                "<option value='2012年'>2012年</option>" +
+                "<option value='2013年'>2013年</option>" +
+                "<option value='2014年'>2014年</option>" +
+                "<option value='2015年'>2015年</option>" +
+                "<option value='2016年'>2016年</option>" +
+                "<option value='2017年'>2017年</option>" +
+                "<option value='2018年'>2018年</option>" +
+                "<option value='2019年'>2019年</option>" +
+                "<option value='2020年'>2020年</option>" +
+                "<option value='2021年'>2021年</option>" +
+                "<option value='2022年'>2022年</option>" +
+                "<option value='2023年'>2023年</option>" +
+                "<option value='2024年'>2024年</option>" +
+                "</select>" +
+                "</div>"
+            )
+              .prependTo($("#table_int_wrapper"))
+              .on("change", function () {
+                const val = $.fn.dataTable.util.escapeRegex(
+                  $(this).find("select").val()
+                );
+                column.search(val ? "^" + val + "$" : "", true, false).draw();
+              });
+          });
+      };
+    </script>
+  </body>
+</html>

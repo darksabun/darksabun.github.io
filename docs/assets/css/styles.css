@@ -385,12 +385,12 @@ sup {
 
 /* Fixed by DARKSABUN */
 a {
-  color: #0d6efd;
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #0a58ca;
+  --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
   text-decoration: underline;
 }
 /* Fixed by DARKSABUN */
@@ -9601,6 +9601,16 @@ fieldset:disabled .btn {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
+
+/* Fixed by DARKSABUN */
+[data-bs-theme="dark"] .bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgba(
+    var(--bs-secondary-bg-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+/* Fixed by DARKSABUN */
 
 .bg-black {
   --bs-bg-opacity: 1;
