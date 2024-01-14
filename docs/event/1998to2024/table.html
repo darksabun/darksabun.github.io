@@ -62,7 +62,7 @@
               <div class="card-body">
                 <a
                   href="./sabun/bofnt_sabun_all_20231203.zip"
-                  class="btn btn-secondary btn-icon"
+                  class="btn btn-dark btn-icon"
                   >Download All Charts (2023.12.03)</a
                 >
               </div>
@@ -175,33 +175,6 @@
                 "Filter by Year: " +
                 "<select>" +
                 "<option value=''>All</option>" +
-                "<option value='1998年'>1998年</option>" +
-                "<option value='1999年'>1999年</option>" +
-                "<option value='2000年'>2000年</option>" +
-                "<option value='2001年'>2001年</option>" +
-                "<option value='2002年'>2002年</option>" +
-                "<option value='2003年'>2003年</option>" +
-                "<option value='2004年'>2004年</option>" +
-                "<option value='2005年'>2005年</option>" +
-                "<option value='2006年'>2006年</option>" +
-                "<option value='2007年'>2007年</option>" +
-                "<option value='2008年'>2008年</option>" +
-                "<option value='2009年'>2009年</option>" +
-                "<option value='2010年'>2010年</option>" +
-                "<option value='2011年'>2011年</option>" +
-                "<option value='2012年'>2012年</option>" +
-                "<option value='2013年'>2013年</option>" +
-                "<option value='2014年'>2014年</option>" +
-                "<option value='2015年'>2015年</option>" +
-                "<option value='2016年'>2016年</option>" +
-                "<option value='2017年'>2017年</option>" +
-                "<option value='2018年'>2018年</option>" +
-                "<option value='2019年'>2019年</option>" +
-                "<option value='2020年'>2020年</option>" +
-                "<option value='2021年'>2021年</option>" +
-                "<option value='2022年'>2022年</option>" +
-                "<option value='2023年'>2023年</option>" +
-                "<option value='2024年'>2024年</option>" +
                 "</select>" +
                 "</div>"
             )
@@ -211,6 +184,20 @@
                   $(this).find("select").val()
                 );
                 column.search(val ? "^" + val + "$" : "", true, false).draw();
+              });
+
+            column
+              .data()
+              .unique()
+              .sort(function (a, b) {
+                return parseInt(a) - parseInt(b);
+              })
+              .each(function (d, j) {
+                select
+                  .find("select")
+                  .append(
+                    "<option value='" + d + mark + "'>" + d + mark + "</option>"
+                  );
               });
           });
       };
