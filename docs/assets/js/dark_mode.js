@@ -40,4 +40,4 @@ const onDOMContentLoaded = () => {
   }
 };
 
-window.addEventListener("DOMContentLoaded", onDOMContentLoaded);
+onDOMContentLoaded();
