@@ -1,6 +1,6 @@
 // Dark Mode
 const prefersColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
-const html = document.querySelector("html");
+const html = document.documentElement;
 
 const toggleDarkMode = () => {
   const isDarkMode = prefersColorScheme.matches;
@@ -35,7 +35,7 @@ const onDOMContentLoaded = () => {
 
   const currentTheme = html.getAttribute("data-bs-theme");
 
-  if (!currentTheme || currentTheme === "light") {
+  if (!currentTheme) {
     toggleDarkMode();
   }
 };
