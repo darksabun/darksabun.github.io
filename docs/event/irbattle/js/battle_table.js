@@ -53,60 +53,26 @@ function format(d) {
   let lr2PlayerURL =
     "http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=mypage&playerid=";
   lr2PlayerURL += d.lr2id;
-  return (
-    "<table" +
-    " class=" +
-    "'table" +
-    " table-striped" +
-    " table-hover" +
-    " text-gray-900" +
-    " text-start'>" +
-    "<tr>" +
-    "<td>Nickname : " +
-    d.player +
-    " (" +
-    d.lr2id +
-    ")" +
-    "</td>" +
-    "</tr>" +
-    "<tr>" +
-    "<td>LR2IR my page :" +
-    " <a href='" +
-    lr2PlayerURL +
-    "' target='_blank'>" +
-    "Click <i class='fas fa-mouse-pointer'></i>" +
-    "</a>" +
-    "</td>" +
-    "</tr>" +
-    "<tr>" +
-    "<td>Total point (All Difficulties) : " +
-    d.totalpoint +
-    "</td>" +
-    "</tr>" +
-    "</table>"
-  );
+  return `
+        <table class="table table-striped table-hover text-gray-900 text-start">
+            <tr>
+              <td>Nickname : ${d.player} (${d.lr2id})</td>
+            </tr>
+            <tr>
+              <td>LR2IR my page : <a href='${lr2PlayerURL}' target='_blank'>Click <i class='fas fa-mouse-pointer'></i></a></td>
+            </tr>
+            <tr>
+              <td>Total point (All Difficulties) : ${d.totalpoint}</td>
+            </tr>
+        </table>`;
 }
 
 // for Battle Ranking Table Multi-Language Support
 // Table Language Change
 
-function tableLangKO() {
+function tableLanguageChange(lang) {
   table.destroy();
-  getLanguage = "ko";
+  getLanguage = lang;
   makeBattleTable();
-  changeLangKO();
-}
-
-function tableLangEN() {
-  table.destroy();
-  getLanguage = "en";
-  makeBattleTable();
-  changeLangEN();
-}
-
-function tableLangJA() {
-  table.destroy();
-  getLanguage = "ja";
-  makeBattleTable();
-  changeLangJA();
+  changeLanguage(getLanguage);
 }

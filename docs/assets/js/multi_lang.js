@@ -1,55 +1,24 @@
 // for Multiple Language
 let getLanguage = navigator.language;
-const $ko = document.querySelectorAll(".lang-ko");
-const $ja = document.querySelectorAll(".lang-ja");
-const $en = document.querySelectorAll(".lang-en");
+const languages = {
+  ko: document.querySelectorAll(".lang-ko"),
+  ja: document.querySelectorAll(".lang-ja"),
+  en: document.querySelectorAll(".lang-en"),
+};
 
-if (getLanguage.slice(0, 2) === "ko") {
-  $ko.forEach((element) => {
-    element.classList.remove("text-secret");
-  });
-} else if (getLanguage.slice(0, 2) === "ja") {
-  $ja.forEach((element) => {
-    element.classList.remove("text-secret");
-  });
-} else {
-  $en.forEach((element) => {
-    element.classList.remove("text-secret");
+function setLanguageVisibility(targetLang) {
+  Object.values(languages).forEach((lang) => {
+    lang.forEach((element) => {
+      const langClass = element.classList.contains(`lang-${targetLang}`);
+      element.classList.toggle("text-secret", !langClass);
+    });
   });
 }
 
-function changeLangKO() {
-  $ja.forEach((element) => {
-    element.classList.add("text-secret");
-  });
-  $en.forEach((element) => {
-    element.classList.add("text-secret");
-  });
-  $ko.forEach((element) => {
-    element.classList.remove("text-secret");
-  });
-}
+// Initial language setting based on navigator.language
+const initialLang = getLanguage.slice(0, 2);
+setLanguageVisibility(initialLang);
 
-function changeLangJA() {
-  $ko.forEach((element) => {
-    element.classList.add("text-secret");
-  });
-  $en.forEach((element) => {
-    element.classList.add("text-secret");
-  });
-  $ja.forEach((element) => {
-    element.classList.remove("text-secret");
-  });
-}
-
-function changeLangEN() {
-  $ko.forEach((element) => {
-    element.classList.add("text-secret");
-  });
-  $ja.forEach((element) => {
-    element.classList.add("text-secret");
-  });
-  $en.forEach((element) => {
-    element.classList.remove("text-secret");
-  });
+function changeLanguage(lang) {
+  setLanguageVisibility(lang);
 }
