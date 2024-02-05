@@ -1,3 +1,4 @@
 # DARKSABUN
-Fun and Kuso Chart Archive<br>
+
+Fun and Kuso Chart Archive<br />
 <https://darksabun.github.io/>
