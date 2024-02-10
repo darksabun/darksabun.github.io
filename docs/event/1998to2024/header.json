@@ -30,5 +30,6 @@
     "2023",
     "2024"
   ],
-  "data_url": "https://script.google.com/macros/s/AKfycbwRseW0wJovdMdWyfxgRWbZ7cKTlvMpPGhBsYrY1kp0md-kW5o0W1GCiGMFUCmdPR05/exec"
+  "data_url": "data.json",
+  "compat_prefix": "YEAR "
 }

@@ -16,6 +16,7 @@ const tableColumns = [
     type: "natural",
     render: tableData.tableLevel,
   },
+  /*
   {
     title: "Score",
     width: "1%",
@@ -24,6 +25,7 @@ const tableColumns = [
     searchable: false,
     render: tableData.tableScore,
   },
+  */
   {
     title: "Title<br>(LR2IR)",
     width: "30%",
