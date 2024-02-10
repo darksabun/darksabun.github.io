@@ -27,6 +27,11 @@ async function fetchJson() {
     h4.classList.add("m-4", "text-center");
     h4.textContent = i.ds_h4;
 
+    // SubSubtitle
+    const h5 = document.createElement("h5");
+    h5.classList.add("m-4", "text-center");
+    h5.textContent = i.ds_h5;
+
     // AUTOPLAY Video
     const pVideo = document.createElement("p");
     if (i.free_button_name) {
@@ -261,11 +266,11 @@ async function fetchJson() {
 
     // Comment
     const pComment = document.createElement("p");
-    const h5 = document.createElement("h5");
+    const h5Comment = document.createElement("h5");
     if (i.nickname) {
-      h5.textContent = `Comment (${i.nickname})`;
+      h5Comment.textContent = `Comment (${i.nickname})`;
     } else {
-      h5.textContent = "Comment";
+      h5Comment.textContent = "Comment";
     }
     pComment.innerHTML = i.comment;
 
@@ -273,13 +278,16 @@ async function fetchJson() {
     venueDIV.appendChild(hr);
     venueDIV.appendChild(h2);
     venueDIV.appendChild(h4);
+    if (i.ds_h5) {
+      venueDIV.appendChild(h5);
+    }
     venueDIV.appendChild(pVideo);
     venueDIV.appendChild(pDownloadButton);
     if (i.course) {
       venueDIV.appendChild(courseMakingDiv);
     }
     if (i.comment) {
-      venueDIV.appendChild(h5);
+      venueDIV.appendChild(h5Comment);
       venueDIV.appendChild(pComment);
     }
   });
@@ -289,7 +297,7 @@ async function fetchJson() {
 
 // Usage
 // =========================
-// Used header : ds_anchor, ds_h2, ds_h4, ds_video, url, url_diff, nickname, comment, course(if need)
+// Used header : ds_anchor, ds_h2, ds_h4, ds_h5(if need), ds_video, url, url_diff, nickname, comment, course(if need)
 // -------------------------
 // How to make Course Table
 //

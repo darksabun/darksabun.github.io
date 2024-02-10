@@ -17,6 +17,23 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+    <style>
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .blinking-text {
+        animation: blink 1s infinite;
+      }
+    </style>
   </head>
 
   <body class="sb-nav-fixed">
@@ -128,7 +145,14 @@
                     <td><a href="#2021">2021</a></td>
                     <td><a href="#2022">2022</a></td>
                     <td><a href="#2023">2023</a></td>
-                    <td colspan="2"><a href="#2024">2024</a></td>
+                    <td colspan="2">
+                      <a href="#2024" class="blinking-text"
+                        ><span style="color: red">2</span
+                        ><span style="color: orange">0</span
+                        ><span style="color: deepskyblue">2</span
+                        ><span style="color: purple">4</span> (NEW!)</a
+                      >
+                    </td>
                   </tr>
                   <tr></tr>
                 </table>
