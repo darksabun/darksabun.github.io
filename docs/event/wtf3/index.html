@@ -79,7 +79,6 @@
                   <tr>
                     <th>Stage</th>
                     <th>Movie</th>
-                    <th>Score</th>
                     <th>Title</th>
                     <th>Artist</th>
                     <th>Patterner</th>
@@ -92,13 +91,6 @@
                       <a
                         href="https://www.youtube.com/watch?v=Kdvhg7RHzDw"
                         class="fas fa-lg fa-play"
-                        target="_blank"
-                      ></a>
-                    </td>
-                    <td style="width: 1%">
-                      <a
-                        href="http://www.ribbit.xyz/bms/score/view?md5=db246313eeb424a1b26c549f2beac146"
-                        class="fas fa-lg fa-music"
                         target="_blank"
                       ></a>
                     </td>
@@ -126,13 +118,6 @@
                       <a
                         href="https://youtu.be/Kdvhg7RHzDw&t=192"
                         class="fas fa-lg fa-play"
-                        target="_blank"
-                      ></a>
-                    </td>
-                    <td style="width: 1%">
-                      <a
-                        href="http://www.ribbit.xyz/bms/score/view?md5=40f91bd0b884a8ae85deab162aeb0083"
-                        class="fas fa-lg fa-music"
                         target="_blank"
                       ></a>
                     </td>
@@ -167,13 +152,6 @@
                         target="_blank"
                       ></a>
                     </td>
-                    <td style="width: 1%">
-                      <a
-                        href="http://www.ribbit.xyz/bms/score/view?md5=17377f10d862aa0e86a528aced4e6390"
-                        class="fas fa-lg fa-music"
-                        target="_blank"
-                      ></a>
-                    </td>
                     <td style="width: 10%">
                       <a
                         href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=17377f10d862aa0e86a528aced4e6390"
@@ -200,13 +178,6 @@
                       <a
                         href="https://youtu.be/Kdvhg7RHzDw&t=402"
                         class="fas fa-lg fa-play"
-                        target="_blank"
-                      ></a>
-                    </td>
-                    <td style="width: 1%">
-                      <a
-                        href="http://www.ribbit.xyz/bms/score/view?md5=897d7a55e09bbe12590a88b0513862e5"
-                        class="fas fa-lg fa-music"
                         target="_blank"
                       ></a>
                     </td>
@@ -239,17 +210,11 @@
                         target="_blank"
                       ></a>
                     </td>
-                    <td style="width: 1%">
-                      <a
-                        href="http://www.ribbit.xyz/bms/score/view?md5=b093953b256886f10e60d067932526b6"
-                        class="fas fa-lg fa-music"
-                        target="_blank"
-                      ></a>
-                    </td>
                     <td style="width: 10%">
                       <a
                         href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=b093953b256886f10e60d067932526b6"
                         target="_blank"
+                        id="secret"
                         >???</a
                       >
                     </td>
@@ -306,6 +271,13 @@
               <hr />
               <h5>Pen & Yu-ta & MANSAIN</h5>
               <p>연예인 초청공연</p>
+              <a
+                href="#wtfTable"
+                id="and-more"
+                class="text-muted"
+                onclick="showlog()"
+                >AND MORE...?</a
+              >
             </div>
           </div>
         </main>
@@ -323,5 +295,11 @@
     <script src="/assets/js/multi_lang.js"></script>
     <script src="/assets/js/scripts.js"></script>
     <script src="/assets/js/include_html.js"></script>
+    <script>
+      function showlog() {
+        document.getElementById("and-more").style.display = "none";
+        document.getElementById("secret").textContent = "Bohemian Rhapsody";
+      }
+    </script>
   </body>
 </html>

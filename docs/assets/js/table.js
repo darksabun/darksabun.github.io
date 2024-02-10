@@ -238,6 +238,7 @@ const defaultColumns = [
     data: "level",
     render: tableData.tableLevel,
   },
+  /*
   {
     title: "Score",
     width: "1%",
@@ -246,6 +247,7 @@ const defaultColumns = [
     searchable: false,
     render: tableData.tableScore,
   },
+  */
   {
     title: "Title<br>(LR2IR)",
     width: "30%",
