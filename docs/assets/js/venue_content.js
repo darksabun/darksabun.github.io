@@ -1,10 +1,4 @@
 // Venue Contents Making
-document.addEventListener("DOMContentLoaded", function () {
-  if (typeof venueManualLoad === "undefined") {
-    fetchJson();
-  }
-});
-
 async function fetchJson() {
   const result = await fetch("./venue_data.json");
   const json = await result.json();
@@ -293,6 +287,11 @@ async function fetchJson() {
   });
   document.querySelector(".venue-content").appendChild(venueDIV);
   document.querySelector("#venue-content-load").remove();
+}
+
+// Venue Manual Load
+if (typeof venueManualLoad === "undefined") {
+  fetchJson();
 }
 
 // Usage
