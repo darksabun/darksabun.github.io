@@ -1,4 +1,32 @@
 // Venue Contents Making
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof venueManualLoad === "undefined") {
+    fetchJson();
+    setTimeout(() => {
+      // for Multiple Language
+      let getLanguage = navigator.language;
+      const languages = {
+        ko: document.querySelectorAll(".lang-ko"),
+        ja: document.querySelectorAll(".lang-ja"),
+        en: document.querySelectorAll(".lang-en"),
+      };
+
+      function setLanguageVisibility(targetLang) {
+        Object.values(languages).forEach((lang) => {
+          lang.forEach((element) => {
+            const langClass = element.classList.contains(`lang-${targetLang}`);
+            element.classList.toggle("text-secret", !langClass);
+          });
+        });
+      }
+
+      // Initial language setting based on navigator.language
+      const initialLang = getLanguage.slice(0, 2);
+      setLanguageVisibility(initialLang);
+    }, 300);
+  }
+});
+
 async function fetchJson() {
   const result = await fetch("./venue_data.json");
   const json = await result.json();
@@ -287,11 +315,6 @@ async function fetchJson() {
   });
   document.querySelector(".venue-content").appendChild(venueDIV);
   document.querySelector("#venue-content-load").remove();
-}
-
-// Venue Manual Load
-if (typeof venueManualLoad === "undefined") {
-  fetchJson();
 }
 
 // Usage
