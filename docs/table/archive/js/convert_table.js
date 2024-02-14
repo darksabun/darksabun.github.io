@@ -1,9 +1,9 @@
 $(function () {
   $.getJSON($("meta[name=bmstable]").attr("content"), function (header) {
     $("title").text(header.name + " - DARKSABUN");
-    $("#big-c-title").text(header.name).attr("href", header.original_url);
-    $("#small-c-title").html(
-      "<i class='fas fa-table me-1'></i> " + header.name
+    $("#bigTableTitle").text(header.name).attr("href", header.original_url);
+    $("#smallTableTitle").html(
+      "<i class='fas fa-table me-2'></i>" + header.name
     );
   });
 });

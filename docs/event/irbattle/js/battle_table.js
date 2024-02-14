@@ -59,7 +59,7 @@ function format(d) {
               <td>Nickname : ${d.player} (${d.lr2id})</td>
             </tr>
             <tr>
-              <td>LR2IR my page : <a href='${lr2PlayerURL}' target='_blank'>Click <i class='fas fa-mouse-pointer'></i></a></td>
+              <td>LR2IR my page : <a href='${lr2PlayerURL}' target='_blank'>Click<i class='fas fa-mouse-pointer ms-2'></i></a></td>
             </tr>
             <tr>
               <td>Total point (All Difficulties) : ${d.totalpoint}</td>
@@ -69,7 +69,6 @@ function format(d) {
 
 // for Battle Ranking Table Multi-Language Support
 // Table Language Change
-
 function tableLanguageChange(lang) {
   table.destroy();
   getLanguage = lang;

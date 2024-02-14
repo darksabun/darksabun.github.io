@@ -272,7 +272,16 @@ async function fetchJson() {
     } else {
       h5Comment.textContent = "Comment";
     }
-    pComment.innerHTML = i.comment;
+    // Multi-Language Comment
+    if (i.comment) {
+      pComment.innerHTML = i.comment;
+    } else if (nowLang == "ko" && i.comment_ko) {
+      pComment.innerHTML = i.comment_ko;
+    } else if (nowLang == "ja" && i.comment_ja) {
+      pComment.innerHTML = i.comment_ja;
+    } else {
+      pComment.innerHTML = i.comment_en;
+    }
 
     // Append
     venueDIV.appendChild(hr);
@@ -286,13 +295,13 @@ async function fetchJson() {
     if (i.course) {
       venueDIV.appendChild(courseMakingDiv);
     }
-    if (i.comment) {
+    if (i.comment || i.comment_ko || i.comment_ja || i.comment_en) {
       venueDIV.appendChild(h5Comment);
       venueDIV.appendChild(pComment);
     }
   });
   document.querySelector(".venue-content").appendChild(venueDIV);
-  document.querySelector("#venue-content-load").remove();
+  document.querySelector("#venue-content-load").style.display = "none";
 }
 
 // Usage
