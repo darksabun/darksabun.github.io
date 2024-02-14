@@ -21,9 +21,8 @@ setLanguageVisibility(nowLang);
 
 function changeLanguage(wantLang) {
   setLanguageVisibility(wantLang);
-  const nowHref = window.location.href;
-  // Multiple Language for Venue (exclude BOFXVI Diary)
-  if (nowHref.indexOf("venue") !== 1) {
+  // Multiple Language for Venue
+  if (document.querySelector(".venue-content")) {
     document.querySelector(".venue-content").innerHTML = "";
     document.querySelector("#venue-content-load").style.display = "";
     nowLang = wantLang;
