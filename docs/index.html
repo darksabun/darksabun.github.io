@@ -72,7 +72,8 @@
               <div class="col-xl-6">
                 <div class="card mb-4">
                   <div class="card-header">
-                    <i class="fas fa-calendar me-2"></i>Recent Event
+                    <i class="fas fa-calendar me-2"></i
+                    ><a class="text-reset" href="/event/">Recent Event</a>
                   </div>
                   <div class="card-body">
                     <div class="table-responsive">
@@ -136,7 +137,7 @@
           type: "natural",
         },
         {
-          title: "Name",
+          title: "Event",
           data: "name",
           render: function (data, type, row) {
             return "<a href='" + row.link + "'>" + data + "</a>";
