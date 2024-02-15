@@ -86,22 +86,20 @@ function makeTablelist() {
     initComplete: function () {
       makeLastUpdate(table);
       $("#smallTableTitle").empty();
-      let filterStr =
-        "<div class='mt-2 float-start'>" +
-        "<i class='fas fa-table me-1'></i> Filter by Tag: " +
-        "<select>" +
-        "<option value=''>All</option>" +
-        "</select>" +
-        "</div>";
+      let filterStr = `<div class="mt-2 float-start">
+                        <i class="fas fa-table me-2"></i>Filter by Tag:
+                        <select>
+                          <option value="">All</option>
+                        </select>
+                      </div>`;
       let whereAppend = $("#smallTableTitle");
       makeFilter(table, 3, filterStr, whereAppend);
-      filterStr =
-        "<div class='float-none'>" +
-        "<i class='fas fa-table me-1'></i> Filter by Type: " +
-        "<select>" +
-        "<option value=''>All</option>" +
-        "</select>" +
-        "</div>";
+      filterStr = `<div class="float-none">
+                    <i class="fas fa-table me-2"></i>Filter by Type:
+                    <select>
+                      <option value="">All</option>
+                    </select>
+                  </div>`;
       makeFilter(table, 2, filterStr, whereAppend);
     },
   });
