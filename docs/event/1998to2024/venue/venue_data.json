@@ -123,8 +123,7 @@
     "ds_video": "7N3OuRFMeIQ",
     "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=41&event=60",
     "url_diff": "../sabun/2009_COOKI.zip",
-    "nickname": "COOKI",
-    "comment": ""
+    "nickname": "COOKI"
   },
   {
     "ds_anchor": "2010",
@@ -194,7 +193,9 @@
     "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=528&event=110",
     "url_diff": "../sabun/2016_parksu.zip",
     "nickname": "И",
-    "comment": "健全なる精神は健全なる身体に宿る！！！"
+    "comment_ko": "건강한 몸에 건전한 정신이 깃든다!!!",
+    "comment_ja": "健全なる精神は健全なる身体に宿る！！！",
+    "comment_en": "A SOUND MIND IN A SOUND BODY!!!"
   },
   {
     "ds_anchor": "2017",
@@ -244,7 +245,9 @@
     "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=418&event=137",
     "url_diff": "../sabun/2021_DK.zip",
     "nickname": "DK",
-    "comment": "<span class='text-secret lang-ko'>평소에 Groundbreaking을 자주 듣는 편입니다. <br>Pixel Princess를 인상적으로 들어서 항상 제작 후보로 삼고 있었는데, 마침 좋은 기획이 열려 만들기로 마음 먹었습니다.<br><br>작업 초반엔 목표를 \"ANOTHER보다 조금 어렵게\" 정도로만 잡았지만, 만들다 보니 난이도가 생각보다 많이 어려워졌습니다.<br>BPM이 빨라서 예상보다 어려운건지, 아니면 제 게임 실력이 떨어져서 그런지 잘 모르겠네요.<br><br>그루브게이지 이하에선 트릴이 포함된 난타, 그리고 동시치기에 유의하며 플레이해야하고<br>하드게이지 이상에선 빠른 계단을 조심해야 합니다.<br>모두 재밌게 즐겨주세요~</span><span class='text-secret lang-ja'>ふだんGroundbreakingをよくきくほうです。<br>Pixel Princessを印象的に聴いていつも制作候補にしていたのですが、ちょうどいい企画があって作ることにしました。<br><br>作業序盤には目標を「ANOTHERより少し難しく」程度に設定したが、作ってみると難易度が思ったよりかなり難しくなりました。<br>BPMが早くて予想より難しいのか、それとも私のゲームの実力が落ちたからかよく分かりません。<br><br>GROOVE GAUGE以下では、トリルを含む乱打、そして同時押しちに留意してプレーする必要があり<br>HARD GAUGE以上では、速い階段に気をつけなければなりません。<br>皆さん楽しんでください。</span><span class='text-secret lang-en'>I usually listen to Groundbreaking often.<br>I listened to the Pixel Princess impressively and always made it a candidate for production, but I decided to make it because a good event opened up.<br><br>At the beginning of the work, I only set the goal as \"a little harder than ANOTHER\", but as I made it, the difficulty became much more difficult than I thought.<br>I don't know if it's harder than I expected because the BPM is fast, or maybe it's because my game skills are poor.<br><br>Below the groove gauge, you have to pay attention to stream with trills and chords play<br>Above the hard gauge, you should be careful of the fast stairs.<br>I hope you all enjoy it. Thank you.</span>"
+    "comment_ko": "평소에 Groundbreaking을 자주 듣는 편입니다. <br>Pixel Princess를 인상적으로 들어서 항상 제작 후보로 삼고 있었는데, 마침 좋은 기획이 열려 만들기로 마음 먹었습니다.<br><br>작업 초반엔 목표를 \"ANOTHER보다 조금 어렵게\" 정도로만 잡았지만, 만들다 보니 난이도가 생각보다 많이 어려워졌습니다.<br>BPM이 빨라서 예상보다 어려운건지, 아니면 제 게임 실력이 떨어져서 그런지 잘 모르겠네요.<br><br>그루브게이지 이하에선 트릴이 포함된 난타, 그리고 동시치기에 유의하며 플레이해야하고<br>하드게이지 이상에선 빠른 계단을 조심해야 합니다.<br>모두 재밌게 즐겨주세요~",
+    "comment_ja": "ふだんGroundbreakingをよくきくほうです。<br>Pixel Princessを印象的に聴いていつも制作候補にしていたのですが、ちょうどいい企画があって作ることにしました。<br><br>作業序盤には目標を「ANOTHERより少し難しく」程度に設定したが、作ってみると難易度が思ったよりかなり難しくなりました。<br>BPMが早くて予想より難しいのか、それとも私のゲームの実力が落ちたからかよく分かりません。<br><br>GROOVE GAUGE以下では、トリルを含む乱打、そして同時押しちに留意してプレーする必要があり<br>HARD GAUGE以上では、速い階段に気をつけなければなりません。<br>皆さん楽しんでください。",
+    "comment_en": "I usually listen to Groundbreaking often.<br>I listened to the Pixel Princess impressively and always made it a candidate for production, but I decided to make it because a good event opened up.<br><br>At the beginning of the work, I only set the goal as \"a little harder than ANOTHER\", but as I made it, the difficulty became much more difficult than I thought.<br>I don't know if it's harder than I expected because the BPM is fast, or maybe it's because my game skills are poor.<br><br>Below the groove gauge, you have to pay attention to stream with trills and chords play<br>Above the hard gauge, you should be careful of the fast stairs.<br>I hope you all enjoy it. Thank you."
   },
   {
     "ds_anchor": "2022",
@@ -254,8 +257,7 @@
     "ds_video": "wHEwJugtCsk",
     "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=213&event=140",
     "url_diff": "../sabun/2022_DetroCaniC.zip",
-    "nickname": "DetroCaniC",
-    "comment": ""
+    "nickname": "DetroCaniC"
   },
   {
     "ds_anchor": "2023",

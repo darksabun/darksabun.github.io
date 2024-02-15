@@ -17,23 +17,6 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
-    <style>
-      @keyframes blink {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      .blinking-text {
-        animation: blink 1s infinite;
-      }
-    </style>
   </head>
 
   <body class="sb-nav-fixed">
@@ -165,7 +148,10 @@
                 class="container-fluid mb-4 text-center"
               >
                 <hr />
-                <img class="img-fluid" src="/clubDS/images/loading.png" />
+                <img
+                  class="img-fluid blinking-text"
+                  src="/clubDS/images/loading.png"
+                />
               </div>
               <div class="venue-content"></div>
             </section>
