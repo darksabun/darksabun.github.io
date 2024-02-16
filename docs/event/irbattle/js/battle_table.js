@@ -17,11 +17,7 @@ function makeBattleTable() {
       dataSrc: "",
     },
     columns:
-      getLanguage.slice(0, 2) === "ko"
-        ? KOcolumns
-        : getLanguage.slice(0, 2) === "ja"
-        ? JAcolumns
-        : ENcolumns,
+      nowLang === "ko" ? KOcolumns : nowLang === "ja" ? JAcolumns : ENcolumns,
   });
 
   // Add event listener for opening and closing details
@@ -71,7 +67,7 @@ function format(d) {
 // Table Language Change
 function tableLanguageChange(lang) {
   table.destroy();
-  getLanguage = lang;
+  nowLang = lang;
   makeBattleTable();
-  changeLanguage(getLanguage);
+  changeLanguage(lang);
 }
