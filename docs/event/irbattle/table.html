@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://cdn.datatables.net/v/bs5/dt-1.13.8/datatables.min.css"
+      href="https://cdn.datatables.net/v/bs5/dt-2.0.1/datatables.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
@@ -90,19 +90,19 @@
     </div>
     <!-- Scripts -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-beta/jquery.min.js"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.datatables.net/v/bs5/dt-1.13.8/datatables.min.js"
+      src="https://cdn.datatables.net/v/bs5/dt-2.0.1/datatables.min.js"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.datatables.net/plug-ins/1.13.8/sorting/enum.min.js"
+      src="https://cdn.datatables.net/plug-ins/2.0.1/sorting/enum.min.js"
       crossorigin="anonymous"
     ></script>
     <script src="/assets/js/multi_lang.js"></script>
@@ -203,9 +203,9 @@
           .every(function () {
             const column = this;
             let select = $(
-              "<div class='float-start'>" +
+              "<div class='dt-length'>" +
                 "Filter by Section: " +
-                "<select>" +
+                "<select class='form-select form-select-sm'>" +
                 "<option value=''>All</option>" +
                 "<option value='初級者'>初級者</option>" +
                 "<option value='中級者'>中級者</option>" +
@@ -214,9 +214,9 @@
                 "</select>" +
                 "</div>"
             )
-              .prependTo($("#table_int_wrapper"))
+              .prependTo($("#table_int_wrapper > div:nth-child(1) > .me-auto"))
               .on("change", function () {
-                const val = $.fn.dataTable.util.escapeRegex(
+                const val = DataTable.util.escapeRegex(
                   $(this).find("select").val()
                 );
                 column.search(val ? "^" + val + "$" : "", true, false).draw();

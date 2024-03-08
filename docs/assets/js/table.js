@@ -56,16 +56,16 @@ function makeBMSTable() {
           .every(function () {
             const column = this;
             let select = $(
-              "<div class='float-start'>" +
+              "<div class='dt-length'>" +
                 "Filter by Level: " +
-                "<select>" +
+                "<select class='form-select form-select-sm'>" +
                 "<option value=''>All</option>" +
                 "</select>" +
                 "</div>"
             )
-              .prependTo($("#table_int_wrapper"))
+              .prependTo($("#table_int_wrapper > div:nth-child(1) > .me-auto"))
               .on("change", function () {
-                const val = $.fn.dataTable.util.escapeRegex(
+                const val = DataTable.util.escapeRegex(
                   $(this).find("select").val()
                 );
                 column.search(val ? "^" + val + "$" : "", true, false).draw();

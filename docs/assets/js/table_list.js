@@ -137,9 +137,7 @@ function makeFilter(table, x, filterStr, whereAppend) {
     let select = $(filterStr)
       .prependTo(whereAppend)
       .on("change", function () {
-        const val = $.fn.dataTable.util.escapeRegex(
-          $(this).find("select").val()
-        );
+        const val = DataTable.util.escapeRegex($(this).find("select").val());
         column.search(val ? "^" + val + "$" : "", true, false).draw();
       });
 
