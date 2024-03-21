@@ -218,7 +218,8 @@
               ("0" + date_.getDate()).slice(-2);
             return dateStr;
           });
-        $("#update").text("Last Update : " + lastUpdateTableDate);
+        document.getElementById("update").textContent =
+          "Last Update : " + lastUpdateTableDate;
       };
     </script>
   </body>

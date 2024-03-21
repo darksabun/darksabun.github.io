@@ -21,26 +21,33 @@ function makeBattleTable() {
   });
 
   // Add event listener for opening and closing details
-  $("#table_int tbody").on("click", "td.details-control", function () {
-    const tr = $(this).closest("tr");
-    const row = table.row(tr);
+  document
+    .querySelector("#table_int tbody")
+    .addEventListener("click", function (event) {
+      const target = event.target;
+      if (target && target.classList.contains("details-control")) {
+        const tr = target.closest("tr");
+        const row = table.row(tr);
 
-    if (row.child.isShown()) {
-      // This row is already open - close it
-      row.child.hide();
-      tr.removeClass("shown");
-    } else {
-      // Open this row
-      row.child(format(row.data())).show();
-      tr.addClass("shown");
-    }
-  });
+        if (row.child.isShown()) {
+          // This row is already open - close it
+          row.child.hide();
+          tr.classList.remove("shown");
+        } else {
+          // Open this row
+          row.child(format(row.data())).show();
+          tr.classList.add("shown");
+        }
+      }
+    });
 }
 
 // Table Data
 const tableData = {
   tablePlayer: function (data) {
-    return "<a href='javascript:void(0)'>" + data + "</a>";
+    return (
+      "<a class='details-control' href='javascript:void(0)'>" + data + "</a>"
+    );
   },
 };
 

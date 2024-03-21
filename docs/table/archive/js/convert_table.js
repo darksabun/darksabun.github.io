@@ -1,11 +1,17 @@
 $(function () {
-  $.getJSON($("meta[name=bmstable]").attr("content"), function (header) {
-    $("title").text(header.name + " - DARKSABUN");
-    $("#bigTableTitle").text(header.name).attr("href", header.original_url);
-    $("#smallTableTitle").html(
-      "<i class='fas fa-table me-2'></i>" + header.name
+  async function getJSON() {
+    const response = await fetch(
+      document.querySelector("meta[name=bmstable]").getAttribute("content")
     );
-  });
+    const header = await response.json();
+    document.querySelector("title").textContent = header.name + " - DARKSABUN";
+    const bigTableTitle = document.getElementById("bigTableTitle");
+    bigTableTitle.textContent = header.name;
+    bigTableTitle.href = header.original_url;
+    document.getElementById("smallTableTitle").innerHTML =
+      "<i class='fas fa-table me-2'></i>" + header.name;
+  }
+  if (document.querySelector("meta[name=bmstable]")) getJSON();
 });
 
 const tableColumns = [
