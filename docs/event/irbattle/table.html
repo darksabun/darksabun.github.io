@@ -197,31 +197,30 @@
 
       makeBMSLevelFilter = "";
       const makeCustomFilter = function () {
-        $("#table_int")
-          .DataTable()
-          .columns(0)
-          .every(function () {
-            const column = this;
-            let select = $(
-              "<div class='dt-length'>" +
-                "Filter by Section: " +
-                "<select class='form-select form-select-sm'>" +
-                "<option value=''>All</option>" +
-                "<option value='初級者'>初級者</option>" +
-                "<option value='中級者'>中級者</option>" +
-                "<option value='上級者'>上級者</option>" +
-                "<option value='(^^)'>(^^)</option>" +
-                "</select>" +
-                "</div>"
-            )
-              .prependTo($("#table_int_wrapper > div:nth-child(1) > .me-auto"))
-              .on("change", function () {
-                const val = DataTable.util.escapeRegex(
-                  $(this).find("select").val()
-                );
-                column.search(val ? "^" + val + "$" : "", true, false).draw();
-              });
+        new DataTable("#table_int").columns(0).every(function () {
+          const column = this;
+          const selectContainer = document.createElement("div");
+          selectContainer.classList.add("dt-length");
+          selectContainer.innerHTML = `
+            Filter by Section: 
+            <select class='form-select form-select-sm'>
+              <option value=''>All</option>
+              <option value='初級者'>初級者</option>
+              <option value='中級者'>中級者</option>
+              <option value='上級者'>上級者</option>
+              <option value='(^^)'>(^^)</option>
+            </select>
+          `;
+          document
+            .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
+            .prepend(selectContainer);
+
+          const selectElement = selectContainer.querySelector("select");
+          selectElement.addEventListener("change", function () {
+            const val = DataTable.util.escapeRegex(this.value);
+            column.search(val ? "^" + val + "$" : "", true, false).draw();
           });
+        });
       };
     </script>
   </body>

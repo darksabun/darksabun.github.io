@@ -81,7 +81,9 @@ function makeBMSTable() {
             column
               .data()
               .unique()
-              .sort((a, b) => parseInt(a) - parseInt(b))
+              .sort(function (a, b) {
+                return parseInt(a) - parseInt(b);
+              })
               .each(function (d) {
                 selectElement.innerHTML += `<option value="${mark}${d}">${d}</option>`;
               });
