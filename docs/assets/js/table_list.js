@@ -42,7 +42,6 @@ function makeTablelist() {
       url: "https://script.google.com/macros/s/AKfycbzaQbcI9UZDcDlSHHl2NHilhmePrNrwxRdOFkmIXsfnbfksKKmAB3V65WZ8jPWU-7E/exec?table=tablelist",
       dataSrc: "",
     },
-
     columns: [
       {
         title: "Symbol",
@@ -55,7 +54,7 @@ function makeTablelist() {
         width: "5%",
         data: "name",
         render: function (data, type, row) {
-          return "<a href='" + row.url + "'>" + data + "</a>";
+          return `<a href="${row.url}">${data}</a>`;
         },
       },
       {
@@ -74,39 +73,39 @@ function makeTablelist() {
         data: "comment",
       },
     ],
-
     createdRow: function (row, data) {
-      if (data.state == 1) $(row).addClass("bg-primary-subtle");
-      if (data.state == 2) $(row).addClass("bg-warning-subtle");
-      if (data.state == 3) $(row).addClass("bg-success-subtle");
-      if (data.state == 4) $(row).addClass("bg-secondary-subtle");
-      if (data.state == 5) $(row).addClass("bg-info-subtle");
+      const rowColor = {
+        1: "bg-primary-subtle",
+        2: "bg-warning-subtle",
+        3: "bg-success-subtle",
+        4: "bg-secondary-subtle",
+        5: "bg-info-subtle",
+      };
+      if (data.state) row.classList.add(rowColor[data.state]);
     },
-
     initComplete: function () {
       makeLastUpdate(table);
-      $("#smallTableTitle").empty();
+      document.getElementById("smallTableTitle").innerHTML = "";
       let filterStr = `<div class="mt-2 float-start">
-                        <i class="fas fa-table me-2"></i>Filter by Tag:
-                        <select>
-                          <option value="">All</option>
-                        </select>
-                      </div>`;
-      let whereAppend = $("#smallTableTitle");
+                          <i class="fas fa-table me-2"></i>Filter by Tag:
+                          <select>
+                            <option value="">All</option>
+                          </select>
+                        </div>`;
+      let whereAppend = document.getElementById("smallTableTitle");
       makeFilter(table, 3, filterStr, whereAppend);
       filterStr = `<div class="float-none">
-                    <i class="fas fa-table me-2"></i>Filter by Type:
-                    <select>
-                      <option value="">All</option>
-                    </select>
-                  </div>`;
+                      <i class="fas fa-table me-2"></i>Filter by Type:
+                      <select>
+                        <option value="">All</option>
+                      </select>
+                    </div>`;
       makeFilter(table, 2, filterStr, whereAppend);
     },
   });
 }
 
 function makeLastUpdate(table) {
-  // Add Last Update
   const data = table.ajax.json();
   const lastUpdateTableDate = data
     .filter(function (diffTable) {
@@ -128,7 +127,8 @@ function makeLastUpdate(table) {
         ("0" + date_.getDate()).slice(-2);
       return dateStr;
     });
-  $("#update").text("Last Update : " + lastUpdateTableDate);
+  document.getElementById("update").textContent =
+    "Last Update : " + lastUpdateTableDate;
 }
 
 function makeFilter(table, x, filterStr, whereAppend) {

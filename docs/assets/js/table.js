@@ -1,21 +1,24 @@
 // Difficulty Table
-let mark = "",
-  data_link = "",
-  makeBMSLevelFilter = 1;
+let mark = "";
+let data_link = "";
+let makeBMSLevelFilter = 1;
 $(function () {
-  $.getJSON($("meta[name=bmstable]").attr("content"), function (header) {
-    mark = header.symbol;
-    if (header.data_url) data_link = header.data_url;
+  async function getJSON() {
+    const response = await fetch(
+      document.querySelector("meta[name=bmstable]").getAttribute("content")
+    );
+    const header = await response.json();
+    if (header.symbol) mark = header.symbol;
     if (header.last_update)
-      $("#update").text("Last Update : " + header.last_update);
+      document.getElementById("update").textContent =
+        "Last Update : " + header.last_update;
     if (header.enum_level_order) DataTable.enum(header.enum_level_order);
-    if (typeof makeChangelog === "undefined")
-      if (header.changelog_url) $("#changelog").load(header.changelog_url);
+    if (header.data_url) data_link = header.data_url;
     makeBMSTable();
-  });
+  }
+  if (document.querySelector("meta[name=bmstable]")) getJSON();
 });
 
-// BMS Table
 function makeBMSTable() {
   new DataTable("#table_int", {
     autoWidth: typeof customAutoWidth === "undefined" ? true : customAutoWidth,
@@ -37,11 +40,14 @@ function makeBMSTable() {
       typeof tableColumns === "undefined" ? defaultColumns : tableColumns,
 
     createdRow: function (row, data) {
-      if (data.state == 1) $(row).addClass("bg-primary-subtle");
-      if (data.state == 2) $(row).addClass("bg-warning-subtle");
-      if (data.state == 3) $(row).addClass("bg-success-subtle");
-      if (data.state == 4) $(row).addClass("bg-secondary-subtle");
-      if (data.state == 5) $(row).addClass("bg-info-subtle");
+      const rowColor = {
+        1: "bg-primary-subtle",
+        2: "bg-warning-subtle",
+        3: "bg-success-subtle",
+        4: "bg-secondary-subtle",
+        5: "bg-info-subtle",
+      };
+      if (data.state) row.classList.add(rowColor[data.state]);
     },
 
     // Filter by Level
@@ -55,34 +61,29 @@ function makeBMSTable() {
           .columns(0)
           .every(function () {
             const column = this;
-            let select = $(
-              "<div class='dt-length'>" +
-                "Filter by Level: " +
-                "<select class='form-select form-select-sm'>" +
-                "<option value=''>All</option>" +
-                "</select>" +
-                "</div>"
-            )
-              .prependTo($("#table_int_wrapper > div:nth-child(1) > .me-auto"))
-              .on("change", function () {
-                const val = DataTable.util.escapeRegex(
-                  $(this).find("select").val()
-                );
-                column.search(val ? "^" + val + "$" : "", true, false).draw();
-              });
+            const selectContainer = document.createElement("div");
+            selectContainer.classList.add("dt-length");
+            selectContainer.innerHTML = `
+              Filter by Level:
+              <select class="form-select form-select-sm">
+                <option value="">All</option>
+              </select>`;
+            document
+              .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
+              .prepend(selectContainer);
+
+            const selectElement = selectContainer.querySelector("select");
+            selectElement.addEventListener("change", function () {
+              const val = DataTable.util.escapeRegex(this.value);
+              column.search(val ? "^" + val + "$" : "", true, false).draw();
+            });
 
             column
               .data()
               .unique()
-              .sort(function (a, b) {
-                return parseInt(a) - parseInt(b);
-              })
-              .each(function (d, j) {
-                select
-                  .find("select")
-                  .append(
-                    "<option value='" + mark + d + "'>" + d + "</option>"
-                  );
+              .sort((a, b) => parseInt(a) - parseInt(b))
+              .each(function (d) {
+                selectElement.innerHTML += `<option value="${mark}${d}">${d}</option>`;
               });
           });
       } else if (typeof makeCustomFilter != "undefined") {
@@ -94,37 +95,23 @@ function makeBMSTable() {
 
 const tableData = {
   tableLevel: function (data) {
-    return mark + data;
+    return `${mark}${data}`;
   },
 
   tableTitle: function (data, type, row) {
-    let lr2irBaseURL =
-      "http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=";
-    lr2irBaseURL += row.md5;
-    return "<a href='" + lr2irBaseURL + "' target='_blank'>" + data + "</a>";
+    const lr2irBaseURL = `http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=${row.md5}`;
+    return `<a href="${lr2irBaseURL}" target="_blank">${data}</a>`;
   },
 
   tableScore: function (data) {
-    let scoreBaseURL = "http://www.ribbit.xyz/bms/score/view?md5=";
-    scoreBaseURL += data;
-    return (
-      "<a href='" +
-      scoreBaseURL +
-      "' target='_blank'><i class='fas fa-lg fa-music'></i></a>"
-    );
+    const scoreBaseURL = `http://www.ribbit.xyz/bms/score/view?md5=${data}`;
+    return `<a href="${scoreBaseURL}" target="_blank"><i class="fas fa-lg fa-music"></i></a>`;
   },
 
   tableMovie: function (data) {
-    let movieURL = "https://www.youtube.com/watch?v=";
-    movieURL += data.slice(-11);
+    let movieURL = `https://www.youtube.com/watch?v=${data.slice(-11)}`;
     if (data) {
-      return (
-        "<a href='" +
-        movieURL +
-        "' target='_blank'>" +
-        "<i class='fas fa-lg fa-play'></i>" +
-        "</a>"
-      );
+      return `<a href="${movieURL}" target="_blank"><i class="fas fa-lg fa-play"></i></a>`;
     } else {
       return "";
     }
@@ -134,11 +121,9 @@ const tableData = {
     let artistStr = "";
     if (row.url) {
       if (data) {
-        artistStr =
-          "<a href='" + row.url + "' target='_blank'>" + data + "</a>";
+        artistStr = `<a href="${row.url}" target="_blank">${data}</a>`;
       } else {
-        artistStr =
-          "<a href='" + row.url + "' target='_blank'>" + row.url + "</a>";
+        artistStr = `<a href="${row.url}" target="_blank">${row.url}</a>`;
       }
     } else {
       if (data) {
@@ -147,23 +132,13 @@ const tableData = {
     }
     if (row.url_pack) {
       if (row.name_pack) {
-        artistStr +=
-          "<br>(<a href='" +
-          row.url_pack +
-          "' target='_blank'>" +
-          row.name_pack +
-          "</a>)";
+        artistStr += `<br>(<a href="${row.url_pack}" target="_blank">${row.name_pack}</a>)`;
       } else {
-        artistStr +=
-          "<br>(<a href='" +
-          row.url_pack +
-          "' target='_blank'>" +
-          row.url_pack +
-          "</a>)";
+        artistStr += `<br>(<a href="${row.url_pack}" target="_blank">${row.url_pack}</a>)`;
       }
     } else {
       if (row.name_pack) {
-        artistStr += "<br>(" + row.name_pack + ")";
+        artistStr += `<br>(${row.name_pack})`;
       }
     }
     return artistStr;
@@ -172,34 +147,16 @@ const tableData = {
   tableChart: function (data, type, row) {
     if (row.maker_site) {
       if (row.url_diff) {
-        return (
-          "<a href='" +
-          row.url_diff +
-          "'>" +
-          "<i class='fas fa-lg fa-arrow-down'></i>" +
-          "</a><br>(<a href='" +
-          row.maker_site +
-          "'>" +
-          data +
-          "</a>)"
-        );
+        return `<a href="${row.url_diff}"><i class="fas fa-lg fa-arrow-down"></i></a><br>(<a href="${row.maker_site}">${data}</a>)`;
       } else {
-        return "同梱<br>(<a href='" + row.maker_site + "'>" + data + "</a>)";
+        return `同梱<br>(<a href="${row.maker_site}">${data}</a>)`;
       }
     } else {
       if (row.url_diff) {
         if (data) {
-          return (
-            "<a href='" + row.url_diff + "' target='_blank'>" + data + "</a>"
-          );
+          return `<a href="${row.url_diff}" target="_blank">${data}</a>`;
         } else {
-          return (
-            "<a href='" +
-            row.url_diff +
-            "'>" +
-            "<i class='fas fa-lg fa-arrow-down'></i>" +
-            "</a>"
-          );
+          return `<a href="${row.url_diff}"><i class="fas fa-lg fa-arrow-down"></i></a>`;
         }
       } else {
         if (data) {
@@ -214,12 +171,10 @@ const tableData = {
   tableDate: function (data) {
     if (data) {
       const date_ = new Date(data);
-      const dateString =
-        date_.getFullYear() +
-        "." +
-        ("0" + (date_.getMonth() + 1)).slice(-2) +
-        "." +
-        ("0" + date_.getDate()).slice(-2);
+      const dateString = `${date_.getFullYear()}.${(
+        "0" +
+        (date_.getMonth() + 1)
+      ).slice(-2)}.${("0" + date_.getDate()).slice(-2)}`;
       return dateString;
     } else {
       return "";
