@@ -61,22 +61,25 @@ function makeBMSTable() {
           .columns(0)
           .every(function () {
             const column = this;
+            const filterText = "Filter by Level: ";
             const selectContainer = document.createElement("div");
             selectContainer.classList.add("dt-length");
-            selectContainer.innerHTML = `
-              Filter by Level:
-              <select class="form-select form-select-sm">
-                <option value="">All</option>
-              </select>`;
-            document
-              .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
-              .prepend(selectContainer);
 
-            const selectElement = selectContainer.querySelector("select");
-            selectElement.addEventListener("change", function () {
+            const select = document.createElement("select");
+            select.classList.add("form-select", "form-select-sm");
+            select.add(new Option("All", ""));
+
+            select.addEventListener("change", function () {
               const val = DataTable.util.escapeRegex(this.value);
               column.search(val ? "^" + val + "$" : "", true, false).draw();
             });
+
+            selectContainer.appendChild(document.createTextNode(filterText));
+            selectContainer.appendChild(select);
+
+            document
+              .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
+              .prepend(selectContainer);
 
             column
               .data()
@@ -84,8 +87,11 @@ function makeBMSTable() {
               .sort(function (a, b) {
                 return parseInt(a) - parseInt(b);
               })
-              .each(function (d) {
-                selectElement.innerHTML += `<option value="${mark}${d}">${d}</option>`;
+              .each(function (d, j) {
+                const option = document.createElement("option");
+                option.value = mark + d;
+                option.textContent = d;
+                select.appendChild(option);
               });
           });
       } else if (typeof makeCustomFilter != "undefined") {
@@ -93,6 +99,15 @@ function makeBMSTable() {
       }
     },
   });
+}
+
+// Date Format
+function formatDateString(dateStr) {
+  const date_ = new Date(dateStr);
+  const year = date_.getFullYear();
+  const month = String(date_.getMonth() + 1).padStart(2, "0");
+  const day = String(date_.getDate()).padStart(2, "0");
+  return `${year}.${month}.${day}`;
 }
 
 const tableData = {
@@ -172,12 +187,7 @@ const tableData = {
 
   tableDate: function (data) {
     if (data) {
-      const date_ = new Date(data);
-      const dateString = `${date_.getFullYear()}.${(
-        "0" +
-        (date_.getMonth() + 1)
-      ).slice(-2)}.${("0" + date_.getDate()).slice(-2)}`;
-      return dateString;
+      return formatDateString(data);
     } else {
       return "";
     }
