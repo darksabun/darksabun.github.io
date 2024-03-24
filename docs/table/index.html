@@ -210,13 +210,7 @@
           .slice(0, 1)
           .map(function (diffTable) {
             const date_ = new Date(diffTable.date);
-            const dateStr =
-              date_.getFullYear() +
-              "." +
-              ("0" + (date_.getMonth() + 1)).slice(-2) +
-              "." +
-              ("0" + date_.getDate()).slice(-2);
-            return dateStr;
+            const dateStr = formatDateString(diffTable.date);
           });
         document.getElementById("update").textContent =
           "Last Update : " + lastUpdateTableDate;

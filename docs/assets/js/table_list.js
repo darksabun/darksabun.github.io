@@ -122,9 +122,9 @@ function makeLastUpdate(table) {
       const dateStr =
         date_.getFullYear() +
         "." +
-        ("0" + (date_.getMonth() + 1)).slice(-2) +
+        String(date_.getMonth() + 1).padStart(2, "0") +
         "." +
-        ("0" + date_.getDate()).slice(-2);
+        String(date_.getDate()).padStart(2, "0");
       return dateStr;
     });
   document.getElementById("update").textContent =
