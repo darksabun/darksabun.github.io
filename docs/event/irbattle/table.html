@@ -199,29 +199,40 @@
       const makeCustomFilter = function () {
         new DataTable("#table_int").columns(0).every(function () {
           const column = this;
+          const filterText = "Filter by Section: ";
           const selectContainer = document.createElement("div");
           selectContainer.classList.add("dt-length");
-          selectContainer.innerHTML = `
-            Filter by Section: 
-            <select class='form-select form-select-sm'>
-              <option value=''>All</option>
-              <option value='初級者'>初級者</option>
-              <option value='中級者'>中級者</option>
-              <option value='上級者'>上級者</option>
-              <option value='(^^)'>(^^)</option>
-            </select>
-          `;
-          document
-            .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
-            .prepend(selectContainer);
 
-          const selectElement = selectContainer.querySelector("select");
-          selectElement.addEventListener("change", function () {
+          const select = document.createElement("select");
+          select.classList.add("form-select", "form-select-sm");
+          select.add(new Option("All", ""));
+          select.add(new Option("初級者", "初級者"));
+          select.add(new Option("中級者", "中級者"));
+          select.add(new Option("上級者", "上級者"));
+          select.add(new Option("(^^)", "(^^)"));
+
+          select.addEventListener("change", function () {
             const val = DataTable.util.escapeRegex(this.value);
             column.search(val ? "^" + val + "$" : "", true, false).draw();
           });
+
+          selectContainer.appendChild(document.createTextNode(filterText));
+          selectContainer.appendChild(select);
+
+          document
+            .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
+            .prepend(selectContainer);
         });
       };
     </script>
   </body>
 </html>
+selectContainer.innerHTML = ` Filter by Section:
+<select class="form-select form-select-sm">
+  <option value="">All</option>
+  <option value="初級者">初級者</option>
+  <option value="中級者">中級者</option>
+  <option value="上級者">上級者</option>
+  <option value="(^^)">(^^)</option>
+</select>
+`;

@@ -179,26 +179,28 @@
       const makeCustomFilter = function () {
         new DataTable("#table_int").columns(0).every(function () {
           const column = this;
+          const filterText = "Filter by Section: ";
           const selectContainer = document.createElement("div");
           selectContainer.classList.add("dt-length");
-          selectContainer.innerHTML = `
-            Filter by Section: 
-            <select class='form-select form-select-sm'>
-              <option value=''>All</option>
-              <option value='Black'>Black Box</option>
-              <option value='Gray'>Gray Box</option>
-              <option value='Sand'>Sand Box</option>
-            </select>
-          `;
-          document
-            .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
-            .prepend(selectContainer);
 
-          const selectElement = selectContainer.querySelector("select");
-          selectElement.addEventListener("change", function () {
+          const select = document.createElement("select");
+          select.classList.add("form-select", "form-select-sm");
+          select.add(new Option("All", ""));
+          select.add(new Option("Black Box", "Black"));
+          select.add(new Option("Gray Box", "Gray"));
+          select.add(new Option("Sand Box", "Sand"));
+
+          select.addEventListener("change", function () {
             const val = DataTable.util.escapeRegex(this.value);
             column.search(val ? "^" + val + "$" : "", true, false).draw();
           });
+
+          selectContainer.appendChild(document.createTextNode(filterText));
+          selectContainer.appendChild(select);
+
+          document
+            .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
+            .prepend(selectContainer);
         });
       };
     </script>
