@@ -57,42 +57,38 @@ function makeBMSTable() {
       if (typeof makeLastUpdate !== "undefined") makeLastUpdate();
       if (makeBMSLevelFilter === 1) {
         // Filter
-        this.api()
-          .columns(0)
-          .every(function () {
-            const column = this;
-            const filterText = "Filter by Level: ";
-            const selectContainer = document.createElement("div");
-            selectContainer.classList.add("dt-length");
+        const column = this.api().column(0);
+        const filterText = "Filter by Level: ";
+        const selectContainer = document.createElement("div");
+        selectContainer.classList.add("dt-length");
 
-            const select = document.createElement("select");
-            select.classList.add("form-select", "form-select-sm");
-            select.add(new Option("All", ""));
+        const select = document.createElement("select");
+        select.classList.add("form-select", "form-select-sm");
+        select.add(new Option("All", ""));
 
-            select.addEventListener("change", function () {
-              const val = DataTable.util.escapeRegex(this.value);
-              column.search(val ? "^" + val + "$" : "", true, false).draw();
-            });
+        select.addEventListener("change", function () {
+          const val = DataTable.util.escapeRegex(this.value);
+          column.search(val ? "^" + val + "$" : "", true, false).draw();
+        });
 
-            selectContainer.appendChild(document.createTextNode(filterText));
-            selectContainer.appendChild(select);
+        selectContainer.appendChild(document.createTextNode(filterText));
+        selectContainer.appendChild(select);
 
-            document
-              .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
-              .prepend(selectContainer);
+        document
+          .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
+          .prepend(selectContainer);
 
-            column
-              .data()
-              .unique()
-              .sort(function (a, b) {
-                return parseInt(a) - parseInt(b);
-              })
-              .each(function (d, j) {
-                const option = document.createElement("option");
-                option.value = mark + d;
-                option.textContent = d;
-                select.appendChild(option);
-              });
+        column
+          .data()
+          .unique()
+          .sort(function (a, b) {
+            return parseInt(a) - parseInt(b);
+          })
+          .each(function (d, j) {
+            const option = document.createElement("option");
+            option.value = mark + d;
+            option.textContent = d;
+            select.appendChild(option);
           });
       } else if (typeof makeCustomFilter != "undefined") {
         makeCustomFilter();
