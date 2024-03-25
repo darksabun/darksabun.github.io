@@ -85,22 +85,7 @@ function makeTablelist() {
     },
     initComplete: function () {
       makeLastUpdate(table);
-      document.getElementById("smallTableTitle").innerHTML = "";
-      let filterStr = `<div class="mt-2 float-start">
-                          <i class="fas fa-table me-2"></i>Filter by Tag:
-                          <select>
-                            <option value="">All</option>
-                          </select>
-                        </div>`;
-      let whereAppend = document.getElementById("smallTableTitle");
-      makeFilter(table, 3, filterStr, whereAppend);
-      filterStr = `<div class="float-none">
-                      <i class="fas fa-table me-2"></i>Filter by Type:
-                      <select>
-                        <option value="">All</option>
-                      </select>
-                    </div>`;
-      makeFilter(table, 2, filterStr, whereAppend);
+      makeFilter(table);
     },
   });
 }
@@ -131,15 +116,32 @@ function makeLastUpdate(table) {
     "Last Update : " + lastUpdateTableDate;
 }
 
-function makeFilter(table, x, filterStr, whereAppend) {
-  table.columns(x).every(function () {
-    const column = this;
-    let select = $(filterStr)
-      .prependTo(whereAppend)
-      .on("change", function () {
-        const val = DataTable.util.escapeRegex($(this).find("select").val());
-        column.search(val ? "^" + val + "$" : "", true, false).draw();
-      });
+function makeFilter(table) {
+  const smallTableTitle = document.getElementById("smallTableTitle");
+  smallTableTitle.innerHTML = "";
+  [3, 2].forEach(function (index) {
+    const column = table.column(i);
+    const filterText =
+      index === 3
+        ? `<i class="fas fa-table me-2"></i>Filter by Tag: `
+        : `<i class="fas fa-table me-2"></i>Filter by Type: `;
+    const selectContainer = document.createElement("div");
+    index === 3
+      ? selectContainer.classList.add("mt-2", "float-start")
+      : selectContainer.classList.add("float-none");
+
+    const select = document.createElement("select");
+    select.add(new Option("All", ""));
+
+    select.addEventListener("change", function () {
+      const val = DataTable.util.escapeRegex(this.value);
+      column.search(val ? "^" + val + "$" : "", true, false).draw();
+    });
+
+    selectContainer.innerHTML = filterText;
+    selectContainer.appendChild(select);
+
+    smallTableTitle.prepend(selectContainer);
 
     column
       .data()
@@ -148,9 +150,10 @@ function makeFilter(table, x, filterStr, whereAppend) {
         return parseInt(a) - parseInt(b);
       })
       .each(function (d, j) {
-        select
-          .find("select")
-          .append("<option value='" + d + "'>" + d + "</option>");
+        const option = document.createElement("option");
+        option.value = d;
+        option.textContent = d;
+        select.appendChild(option);
       });
   });
 }

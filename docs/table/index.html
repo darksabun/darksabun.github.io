@@ -209,8 +209,7 @@
           })
           .slice(0, 1)
           .map(function (diffTable) {
-            const date_ = new Date(diffTable.date);
-            const dateStr = formatDateString(diffTable.date);
+            return formatDateString(new Date(diffTable.date));
           });
         document.getElementById("update").textContent =
           "Last Update : " + lastUpdateTableDate;
