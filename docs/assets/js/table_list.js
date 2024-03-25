@@ -120,7 +120,7 @@ function makeFilter(table) {
   const smallTableTitle = document.getElementById("smallTableTitle");
   smallTableTitle.innerHTML = "";
   [3, 2].forEach(function (index) {
-    const column = table.column(i);
+    const column = table.column(index);
     const filterText =
       index === 3
         ? `<i class="fas fa-table me-2"></i>Filter by Tag: `
