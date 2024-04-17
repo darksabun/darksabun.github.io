@@ -117,7 +117,7 @@ const tableData = {
   },
 
   tableScore: function (data) {
-    const scoreBaseURL = `http://www.ribbit.xyz/bms/score/view?md5=${data}`;
+    const scoreBaseURL = `https://bms-score-viewer.pages.dev/view?md5=${data}`;
     return `<a href="${scoreBaseURL}" target="_blank"><i class="fas fa-lg fa-music"></i></a>`;
   },
 
@@ -201,7 +201,6 @@ const defaultColumns = [
     data: "level",
     render: tableData.tableLevel,
   },
-  /*
   {
     title: "Score",
     width: "1%",
@@ -210,7 +209,6 @@ const defaultColumns = [
     searchable: false,
     render: tableData.tableScore,
   },
-  */
   {
     title: "Title<br>(LR2IR)",
     width: "30%",
