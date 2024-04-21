@@ -205,6 +205,7 @@ const defaultColumns = [
     title: "Score",
     width: "1%",
     data: "md5",
+    className: "text-center",
     orderable: false,
     searchable: false,
     render: tableData.tableScore,
