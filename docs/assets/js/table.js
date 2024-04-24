@@ -20,7 +20,7 @@ $(function () {
 });
 
 function makeBMSTable() {
-  new DataTable("#table_int", {
+  new DataTable("#tableDiff", {
     autoWidth: typeof customAutoWidth === "undefined" ? true : customAutoWidth,
     paging: typeof customPaging === "undefined" ? false : customPaging,
     pageLength:
@@ -75,7 +75,7 @@ function makeBMSTable() {
         selectContainer.appendChild(select);
 
         document
-          .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
+          .querySelector("#tableDiff_wrapper > div:nth-child(1) > .me-auto")
           .prepend(selectContainer);
 
         column
@@ -122,7 +122,7 @@ const tableData = {
   },
 
   tableMovie: function (data) {
-    let movieURL = `https://www.youtube.com/watch?v=${data.slice(-11)}`;
+    const movieURL = `https://www.youtube.com/watch?v=${data.slice(-11)}`;
     if (data) {
       return `<a href="${movieURL}" target="_blank"><i class="fas fa-lg fa-play"></i></a>`;
     } else {
@@ -205,7 +205,6 @@ const defaultColumns = [
     title: "Score",
     width: "1%",
     data: "md5",
-    className: "text-center",
     orderable: false,
     searchable: false,
     render: tableData.tableScore,
