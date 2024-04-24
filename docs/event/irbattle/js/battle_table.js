@@ -5,7 +5,7 @@ $(function () {
 
 // Battle Ranking Table
 function makeBattleTable() {
-  table = new DataTable("#table_int", {
+  table = new DataTable("#tableDiff", {
     scrollX: true,
     scrollY: "70vh",
     paging: false,
@@ -22,7 +22,7 @@ function makeBattleTable() {
 
   // Add event listener for opening and closing details
   document
-    .querySelector("#table_int tbody")
+    .querySelector("#tableDiff tbody")
     .addEventListener("click", function (event) {
       const target = event.target;
       if (target && target.classList.contains("details-control")) {

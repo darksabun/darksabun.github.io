@@ -74,7 +74,7 @@
               <div class="card-body">
                 <div class="table-responsive">
                   <table
-                    id="table_int"
+                    id="tableDiff"
                     class="table table-sm table-striped table-bordered table-hover text-gray-900 text-center m-auto"
                   ></table>
                 </div>
@@ -195,7 +195,7 @@
 
       makeBMSLevelFilter = "";
       const makeCustomFilter = function () {
-        const column = new DataTable("#table_int").column(1);
+        const column = new DataTable("#tableDiff").column(1);
         const filterText = "Filter by Section: ";
         const selectContainer = document.createElement("div");
         selectContainer.classList.add("dt-length");
@@ -213,7 +213,7 @@
         selectContainer.appendChild(select);
 
         document
-          .querySelector("#table_int_wrapper > div:nth-child(1) > .me-auto")
+          .querySelector("#tableDiff_wrapper > div:nth-child(1) > .me-auto")
           .prepend(selectContainer);
 
         column

@@ -27,7 +27,7 @@ clipboard.on("error", function () {
 });
 
 function makeTablelist() {
-  let table = new DataTable("#table_int", {
+  let table = new DataTable("#tableDiff", {
     autoWidth: false,
     paging: true,
     order: [

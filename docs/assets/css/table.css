@@ -50,24 +50,29 @@
   --bs-table-bg: transparent;
 }
 
-#table_int {
+#tableDiff {
   width: 100% !important;
 }
 
-#table_int a {
+#tableDiff a {
   color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
   text-decoration: none;
   background-color: transparent;
 }
 
-#table_int th {
-  text-align: center;
-  vertical-align: middle;
+#tableDiff th {
+  text-align: center !important;
+  vertical-align: middle !important;
   font-size: 0.95em;
 }
 
+#tableDiff td {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
 /* etc */
-.diffflame {
+.scale-frame {
   table-layout: fixed;
   width: 250px;
   text-align: center;
@@ -76,13 +81,13 @@
   float: left;
 }
 
-.diffflame th {
+.scale-frame th {
   border-color: #000000;
   border-style: solid;
   border-width: 3px 3px 3px;
 }
 
-.diffflame td {
+.scale-frame td {
   border: 1px solid #000;
 }
 
