@@ -1,4 +1,4 @@
-$(function () {
+document.addEventListener("DOMContentLoaded", function () {
   async function getJSON() {
     const response = await fetch(
       document.querySelector("meta[name=bmstable]").getAttribute("content")

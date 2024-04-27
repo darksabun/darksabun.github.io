@@ -2,7 +2,7 @@
 let mark = "";
 let data_link = "";
 let makeBMSLevelFilter = 1;
-$(function () {
+document.addEventListener("DOMContentLoaded", function () {
   async function getJSON() {
     const response = await fetch(
       document.querySelector("meta[name=bmstable]").getAttribute("content")

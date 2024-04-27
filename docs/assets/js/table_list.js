@@ -1,5 +1,5 @@
 // Difficulty Table List
-$(function () {
+document.addEventListener("DOMContentLoaded", function () {
   DataTable.enum(["SP", "DP", "PMS", "EVENT", "etc"]);
   DataTable.enum([
     "General",

@@ -1,5 +1,5 @@
 let table = "";
-$(function () {
+document.addEventListener("DOMContentLoaded", function () {
   makeBattleTable();
 });
 
