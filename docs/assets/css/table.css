@@ -61,14 +61,17 @@
 }
 
 #tableDiff th {
-  text-align: center !important;
-  vertical-align: middle !important;
+  text-align: center;
+  vertical-align: middle;
   font-size: 0.95em;
 }
 
-#tableDiff td {
+.text-start td {
+  text-align: left !important;
+}
+
+.text-center td {
   text-align: center !important;
-  vertical-align: middle !important;
 }
 
 /* etc */
