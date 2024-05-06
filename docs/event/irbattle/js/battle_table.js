@@ -1,7 +1,25 @@
 let table = "";
-document.addEventListener("DOMContentLoaded", function () {
+function contentLoadedEvent() {
   makeBattleTable();
-});
+}
+function rowClickEvent(event) {
+  const target = event.target;
+  if (target && target.classList.contains("details-control")) {
+    const tr = target.closest("tr");
+    const row = table.row(tr);
+
+    if (row.child.isShown()) {
+      // This row is already open - close it
+      row.child.hide();
+      tr.classList.remove("shown");
+    } else {
+      // Open this row
+      row.child(format(row.data())).show();
+      tr.classList.add("shown");
+    }
+  }
+}
+document.addEventListener("DOMContentLoaded", contentLoadedEvent);
 
 // Battle Ranking Table
 function makeBattleTable() {
@@ -23,23 +41,7 @@ function makeBattleTable() {
   // Add event listener for opening and closing details
   document
     .querySelector("#tableDiff tbody")
-    .addEventListener("click", function (event) {
-      const target = event.target;
-      if (target && target.classList.contains("details-control")) {
-        const tr = target.closest("tr");
-        const row = table.row(tr);
-
-        if (row.child.isShown()) {
-          // This row is already open - close it
-          row.child.hide();
-          tr.classList.remove("shown");
-        } else {
-          // Open this row
-          row.child(format(row.data())).show();
-          tr.classList.add("shown");
-        }
-      }
-    });
+    .addEventListener("click", rowClickEvent);
 }
 
 // Table Data
@@ -73,6 +75,8 @@ function format(d) {
 // for Battle Ranking Table Multi-Language Support
 // Table Language Change
 function tableLanguageChange(lang) {
+  document.removeEventListener("DOMContentLoaded", contentLoadedEvent);
+  document.querySelector("#tableDiff tbody").removeEventListener("click", rowClickEvent);
   table.destroy();
   nowLang = lang;
   makeBattleTable();
