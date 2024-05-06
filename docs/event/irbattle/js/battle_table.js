@@ -75,7 +75,6 @@ function format(d) {
 // for Battle Ranking Table Multi-Language Support
 // Table Language Change
 function tableLanguageChange(lang) {
-  document.removeEventListener("DOMContentLoaded", contentLoadedEvent);
   document.querySelector("#tableDiff tbody").removeEventListener("click", rowClickEvent);
   table.destroy();
   nowLang = lang;
