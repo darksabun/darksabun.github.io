@@ -71,9 +71,9 @@
     "title": "jigsaw colors",
     "url": "https://web.archive.org/web/20090723005416/http://uploader.bms.ms/sen-goku/?download=jigsaw.rar",
     "request_answer": "st0 이하",
-    "request_ko": "<= st0",
-    "request_ja": "<= st0",
-    "request_en": "<= st0",
+    "request_ko": "≤ st0",
+    "request_ja": "≤ st0",
+    "request_en": "≤ st0",
     "by": "七海"
   },
   {
@@ -213,10 +213,10 @@
     "artist": "SENS",
     "title": "SENS REMIX II-2nd Anniversary-",
     "url": "https://web.archive.org/web/20041129052843/http://www.sango.sakura.ne.jp/~sens/bms/djsens_remix2.zip",
-    "request_answer": ">=B1",
-    "request_ko": ">=B1",
-    "request_ja": ">=B1",
-    "request_en": ">=B1",
+    "request_answer": "≥ B1",
+    "request_ko": "≥ B1",
+    "request_ja": "≥ B1",
+    "request_en": "≥ B1",
     "by": "LuvTek"
   },
   {
@@ -225,9 +225,9 @@
     "title": "ね…、ねぇ…、…ごめんさいご",
     "url": "http://web.archive.org/web/20060621175412/http://placase.bms.ms/data/bms/cat.rar",
     "request_answer": "2000 notes 以上",
-    "request_ko": ">= 2000 NOTES",
-    "request_ja": ">= 2000 NOTES",
-    "request_en": ">= 2000 NOTES",
+    "request_ko": "≥ 2000 NOTES",
+    "request_ja": "≥ 2000 NOTES",
+    "request_en": "≥ 2000 NOTES",
     "by": "Mary_Sue"
   },
   {
@@ -236,9 +236,9 @@
     "title": "ｑａяσｌГФ｜ ΣθгＬｐ",
     "url": "https://pupuly.nekokan.dyndns.info/bms/v/226",
     "request_answer": "（鍵盤ノートの数－皿の枚数）= 2500以上",
-    "request_ko": "(건반부 노트 수 - 스크래치 노트 수) >= 2500",
-    "request_ja": "（鍵盤ノートの数－皿の枚数）>= 2500",
-    "request_en": "(Keypart notes # - scratch notes #) >= 2500",
+    "request_ko": "(건반부 노트 수 - 스크래치 노트 수) ≥ 2500",
+    "request_ja": "（鍵盤ノートの数－皿の枚数）≥ 2500",
+    "request_en": "(Keypart notes # - scratch notes #) ≥ 2500",
     "by": "Mary_Sue"
   },
   {
@@ -258,9 +258,9 @@
     "title": "大韓ニュース　第1661号",
     "url": "https://mega.nz/file/5bYHyZJb#VgNeUn66snZUwkqia6MOETpGEMddxDLAVXsmUvW83IU",
     "request_answer": "ノーツ5000個以上",
-    "request_ko": ">= 5000 NOTES",
-    "request_ja": ">= 5000 NOTES",
-    "request_en": ">= 5000 NOTES",
+    "request_ko": "≥ 5000 NOTES",
+    "request_ja": "≥ 5000 NOTES",
+    "request_en": "≥ 5000 NOTES",
     "by": "Mary_Sue"
   },
   {
@@ -269,9 +269,9 @@
     "title": "Lament for Broken Puppet",
     "url": "https://mega.nz/folder/EpgWgJqa#7OItZfYLQxZ0X8OB19yvNQ/file/J5hSCT6R",
     "request_answer": "平均密度 19Notes/s以上",
-    "request_ko": "평균밀도 >= 19 Notes/s",
-    "request_ja": "平均密度 >= 19 Notes/s",
-    "request_en": "Average density >= 19 Notes/s",
+    "request_ko": "평균밀도 ≥ 19 Notes/s",
+    "request_ja": "平均密度 ≥ 19 Notes/s",
+    "request_en": "Average density ≥ 19 Notes/s",
     "by": "Mary_Sue"
   },
   {
@@ -280,9 +280,9 @@
     "title": "Schisma",
     "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=18&event=116",
     "request_answer": "sl10 이상",
-    "request_ko": ">= sl10",
-    "request_ja": ">= sl10",
-    "request_en": ">= sl10",
+    "request_ko": "≥ sl10",
+    "request_ja": "≥ sl10",
+    "request_en": "≥ sl10",
     "by": "Nuclein"
   },
   {
@@ -368,9 +368,9 @@
     "title": "consider numbers 3",
     "url": "http://yamajet.com/music/html/considernumbers3.html",
     "request_answer": "난이도 sl1 이상 / 難易度sl1以上",
-    "request_ko": ">= sl1",
-    "request_ja": ">= sl1",
-    "request_en": ">= sl1",
+    "request_ko": "≥ sl1",
+    "request_ja": "≥ sl1",
+    "request_en": "≥ sl1",
     "by": "seojoon"
   },
   {
@@ -379,9 +379,9 @@
     "title": "anachronism",
     "url": "https://archive.org/download/dj_fujii_bms/DJ_fujii_bms_collection.rar/DJ_fujii_bms_collection%2Fanachronism.rar",
     "request_answer": "노트 수 1200개 이상 / ノート数1200個以上",
-    "request_ko": ">= 1200 NOTES",
-    "request_ja": ">= 1200 NOTES",
-    "request_en": ">= 1200 NOTES",
+    "request_ko": "≥ 1200 NOTES",
+    "request_ja": "≥ 1200 NOTES",
+    "request_en": "≥ 1200 NOTES",
     "by": "seojoon"
   },
   {
@@ -477,10 +477,10 @@
     "artist": "ProjectG",
     "title": "Unchosen",
     "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=486&event=142",
-    "request_answer": ">= 2929 NOTES",
-    "request_ko": ">= 2929 NOTES",
-    "request_ja": ">= 2929 NOTES",
-    "request_en": ">= 2929 NOTES",
+    "request_answer": "≥ 2929 NOTES",
+    "request_ko": "≥ 2929 NOTES",
+    "request_ja": "≥ 2929 NOTES",
+    "request_en": "≥ 2929 NOTES",
     "by": "tyrcs"
   },
   {
@@ -535,7 +535,7 @@
     "request_answer": "皿1000枚以上",
     "request_ko": "스크래치 1000개 이상",
     "request_ja": "皿1000枚以上",
-    "request_en": ">= 1000 scratch notes",
+    "request_en": "≥ 1000 scratch notes",
     "by": "Unlimited 번데기 Works"
   },
   {
@@ -675,10 +675,10 @@
     "artist": "tkqn14_Append",
     "title": "《〇ヮ〇》",
     "url": "http://k-bms.com/party_pabat/party.jsp?board_num=24&num=16",
-    "request_answer": ">=10000 notes",
-    "request_ko": ">= 10000 NOTES",
-    "request_ja": ">= 10000 NOTES",
-    "request_en": ">= 10000 NOTES",
+    "request_answer": "≥10000 notes",
+    "request_ko": "≥ 10000 NOTES",
+    "request_ja": "≥ 10000 NOTES",
+    "request_en": "≥ 10000 NOTES",
     "by": "И"
   },
   {
