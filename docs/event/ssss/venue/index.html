@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Sabun-Shuffle Summer Season | Venue - DARKSABUN</title>
+    <script src="/assets/js/dark_mode.js"></script>
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <link href="/assets/css/table.css" rel="stylesheet" />
+    <link href="/assets/css/venue.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.datatables.net/v/bs5/dt-2.0.7/datatables.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <a class="navbar-brand ps-3" href="/">DARKSABUN</a
+      ><button
+        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+        id="sidebarToggle"
+        href="#"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div id="layoutSidenav">
+      <!-- Nav bar -->
+      <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+          <div
+            class="sb-sidenav-menu"
+            data-include-html="/assets/components/navbar.html"
+          ></div>
+        </nav>
+      </div>
+      <!-- Main Contents -->
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid px-4">
+            <h1 class="mt-4">Sabun-Shuffle Summer Season</h1>
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item"><a href="/event/">Events</a></li>
+              <li class="breadcrumb-item">
+                <a href="/event/ssss/">Sabun-Shuffle Summer Season</a>
+              </li>
+              <li class="breadcrumb-item active">Venue</li>
+            </ol>
+            <!-- Progress -->
+            <section>
+              <h2 id="SSSSProgress" class="text-center m-4">Progress</h2>
+              <br />
+              <div class="lang-ko text-secret mt-4">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered table-striped text-center align-middle"
+                  >
+                    <tbody>
+                      <tr>
+                        <th>기간</th>
+                        <th colspan="2">일정</th>
+                      </tr>
+                      <tr>
+                        <th>7/1~7/6</th>
+                        <td colspan="2">참가자 프로필 및 과제곡 공개</td>
+                      </tr>
+                      <tr>
+                        <th>7/7~7/13</th>
+                        <td>1차 등록 과제곡 할당</td>
+                        <td>자유 부문 등록 시작</td>
+                      </tr>
+                      <tr>
+                        <th>7/14~7/20</th>
+                        <td>1차 등록 기간</td>
+                        <td rowspan="5">자유 부문 임프레 기간</td>
+                      </tr>
+                      <tr>
+                        <th>7/21~7/27</th>
+                        <td>1차 임프레 주간 1</td>
+                      </tr>
+                      <tr>
+                        <th>7/28~8/3</th>
+                        <td>1차 임프레 주간 2</td>
+                      </tr>
+                      <tr>
+                        <th>8/4~8/10</th>
+                        <td>2차 등록 과제곡 할당</td>
+                      </tr>
+                      <tr>
+                        <th>8/11~8/17</th>
+                        <td>2차 등록 기간</td>
+                      </tr>
+                      <tr>
+                        <th>8/18~8/24</th>
+                        <td>2차 임프레 주간 1</td>
+                        <td>자유 부문 등록 마감</td>
+                      </tr>
+                      <tr>
+                        <th>8/25~8/31</th>
+                        <td>2차 임프레 주간 2</td>
+                        <td>자유 부문 임프레 마감</td>
+                      </tr>
+                      <tr>
+                        <th>9/1~9/2</th>
+                        <td colspan="2">결과 발표</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="lang-ja text-secret mt-4">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered table-striped text-center align-middle"
+                  >
+                    <tbody>
+                      <tr>
+                        <th>期間</th>
+                        <th colspan="2">日程</th>
+                      </tr>
+                      <tr>
+                        <th>7/1~7/6</th>
+                        <td colspan="2">参加者のプロフィール公開</td>
+                      </tr>
+                      <tr>
+                        <th>7/7~7/13</th>
+                        <td>1回目の課題曲の頭割り</td>
+                        <td>自由部門の登録開始</td>
+                      </tr>
+                      <tr>
+                        <th>7/14~7/20</th>
+                        <td>1回目の登録期間</td>
+                        <td rowspan="5">自由部門のインプレ期間</td>
+                      </tr>
+                      <tr>
+                        <th>7/21~7/27</th>
+                        <td>1回目のインプレ週間 1</td>
+                      </tr>
+                      <tr>
+                        <th>7/28~8/3</th>
+                        <td>1回目のインプレ週間 2</td>
+                      </tr>
+                      <tr>
+                        <th>8/4~8/10</th>
+                        <td>2回目の課題曲の頭割り</td>
+                      </tr>
+                      <tr>
+                        <th>8/11~8/17</th>
+                        <td>2回目の登録期間</td>
+                      </tr>
+                      <tr>
+                        <th>8/18~8/24</th>
+                        <td>2回目のインプレ週間 1</td>
+                        <td>自由部門の登録締切</td>
+                      </tr>
+                      <tr>
+                        <th>8/25~8/31</th>
+                        <td>2回目のインプレ週間 2</td>
+                        <td>自由部門のインプレ締切</td>
+                      </tr>
+                      <tr>
+                        <th>9/1~9/2</th>
+                        <td colspan="2">結果発表</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="lang-en text-secret mt-4">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered table-striped text-center align-middle"
+                  >
+                    <tbody>
+                      <tr>
+                        <th>Date</th>
+                        <th colspan="2">To do</th>
+                      </tr>
+                      <tr>
+                        <th>7/1~7/6</th>
+                        <td colspan="2">Open the participants’ profiles</td>
+                      </tr>
+                      <tr>
+                        <th>7/7~7/13</th>
+                        <td>Primary song assignment</td>
+                        <td>Freestyle registration starts</td>
+                      </tr>
+                      <tr>
+                        <th>7/14~7/20</th>
+                        <td>Primary register period</td>
+                        <td rowspan="5">Freestyle impression period</td>
+                      </tr>
+                      <tr>
+                        <th>7/21~7/27</th>
+                        <td>Primary impression period 1</td>
+                      </tr>
+                      <tr>
+                        <th>7/28~8/3</th>
+                        <td>Primary impression period 2</td>
+                      </tr>
+                      <tr>
+                        <th>8/4~8/10</th>
+                        <td>Secondary song assignment</td>
+                      </tr>
+                      <tr>
+                        <th>8/11~8/17</th>
+                        <td>Secondary register period</td>
+                      </tr>
+                      <tr>
+                        <th>8/18~8/24</th>
+                        <td>Secondary impression period 1</td>
+                        <td>Freestyle registration deadline</td>
+                      </tr>
+                      <tr>
+                        <th>8/25~8/31</th>
+                        <td>Secondary impression period 2</td>
+                        <td>Freestyle impression deadline</td>
+                      </tr>
+                      <tr>
+                        <th>9/1~9/2</th>
+                        <td colspan="2">Result announcement</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <!-- Links
+            <hr id="SSSSLinks" />
+            <section>
+              <h2 class="text-center m-4">Links</h2>
+              <div class="container-fluid mt-2">
+                <div class="row mb-4 text-center">
+                  <div class="col-md-4">
+                    <h4>Result</h4>
+                    <p class="lang-ko text-secret mt-2">
+                      결과를 발표하는 페이지로 이동합니다.
+                    </p>
+                    <p class="lang-ja text-secret mt-2">
+                      結果を発表するページに移動します。
+                    </p>
+                    <p class="lang-en text-secret mt-2">Result page</p>
+                    <a href="../result/" class="mb-4 btn-lg btn btn-dark"
+                      >Result</a
+                    >
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Download All</h4>
+                    <p class="lang-ko text-secret">차분 전체 다운로드</p>
+                    <p class="lang-ja text-secret">差分全体ダウンロード</p>
+                    <p class="lang-en text-secret">Download all charts</p>
+                    <a
+                      href="../sabun/SSSS_all_20220905.zip"
+                      class="mb-4 btn-lg btn btn-dark"
+                      >Download</a
+                    >
+                  </div>
+                  <div class="col-md-4">
+                    <h4>JSON Table</h4>
+                    <p class="lang-ko text-secret mt-2">
+                      제출된 차분을 모은 난이도표입니다.
+                    </p>
+                    <p class="lang-ja text-secret mt-2">
+                      提出された差分を集めた難易度表です。
+                    </p>
+                    <p class="lang-en text-secret mt-2">
+                      Difficulty table of submitted charts
+                    </p>
+                    <a href="../table.html" class="mb-4 btn-lg btn btn-dark"
+                      >Table</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </section> -->
+            <!-- Venue 
+            <hr id="SSSSVenue" />
+            <section>
+              <h2 class="text-center m-4">Entries</h2>
+              <div class="container-fluid mt-2">
+                <div class="row mb-4 text-center">
+                  <div class="col-md-4">
+                    <h4>Preliminary</h4>
+                    <p class="lang-ko text-secret mt-2">
+                      예선전 회장으로 이동합니다.
+                    </p>
+                    <p class="lang-ja text-secret mt-2">
+                      予選会場に移動します。
+                    </p>
+                    <p class="lang-en text-secret mt-2">Preliminary Venue</p>
+                    <a
+                      href="https://venue.bmssearch.net/bcel_pre"
+                      class="mb-4 btn-lg btn btn-dark"
+                      >Preliminary</a
+                    >
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Final</h4>
+                    <p class="lang-ko text-secret mt-2">
+                      결승전 회장으로 이동합니다.
+                    </p>
+                    <p class="lang-ja text-secret mt-2">
+                      決勝会場に移動します。
+                    </p>
+                    <p class="lang-en text-secret mt-2">Final Venue</p>
+                    <a
+                      href="https://venue.bmssearch.net/bcel_final"
+                      class="mb-4 btn-lg btn btn-dark"
+                      >Final</a
+                    >
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Freestyle</h4>
+                    <p class="lang-ko text-secret mt-2">
+                      프리스타일 회장으로 이동합니다.
+                    </p>
+                    <p class="lang-ja text-secret mt-2">
+                      Freestyle会場に移動します。
+                    </p>
+                    <p class="lang-en text-secret mt-2">Freestyle Venue</p>
+                    <a
+                      href="https://venue.bmssearch.net/bcel_free"
+                      class="mb-4 btn-lg btn btn-dark"
+                      >Freestyle</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </section>-->
+            <hr id="SSSSParticipant" />
+            <!-- Participant -->
+            <section>
+              <h2 class="text-center m-4">Participant</h2>
+              <div class="container px-4 mb-4">
+                <div>
+                  <div class="row col-md-12">
+                    <div class="col-md-6">
+                      <section>
+                        <h4>
+                          <a href="https://fsrs.github.io/"
+                            ><strong>LuvTek</strong></a
+                          >
+                        </h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a href="https://youtu.be/_HOsOJo9kPY"
+                                >We Will Rock You (Fast) [Another]</a
+                              >
+                            </li>
+                            <li>
+                              <strong>FL差分難易度表</strong> 5th Anniversary
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4><a href="https://bms.parksulab.xyz">И</a></h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="https://www.youtube.com/watch?v=hsEGczPC9Ao"
+                                >Anotrian</a
+                              >
+                            </li>
+                            <li>
+                              have a
+                              <i>"recognizable stylistic signature"</i>
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4><a href="https://x.com/ug3fw">1mi</a></h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="https://youtu.be/SDCncyR00EI?si=VRI_Jj5wgUIn5Hmo"
+                                >La souvenir [omber]</a
+                              >
+                            </li>
+                            <li>最近差分作り始めた初心者です</li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4><a href="https://2rlz.github.io/">2RLZ</a></h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a href="https://youtu.be/oPgpDhENJJU"
+                                >Derve [Grief]</a
+                              >
+                            </li>
+                            <li>ご無沙汰しております。</li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4><a href="https://egosa0424.github.io/">七海</a></h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsid=281901"
+                                >Andro -Despair-</a
+                              >
+                            </li>
+                            <li>わーい！</li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4>
+                          <a href="https://x.com/Dis_Connection_">Decimal</a>
+                        </h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a href="https://youtu.be/2AmLD8se5YA"
+                                >filp69 #Decimalized</a
+                              >
+                            </li>
+                            <li>棟方愛海が好きです</li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4>
+                          <a href="https://darksabun.github.io/Mary_Sue/"
+                            >Mary_Sue</a
+                          >
+                        </h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="https://youtu.be/plhdJp4l6jY?si=cA2mBSm04mVRYvgf"
+                                >EMPIRICISM [Hands Free Masturbation]</a
+                              >
+                            </li>
+                            <li>
+                              MarySue_BMS는 미국의 유명한 피트니스 트레이너이자
+                              영양사인 메리수의 피트니스 프로그램 중 하나일
+                              가능성이 높으며, BMS는 "Body Management System"
+                              혹은 "Body Mind Soul" 등의 약어일 수 있습니다. 이
+                              프로그램은 체중 관리, 근력 강화, 전반적인 신체
+                              건강 증진을 위한 다양한 운동 루틴과 영양 가이드를
+                              포함하고 있을 것입니다. (by ChatGPT)
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4>
+                          <a
+                            href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=mypage&playerid=182035"
+                            >Nuclein</a
+                          >
+                        </h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="https://youtu.be/_QgwJkXajg4?si=z535Ri3SnkPLgYfg"
+                                >Moonlit Operation [Birther]</a
+                              >
+                            </li>
+                            <li>
+                              저주로 인해 sl0 하드 못하는 사람입니다. 잘
+                              부탁드립니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4>
+                          <a
+                            href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=mypage&playerid=86559"
+                            >qtp13</a
+                          >
+                        </h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsid=331000"
+                                >the lost delaycated (distant memory)</a
+                              >
+                            </li>
+                            <li>delaying the inevitable</li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4>
+                          <a
+                            href="https://www.youtube.com/channel/UCHYmncA4N7WdYUx0OrUUo8g"
+                            >seojoon</a
+                          >
+                        </h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsid=330148"
+                                >07xx1999 complete [SJ Hard]</a
+                              >
+                            </li>
+                            <li>
+                              스타듀 밸리에서 버츄얼 파밍을 하다가 돌아왔습니다.
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4><a href="https://seraphin.xyz/sabun">sera</a></h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="https://www.youtube.com/watch?v=AWUF1Zvzc-0"
+                                >L c__ [shatter]</a
+                              >
+                            </li>
+                            <li>^------------------^</li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4>
+                          <a
+                            href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=mypage&playerid=150031"
+                            >tyrcs</a
+                          >
+                        </h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=fe5b86680892f574aa3955152a6f3cb7"
+                                >Volanphantasia (BEEF MASTER)</a
+                              >
+                            </li>
+                            <li>be happy</li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4>
+                          <a href="http://yaritaihoudie.free.fr/"
+                            >Unlimited 번데기 Works</a
+                          >
+                        </h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="https://www.youtube.com/watch?v=THTsTvGt2fs"
+                                >みつめていたい anotherplus</a
+                              >
+                            </li>
+                            <li>
+                              I am the cook of my afternoon snack Silkworm is my
+                              nutrition and protein, n-3 fatty acids and
+                              carbohydrates are (in) my blood I have roasted
+                              over a thousand pupas Unknown to Death, Nor known
+                              to Life. Have withstood patience to cook many
+                              meals Yet, those hands will never hold hatched
+                              butterflies So as I pray, unlimited 번데기 works.
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4>
+                          <a
+                            href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=mypage&playerid=165696"
+                            >Zethiwo</a
+                          >
+                        </h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a href="https://youtu.be/F5tkk7Sz178"
+                                >Assault TAXI [Rainstorm Gallops]</a
+                              >
+                            </li>
+                            <li>Please give me more advice(^^)</li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4>
+                          <a href="https://kur4yam1.github.io/ym_table.html"
+                            >くろ</a
+                          >
+                        </h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="https://www.youtube.com/watch?v=cg1KuW_2T84"
+                                >Autopray [yamither]</a
+                              >
+                            </li>
+                            <li>
+                              今年に入ってから差分作成を始めました。普段はギミックばかりですが、楽しい譜面を目指します(
+                              ㆆ-ㆆ)و✧
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section>
+                        <h4><a href="https://x.com/deogenerate">㍐</a></h4>
+                        <div>
+                          <ul>
+                            <li>
+                              <a
+                                href="https://www.youtube.com/watch?v=Ih-t9TpiaD8"
+                                >YAKUI [UNRULY]</a
+                              >
+                            </li>
+                            <li>
+                              I'm a long-time IIDX player, been playing BMS for
+                              a year or so now and recently into charting and
+                              song-making. I'd love to branch out and make
+                              things outside of my comfort zone!
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr id="SSSSSongList" />
+            <!-- Request List -->
+            <section>
+              <h2 class="text-center m-4">Request List</h2>
+              <!--
+              <div class="container-fluid text-center">
+                <div
+                  id="showSSSSRequestList"
+                  class="btn btn-lg btn-dark btn-icon"
+                >
+                  View
+                </div>
+              </div>-->
+              <div class="container-fluid px-0">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <i class="fas fa-globe me-1"></i>
+                    Language
+                  </div>
+                  <div class="card-body">
+                    <div class="btn-group">
+                      <div
+                        class="btn btn-secondary btn-icon"
+                        onclick="tableLanguageChange('ko')"
+                      >
+                        한국어
+                      </div>
+                      <div
+                        class="btn btn-secondary btn-icon"
+                        onclick="tableLanguageChange('en')"
+                      >
+                        English
+                      </div>
+                      <div
+                        class="btn btn-secondary btn-icon"
+                        onclick="tableLanguageChange('ja')"
+                      >
+                        日本語
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header">
+                  <i class="fas fa-table me-1"></i>
+                  Table
+                </div>
+                <div class="table-responsive container-fluid mb-4">
+                  <table
+                    id="tableDiff"
+                    class="table table-sm table-striped table-bordered table-hover text-gray-900 text-center m-auto"
+                  ></table>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+        <footer
+          class="py-4 bg-light-subtle mt-auto"
+          data-include-html="/assets/components/footer_ssss.html"
+        ></footer>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-beta/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/multi_lang.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/include_html.js"></script>
+    <script
+      src="https://cdn.datatables.net/v/bs5/dt-2.0.7/datatables.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.datatables.net/plug-ins/1.13.10/sorting/natural.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/table.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        /*const showSongListButton = document.getElementById(
+          "showSSSSRequestList"
+        );
+        showSongListButton.addEventListener("click", function () {
+          makeBMSTable();
+          showSongListButton.remove();
+        });*/
+        makeBMSTable();
+      });
+
+      const customPaging = true;
+      const customInfo = true;
+      const customPageLength = 25;
+
+      data_link = "./request_list.json";
+      const tableColumns = [
+        {
+          title: "Level",
+          width: "1%",
+          data: "level",
+          type: "natural",
+        },
+        {
+          title: "BMS<br>(BMS DL)",
+          width: "30%",
+          data: "title",
+          render: function (data, type, row) {
+            return (
+              "<a href='" +
+              row.url +
+              "' target='_blank'>" +
+              row.artist +
+              " - " +
+              data +
+              "</a>"
+            );
+          },
+        },
+        {
+          title: "Request",
+          width: "15%",
+          render: function (data, type, row) {
+            if (nowLang === "ko") {
+              return row.request_ko;
+            } else if (nowLang === "ja") {
+              return row.request_ja;
+            } else return row.request_en;
+          },
+        },
+        {
+          title: "Proposer",
+          width: "10%",
+          data: "by",
+        },
+      ];
+
+      function tableLanguageChange(lang) {
+        new DataTable("#tableDiff").destroy();
+        nowLang = lang;
+        makeBMSTable();
+        changeLanguage(lang);
+      }
+    </script>
+  </body>
+</html>
