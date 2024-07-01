@@ -683,17 +683,16 @@
             <!-- Request List -->
             <section>
               <h2 class="text-center m-4">Request List</h2>
-              <!--
               <div class="container-fluid text-center">
-                <div
+                <!--<div
                   id="showSSSSRequestList"
                   class="btn btn-lg btn-dark btn-icon"
                 >
                   View
-                </div>
-              </div>-->
+                </div>-->
+              </div>
               <div class="container-fluid px-0">
-                <div class="card mb-4">
+                <div class="card mb-4 hide-list">
                   <div class="card-header">
                     <i class="fas fa-globe me-1"></i>
                     Language
@@ -722,7 +721,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card mb-4">
+              <div class="card mb-4 hide-list">
                 <div class="card-header">
                   <i class="fas fa-table me-1"></i>
                   Table
@@ -769,9 +768,13 @@
         /*const showSongListButton = document.getElementById(
           "showSSSSRequestList"
         );
+        const showRequestListTable = document.querySelectorAll(".hide-list");
         showSongListButton.addEventListener("click", function () {
           makeBMSTable();
           showSongListButton.remove();
+          showRequestListTable.forEach((i) => {
+            i.style.display = "";
+          });
         });*/
         makeBMSTable();
       });
