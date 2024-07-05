@@ -195,9 +195,9 @@
         const select = document.createElement("select");
         select.classList.add("form-select", "form-select-sm");
         select.add(new Option("All", ""));
-        select.add(new Option("Black Box", "Black"));
-        select.add(new Option("Gray Box", "Gray"));
-        select.add(new Option("Sand Box", "Sand"));
+        select.add(new Option("R1", "R1"));
+        select.add(new Option("R2", "R2"));
+        select.add(new Option("Free", "Free"));
 
         select.addEventListener("change", function () {
           const val = DataTable.util.escapeRegex(this.value);
