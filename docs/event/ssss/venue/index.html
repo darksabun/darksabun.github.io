@@ -766,16 +766,16 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         /*const showSongListButton = document.getElementById(
-          "showSSSSRequestList"
-        );
-        const showRequestListTable = document.querySelectorAll(".hide-list");
-        showSongListButton.addEventListener("click", function () {
-          makeBMSTable();
-          showSongListButton.remove();
-          showRequestListTable.forEach((i) => {
-            i.style.display = "";
-          });
-        });*/
+                "showSSSSRequestList"
+              );
+              const showRequestListTable = document.querySelectorAll(".hide-list");
+              showSongListButton.addEventListener("click", function () {
+                makeBMSTable();
+                showSongListButton.remove();
+                showRequestListTable.forEach((i) => {
+                  i.style.display = "";
+                });
+              });*/
         makeBMSTable();
       });
 
@@ -796,15 +796,29 @@
           width: "30%",
           data: "title",
           render: function (data, type, row) {
-            return (
-              "<a href='" +
-              row.url +
-              "' target='_blank'>" +
-              row.artist +
-              " - " +
-              data +
-              "</a>"
-            );
+            if (data.length >= 50) {
+              return (
+                "<a href='" +
+                row.url +
+                "' target='_blank'>" +
+                row.artist +
+                " - " +
+                data.slice(0, 3) +
+                "…" +
+                data.slice(-3) +
+                "</a>"
+              );
+            } else {
+              return (
+                "<a href='" +
+                row.url +
+                "' target='_blank'>" +
+                row.artist +
+                " - " +
+                data +
+                "</a>"
+              );
+            }
           },
         },
         {
@@ -821,7 +835,12 @@
         {
           title: "Proposer",
           width: "10%",
-          data: "by",
+          data: "proposer",
+        },
+        {
+          title: "BMS No.",
+          width: "1%",
+          data: "no",
         },
       ];
 
