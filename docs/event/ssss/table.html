@@ -140,7 +140,6 @@
           title: "Section",
           width: "1%",
           data: "level",
-          type: "natural",
         },
         {
           title: "<i class='fas fa-lg fa-music'></i>",
@@ -181,17 +180,27 @@
           render: tableData.tableArtist,
         },
         {
-          title: "DL",
-          width: "15%",
+          title: "DL<br>(Maker)",
+          width: "10%",
           data: "name_diff",
           orderable: false,
           searchable: false,
           render: tableData.tableChart,
         },
         {
-          title: "Comment",
+          title: "Proposer",
           width: "10%",
-          render: tableData.tableComment,
+          data: "proposer",
+        },
+        {
+          title: "Request",
+          width: "10%",
+          data: "request",
+        },
+        {
+          title: "Difficulty",
+          width: "1%",
+          data: "diff",
         },
       ];
 
