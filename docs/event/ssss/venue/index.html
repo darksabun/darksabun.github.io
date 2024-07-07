@@ -61,8 +61,7 @@
             <!-- Progress -->
             <section>
               <h2 id="SSSSProgress" class="text-center m-4">Progress</h2>
-              <br />
-              <div class="lang-ko text-secret mt-4">
+              <div class="lang-ko text-secret m-4">
                 <div class="table-responsive">
                   <table
                     class="table table-bordered table-striped text-center align-middle"
@@ -682,7 +681,7 @@
             <hr id="SSSSRoundTable" />
             <section>
               <h2 class="text-center m-4">Round 1</h2>
-              <div class="lang-ko text-secret mt-4">
+              <div class="m-4">
                 <div class="table-responsive">
                   <table
                     class="table table-bordered table-striped text-center align-middle"
@@ -784,19 +783,19 @@
                   <div class="card-body">
                     <div class="btn-group">
                       <div
-                        class="btn btn-secondary btn-icon"
+                        class="btn btn-dark btn-icon"
                         onclick="tableLanguageChange('ko')"
                       >
                         한국어
                       </div>
                       <div
-                        class="btn btn-secondary btn-icon"
+                        class="btn btn-dark btn-icon"
                         onclick="tableLanguageChange('en')"
                       >
                         English
                       </div>
                       <div
-                        class="btn btn-secondary btn-icon"
+                        class="btn btn-dark btn-icon"
                         onclick="tableLanguageChange('ja')"
                       >
                         日本語
@@ -863,6 +862,7 @@
         makeBMSTable();
       });
 
+      mark = "☆";
       const customPaging = true;
       const customInfo = true;
       const customPageLength = 25;
@@ -874,6 +874,7 @@
           width: "1%",
           data: "level",
           type: "natural",
+          render: tableData.tableLevel,
         },
         {
           title: "BMS<br>(BMS DL)",
@@ -881,27 +882,11 @@
           data: "title",
           render: function (data, type, row) {
             if (data.length >= 50) {
-              return (
-                "<a href='" +
-                row.url +
-                "' target='_blank'>" +
-                row.artist +
-                " - " +
-                data.slice(0, 3) +
-                "…" +
-                data.slice(-3) +
-                "</a>"
-              );
+              return `<a href="${row.url}"' target='_blank'>${
+                row.artist
+              } - ${data.slice(0, 3)}…${data.slice(-3)}</a>`;
             } else {
-              return (
-                "<a href='" +
-                row.url +
-                "' target='_blank'>" +
-                row.artist +
-                " - " +
-                data +
-                "</a>"
-              );
+              return `<a href="${row.url}"' target='_blank'>${row.artist} - ${data}</a>`;
             }
           },
         },
