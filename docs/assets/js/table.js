@@ -63,6 +63,7 @@ function makeBMSTable() {
         selectContainer.classList.add("dt-length");
 
         const select = document.createElement("select");
+        select.id = "tableDiffSelect";
         select.classList.add("form-select", "form-select-sm");
         select.add(new Option("All", ""));
 
