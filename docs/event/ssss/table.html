@@ -64,15 +64,15 @@
                 <div class="mb-2">
                   <a
                     href="---"
-                    class="btn btn-primary btn-icon"
+                    class="btn btn-info btn-icon"
                     >Download All Charts (2024.08.25)</a
                   >
                 </div>
                 -->
-                <div class="mb-2">
+                <div>
                   <a
                     href="./sabun/ssss_1st_all_20240721.zip"
-                    class="btn btn-dark btn-icon"
+                    class="btn btn-primary btn-icon"
                     >Download Round 1 Charts (2024.07.21)</a
                   >
                 </div>
@@ -91,8 +91,7 @@
                     >Download Freeroll Charts (2024.08.25)</a
                   >
                 </div>
-              -->
-              </div>
+              --></div>
             </div>
             <div class="card mb-4">
               <div class="card-header">
@@ -142,6 +141,14 @@
           title: "Section",
           width: "1%",
           data: "level",
+          render: function (data) {
+            const levelToTag = {
+              R1: "Round 1",
+              R2: "Round 2",
+              Free: "Freeroll",
+            };
+            return levelToTag[data];
+          },
         },
         {
           title: "<i class='fas fa-lg fa-music'></i>",
@@ -216,6 +223,9 @@
         const select = document.createElement("select");
         select.classList.add("form-select", "form-select-sm");
         select.add(new Option("All", ""));
+        select.add(new Option("Round 1", "Round 1"));
+        select.add(new Option("Round 2", "Round 2"));
+        select.add(new Option("Freeroll", "Freeroll"));
 
         select.addEventListener("change", function () {
           const val = DataTable.util.escapeRegex(this.value);
@@ -228,20 +238,6 @@
         document
           .querySelector("#tableDiff_wrapper > div:nth-child(1) > .me-auto")
           .prepend(selectContainer);
-
-        column
-          .data()
-          .unique()
-          .sort(function (a, b) {
-            return parseInt(a) - parseInt(b);
-          })
-          .each(function (d, j) {
-            console.log(d);
-            const option = document.createElement("option");
-            option.value = d;
-            option.textContent = d;
-            select.appendChild(option);
-          });
       };
     </script>
   </body>

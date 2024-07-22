@@ -1,7 +1,8 @@
 {
   "name": "Sabun-Shuffle Summer Season",
-  "symbol": "SSSS ",
+  "symbol": "SSSS",
+  "compat_prefix": "SSSS ",
   "level_order": ["R1", "R2", "Free"],
-  "enum_level_order": ["R1", "R2", "Free"],
+  "enum_level_order": ["Round 1", "Round 2", "Freeroll"],
   "data_url": "https://script.google.com/macros/s/AKfycbwRseW0wJovdMdWyfxgRWbZ7cKTlvMpPGhBsYrY1kp0md-kW5o0W1GCiGMFUCmdPR05/exec"
 }
