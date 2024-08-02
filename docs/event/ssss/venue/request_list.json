@@ -9,7 +9,8 @@
     "request_ja": "正統派トランス系譜面",
     "request_en": "Classical trance music charting style",
     "proposer": "LuvTek",
-    "no": 101
+    "no": 101,
+    "state": ""
   },
   {
     "level": 2,
@@ -21,7 +22,8 @@
     "request_ja": "バラエティー",
     "request_en": "Variety",
     "proposer": "LuvTek",
-    "no": 201
+    "no": 201,
+    "state": ""
   },
   {
     "level": 3,
@@ -33,7 +35,8 @@
     "request_ja": "「コントラスト」",
     "request_en": "「Contrast」",
     "proposer": "LuvTek",
-    "no": 301
+    "no": 301,
+    "state": ""
   },
   {
     "level": 4,
@@ -45,7 +48,8 @@
     "request_ja": "HARD判定",
     "request_en": "HARD JUDGERANK",
     "proposer": "LuvTek",
-    "no": 401
+    "no": 401,
+    "state": ""
   },
   {
     "level": 5,
@@ -57,7 +61,8 @@
     "request_ja": "≥ B1",
     "request_en": "≥ B1",
     "proposer": "LuvTek",
-    "no": 501
+    "no": 501,
+    "state": 4
   },
   {
     "level": 1,
@@ -69,7 +74,8 @@
     "request_ja": "sl0-1",
     "request_en": "sl0-1",
     "proposer": "И",
-    "no": 102
+    "no": 102,
+    "state": ""
   },
   {
     "level": 2,
@@ -81,7 +87,8 @@
     "request_ja": "32分以上の連打なし",
     "request_en": "No 32nd faster jacks",
     "proposer": "И",
-    "no": 202
+    "no": 202,
+    "state": ""
   },
   {
     "level": 3,
@@ -93,7 +100,8 @@
     "request_ja": "VERYHARD判定",
     "request_en": "VERYHARD JUDGERANK",
     "proposer": "И",
-    "no": 302
+    "no": 302,
+    "state": ""
   },
   {
     "level": 4,
@@ -105,7 +113,8 @@
     "request_ja": "[RooT--]",
     "request_en": "[RooT--]",
     "proposer": "И",
-    "no": 402
+    "no": 402,
+    "state": 4
   },
   {
     "level": 5,
@@ -117,7 +126,8 @@
     "request_ja": "≥ 10000 NOTES",
     "request_en": "≥ 10000 NOTES",
     "proposer": "И",
-    "no": 502
+    "no": 502,
+    "state": ""
   },
   {
     "level": 1,
@@ -129,7 +139,8 @@
     "request_ja": "乱打",
     "request_en": "Stream",
     "proposer": "1mi",
-    "no": 103
+    "no": 103,
+    "state": 4
   },
   {
     "level": 2,
@@ -141,7 +152,8 @@
     "request_ja": "ガチ押し",
     "request_en": "Gachi",
     "proposer": "1mi",
-    "no": 203
+    "no": 203,
+    "state": ""
   },
   {
     "level": 5,
@@ -153,7 +165,8 @@
     "request_ja": "ディレイ",
     "request_en": "Delay",
     "proposer": "1mi",
-    "no": 503
+    "no": 503,
+    "state": ""
   },
   {
     "level": 1,
@@ -165,7 +178,8 @@
     "request_ja": "LN皿(BSS)あり",
     "request_en": "Using scratch LN (BSS)",
     "proposer": "2RLZ",
-    "no": 104
+    "no": 104,
+    "state": ""
   },
   {
     "level": 2,
@@ -177,7 +191,8 @@
     "request_ja": "連打なし",
     "request_en": "Jack-free",
     "proposer": "2RLZ",
-    "no": 204
+    "no": 204,
+    "state": ""
   },
   {
     "level": 4,
@@ -189,7 +204,8 @@
     "request_ja": "BPMの変化が10回以上",
     "request_en": "10 times or more BPM changes",
     "proposer": "2RLZ",
-    "no": 404
+    "no": 404,
+    "state": 4
   },
   {
     "level": 1,
@@ -201,7 +217,8 @@
     "request_ja": "≤ st0",
     "request_en": "≤ st0",
     "proposer": "七海",
-    "no": 105
+    "no": 105,
+    "state": ""
   },
   {
     "level": 2,
@@ -213,7 +230,8 @@
     "request_ja": "sl12",
     "request_en": "sl12",
     "proposer": "七海",
-    "no": 205
+    "no": 205,
+    "state": ""
   },
   {
     "level": 4,
@@ -225,7 +243,8 @@
     "request_ja": "2424 NOTES",
     "request_en": "2424 NOTES",
     "proposer": "七海",
-    "no": 405
+    "no": 405,
+    "state": ""
   },
   {
     "level": 5,
@@ -237,7 +256,8 @@
     "request_ja": "ソフランの最小化",
     "request_en": "Minimizing soft-landing",
     "proposer": "七海",
-    "no": 505
+    "no": 505,
+    "state": 4
   },
   {
     "level": 1,
@@ -249,7 +269,8 @@
     "request_ja": "乱打",
     "request_en": "Stream",
     "proposer": "Decimal",
-    "no": 106
+    "no": 106,
+    "state": ""
   },
   {
     "level": 2,
@@ -261,7 +282,8 @@
     "request_ja": "同梱曲変更差分の「124」で差分を作る",
     "request_en": "Based on the packaged arrange chart 「124」.",
     "proposer": "Decimal",
-    "no": 206
+    "no": 206,
+    "state": 4
   },
   {
     "level": 3,
@@ -273,7 +295,8 @@
     "request_ja": "個人差譜面",
     "request_en": "Individual difference",
     "proposer": "Decimal",
-    "no": 306
+    "no": 306,
+    "state": ""
   },
   {
     "level": 4,
@@ -285,19 +308,21 @@
     "request_ja": "超長尺",
     "request_en": "Super long distance",
     "proposer": "Decimal",
-    "no": 406
+    "no": 406,
+    "state": ""
   },
   {
     "level": 5,
     "artist": "tarolabo",
-    "title": "Machine⊆Reverse-gender Machine⊇Reverse-gender ",
+    "title": "Machine⊆Reverse-gender Machine⊇Reverse-gender",
     "url": "https://www.mediafire.com/file/th60fhipcw4b0ao/Machine%E2%8A%86Reverse-gender+Machine%E2%8A%87Reverse-gender.zip",
     "request_answer": "ヤバい",
     "request_ko": "야바이(ヤバい)",
     "request_ja": "ヤバい",
     "request_en": "YABAI(ヤバい)",
     "proposer": "Decimal",
-    "no": 506
+    "no": 506,
+    "state": ""
   },
   {
     "level": 1,
@@ -309,7 +334,8 @@
     "request_ja": "≥ 2000 NOTES",
     "request_en": "≥ 2000 NOTES",
     "proposer": "Mary_Sue",
-    "no": 107
+    "no": 107,
+    "state": ""
   },
   {
     "level": 2,
@@ -321,7 +347,8 @@
     "request_ja": "（鍵盤ノートの数－皿の枚数）≥ 2500",
     "request_en": "(Keypart notes # - scratch notes #) ≥ 2500",
     "proposer": "Mary_Sue",
-    "no": 207
+    "no": 207,
+    "state": 4
   },
   {
     "level": 3,
@@ -333,7 +360,8 @@
     "request_ja": "みんな大好きな練習になる譜面",
     "request_en": "Pratice chart; everyone loves.",
     "proposer": "Mary_Sue",
-    "no": 307
+    "no": 307,
+    "state": ""
   },
   {
     "level": 4,
@@ -345,7 +373,8 @@
     "request_ja": "≥ 5000 NOTES",
     "request_en": "≥ 5000 NOTES",
     "proposer": "Mary_Sue",
-    "no": 407
+    "no": 407,
+    "state": ""
   },
   {
     "level": 5,
@@ -357,7 +386,8 @@
     "request_ja": "平均密度 ≥ 19 Notes/s",
     "request_en": "Average density ≥ 19 Notes/s",
     "proposer": "Mary_Sue",
-    "no": 507
+    "no": 507,
+    "state": ""
   },
   {
     "level": 1,
@@ -369,7 +399,8 @@
     "request_ja": "≥ sl10",
     "request_en": "≥ sl10",
     "proposer": "Nuclein",
-    "no": 108
+    "no": 108,
+    "state": ""
   },
   {
     "level": 2,
@@ -381,7 +412,8 @@
     "request_ja": "sl5",
     "request_en": "sl5",
     "proposer": "Nuclein",
-    "no": 208
+    "no": 208,
+    "state": ""
   },
   {
     "level": 3,
@@ -393,7 +425,8 @@
     "request_ja": "ガチ押し",
     "request_en": "Gachi",
     "proposer": "Nuclein",
-    "no": 308
+    "no": 308,
+    "state": ""
   },
   {
     "level": 4,
@@ -405,7 +438,8 @@
     "request_ja": "ディレイ",
     "request_en": "Delay",
     "proposer": "Nuclein",
-    "no": 408
+    "no": 408,
+    "state": 4
   },
   {
     "level": 1,
@@ -417,7 +451,8 @@
     "request_ja": "Hyper難易度",
     "request_en": "Hyper Difficulty",
     "proposer": "qtp13",
-    "no": 109
+    "no": 109,
+    "state": ""
   },
   {
     "level": 2,
@@ -429,7 +464,8 @@
     "request_ja": "★18",
     "request_en": "★18",
     "proposer": "qtp13",
-    "no": 209
+    "no": 209,
+    "state": 4
   },
   {
     "level": 4,
@@ -441,7 +477,8 @@
     "request_ja": "総合ディレイ剤",
     "request_en": "comprehensive delay",
     "proposer": "qtp13",
-    "no": 409
+    "no": 409,
+    "state": ""
   },
   {
     "level": 5,
@@ -453,7 +490,8 @@
     "request_ja": "2147483647（この数字に関連している限り、どのような譜面でも構いません）",
     "request_en": "2147483647 (any kind of chart, as long it incorporates these numbers)",
     "proposer": "qtp13",
-    "no": 509
+    "no": 509,
+    "state": ""
   },
   {
     "level": 1,
@@ -465,7 +503,8 @@
     "request_ja": "≥ sl1",
     "request_en": "≥ sl1",
     "proposer": "seojoon",
-    "no": 110
+    "no": 110,
+    "state": ""
   },
   {
     "level": 2,
@@ -477,7 +516,8 @@
     "request_ja": "≥ 1200 NOTES",
     "request_en": "≥ 1200 NOTES",
     "proposer": "seojoon",
-    "no": 210
+    "no": 210,
+    "state": ""
   },
   {
     "level": 4,
@@ -489,7 +529,8 @@
     "request_ja": "同梱譜面の[Girls forM]で差分を作る",
     "request_en": "Based on the packaged chart [Girls forM]",
     "proposer": "seojoon",
-    "no": 410
+    "no": 410,
+    "state": 4
   },
   {
     "level": 5,
@@ -501,7 +542,8 @@
     "request_ja": "完全曲改変",
     "request_en": "Complete song re-arrangement",
     "proposer": "seojoon",
-    "no": 510
+    "no": 510,
+    "state": ""
   },
   {
     "level": 1,
@@ -513,7 +555,8 @@
     "request_ja": "NORMAL判定",
     "request_en": "NORMAL JUDEGRANK",
     "proposer": "sera",
-    "no": 111
+    "no": 111,
+    "state": ""
   },
   {
     "level": 2,
@@ -525,7 +568,8 @@
     "request_ja": "穴抜き(カーテン)",
     "request_en": "LN inverse (curtain)",
     "proposer": "sera",
-    "no": 211
+    "no": 211,
+    "state": ""
   },
   {
     "level": 3,
@@ -537,7 +581,8 @@
     "request_ja": "連打",
     "request_en": "Jacks",
     "proposer": "sera",
-    "no": 311
+    "no": 311,
+    "state": ""
   },
   {
     "level": 4,
@@ -549,7 +594,8 @@
     "request_ja": "隣接配置(ドクマリまたはより広い形)のみ使用",
     "request_en": "All notes adjacent chords (2 note pill chords or larger)",
     "proposer": "sera",
-    "no": 411
+    "no": 411,
+    "state": 4
   },
   {
     "level": 5,
@@ -561,7 +607,8 @@
     "request_ja": "キー音アレンジ",
     "request_en": "Keysound arrange",
     "proposer": "sera",
-    "no": 511
+    "no": 511,
+    "state": ""
   },
   {
     "level": 1,
@@ -573,7 +620,8 @@
     "request_ja": "st1-4",
     "request_en": "st1-4",
     "proposer": "tyrcs",
-    "no": 112
+    "no": 112,
+    "state": ""
   },
   {
     "level": 2,
@@ -585,7 +633,8 @@
     "request_ja": "≥ 2929 NOTES",
     "request_en": "≥ 2929 NOTES",
     "proposer": "tyrcs",
-    "no": 212
+    "no": 212,
+    "state": ""
   },
   {
     "level": 3,
@@ -597,7 +646,8 @@
     "request_ja": "すべてのレーンの組み合わせについて（皿を除く）、割り当てられたノート数の最大公約数が3以下であること。（0は1とみなす） 例：(155, 156, 159, 163, 154, 151, 149) の場合、（156と159）の最大公約数が3であるため許容",
     "request_en": "The largest Greatest Common Divisor of notecounts of every possible pair of columns (excluding scratch lane) should be no more than 3. (0 note is considered as 1) Example: notecount of (155 156 159 163 154 151 149) is 3 (156 and 159), so it is allowed",
     "proposer": "tyrcs",
-    "no": 312
+    "no": 312,
+    "state": ""
   },
   {
     "level": 4,
@@ -609,7 +659,8 @@
     "request_ja": "過半数以上の小節でストップを使用",
     "request_en": "at least 50% of measure should contain at least one STOP command",
     "proposer": "tyrcs",
-    "no": 412
+    "no": 412,
+    "state": ""
   },
   {
     "level": 5,
@@ -621,7 +672,8 @@
     "request_ja": "皿を除いて、一度に押すノートの数の種類が3種類以下であること。例：単押し、3つ同時押し、7つ同時押しのみを含む譜面",
     "request_en": "only three different chord sizes are allowed (excluding scratches). Example: a chart contains only single notes, 3-note chords and 7-note chords is allowed.",
     "proposer": "tyrcs",
-    "no": 512
+    "no": 512,
+    "state": 4
   },
   {
     "level": 1,
@@ -633,7 +685,8 @@
     "request_ja": "乱打",
     "request_en": "Stream",
     "proposer": "Unlimited 번데기 Works",
-    "no": 113
+    "no": 113,
+    "state": ""
   },
   {
     "level": 2,
@@ -645,7 +698,8 @@
     "request_ja": "皿1000枚以上",
     "request_en": "≥ 1000 scratch notes",
     "proposer": "Unlimited 번데기 Works",
-    "no": 213
+    "no": 213,
+    "state": 4
   },
   {
     "level": 3,
@@ -657,7 +711,8 @@
     "request_ja": "ディレイ",
     "request_en": "Delay",
     "proposer": "Unlimited 번데기 Works",
-    "no": 313
+    "no": 313,
+    "state": ""
   },
   {
     "level": 4,
@@ -669,7 +724,8 @@
     "request_ja": "HARD判定",
     "request_en": "HARD JUDGERANK",
     "proposer": "Unlimited 번데기 Works",
-    "no": 413
+    "no": 413,
+    "state": ""
   },
   {
     "level": 5,
@@ -681,7 +737,8 @@
     "request_ja": "地雷祭",
     "request_en": "Mine festival",
     "proposer": "Unlimited 번데기 Works",
-    "no": 513
+    "no": 513,
+    "state": ""
   },
   {
     "level": 1,
@@ -693,7 +750,8 @@
     "request_ja": "> 2333 NOTES",
     "request_en": "> 2333 NOTES",
     "proposer": "Zethiwo",
-    "no": 114
+    "no": 114,
+    "state": ""
   },
   {
     "level": 2,
@@ -705,7 +763,8 @@
     "request_ja": "NORMAL判定",
     "request_en": "NORMAL JUDEGRANK",
     "proposer": "Zethiwo",
-    "no": 214
+    "no": 214,
+    "state": ""
   },
   {
     "level": 3,
@@ -717,7 +776,8 @@
     "request_ja": "> 600 TOTAL",
     "request_en": "> 600 TOTAL",
     "proposer": "Zethiwo",
-    "no": 314
+    "no": 314,
+    "state": ""
   },
   {
     "level": 4,
@@ -729,7 +789,8 @@
     "request_ja": "微縦連メインの譜面",
     "request_en": "Mini-jacks-focused chart",
     "proposer": "Zethiwo",
-    "no": 414
+    "no": 414,
+    "state": ""
   },
   {
     "level": 5,
@@ -741,7 +802,8 @@
     "request_ja": "平均密度 > 27 Notes/s",
     "request_en": "Average density  > 27 Notes/s",
     "proposer": "Zethiwo",
-    "no": 514
+    "no": 514,
+    "state": 4
   },
   {
     "level": 1,
@@ -753,7 +815,8 @@
     "request_ja": "NORMAL~VERYHARD判定のいずれか",
     "request_en": "Choose from NORMAL to VERYHARD JUDGERANK",
     "proposer": "くろ",
-    "no": 115
+    "no": 115,
+    "state": ""
   },
   {
     "level": 2,
@@ -765,7 +828,8 @@
     "request_ja": "局所難",
     "request_en": "Short burst(s)",
     "proposer": "くろ",
-    "no": 215
+    "no": 215,
+    "state": ""
   },
   {
     "level": 3,
@@ -777,7 +841,8 @@
     "request_ja": "ギミック1種類以上",
     "request_en": "One or more types of gimmicks",
     "proposer": "くろ",
-    "no": 315
+    "no": 315,
+    "state": ""
   },
   {
     "level": 4,
@@ -789,7 +854,8 @@
     "request_ja": "sl3",
     "request_en": "sl3",
     "proposer": "くろ",
-    "no": 415
+    "no": 415,
+    "state": 4
   },
   {
     "level": 5,
@@ -801,7 +867,8 @@
     "request_ja": "ギミックメインの譜面",
     "request_en": "Gimmick-focused chart",
     "proposer": "くろ",
-    "no": 515
+    "no": 515,
+    "state": ""
   },
   {
     "level": 1,
@@ -813,7 +880,8 @@
     "request_ja": "連打",
     "request_en": "Jacks",
     "proposer": "㍐",
-    "no": 116
+    "no": 116,
+    "state": ""
   },
   {
     "level": 2,
@@ -825,7 +893,8 @@
     "request_ja": "スクラッチ",
     "request_en": "Scratch",
     "proposer": "㍐",
-    "no": 216
+    "no": 216,
+    "state": ""
   },
   {
     "level": 3,
@@ -837,7 +906,8 @@
     "request_ja": "二重階段",
     "request_en": "Chordstairs",
     "proposer": "㍐",
-    "no": 316
+    "no": 316,
+    "state": ""
   },
   {
     "level": 4,
@@ -849,7 +919,8 @@
     "request_ja": "Ude2-3",
     "request_en": "Ude2-3",
     "proposer": "㍐",
-    "no": 416
+    "no": 416,
+    "state": ""
   },
   {
     "level": 5,
@@ -861,6 +932,7 @@
     "request_ja": "平均密度 > 14 Notes/s",
     "request_en": "Average density  > 14 Notes/s",
     "proposer": "㍐",
-    "no": 516
+    "no": 516,
+    "state": 4
   }
 ]
