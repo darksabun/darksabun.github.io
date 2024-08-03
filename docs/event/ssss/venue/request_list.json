@@ -62,7 +62,7 @@
     "request_en": "≥ B1",
     "proposer": "LuvTek",
     "no": 501,
-    "state": 4
+    "state": 5
   },
   {
     "level": 1,
@@ -114,7 +114,7 @@
     "request_en": "[RooT--]",
     "proposer": "И",
     "no": 402,
-    "state": 4
+    "state": 5
   },
   {
     "level": 5,
@@ -140,7 +140,7 @@
     "request_en": "Stream",
     "proposer": "1mi",
     "no": 103,
-    "state": 4
+    "state": 5
   },
   {
     "level": 2,
@@ -205,7 +205,7 @@
     "request_en": "10 times or more BPM changes",
     "proposer": "2RLZ",
     "no": 404,
-    "state": 4
+    "state": 5
   },
   {
     "level": 1,
@@ -257,7 +257,7 @@
     "request_en": "Minimizing soft-landing",
     "proposer": "七海",
     "no": 505,
-    "state": 4
+    "state": 5
   },
   {
     "level": 1,
@@ -283,7 +283,7 @@
     "request_en": "Based on the packaged arrange chart 「124」.",
     "proposer": "Decimal",
     "no": 206,
-    "state": 4
+    "state": 5
   },
   {
     "level": 3,
@@ -348,7 +348,7 @@
     "request_en": "(Keypart notes # - scratch notes #) ≥ 2500",
     "proposer": "Mary_Sue",
     "no": 207,
-    "state": 4
+    "state": 5
   },
   {
     "level": 3,
@@ -439,7 +439,7 @@
     "request_en": "Delay",
     "proposer": "Nuclein",
     "no": 408,
-    "state": 4
+    "state": 5
   },
   {
     "level": 1,
@@ -465,7 +465,7 @@
     "request_en": "★18",
     "proposer": "qtp13",
     "no": 209,
-    "state": 4
+    "state": 5
   },
   {
     "level": 4,
@@ -530,7 +530,7 @@
     "request_en": "Based on the packaged chart [Girls forM]",
     "proposer": "seojoon",
     "no": 410,
-    "state": 4
+    "state": 5
   },
   {
     "level": 5,
@@ -595,7 +595,7 @@
     "request_en": "All notes adjacent chords (2 note pill chords or larger)",
     "proposer": "sera",
     "no": 411,
-    "state": 4
+    "state": 5
   },
   {
     "level": 5,
@@ -673,7 +673,7 @@
     "request_en": "only three different chord sizes are allowed (excluding scratches). Example: a chart contains only single notes, 3-note chords and 7-note chords is allowed.",
     "proposer": "tyrcs",
     "no": 512,
-    "state": 4
+    "state": 5
   },
   {
     "level": 1,
@@ -699,7 +699,7 @@
     "request_en": "≥ 1000 scratch notes",
     "proposer": "Unlimited 번데기 Works",
     "no": 213,
-    "state": 4
+    "state": 5
   },
   {
     "level": 3,
@@ -803,7 +803,7 @@
     "request_en": "Average density  > 27 Notes/s",
     "proposer": "Zethiwo",
     "no": 514,
-    "state": 4
+    "state": 5
   },
   {
     "level": 1,
@@ -855,7 +855,7 @@
     "request_en": "sl3",
     "proposer": "くろ",
     "no": 415,
-    "state": 4
+    "state": 5
   },
   {
     "level": 5,
@@ -933,6 +933,6 @@
     "request_en": "Average density  > 14 Notes/s",
     "proposer": "㍐",
     "no": 516,
-    "state": 4
+    "state": 5
   }
 ]
