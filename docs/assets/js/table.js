@@ -46,6 +46,9 @@ function makeBMSTable() {
         3: "bg-success-subtle",
         4: "bg-secondary-subtle",
         5: "bg-info-subtle",
+        6: "bg-danger-subtle",
+        7: "bg-light-subtle",
+        8: "bg-dark-subtle",
       };
       if (data.state) row.classList.add(rowColor[data.state]);
     },
