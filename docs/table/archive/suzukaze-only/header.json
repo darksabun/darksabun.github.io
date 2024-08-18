@@ -1,6 +1,6 @@
 ﻿{
-  "name": "S難易度表",
-  "symbol": "†ZOI",
+  "name": "SUZUKAZEΛonly難易度",
+  "symbol": "Λ",
   "level_order": [
     "0",
     "1",
@@ -18,9 +18,10 @@
     "13",
     "14",
     "Λ",
-    "Λs"
+    "Λs",
+    "ZOI"
   ],
   "data_url": "data.json",
-  "original_url": "https://web.archive.org/web/20200726025956/http://suzukazekuhare.web.fc2.com/",
-  "last_update": "2021.06.06"
+  "original_url": "https://web.archive.org/web/20240310094541/https://suzukazekuhare.web.fc2.com/suzukazelist.html",
+  "last_update": "2024.08.17"
 }
