@@ -22,6 +22,11 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+    <style>
+      .hide-list {
+        display: none;
+      }
+    </style>
   </head>
 
   <body class="sb-nav-fixed">
@@ -254,19 +259,19 @@
                     <a href="../result/" class="mb-4 btn-lg btn btn-dark"
                       >Result</a
                     >
-                  </div>
-                  <div class="col-md-4">
+                  </div> -->
+                  <div class="col-md-6">
                     <h4>Download All</h4>
                     <p class="lang-ko text-secret">차분 전체 다운로드</p>
                     <p class="lang-ja text-secret">差分全体ダウンロード</p>
                     <p class="lang-en text-secret">Download all charts</p>
                     <a
-                      href="../sabun/SSSS_all_20220905.zip"
+                      href="../sabun/ssss_all_20240825.zip"
                       class="mb-4 btn-lg btn btn-dark"
                       >Download</a
                     >
-                  </div>  -->
-                  <div class="col-md-12">
+                  </div>
+                  <div class="col-md-6">
                     <h4>JSON Table</h4>
                     <p class="lang-ko text-secret mt-2">
                       제출된 차분을 모은 난이도표입니다.
@@ -679,7 +684,7 @@
               </div>
             </section>
             <hr id="SSSSRoundTable" />
-            <!--<section>
+            <section>
               <h2 class="text-center m-4">Round 1</h2>
               <div class="m-4">
                 <div class="table-responsive">
@@ -761,7 +766,7 @@
                   </table>
                 </div>
               </div>
-            </section>-->
+            </section>
             <section>
               <h2 class="text-center m-4">Round 2</h2>
               <div class="m-4">
@@ -850,12 +855,12 @@
             <section>
               <h2 class="text-center m-4">Request List</h2>
               <div class="container-fluid text-center">
-                <!--<div
+                <div
                   id="showSSSSRequestList"
-                  class="btn btn-lg btn-dark btn-icon"
+                  class="btn btn-lg btn-dark btn-icon mb-4"
                 >
                   View
-                </div>-->
+                </div>
               </div>
               <div class="container-fluid px-0">
                 <div class="card mb-4 hide-list">
@@ -931,18 +936,17 @@
     <script src="/assets/js/table.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        /*const showSongListButton = document.getElementById(
-                "showSSSSRequestList"
-              );
-              const showRequestListTable = document.querySelectorAll(".hide-list");
-              showSongListButton.addEventListener("click", function () {
-                makeBMSTable();
-                showSongListButton.remove();
-                showRequestListTable.forEach((i) => {
-                  i.style.display = "";
-                });
-              });*/
-        makeBMSTable();
+        const showSongListButton = document.getElementById(
+          "showSSSSRequestList"
+        );
+        const showRequestListTable = document.querySelectorAll(".hide-list");
+        showSongListButton.addEventListener("click", function () {
+          showSongListButton.remove();
+          showRequestListTable.forEach((i) => {
+            i.classList.remove("hide-list");
+          });
+          makeBMSTable();
+        });
       });
 
       mark = "☆";
@@ -1029,7 +1033,6 @@
           .each(function (d, j) {
             const option = document.createElement("option");
             option.value = d;
-            console.log(d);
             option.textContent = d;
             select.appendChild(option);
           });
