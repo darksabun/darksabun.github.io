@@ -49,7 +49,7 @@
     "request_en": "HARD JUDGERANK",
     "proposer": "LuvTek",
     "no": 401,
-    "state": ""
+    "state": 5
   },
   {
     "level": 5,
@@ -101,7 +101,7 @@
     "request_en": "VERYHARD JUDGERANK",
     "proposer": "И",
     "no": 302,
-    "state": ""
+    "state": 5
   },
   {
     "level": 4,
@@ -153,7 +153,7 @@
     "request_en": "Gachi",
     "proposer": "1mi",
     "no": 203,
-    "state": ""
+    "state": 5
   },
   {
     "level": 5,
@@ -192,7 +192,7 @@
     "request_en": "Jack-free",
     "proposer": "2RLZ",
     "no": 204,
-    "state": ""
+    "state": 5
   },
   {
     "level": 4,
@@ -244,7 +244,7 @@
     "request_en": "2424 NOTES",
     "proposer": "七海",
     "no": 405,
-    "state": ""
+    "state": 5
   },
   {
     "level": 5,
@@ -296,7 +296,7 @@
     "request_en": "Individual difference",
     "proposer": "Decimal",
     "no": 306,
-    "state": ""
+    "state": 5
   },
   {
     "level": 4,
@@ -335,7 +335,7 @@
     "request_en": "≥ 2000 NOTES",
     "proposer": "Mary_Sue",
     "no": 107,
-    "state": ""
+    "state": 5
   },
   {
     "level": 2,
@@ -406,14 +406,14 @@
     "level": 2,
     "artist": "seatrus",
     "title": "V!rtuaresort",
-    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=242&event=133",
+    "url": "https://mega.nz/file/me5nBSJT#Cm_PhunbS0sPD8Wv78ot01r0eV9UlKt49IiBOndvIPg",
     "request_answer": "sl5",
     "request_ko": "sl5",
     "request_ja": "sl5",
     "request_en": "sl5",
     "proposer": "Nuclein",
     "no": 208,
-    "state": ""
+    "state": 5
   },
   {
     "level": 3,
@@ -491,7 +491,7 @@
     "request_en": "2147483647 (any kind of chart, as long it incorporates these numbers)",
     "proposer": "qtp13",
     "no": 509,
-    "state": ""
+    "state": 5
   },
   {
     "level": 1,
@@ -543,7 +543,7 @@
     "request_en": "Complete song re-arrangement",
     "proposer": "seojoon",
     "no": 510,
-    "state": ""
+    "state": 5
   },
   {
     "level": 1,
@@ -569,7 +569,7 @@
     "request_en": "LN inverse (curtain)",
     "proposer": "sera",
     "no": 211,
-    "state": ""
+    "state": 5
   },
   {
     "level": 3,
@@ -588,7 +588,7 @@
     "level": 4,
     "artist": "やりたい放DIE!楽団",
     "title": "大死闘！ボクらのラストスタンド",
-    "url": "http://yaritaihoudie.free.fr/bms/boxofsins/daishitou.rar",
+    "url": "https://yaritaihoudie.fr/bms/boxofsins/daishitou.rar",
     "request_answer": "All notes adjacent chords (2 note pill chords or larger)",
     "request_ko": "인접배치(알약 혹은 더 넓은 형태)만 사용",
     "request_ja": "隣接配置(ドクマリまたはより広い形)のみ使用",
@@ -647,7 +647,7 @@
     "request_en": "The largest Greatest Common Divisor of notecounts of every possible pair of columns (excluding scratch lane) should be no more than 3. (0 note is considered as 1) Example: notecount of (155 156 159 163 154 151 149) is 3 (156 and 159), so it is allowed",
     "proposer": "tyrcs",
     "no": 312,
-    "state": ""
+    "state": 5
   },
   {
     "level": 4,
@@ -686,7 +686,7 @@
     "request_en": "Stream",
     "proposer": "Unlimited 번데기 Works",
     "no": 113,
-    "state": ""
+    "state": 5
   },
   {
     "level": 2,
@@ -777,7 +777,7 @@
     "request_en": "> 600 TOTAL",
     "proposer": "Zethiwo",
     "no": 314,
-    "state": ""
+    "state": 5
   },
   {
     "level": 4,
@@ -842,7 +842,7 @@
     "request_en": "One or more types of gimmicks",
     "proposer": "くろ",
     "no": 315,
-    "state": ""
+    "state": 5
   },
   {
     "level": 4,
@@ -920,7 +920,7 @@
     "request_en": "Ude2-3",
     "proposer": "㍐",
     "no": 416,
-    "state": ""
+    "state": 5
   },
   {
     "level": 5,

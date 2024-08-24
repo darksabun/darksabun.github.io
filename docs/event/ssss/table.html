@@ -69,21 +69,21 @@
                   >
                 </div>
                 -->
-                <div>
+                <div class="mb-2">
                   <a
                     href="./sabun/ssss_1st_all_20240721.zip"
                     class="btn btn-primary btn-icon"
                     >Download Round 1 Charts (2024.07.21)</a
                   >
                 </div>
-                <!--
-                <div class="mb-2">
+                <div>
                   <a
-                    href="./sabun/---.zip"
-                    class="btn btn-secondary btn-icon"
-                    >Download Round 2 Charts (2024.08.18)</a
+                    href="./sabun/ssss_2nd_all_20240819.zip"
+                    class="btn btn-warning btn-icon"
+                    >Download Round 2 Charts (2024.08.19)</a
                   >
                 </div>
+                <!--
                 <div>
                   <a
                     href="---"
@@ -172,7 +172,7 @@
           data: "title",
           render: function (data, type, row) {
             const lr2irBaseURL = `http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=${row.md5}`;
-            if (data.length >= 50) {
+            if (data.length >= 70) {
               return `<a href="${lr2irBaseURL}" target="_blank">${data.slice(
                 0,
                 3
