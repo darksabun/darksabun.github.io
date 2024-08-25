@@ -18,12 +18,13 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://cdn.datatables.net/v/bs5/dt-2.1.3/datatables.min.css"
+      href="https://cdn.datatables.net/v/bs5/dt-2.1.4/datatables.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
     <style>
-      .hide-list {
+      .hide-list,
+      .hide-assignment {
         display: none;
       }
     </style>
@@ -685,8 +686,19 @@
             </section>
             <hr id="SSSSRoundTable" />
             <section>
-              <h2 class="text-center m-4">Round 1</h2>
-              <div class="m-4">
+              <h2 id="SSSSAssignmentTitle" class="text-center m-4">
+                Assignment Results
+              </h2>
+              <div class="container-fluid text-center">
+                <div
+                  id="showSSSSAssignment"
+                  class="btn btn-lg btn-dark btn-icon mb-4"
+                >
+                  View
+                </div>
+              </div>
+              <h2 class="text-center m-4 hide-assignment">Round 1</h2>
+              <div class="m-4 hide-assignment">
                 <div class="table-responsive">
                   <table
                     class="table table-bordered table-striped text-center align-middle"
@@ -768,8 +780,8 @@
               </div>
             </section>
             <section>
-              <h2 class="text-center m-4">Round 2</h2>
-              <div class="m-4">
+              <h2 class="text-center m-4 hide-assignment">Round 2</h2>
+              <div class="m-4 hide-assignment">
                 <div class="table-responsive">
                   <table
                     class="table table-bordered table-striped text-center align-middle"
@@ -915,7 +927,7 @@
     </div>
     <!-- Scripts -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-beta/jquery.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-beta.2/jquery.min.js"
       crossorigin="anonymous"
     ></script>
     <script
@@ -926,7 +938,7 @@
     <script src="/assets/js/scripts.js"></script>
     <script src="/assets/js/include_html.js"></script>
     <script
-      src="https://cdn.datatables.net/v/bs5/dt-2.1.3/datatables.min.js"
+      src="https://cdn.datatables.net/v/bs5/dt-2.1.4/datatables.min.js"
       crossorigin="anonymous"
     ></script>
     <script
@@ -936,6 +948,20 @@
     <script src="/assets/js/table.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        const showSSSSAssignmentButton =
+          document.getElementById("showSSSSAssignment");
+        const SSSSAssignmentTitle = document.getElementById(
+          "SSSSAssignmentTitle"
+        );
+        const showAssignmentTable =
+          document.querySelectorAll(".hide-assignment");
+        showSSSSAssignmentButton.addEventListener("click", function () {
+          showSSSSAssignmentButton.remove();
+          SSSSAssignmentTitle.remove();
+          showAssignmentTable.forEach((i) => {
+            i.classList.remove("hide-assignment");
+          });
+        });
         const showSongListButton = document.getElementById(
           "showSSSSRequestList"
         );
