@@ -30,3 +30,8 @@ h4 {
 .blinking-text {
   animation: blink 1s infinite;
 }
+
+/* SUPREME LEADER **LuvTek** */
+.hide-cursor {
+  cursor: none;
+}

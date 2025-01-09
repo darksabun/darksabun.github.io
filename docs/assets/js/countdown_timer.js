@@ -21,13 +21,13 @@ var countDownTimer = function (id, date) {
     var minutes = Math.floor((distDt % _hour) / _minute);
     var seconds = Math.floor((distDt % _minute) / _second);
 
-    if (getLanguage.slice(0, 2) === "ko") {
+    if (getCurrentLanguage() === "ko") {
       document.getElementById(id).textContent =
         "신청 마감까지 남은 시간 : " + days + "일 ";
       document.getElementById(id).textContent += hours + "시간 ";
       document.getElementById(id).textContent += minutes + "분 ";
       document.getElementById(id).textContent += seconds + "초 ";
-    } else if (getLanguage.slice(0, 2) === "ja") {
+    } else if (getCurrentLanguage() === "ja") {
       document.getElementById(id).textContent =
         "申し込み締め切りまでの残り時間 : " + days + "日 ";
       document.getElementById(id).textContent += hours + "時間 ";
