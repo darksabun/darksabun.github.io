@@ -11,6 +11,7 @@
     <script src="/assets/js/dark_mode.js"></script>
     <link href="/assets/css/styles.css" rel="stylesheet" />
     <link href="/assets/css/table.css" rel="stylesheet" />
+    <link href="/assets/css/venue.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -192,7 +193,7 @@
             if (row.maker_site) {
               if (row.url_diff) {
                 if (data == "LuvTek") {
-                  return `<a href="${row.url_diff}"><i class="fas fa-lg fa-arrow-down"></i></a><br>(<a href="${row.maker_site}" class="fw-bold">${data}</a>)`;
+                  return `<a href="${row.url_diff}"><i class="fas fa-lg fa-arrow-down"></i></a><br>(<a href="${row.maker_site}" class="fw-bold hide-cursor">${data}</a>)`;
                 } else {
                   return `<a href="${row.url_diff}"><i class="fas fa-lg fa-arrow-down"></i></a><br>(<a href="${row.maker_site}">${data}</a>)`;
                 }
@@ -210,7 +211,7 @@
           data: "proposer",
           render: function (data) {
             if (data == "LuvTek") {
-              return `<strong>${data}</strong>`;
+              return `<span class="fw-bold hide-cursor">${data}</span>`;
             } else {
               return data;
             }
