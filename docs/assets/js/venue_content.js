@@ -300,7 +300,7 @@ async function fetchJson() {
       venueDIV.appendChild(pComment);
     }
   });
-  document.querySelector(".venue-content").appendChild(venueDIV);
+  document.querySelector("#venue-content").appendChild(venueDIV);
   document.querySelector("#venue-content-load").style.display = "none";
 }
 
