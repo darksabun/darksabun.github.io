@@ -233,7 +233,8 @@ async function fetchJson() {
 
         const courseTd3 = document.createElement("td");
         const courseScoreUrl = document.createElement("a");
-        courseScoreUrl.href = "http://www.ribbit.xyz/bms/score/view?md5=" + md5;
+        courseScoreUrl.href =
+          "https://bms-score-viewer.pages.dev/view?md5=" + md5;
         courseScoreUrl.classList.add("fas", "fa-lg", "fa-music");
         courseTd3.appendChild(courseScoreUrl);
 

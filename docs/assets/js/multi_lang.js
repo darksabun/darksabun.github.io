@@ -23,8 +23,8 @@ let nowLang = getCurrentLanguage();
 setLanguageVisibility(nowLang);
 
 function changeLanguage(wantLang) {
-  if (document.querySelector(".venue-content")) {
-    document.querySelector(".venue-content").innerHTML = "";
+  if (document.querySelector("#venue-content")) {
+    document.querySelector("#venue-content").innerHTML = "";
     document.querySelector("#venue-content-load").style.display = "";
     nowLang = wantLang;
     fetchJson();
