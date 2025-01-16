@@ -78,7 +78,7 @@ async function fetchJson() {
           }
         </style>
         <a href="https://www.youtube.com/embed/${i.ds_video}?autoplay=1">
-          <img src="https://img.youtube.com/vi/${i.ds_video}/maxresdefault.jpg" alt="${i.ds_video}" onerror="https://img.youtube.com/vi/${i.ds_video}/hqdefault.jpg">
+          <img src="https://img.youtube.com/vi/${i.ds_video}/maxresdefault.jpg" alt="${i.ds_video}" onerror="this.src='https://img.youtube.com/vi/${i.ds_video}/hqdefault.jpg'">
           <span>▶</span>
         </a>`
       );
