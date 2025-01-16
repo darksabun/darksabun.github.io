@@ -51,6 +51,8 @@ async function fetchJson() {
       pVideo.classList.add("container", "ratio", "ratio-16x9");
       const iframeVideo = document.createElement("iframe");
       iframeVideo.classList.add("rounded-3");
+      iframeVideo.setAttribute("loading", "lazy");
+      const img = document.createElement("img");
       iframeVideo.setAttribute(
         "srcdoc",
         `<style>
@@ -78,9 +80,18 @@ async function fetchJson() {
           }
         </style>
         <a href="https://www.youtube.com/embed/${i.ds_video}?autoplay=1">
-          <img src="https://img.youtube.com/vi/${i.ds_video}/maxresdefault.jpg" alt="${i.ds_video}" onerror="this.src='https://img.youtube.com/vi/${i.ds_video}/hqdefault.jpg'">
+          <img id="img_${i.ds_video}">
           <span>▶</span>
-        </a>`
+        </a>
+        <script>
+          const img = document.querySelector("#img_${i.ds_video}");
+          img.onload = function() {
+            if (img.naturalHeight === 90) {
+              img.src = "https://img.youtube.com/vi/${i.ds_video}/hqdefault.jpg";
+            }
+          }
+          img.src = "https://img.youtube.com/vi/${i.ds_video}/maxresdefault.jpg";
+        </script>`
       );
       iframeVideo.setAttribute(
         "src",
