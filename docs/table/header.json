@@ -129,6 +129,36 @@
           "f7380f420783ca1cd36894190a033cac",
           "d1ffc70f47c70cf24023ac32c943dcbc"
         ]
+      },
+      {
+        "name": "DARKSABUN: M-SPIN'S SELECTION",
+        "constraint": ["grade_mirror", "gauge_lr2", "ln"],
+        "trophy": [
+          { "name": "silvermedal", "missrate": 5.0, "scorerate": 70.0 },
+          { "name": "goldmedal", "missrate": 2.5, "scorerate": 85.0 }
+        ],
+        "md5": [
+          "631e87eb574fe0da464a7e019cc27dcf",
+          "2047088a10d934139485457f50f76916",
+          "3056fd12454f3bdd19e9e808d096e445",
+          "f35818c25c7484b48b94b8bb7e20edb6",
+          "c18ef090a234adebd4814e72f0259fb6"
+        ]
+      },
+      {
+        "name": "DARKSABUN: PARKSU'S SELECTION",
+        "constraint": ["grade_mirror", "gauge_lr2", "ln"],
+        "trophy": [
+          { "name": "silvermedal", "missrate": 5.0, "scorerate": 70.0 },
+          { "name": "goldmedal", "missrate": 2.5, "scorerate": 85.0 }
+        ],
+        "md5": [
+          "a62c7fe7ebe8d57a6abddd56b8ef9590",
+          "fddbed24c5c285c83685d2b9c7f3763a",
+          "79aef01c99f53cf42a8f8466aecdd803",
+          "552402ac2f47b423077f488504abb061",
+          "0accf0a451eda7adf2b6ac8242b4830d"
+        ]
       }
     ]
   ]
