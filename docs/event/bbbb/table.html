@@ -20,33 +20,6 @@
       href="https://cdn.datatables.net/v/bs5/dt-2.2.2/datatables.min.css"
       rel="stylesheet"
       crossorigin="anonymous" />
-    <style>
-      .button-container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-      .button-container .btn {
-        padding: 10px 20px;
-        font-size: 16px;
-        text-align: center;
-      }
-      .btn-download-all {
-        background-color: #307030; /* Green */
-        color: white;
-      }
-      .btn-download-round1 {
-        background-color: #1666bb; /* Blue */
-        color: white;
-      }
-      .btn-download-round2 {
-        background-color: #aa6600; /* Orange */
-        color: white;
-      }
-      .button-container .btn:hover {
-        opacity: 0.8;
-      }
-    </style>
   </head>
 
   <body class="sb-nav-fixed">
@@ -83,21 +56,26 @@
             </ol>
             <div class="card mb-4">
               <div class="card-body">
-                <div class="button-container">
-                  <a href="./sabun/bbbb_all_20250302.zip" class="btn btn-download-all">
-                    Download All Charts (2025.03.02)
-                  </a>
-                  <p>Download all the charts available for this event.</p>
-
-                  <a href="./sabun/bbbb_round1_20250216.zip" class="btn btn-download-round1">
-                    Download Round 1 Charts (2025.02.16)
-                  </a>
-                  <p>Get the charts for Round 1 from February 16, 2025.</p>
-
-                  <a href="./sabun/bbbb_round2_20250302.zip" class="btn btn-download-round2">
-                    Download Round 2 Charts (2025.03.02)
-                  </a>
-                  <p>Get the charts for Round 2 from February 16, 2025.</p>
+                <div class="mb-2">
+                  <a
+                    href="./sabun/bbbb_all_20250302.zip"
+                    class="btn btn-success btn-icon"
+                    >Download All Charts (2025.03.02)</a
+                  >
+                </div>
+                <div class="mb-2">
+                  <a
+                    href="./sabun/bbbb_round1_20250216.zip"
+                    class="btn btn-primary btn-icon"
+                    >Download Round 1 Charts (2025.03.02)</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="./sabun/bbbb_round2_20250302.zip"
+                    class="btn btn-warning btn-icon"
+                    >Download Round 2 Charts (2025.03.02)</a
+                  >
                 </div>
               </div>
             </div>
@@ -107,7 +85,9 @@
               </div>
               <div class="card-body">
                 <div class="table-responsive">
-                  <table id="tableDiff" class="table table-sm table-striped table-bordered table-hover text-gray-900 text-center m-auto"></table>
+                  <table
+                    id="tableDiff"
+                    class="table table-sm table-striped table-bordered table-hover text-gray-900 text-center m-auto"></table>
                 </div>
               </div>
             </div>
