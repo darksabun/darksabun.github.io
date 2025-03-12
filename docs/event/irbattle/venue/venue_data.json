@@ -24,7 +24,7 @@
     "ds_h2": "初級者IR（縦連打）",
     "ds_h4": "Ithaca Chasma - Tethys [連打Beginner]",
     "ds_video": "zCiLflPK5M8",
-    "url": "http://scytheleg.sakura.ne.jp/tempyou/bms/bms/Tethys.rar",
+    "url": "https://scytheleg.sakura.ne.jp/tempyou/bms/bms/Tethys.rar",
     "url_diff": "../sabun/A03_Tethys_parksu.zip",
     "nickname": "И",
     "comment": "I LUV LONG-JACKS!"
@@ -44,7 +44,7 @@
     "ds_h2": "初級者IR（スクラッチ）",
     "ds_h4": "sinumade_ - THz [皿W]",
     "ds_video": "j0QhJsB542s",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=190&event=133",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=190&event=133",
     "url_diff": "../sabun/A08_THz_w.zip",
     "nickname": "w",
     "comment": "Making a scratch sabun chart can be awkward. Most of the time, the pattern of the scratches are determined by the song itself, not the chart maker. Because of this, the scratch patterns usually can't be changed much from the default charts. Also, most of the time, the default charts for \"scratch\" songs are already quite fun to play, so there is little need to make a sabun.<br><br>This leaves us with a few options when making a scratch sabun:<br>1. Find a \"scratch\" song, with fun scratch rhythms, but the default charts are not well balanced or the notes do not flow well with the scratch rhythm. We can make a more balanced sabun chart.<br>2. Find a \"scratch\" song, where many of the \"scratch\" keysounds are not included in the chart.<br>3. Make a scratch sabun from a non-scratch song (using keysounds which are not normally used for scratch, like scratch snares, scratch piano etc)<br><br>I didn't want to do (3), so I tried to look for (1) or (2). I think THz belongs to category (2). THz [7k Another] already has plenty of scratch, and is also quite fun to play, but many of the scratch keysounds are not used in the chart. I wanted to try making a chart that makes use of most of these scratch keysounds.<br><br>I started by moving all of the scratch keysounds (vocals, scratch sounds etc) to the scratch lane. This is so that I don't miss any scratch keysounds later. When making the chart, I would move notes from the scratch lane back to the B lanes if the scratches are not appropriate.<br><br>When I start charting the notes, I quickly realized that while the song is great, the keysounding of this BMS is horrible. All of the labels 01-ZZ are used, and it seems like many of the keysounds were left uncut because they ran out of keysound labels. Also, it seems like all of the hat_###.ogg and snare2_###.ogg keysounds (N4~M2) are not present in the song folder, so there are a lot of silent keysounds in the song. I wonder if those keysounds were intentionally removed, or the artist forgot to include the keysounds in the download. There are also very few useable keysound objects for charting, so I tried to make tricky patterns with few notes.<br><br>I have a rule when using blank keysounds. I will only use blank keysounds to make chords larger. However, because all keysound labels (01-ZZ) are already used, it was difficult for me to use blank keysounds. After a bit of searching, I noticed keysound M9=snare2_000.ogg is not used anywhere in the chart. So I deleted the definition #WAVM9 snare2_000.ogg and used M9 for blank keysounds. This way, the chart passes the keysound misalignment check.<br><br>I still don't have a lot of experience when designing good scratch charts, but I have a few theories.<br>1. There should be breaks in the scratch patterns. If there are no breaks, it would be difficult to recover from a single BAD chain. It is also good to allow the player to \"reset\" their hand position on the turntable.<br>2. Scratch is difficult for timing, so I think having a few regular notes makes timing easier.<br>3. Memorizing scratch rhythms is common. It is important for the scratch rhythm to match the music well, so that the player can learn the rhythm easily.<br><br>To make the chart fun to play, in the gaps between scratch chains, I tried to use patterns that are played with both hands (LN or large chords). During scratch chains, I often use patterns that can be played with one hand. I think switching between 1-hand and 2-hand playstyles is fun.<br><br>Overall, it was a tricky chart to make, but I hope the final chart is fun.<br><br>I am not sure how to rate the difficulty of this chart. Probably somewhere between ★5 and ★8.<br><br>Time spent: ~1 week"
@@ -84,7 +84,7 @@
     "ds_h2": "初級者IR（DARKSABUN）",
     "ds_h4": "Ryo Ohnuki - WORLD END [The Show Must Go On]",
     "ds_video": "2X4QpdW-sTs",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=1&event=54",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=1&event=54",
     "url_diff": "../sabun/A13_WorldEnd_parksu.zip",
     "nickname": "И",
     "comment": "追加音源あり"
@@ -94,7 +94,7 @@
     "ds_h2": "初級者IR（バラエティ）",
     "ds_h4": "矢立肇 - God Morning -Another mix- [皿-LN-W]",
     "ds_video": "T8RyDNkRWe8",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=305&event=133",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=305&event=133",
     "url_diff": "../sabun/A15_GodMorning_w.zip",
     "nickname": "w",
     "comment": "Recommend MAX BPM FIX<br><br>The \"variety\" tag is quite straightforward to understand. It's what I like to do - have many different elements in my charts, like LN, scratch and jacks. I find that many of my recent charts would satisfy the \"Variety\" requirement.<br><br>God Morning - Jacks, Scratch, Soflan, LN<br>Gimme All The Cocaine - Scratch, Soflan, LN, Long Trill<br>THz - Jacks, Scratch, LN<br><br>Because my charts usually satisfy the \"variety\" requirement, it didn't feel like I really did anything special for this chart. It just feels like what I would normally do. I tried to add more LN and scratch than usual though. It has plenty of LN and scratch, but I don't know if it really has enough to qualify as an LN chart, or a 皿 chart. It's just... in the middle of everything, so I'm not really sure what this chart is for.<br><br>It seems like many BMS patterns focus only on chordstreams and chords (and sometimes jacks and zure). There is a tendency to remove \"unique\" patterns like LN and scratch when making a sabun from a default chart, which can make a song lose part of what makes it interesting. I think this charting meta creates a playerbase with unbalanced skillsets - strong at density, weak at everything else (scratch, LN, trills, soflan etc). I wish modern tables would contain more charts that are good for practicing varied skill sets.<br><br>I tried experimenting with some LN + scratch patterns in this song. They are quite tricky to make, because they have the potential to form unreachable patterns. My main trick is to keep LNs short, and try to put LNs between, not during scratches. I think the LNs give the effect of \"jumping\" your hand between the keys and the turntable.<br><br>Another idea I experiment with here is the \"low scroll speed BSS\" section. When playing a BSS note on a controller, the player only has one hand to play all seven keys. Most players are not good with playing complex patterns with only one hand. My experiment here is to make a 1-handed pattern, but at a low scroll speed (105bpm = 60% scroll) in measure #80-81. A slower scroll speed should give an inexperienced one-hand player more time to prepare.<br><br>One pattern I used twice in this chart is the \"fast scratch + trill\" burst pattern (measures #55, #97). I personally find this pattern fun and tricky to do, and previously used it in my S≠M [BUNNY EXTINCTION] chart. I think many people may not like this pattern though, because it is difficult to play. I like the pattern, so I decided to keep it.<br><br>This was the first chart I made for IR battle, but I wasn't satisfied with it, and just left it there to slowly make adjustments over the past four weeks.<br>Overall, I think this was an okay chart. I think I could have done better, because this is such a good, varied and interesting song."
@@ -134,7 +134,7 @@
     "ds_h2": "初級者IR（HARD判定）",
     "ds_h4": "EXCITECH - Hypertext Transfer Protocol -418-",
     "ds_video": "wj4GqZw1fJ0",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=353&event=83",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=353&event=83",
     "url_diff": "../sabun/A19_http_marie.zip",
     "nickname": "marie",
     "comment": "I wanted to make a fairly straight forward chart, yet still challenging in its own way.<br>The polyrhythms in this song lend themselves to hard judge very well I think!"
@@ -214,7 +214,7 @@
     "ds_h2": "中級者IR（高速乱打）",
     "ds_h4": "hard - EMOTIONAL POLARIZATION",
     "ds_video": "18vjb4j3qds",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=79&event=135",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=79&event=135",
     "url_diff": "../sabun/B05_emotinal_polarization_marquee.zip",
     "nickname": "marquee",
     "comment": "순수 지력계로 만들어 보았습니다."
@@ -244,7 +244,7 @@
     "ds_h2": "中級者IR（カーテン）",
     "ds_h4": "qfeileadh&レゾナンスもえこ - Psalms ～魂の還るばしょ～ 〈天使の階段〉",
     "ds_video": "QEVcAKgeUm8",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&event=133&num=128",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&event=133&num=128",
     "url_diff": "../sabun/B10_Psalms_1008.zip",
     "nickname": "1008",
     "comment": "もっとLN譜面を。"
@@ -274,7 +274,7 @@
     "ds_h2": "中級者IR（やさしいソフラン）",
     "ds_h4": "Futami - Gimme All The Cocaine [W]",
     "ds_video": "EQsRZMTq8Hc",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=40&event=131",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=40&event=131",
     "url_diff": "../sabun/B14_GimmeAllTheCocaine_w.zip",
     "nickname": "w",
     "comment": "Recommend MAX BPM FIX<br><br>Soflan is a strange thing. For example, this song (Gimme All The Cocaine) is 96-198bpm. The first half of the song is in 96bpm, and the second half is 198bpm. Reading at 0.5x scroll speed is very difficult, but this song becomes very easy if you gear change between the first and second halves of the song. Because there is no need to read at 0.5x scroll, it doesn't feel like a soflan song at all.<br><br>I think soflan patterns can be cool when the chart suddenly speeds up or slows down, like a rollercoaster. Soflan gives a lot of emphasis to intense or slow parts of the song, which can make the chart very exciting to watch and play. However, soflan is often annoying to the average player, because they may need to memorize gear changes to play the chart properly. Also, most soflan are 0.5x or 2.0x speed (like 100-200-400bpm), which can be quite difficult to read without a gear change.<br><br>The concept for the \"Gentle Soflan (やさしいソフラン)\" tag is to create a soflan chart that is easy for the average player to play, without needing to memorize gear changes. The two main ideas are:<br>- BPM changes are slight (not 0.5x or 2.0x), so the average player can still read the slow patterns without a gear change.<br>- The BPM changes often, so that gear changing is not a good strategy.<br>My objective is to create a soflan chart that is comfortable for first-time play.<br>Also, the player is encouraged to read slow notes, instead of using gear changes.<br><br>The final chart is 140~196bpm. I use a few different BPMs: 140,154,168,182,196, which are 10/14=71.4%, 11/14, 12/14, 13/14, 14/14=100% scroll speed respectively. I use a time signature trick to ensure the song stays the same: For example, if I want 11/14 scroll speed, I will set the BPM to 154, and set the time signature of the measure to 11/14=0.7857142857142857 by editing the bms in a text editor. I only change scroll speed at the start of the measure, because otherwise it would be too complicated.<br><br>I used a Python script to generate the \"BPM charging\" effect during the starting and ending BSS note.<br><br>I made most of the chart while streaming on Twitch. However, even though I had finished charting every part of the song at the end of the broadcast, it doesn't mean my chart is complete. Most of the time is spent on checking and test playing. I think it is important to repeatedly visually check the patterns by watching the autoplay and test play the chart, so I can make adjustments.<br><br>For example, I made plenty of adjustments to the chordstream sections of the chart offline. When I initially make the chordstream sections, I tend to arbitrarily place notes because it is faster to do. However, arbitrarily placed chordstreams tend to be uninteresting to play. Later on, what I like to do is to listen to the music and watch the chart over and over again, and try to adjust the patterns in the chordstream to more closely fit the flow of the music. For this chart, I added gaps, gachi and large chords in the streams to emphasize big sounds, and changed some of the streams to trills to emphasize the wobble bass. <br><br>I think the most obvious feature of this chart is the long trill. The long trill plays at 196bpm, but it displays 168bpm because it is moving at 85.7% scroll speed. This was something I made in the beginning. It was supposed to be a temporary pattern, because I know many people don't like long trills. But it turned out to be incredibly fun to play (for me).<br>After playing it lots of times, on different randoms, on both keyboard and controller, without FAST/SLOW on, I decided that it's not difficult at all...? Or do I just have a strange skill set?<br><br>I find that it's easy to position your hands to get ready for the trill, because the measure before the trill scrolls slowly at 140bpm (~71.4% scroll), so you have time to see which two buttons the trill is on and get ready. On controller, I usually use two hands to do the trill. But if the trill is on keys 2+4 (I'm P2), I will use my middle and index finger on one hand. On keyboard, I will use my index and middle finger on one hand to do the trill if I get 1+2 or 6+7 (I play SDF space L:\").<br><br>Other than the trill, I think this chart should be quite comfortable to play. Hopefully it is fun and exciting like a good soflan chart should be."
@@ -284,7 +284,7 @@
     "ds_h2": "中級者IR（総合力）",
     "ds_h4": "ETIA. feat. Jenga - On And On!!",
     "ds_video": "NyCVNn6zaMk",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=6&event=123",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=6&event=123",
     "url_diff": "../sabun/B16_on_and_on_marquee.zip",
     "nickname": "marquee",
     "comment": "난타, 동시치기, 짧은 연타, 스크래치 등 여러가지 요소가 담겨있습니다."
@@ -314,7 +314,7 @@
     "ds_h2": "中級者IR（HARD判定）",
     "ds_h4": "Qwesta - NO MERCY (CHUCHA_style_(∪^ω^)VERYFUCK(^ω^∪))",
     "ds_video": "KK6v8FehPjs",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=314&event=133\r\n",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=314&event=133\r\n",
     "url_diff": "../sabun/B19_nomercy_chucha.zip",
     "nickname": "チュチャムスメ",
     "comment": "ということでタイミングゲーにした～　（U^ω^）<br><br><br><br><br>ちなみに見れば分かるけどラストのアレって<br>明らかに意図的なんだろうね<br><br>同梱穴のアレを馬鹿にしただけだから・・・"
@@ -324,7 +324,7 @@
     "ds_h2": "中級者IR（VERYHARD判定）",
     "ds_h4": "COWBELL MASTER 心愛 -COCOA- - GET ON WiTH FUNKOT [SP 0% ITEM RUN]",
     "ds_video": "BMLEQddN4wY",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=80&event=133",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=80&event=133",
     "url_diff": "../sabun/B20_GOWF_nanami.zip",
     "nickname": "七海",
     "comment": "SPHARDとズレなし"
@@ -334,7 +334,7 @@
     "ds_h2": "中級者IR（高BPM）",
     "ds_h4": "立秋 feat.ちょこ - プナイプナイげんそう [IMMORTAL]",
     "ds_video": "54gyShd7mnc",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=249&event=127",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=249&event=127",
     "url_diff": "../sabun/B22_punaipunai_genso_nozomi.zip",
     "nickname": "nozomi",
     "comment": "노트수도 푸나이, 토탈치도 푸나이 (노트수도 2271, 토탈치도 271)"
@@ -434,7 +434,7 @@
     "ds_h2": "上級者IR（ディレイ）",
     "ds_h4": "Tetrajectory feat. Ctymax - Cipher : /2&//〈|0[/〉/w/&lt;/]",
     "ds_video": "K9zlaXbwKIk",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=297&event=123",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=297&event=123",
     "url_diff": "../sabun/C06_Cipher_tyrcs.zip",
     "nickname": "tyrcs",
     "comment": "No misalignment compared with cipher_7N.bms"
@@ -494,7 +494,7 @@
     "ds_h2": "上級者IR（ギミック）",
     "ds_h4": "牧野 - From Megalopolis with Love [Randomizer?]",
     "ds_video": "k-R1Qx5Qzkg",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=9&event=124",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=9&event=124",
     "url_diff": "../sabun/C12_From_Megalopolis_with_Love_parksu.zip",
     "nickname": "И",
     "comment": "追加音源あり"
@@ -534,7 +534,7 @@
     "ds_h2": "上級者IR（カオス）",
     "ds_h4": "kyou1110 + Takuya Namba - 7/8→6/8→7/8→6/8→7/8→6/8→17/16→... [オサレ]",
     "ds_video": "y_2sRW2AfHM",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=120&event=127",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=120&event=127",
     "url_diff": "../sabun/C17_kyou1110_TakuyaNamba_very_long_title_Mary_Sue.zip",
     "nickname": "Mary_Sue",
     "comment": "曲名長いな…"
@@ -544,7 +544,7 @@
     "ds_h2": "上級者IR（NORMAL判定）",
     "ds_h4": "Mer - sekilishuken -IR-",
     "ds_video": "VEaL9HsC5j0",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=210&event=74",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=210&event=74",
     "url_diff": "../sabun/C18_sekilishuken_LuvTek.zip",
     "nickname": "LuvTek",
     "comment": "밸런스가 안 맞는듯 맞는 패턴을 목표로 했습니다.<br>정확한 판정을 연습합시다."
@@ -583,7 +583,7 @@
     "ds_h2": "上級者IR（高BPM）",
     "ds_h4": "dj koishi - Hard Spice [Maryther]",
     "ds_video": "cuIiFlwgqrA",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=599&event=110",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=599&event=110",
     "url_diff": "../sabun/C22_Hard Spice_Mary_Sue.zip",
     "nickname": "Mary_Sue",
     "comment": "BGA GIRLS KAWAII"
@@ -653,7 +653,7 @@
     "ds_h2": "(^^)IR（連打複合）",
     "ds_h4": "BIG O - Negotiation Failure [sp Xpert:PRO]",
     "ds_video": "C2gnU76VAok",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=262&event=133",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=262&event=133",
     "url_diff": "../sabun/D02_NegotiationFailure_LuvTek.zip",
     "nickname": "LuvTek",
     "comment": "PRO is an abb. for Prototype"
@@ -713,7 +713,7 @@
     "ds_h2": "(^^)IR（スイング）",
     "ds_h4": "Namahamu - Midnight Graveyard",
     "ds_video": "H0lr2Ppv9m4",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=390&event=133",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=390&event=133",
     "url_diff": "../sabun/D09_MidnightGraveyard_LuvTek.zip",
     "nickname": "LuvTek",
     "comment": "플레이는 짧고 굵게"
@@ -733,7 +733,7 @@
     "ds_h2": "(^^)IR（DARKSABUN）",
     "ds_h4": "ねこみりん feat.小宮真央 - あい☆こんぷりーと [平凡な女の子の百番目の譜面]",
     "ds_video": "enzbnNBiZk8",
-    "url": "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=34&event=84",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=34&event=84",
     "url_diff": "../sabun/D13_AICOMPLETE_Mary_Sue.zip",
     "nickname": "Mary_Sue",
     "comment": "なんと百番目の譜面だよ！今までありがとうございました！これからもよろしくお願いします！"
