@@ -82,7 +82,7 @@ async function fetchProfileJson() {
 //     "ds_site_url": "Site URL",
 //     "ds_chart_title": "Chart Name",
 //     "ds_chart_video": "Chart Video",
-//     "ds_category": ["Light", "Middle", "Heavy", "Freestyle"], (Must ARRAY)
+//     "ds_category": ["Light", "Middle", "Heavy", "Freestyle"], (must ARRAY)
 //     "comment": "Write comment"
 //   }
 // ]
