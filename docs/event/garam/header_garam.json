@@ -1,0 +1,24 @@
+{
+  "name": "GARAM MASALA",
+  "symbol": "GM",
+  "data_url": "data.json",
+  "compat_prefix": "GM",
+  "course": [
+    [
+      {
+        "name": "GARAM MASALA",
+        "constraint": ["grade_random", "gauge_lr2", "ln"],
+        "trophy": [
+          { "name": "silvermedal", "missrate": 5.0, "scorerate": 70.0 },
+          { "name": "goldmedal", "missrate": 2.5, "scorerate": 85.0 }
+        ],
+        "md5": [
+          "6addc9ac246cc8c820cf9f3e75c704bd",
+          "e6ff3bb6217fc16e71e78ad82b128603",
+          "e2fbf25ad3d66421277f164f8d1a1d46",
+          "da4add6678aae946f4a21a71a2c2dea0"
+        ]
+      }
+    ]
+  ]
+}
