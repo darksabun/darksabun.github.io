@@ -28,7 +28,7 @@ jobs:
         run: |
           git config --local user.email "62116388+darksabun@users.noreply.github.com"
           git config --local user.name "GitHub Action"
-          git commit -m "Auto List Updated" -a
+          git commit -m "DARKSABUN | Automatically update the file list" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
