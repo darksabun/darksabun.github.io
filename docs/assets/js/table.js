@@ -201,7 +201,7 @@ const tableData = {
 const defaultColumns = [
   {
     title: "Level",
-    width: "5%",
+    width: "5.75%",
     data: "level",
     render: tableData.tableLevel,
   },
