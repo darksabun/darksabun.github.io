@@ -1,5 +1,6 @@
 // Difficulty Table List
 document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("changelog").value = "Loading...";
   DataTable.enum(["SP", "DP", "PMS", "EVENT", "etc"]);
   DataTable.enum([
     "General",
@@ -84,36 +85,35 @@ function makeTablelist() {
       if (data.state) row.classList.add(rowColor[data.state]);
     },
     initComplete: function () {
-      makeLastUpdate(table);
+      makeChangelog(table);
       makeFilter(table);
     },
   });
 }
 
-function makeLastUpdate(table) {
+function makeChangelog(table) {
   const data = table.ajax.json();
-  const lastUpdateTableDate = data
-    .filter(function (diffTable) {
-      return !!diffTable.date;
+  const changelogData = data
+    .filter(function (song) {
+      return !!song.date;
     })
     .sort(function (a, b) {
       const aDate = new Date(a.date);
       const bDate = new Date(b.date);
       return aDate < bDate ? 1 : aDate > bDate ? -1 : 0;
     })
-    .slice(0, 1)
-    .map(function (diffTable) {
-      const date_ = new Date(diffTable.date);
+    .map(function (song) {
+      const date_ = new Date(song.date);
       const dateStr =
         date_.getFullYear() +
         "." +
-        String(date_.getMonth() + 1).padStart(2, "0") +
+        ("0" + (date_.getMonth() + 1)).slice(-2) +
         "." +
-        String(date_.getDate()).padStart(2, "0");
-      return dateStr;
-    });
-  document.getElementById("update").textContent =
-    "Last Update : " + lastUpdateTableDate;
+        ("0" + date_.getDate()).slice(-2);
+      return "(" + dateStr + ")" + " Table Added: " + song.name;
+    })
+    .join("\n");
+  document.getElementById("changelog").value = changelogData;
 }
 
 function makeFilter(table) {

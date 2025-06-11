@@ -98,8 +98,36 @@
                   To use this Table List, enter the URL above into the Playlist
                   → Table List URI in the BeMusicSeeker's setting.
                 </div>
-                <br />
-                <p id="update">Last Update : Loading...</p>
+              </div>
+            </div>
+            <div class="accordion mb-4" id="accordionChangelog">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingChangelog">
+                  <button
+                    class="bg-transparent text-reset accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseChangelog"
+                    aria-expanded="false"
+                    aria-controls="collapseChangelog">
+                    Changelog
+                  </button>
+                </h2>
+                <div
+                  id="collapseChangelog"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingChangelog"
+                  data-bs-parent="#accordionChangelog">
+                  <div class="accordion-body">
+                    <textarea
+                      class="rounded col-12 p-2"
+                      name="changelog"
+                      id="changelog"
+                      style="height: 25vh"
+                      readonly>
+                    </textarea>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="card mb-4">
