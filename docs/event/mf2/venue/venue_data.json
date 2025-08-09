@@ -62,5 +62,85 @@
     "ds_video": "Pd2Ko_gLeWw",
     "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=132&event=137",
     "url_diff": "../sabun/KVEYKVA_mumei.zip"
+  },
+  {
+    "ds_anchor": "mf2_2_heart",
+    "ds_h2": "♥",
+    "ds_h4": "MM (feat. shishishiena) - HIGHRISE [Goodbye, SATELLITE]",
+    "ds_video": "qw9n4vvsEhU",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=445&event=142",
+    "url_diff": "../sabun/highrise_9829.zip"
+  },
+  {
+    "ds_anchor": "mf2_2_sister",
+    "ds_h2": "妹&",
+    "ds_h4": "海秋 - 星の海に照らされて [175-…-190]",
+    "ds_video": "X1emLClhkTc",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=27&event=101",
+    "url_diff": "../sabun/starsea_imouto.zip"
+  },
+  {
+    "ds_anchor": "mf2_2_kaiden",
+    "ds_h2": "迷宮兄弟",
+    "ds_h4": "椿. - Myosotis [sylvatica]",
+    "ds_video": "l3OOWs_NYxo",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=200&event=142",
+    "url_diff": "../sabun/Myosotis_meikyuu.zip"
+  },
+  {
+    "ds_anchor": "mf2_2_czg",
+    "ds_h2": "Ctrl+Z Generation",
+    "ds_h4": "Zris - Tiny Leda [TailSeeker]",
+    "ds_video": "wHSXHT_dsD0",
+    "url": "https://starkey.ivory.ne.jp/bjcup/anotherbjc3/detail/view/2/",
+    "url_diff": "../sabun/TinyLeda_ctrlZgen.zip"
+  },
+  {
+    "ds_anchor": "mf2_2_czg_2",
+    "ds_h2": "Ctrl+Z Generation",
+    "ds_h4": "Team ε - E3 bga [Squad ζ]",
+    "ds_video": "XjqSAt79ysM",
+    "url": "https://web.archive.org/web/20020819025557/http://www.sasebo.ac.jp/~e9816/mp_E3BGAIN.exe",
+    "url_diff": "../sabun/E3_ctrlZgen.zip"
+  },
+  {
+    "ds_anchor": "mf2_2_nacho",
+    "ds_h2": "nanahira&choco",
+    "ds_h4": "kanoryo - Fractal(i)xis [Cute Cute HOLOMORPHIC DYNAMICS]",
+    "ds_video": "SilQtYZwdR8",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=80&event=142",
+    "url_diff": "../sabun/Fractalixis_nanahiraChoco.zip"
+  },
+  {
+    "ds_anchor": "mf2_2_section",
+    "ds_h2": "SECTION",
+    "ds_h4": "RearDawn remixed by LU - Backpacker(remix) [/]",
+    "ds_video": "q-Gv-By-0Iw",
+    "url": "https://docs.google.com/uc?export=download&id=1CM1RNI6Ufoiq5BKXT6tSyufegCmECobD",
+    "url_diff": "../sabun/_Backpackerremix_SECTION.zip"
+  },
+  {
+    "ds_anchor": "mf2_2_blank",
+    "ds_h2": "チーム名は空欄にできません。",
+    "ds_h4": "Orange Vox+ ft.AKA - reveL [7 Ex]",
+    "ds_video": "wHhr9wz-vnY",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=158&event=140",
+    "url_diff": "../sabun/revel_mumei.zip"
+  },
+  {
+    "ds_anchor": "mf2_2_special",
+    "ds_h2": "Arvion",
+    "ds_h4": "IKALRE - nenuphar [nympheas]",
+    "ds_video": "UllnsZhPZDc",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=319&event=146",
+    "url_diff": "../sabun/nenuphar_Arvion.zip"
+  },
+  {
+    "ds_anchor": "mf2_2_special_2",
+    "ds_h2": "Arvion",
+    "ds_h4": "paraoka/yusuke - center piercing [3C 273]",
+    "ds_video": "qb5ME4UCVwo",
+    "url": "http://necoco.2-d.jp/bof2011/cp.zip",
+    "url_diff": "../sabun/centerpiercing_Arvion.zip"
   }
 ]
