@@ -110,7 +110,11 @@ function makeChangelog(table) {
         String(date_.getMonth() + 1).padStart(2, "0") +
         "." +
         String(date_.getDate()).padStart(2, "0");
-      return "(" + dateStr + ")" + " Table Added: " + song.name;
+      if (song.comment != "") {
+        return "(" + dateStr + ") Update: " + song.comment + ": " + song.name;
+      } else {
+        return "(" + dateStr + ")" + " Table Added: " + song.name;
+      }
     })
     .join("\n");
   document.getElementById("changelog").value = changelogData;
