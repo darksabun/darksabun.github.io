@@ -97,21 +97,18 @@
     "ds_chart_video": "https://youtu.be/RnStUUO8VYQ",
     "comment": "こんにちは"
   },
-  {
-    "ds_nickname": "Triforce",
-    "ds_site_url": "https://trfce.github.io/",
-    "ds_chart_title": "ナツイノ [涼風]",
-    "ds_chart_video": "https://youtu.be/4fe0e0dezWI",
-    "ds_category": [
-      "차분 제작자가 누구인지 최소한의 힌트로 바라보는 건 어떨까? 라는 생각으로 투고했습니다. 투고 받아주셔서 감사합니다!"
-    ],
-    "comment": "원래는 참가자 제의가 왔었는데 거절했고, 이후에 술먹다가 투고만 받아주냐고 연락을 드려서 진행되었습니다.<br />1999-2025 BMS 이벤트 별 압축파일 환영합니다. 제발 환영합니다."
-  },
-  {
+    {
     "ds_nickname": "2RLZ",
     "ds_site_url": "https://2rlz.darksabun.club/",
     "ds_chart_title": "Inspiration and Expiration [Dyspnea]",
     "ds_chart_video": "https://youtu.be/oF57Wt-4IX4",
     "comment": "何卒よろしくお願い致します。"
+  },
+  {
+    "ds_nickname": "Triforce",
+    "ds_site_url": "https://trfce.github.io/",
+    "ds_chart_title": "ナツイノ [涼風]",
+    "ds_chart_video": "https://youtu.be/4fe0e0dezWI",
+    "comment": "1999-2025 BMS 이벤트 별 압축파일 환영합니다. 제발 환영합니다."
   }
 ]
