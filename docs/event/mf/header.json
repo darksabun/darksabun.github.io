@@ -1,6 +1,6 @@
 {
   "name": "Mutual Fumen",
-  "symbol": "MF",
+  "symbol": "MF ",
   "data_url": "data.json",
-  "compat_prefix": "MF"
+  "compat_prefix": "MF "
 }
