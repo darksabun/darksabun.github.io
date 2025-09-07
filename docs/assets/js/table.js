@@ -79,7 +79,7 @@ function makeBMSTable() {
         selectContainer.appendChild(select);
 
         document
-          .querySelector("#tableDiff_wrapper > div:nth-child(1) > .me-auto")
+          .querySelector("#tableDiff_wrapper > div > .dt-layout-start")
           .prepend(selectContainer);
 
         column
