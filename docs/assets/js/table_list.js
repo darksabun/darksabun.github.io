@@ -111,7 +111,7 @@ function makeChangelog(table) {
         "." +
         String(date_.getDate()).padStart(2, "0");
       if (song.comment != "") {
-        return "(" + dateStr + ") Update: " + song.comment + ": " + song.name;
+        return "(" + dateStr + ") " + song.comment + ": " + song.name;
       } else {
         return "(" + dateStr + ")" + " Table Added: " + song.name;
       }
