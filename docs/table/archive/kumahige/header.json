@@ -1,0 +1,21 @@
+{
+  "name": "Kumahige",
+  "symbol": "Ku",
+  "level_order": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "data_url": "data.json",
+  "original_url": "http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=mypage&playerid=8990",
+  "last_update": "2020.12.31"
+}
