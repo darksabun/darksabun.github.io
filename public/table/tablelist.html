@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Table List - DARKSABUN</title>
+    <script src="/assets/js/dark_mode.js"></script>
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <link href="/assets/css/table.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous" />
+    <link
+      href="https://cdn.datatables.net/v/bs5/dt-2.3.3/datatables.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous" />
+  </head>
+
+  <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <a class="navbar-brand ps-3" href="/">DARKSABUN</a>
+      <button
+        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+        id="sidebarToggle"
+        href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div id="layoutSidenav">
+      <!-- Nav bar -->
+      <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+          <div
+            class="sb-sidenav-menu"
+            data-include-html="/assets/components/navbar.html"></div>
+        </nav>
+      </div>
+      <!-- Main Contents -->
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid px-4">
+            <h1 class="mt-4">Table List</h1>
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item">
+                <a href="/">Home</a>
+              </li>
+              <li class="breadcrumb-item">Tables</li>
+              <li class="breadcrumb-item active">Table List</li>
+            </ol>
+            <div class="card mb-4">
+              <div class="card-body">
+                <div class="mt-2 mb-2">
+                  <form
+                    style="-webkit-overflow-scrolling: touch; overflow-x: auto"
+                    id="bmseekerurl">
+                    <input
+                      size="40"
+                      id="bmsurl"
+                      type="text"
+                      value="https://script.google.com/macros/s/AKfycbzaQbcI9UZDcDlSHHl2NHilhmePrNrwxRdOFkmIXsfnbfksKKmAB3V65WZ8jPWU-7E/exec?table=tablelist"
+                      readonly />
+                    <button
+                      class="btn btn-secondary btn-icon m-2"
+                      id="urlbtn"
+                      type="button"
+                      style="font-size: 0.75em"
+                      data-clipboard-target="#bmsurl">
+                      Copy URL
+                    </button>
+                  </form>
+                </div>
+                <div class="lang-ko lang-en text-secret">
+                  <p>
+                    <img
+                      src="/images/how-to-use.jpg"
+                      class="img-fluid rounded" />
+                  </p>
+                </div>
+                <div class="lang-ja text-secret">
+                  <p>
+                    <img
+                      src="/images/how-to-use-jp.jpg"
+                      class="img-fluid rounded" />
+                  </p>
+                </div>
+                <div class="lang-ko text-secret">
+                  BeMusicSeeker의 설정에서 Playlist → Table List URI에 위 URL을
+                  적용하면 사용할 수 있습니다.
+                </div>
+                <div class="lang-ja text-secret">
+                  BeMusicSeekerの「プレイリスト→難易度表リスト取得URI」に上記URLを適用すると使用できます。
+                </div>
+                <div class="lang-en text-secret">
+                  To use this Table List, enter the URL above into the Playlist
+                  → Table List URI in the BeMusicSeeker's setting.
+                </div>
+              </div>
+            </div>
+            <div class="accordion mb-4" id="accordionChangelog">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingChangelog">
+                  <button
+                    class="bg-transparent text-reset accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseChangelog"
+                    aria-expanded="false"
+                    aria-controls="collapseChangelog">
+                    Changelog
+                  </button>
+                </h2>
+                <div
+                  id="collapseChangelog"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingChangelog"
+                  data-bs-parent="#accordionChangelog">
+                  <div class="accordion-body">
+                    <textarea
+                      class="rounded col-12 p-2"
+                      name="changelog"
+                      id="changelog"
+                      style="height: 25vh"
+                      readonly>
+                    </textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-header" id="smallTableTitle">
+                <i class="fas fa-table me-2"></i>Loading...
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    id="tableDiff"
+                    class="table table-sm table-striped table-bordered table-hover text-gray-900 text-center m-auto"></table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="py-4 bg-light-subtle mt-auto">
+          <div class="container-fluid px-4">
+            <div
+              class="d-flex align-items-center justify-content-between small">
+              <div class="text-muted">DARKSABUN</div>
+              <div>Source: <a href="https://bms.hexlataia.xyz">Hex bms</a></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-rc.1/jquery.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.datatables.net/v/bs5/dt-2.3.3/datatables.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.datatables.net/plug-ins/2.3.3/sorting/enum.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"
+      crossorigin="anonymous"></script>
+    <script src="/assets/js/multi_lang.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/include_html.js"></script>
+    <script src="/assets/js/table_list.js"></script>
+  </body>
+</html>

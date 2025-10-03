@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>LR2IR Battle | Overjoy Ranking - DARKSABUN</title>
+    <script src="/assets/js/dark_mode.js"></script>
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <link href="/assets/css/table.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous" />
+    <link
+      href="https://cdn.datatables.net/v/bs5/dt-2.3.3/datatables.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous" />
+    <style>
+      /* for Battle Table column fix */
+      table {
+        margin: 0 auto;
+        width: 100%;
+        clear: both;
+        border-collapse: collapse;
+        table-layout: fixed;
+        white-space: nowrap;
+      }
+      table.dataTable thead th {
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+
+  <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <a class="navbar-brand ps-3" href="/">DARKSABUN</a
+      ><button
+        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+        id="sidebarToggle"
+        href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div id="layoutSidenav">
+      <!-- Nav bar -->
+      <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+          <div
+            class="sb-sidenav-menu"
+            data-include-html="/assets/components/navbar.html"></div>
+        </nav>
+      </div>
+      <!-- Main Contents -->
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid px-4">
+            <h1 class="mt-4">LR2IR Battle<br />(Overjoy Ranking)</h1>
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item"><a href="/event/">Events</a></li>
+              <li class="breadcrumb-item">
+                <a href="/event/irbattle/">LR2IR Battle</a>
+              </li>
+              <li class="breadcrumb-item active">Ranking</li>
+            </ol>
+            <div class="card mb-4">
+              <div class="card-header">
+                <i class="fas fa-globe me-1"></i>
+                Language
+              </div>
+              <div class="card-body">
+                <div class="btn-group">
+                  <div
+                    class="btn btn-dark btn-icon"
+                    onclick="tableLanguageChange('ko')">
+                    한국어
+                  </div>
+                  <div
+                    class="btn btn-dark btn-icon"
+                    onclick="tableLanguageChange('en')">
+                    English
+                  </div>
+                  <div
+                    class="btn btn-dark btn-icon"
+                    onclick="tableLanguageChange('ja')">
+                    日本語
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-header">
+                <i class="fas fa-table me-2"></i>Ranking
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    id="tableDiff"
+                    class="table table-striped table-bordered table-hover text-gray-900 m-auto"></table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer
+          class="py-4 bg-light-subtle mt-auto"
+          data-include-html="/assets/components/footer_general_venue.html"></footer>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-rc.1/jquery.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.datatables.net/v/bs5/dt-2.3.3/datatables.min.js"
+      crossorigin="anonymous"></script>
+    <script src="/assets/js/multi_lang.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="../js/battle_table.js"></script>
+    <script src="/assets/js/include_html.js"></script>
+    <script>
+      const tableOrder = [20, "desc"];
+      const KOcolumns = [
+        {
+          className: "details-control text-center",
+          title: "플레이어",
+          data: "player",
+          render: tableData.tablePlayer,
+        },
+        {
+          title:
+            "주최<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=a4c20fb7342ec43979c0ebe2570bd4ae' target='_blank'>IR</a>)",
+          data: "point64",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "잡연타<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=4d2f1368b083ae1e89c5ac3edb129a22' target='_blank'>IR</a>)",
+          data: "point65",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "연타복합<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=9b290c783b59c02b87881b97421cc483' target='_blank'>IR</a>)",
+          data: "point66",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "가치오시<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=61222261a5d38c9c7be2858267aa511f' target='_blank'>IR</a>)",
+          data: "point67",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "고속난타<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=4e8dc025f0bd31e7cbf4a24960fb7246' target='_blank'>IR</a>)",
+          data: "point68",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "딜레이<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=98b01841c1e260f1372d4611e51d32ab' target='_blank'>IR</a>)",
+          data: "point69",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "엇갈림<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=b0a835229571aa183ab9ced90b717d4b' target='_blank'>IR</a>)",
+          data: "point70",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "스크래치<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=f622ab7c7671ee30d0a156f342bff515' target='_blank'>IR</a>)",
+          data: "point71",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "스윙 리듬<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=1fdc7462ecad0480506e0a64cc4db0b9' target='_blank'>IR</a>)",
+          data: "point72",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "2키<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=8bcf334429d82640e0acdf8f096a65c1' target='_blank'>IR</a>)",
+          data: "point73",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "DARKSABUN<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=b7ca8613d4b77fff2b9e0f3e8a11320c' target='_blank'>IR</a>)",
+          data: "point74",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "버라이어티<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=5b7fecfaf9f28ccb7d0046cfb6e85841' target='_blank'>IR</a>)",
+          data: "point75",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "종합력<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=d5c60aeba954cc183d817265f3faaf0d' target='_blank'>IR</a>)",
+          data: "point76",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "카오스<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=d024d59c319957e08e6a992e6b84d925' target='_blank'>IR</a>)",
+          data: "point77",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "NORMAL판정<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=9d7929c8b92169acdbbea3a6f1b7d5f8' target='_blank'>IR</a>)",
+          data: "point78",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "HARD판정<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=0be8d5ff297374afdd03c6fe0b3ad930' target='_blank'>IR</a>)",
+          data: "point79",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "장척<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=063916ee4e1c2647715df4f72eba2172' target='_blank'>IR</a>)",
+          data: "point80",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "초장척<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=da8206a8aefae82c360e7e07ea969e8a' target='_blank'>IR</a>)",
+          data: "point81",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "키음 어레인지<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=94b7577cbb11b9205653b694ff8012e9' target='_blank'>IR</a>)",
+          data: "point82",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title: "합계<br>(오버조이)",
+          data: "totalD",
+          type: "natural",
+          className: "text-center",
+        },
+      ];
+
+      const ENcolumns = [
+        {
+          className: "details-control text-center",
+          title: "Player",
+          data: "player",
+          render: tableData.tablePlayer,
+        },
+        {
+          title:
+            "Organizer's charts<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=a4c20fb7342ec43979c0ebe2570bd4ae' target='_blank'>IR</a>)",
+          data: "point64",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "mini-jacks<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=4d2f1368b083ae1e89c5ac3edb129a22' target='_blank'>IR</a>)",
+          data: "point65",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "meso-jacks<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=9b290c783b59c02b87881b97421cc483' target='_blank'>IR</a>)",
+          data: "point66",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "Gachi<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=61222261a5d38c9c7be2858267aa511f' target='_blank'>IR</a>)",
+          data: "point67",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "High-Speed Stream<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=4e8dc025f0bd31e7cbf4a24960fb7246' target='_blank'>IR</a>)",
+          data: "point68",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "Delay<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=98b01841c1e260f1372d4611e51d32ab' target='_blank'>IR</a>)",
+          data: "point69",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "Zure<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=b0a835229571aa183ab9ced90b717d4b' target='_blank'>IR</a>)",
+          data: "point70",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "Scratch<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=f622ab7c7671ee30d0a156f342bff515' target='_blank'>IR</a>)",
+          data: "point71",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "Swing<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=1fdc7462ecad0480506e0a64cc4db0b9' target='_blank'>IR</a>)",
+          data: "point72",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "2Keys<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=8bcf334429d82640e0acdf8f096a65c1' target='_blank'>IR</a>)",
+          data: "point73",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "DARKSABUN<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=b7ca8613d4b77fff2b9e0f3e8a11320c' target='_blank'>IR</a>)",
+          data: "point74",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "Variety<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=5b7fecfaf9f28ccb7d0046cfb6e85841' target='_blank'>IR</a>)",
+          data: "point75",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "Comprehensive<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=d5c60aeba954cc183d817265f3faaf0d' target='_blank'>IR</a>)",
+          data: "point76",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "Chaos<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=d024d59c319957e08e6a992e6b84d925' target='_blank'>IR</a>)",
+          data: "point77",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "NORMAL Judge<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=9d7929c8b92169acdbbea3a6f1b7d5f8' target='_blank'>IR</a>)",
+          data: "point78",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "HARD Judge<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=0be8d5ff297374afdd03c6fe0b3ad930' target='_blank'>IR</a>)",
+          data: "point79",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "Long Distance<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=063916ee4e1c2647715df4f72eba2172' target='_blank'>IR</a>)",
+          data: "point80",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "Super Long Distance<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=da8206a8aefae82c360e7e07ea969e8a' target='_blank'>IR</a>)",
+          data: "point81",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "keysound rearrange<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=94b7577cbb11b9205653b694ff8012e9' target='_blank'>IR</a>)",
+          data: "point82",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title: "Total<br>(Overjoy）",
+          data: "totalD",
+          type: "natural",
+          className: "text-center",
+        },
+      ];
+
+      const JAcolumns = [
+        {
+          className: "details-control text-center",
+          title: "プレイヤー",
+          data: "player",
+          render: tableData.tablePlayer,
+        },
+        {
+          title:
+            "主催<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=a4c20fb7342ec43979c0ebe2570bd4ae' target='_blank'>IR</a>)",
+          data: "point64",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "微連打<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=4d2f1368b083ae1e89c5ac3edb129a22' target='_blank'>IR</a>)",
+          data: "point65",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "連打複合<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=9b290c783b59c02b87881b97421cc483' target='_blank'>IR</a>)",
+          data: "point66",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "ガチ押し<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=61222261a5d38c9c7be2858267aa511f' target='_blank'>IR</a>)",
+          data: "point67",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "高速乱打<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=4e8dc025f0bd31e7cbf4a24960fb7246' target='_blank'>IR</a>)",
+          data: "point68",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "ディレイ<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=98b01841c1e260f1372d4611e51d32ab' target='_blank'>IR</a>)",
+          data: "point69",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "ズレ<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=b0a835229571aa183ab9ced90b717d4b' target='_blank'>IR</a>)",
+          data: "point70",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "スクラッチ<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=f622ab7c7671ee30d0a156f342bff515' target='_blank'>IR</a>)",
+          data: "point71",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            " スイング<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=1fdc7462ecad0480506e0a64cc4db0b9' target='_blank'>IR</a>)",
+          data: "point72",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "2鍵<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=8bcf334429d82640e0acdf8f096a65c1' target='_blank'>IR</a>)",
+          data: "point73",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "DARKSABUN<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=b7ca8613d4b77fff2b9e0f3e8a11320c' target='_blank'>IR</a>)",
+          data: "point74",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "バラエティ<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=5b7fecfaf9f28ccb7d0046cfb6e85841' target='_blank'>IR</a>)",
+          data: "point75",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "総合力<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=d5c60aeba954cc183d817265f3faaf0d' target='_blank'>IR</a>)",
+          data: "point76",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "カオス<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=d024d59c319957e08e6a992e6b84d925' target='_blank'>IR</a>)",
+          data: "point77",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "NORMAL判定<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=9d7929c8b92169acdbbea3a6f1b7d5f8' target='_blank'>IR</a>)",
+          data: "point78",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "HARD判定<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=0be8d5ff297374afdd03c6fe0b3ad930' target='_blank'>IR</a>)",
+          data: "point79",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "長尺<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=063916ee4e1c2647715df4f72eba2172' target='_blank'>IR</a>)",
+          data: "point80",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "超長尺<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=da8206a8aefae82c360e7e07ea969e8a' target='_blank'>IR</a>)",
+          data: "point81",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title:
+            "キー音アレンジ<br>(<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=94b7577cbb11b9205653b694ff8012e9' target='_blank'>IR</a>)",
+          data: "point82",
+          type: "natural",
+          className: "bg-light-subtle text-center",
+        },
+        {
+          title: "合計<br>(^^)",
+          data: "totalD",
+          type: "natural",
+          className: "text-center",
+        },
+      ];
+    </script>
+  </body>
+</html>

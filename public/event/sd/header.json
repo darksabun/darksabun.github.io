@@ -1,0 +1,7 @@
+{
+  "name": "SABUN in the DARK",
+  "symbol": "SiD ",
+  "level_order": ["Black", "Gray", "Sand"],
+  "enum_level_order": ["Black", "Gray", "Sand"],
+  "data_url": "data.json"
+}
