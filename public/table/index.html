@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="bmstable" content="header.json" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>27,934B-JOY - DARKSABUN</title>
+    <script src="/assets/js/dark_mode.js"></script>
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <link href="/assets/css/table.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous" />
+    <link
+      href="https://cdn.datatables.net/v/bs5/dt-2.3.3/datatables.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous" />
+  </head>
+
+  <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <a class="navbar-brand ps-3" href="/">DARKSABUN</a
+      ><button
+        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+        id="sidebarToggle"
+        href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div id="layoutSidenav">
+      <!-- Nav bar -->
+      <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+          <div
+            class="sb-sidenav-menu"
+            data-include-html="/assets/components/navbar.html"></div>
+        </nav>
+      </div>
+      <!-- Main Contents -->
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid px-4">
+            <h1 class="mt-4">27,934B-JOY</h1>
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item">Tables</li>
+              <li class="breadcrumb-item active">27,934B-JOY</li>
+            </ol>
+            <div class="card mb-4">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    class="scale-frame table table-sm text-gray-900 fw-bold table-striped">
+                    <colgroup>
+                      <col style="width: 125px" />
+                      <col style="width: 150px" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th colspan="2">難易度換算表</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>B-7</td>
+                        <td>EASY</td>
+                      </tr>
+                      <tr>
+                        <td>B-6</td>
+                        <td>☆1~12</td>
+                      </tr>
+                      <tr>
+                        <td>B-5</td>
+                        <td>★0~4</td>
+                      </tr>
+                      <tr>
+                        <td>B-4</td>
+                        <td>★5~8</td>
+                      </tr>
+                      <tr>
+                        <td>B-3</td>
+                        <td>★9~12</td>
+                      </tr>
+                      <tr>
+                        <td>B-2</td>
+                        <td>★13~16</td>
+                      </tr>
+                      <tr>
+                        <td>B-1</td>
+                        <td>★17~20</td>
+                      </tr>
+                      <tr>
+                        <td>B0</td>
+                        <td>個人差</td>
+                      </tr>
+                      <tr>
+                        <td>B1~3</td>
+                        <td>st1~3</td>
+                      </tr>
+                      <tr>
+                        <td>B4-~4+</td>
+                        <td>st4~6</td>
+                      </tr>
+                      <tr>
+                        <td>B5-~5+</td>
+                        <td>st7~9</td>
+                      </tr>
+                      <tr>
+                        <td>B6</td>
+                        <td>st10~11</td>
+                      </tr>
+                      <tr>
+                        <td>B7</td>
+                        <td>???</td>
+                      </tr>
+                      <tr>
+                        <td>BDP0</td>
+                        <td>~DP★10</td>
+                      </tr>
+                      <tr>
+                        <td>BDP1</td>
+                        <td>DP★11~DP★12</td>
+                      </tr>
+                      <tr>
+                        <td>BDP2</td>
+                        <td>DP★13~DP★14</td>
+                      </tr>
+                      <tr>
+                        <td>BDP3</td>
+                        <td>DP★15~</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p id="update">Last Update : Loading...</p>
+                <p>
+                  <a class="btn btn-dark btn-icon" href="./course_DARKSABUN.zip"
+                    >Download Course (2025.02.10)</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-header">
+                <i class="fas fa-table me-2"></i>27,934B-JOY
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    id="tableDiff"
+                    class="table table-sm table-striped table-bordered table-hover text-gray-900 text-center m-auto"></table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer
+          class="py-4 bg-light-subtle mt-auto"
+          data-include-html="/assets/components/footer.html"></footer>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-rc.1/jquery.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.datatables.net/v/bs5/dt-2.3.3/datatables.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.datatables.net/plug-ins/2.3.3/sorting/enum.min.js"
+      crossorigin="anonymous"></script>
+    <script src="/assets/js/multi_lang.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/include_html.js"></script>
+    <script src="/assets/js/table.js"></script>
+    <script>
+      const makeLastUpdate = function () {
+        // Add Last Update
+        const data = new DataTable("#tableDiff").ajax.json();
+        const lastUpdateTableDate = data
+          .filter(function (diffTable) {
+            return !!diffTable.date;
+          })
+          .sort(function (a, b) {
+            const aDate = new Date(a.date);
+            const bDate = new Date(b.date);
+            return aDate < bDate ? 1 : aDate > bDate ? -1 : 0;
+          })
+          .slice(0, 1)
+          .map(function (diffTable) {
+            return formatDateString(diffTable.date);
+          });
+        document.getElementById("update").textContent =
+          "Last Update : " + lastUpdateTableDate;
+      };
+    </script>
+  </body>
+</html>

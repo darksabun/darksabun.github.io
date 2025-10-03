@@ -1,0 +1,821 @@
+[
+  {
+    "ds_anchor": "A00",
+    "ds_h2": "初級者IR（主催）",
+    "ds_h4": "Yosk! - Cosmic in the Mist",
+    "ds_video": "HqGLErXTGcM",
+    "url": "https://yosk.ojaru.jp/bmsyosk2.html#106",
+    "url_diff": "../sabun/A00_CosmicInTheMist_parksu.zip",
+    "nickname": "И",
+    "comment": "普通の乱打？"
+  },
+  {
+    "ds_anchor": "A01",
+    "ds_h2": "初級者IR（微連打）",
+    "ds_h4": "-45 - 44river [ABNORMAL]",
+    "ds_video": "uROmyiktRa0",
+    "url": "https://onedrive.live.com/?cid=FC95A680740CA8C9&id=FC95A680740CA8C9%21292&parId=FC95A680740CA8C9%21111",
+    "url_diff": "../sabun/A01_44river_nozomi.zip",
+    "nickname": "nozomi",
+    "comment": "제 데뷔 차분인 The Phantom of Sanctuary (ABNORMAL)과 유사한 방식으로 짰고, 이곡도 중간마다 연타 따닥이가 있습니다."
+  },
+  {
+    "ds_anchor": "A03",
+    "ds_h2": "初級者IR（縦連打）",
+    "ds_h4": "Ithaca Chasma - Tethys [連打Beginner]",
+    "ds_video": "zCiLflPK5M8",
+    "url": "https://scytheleg.sakura.ne.jp/tempyou/bms/bms/Tethys.rar",
+    "url_diff": "../sabun/A03_Tethys_parksu.zip",
+    "nickname": "И",
+    "comment": "I LUV LONG-JACKS!"
+  },
+  {
+    "ds_anchor": "A04",
+    "ds_h2": "初級者IR（ガチ押し）",
+    "ds_h4": "RearDawn - Feel Mixture [IR]",
+    "ds_video": "0QlGKMEkSbk",
+    "url": "https://docs.google.com/spreadsheets/d/1lO2z7KVYyMpE-SjFwEEtvCwQhadl9Kgoqge_j2wsUPI/edit#gid=0",
+    "url_diff": "../sabun/A04_feel_mixture_marquee.zip",
+    "nickname": "marquee",
+    "comment": "느린 끊어치기를 만들어 보았습니다. ★2 夜明けの少女たち [Another+]랑 비슷한 느낌입니다."
+  },
+  {
+    "ds_anchor": "A08",
+    "ds_h2": "初級者IR（スクラッチ）",
+    "ds_h4": "sinumade_ - THz [皿W]",
+    "ds_video": "j0QhJsB542s",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=190&event=133",
+    "url_diff": "../sabun/A08_THz_w.zip",
+    "nickname": "w",
+    "comment": "Making a scratch sabun chart can be awkward. Most of the time, the pattern of the scratches are determined by the song itself, not the chart maker. Because of this, the scratch patterns usually can't be changed much from the default charts. Also, most of the time, the default charts for \"scratch\" songs are already quite fun to play, so there is little need to make a sabun.<br><br>This leaves us with a few options when making a scratch sabun:<br>1. Find a \"scratch\" song, with fun scratch rhythms, but the default charts are not well balanced or the notes do not flow well with the scratch rhythm. We can make a more balanced sabun chart.<br>2. Find a \"scratch\" song, where many of the \"scratch\" keysounds are not included in the chart.<br>3. Make a scratch sabun from a non-scratch song (using keysounds which are not normally used for scratch, like scratch snares, scratch piano etc)<br><br>I didn't want to do (3), so I tried to look for (1) or (2). I think THz belongs to category (2). THz [7k Another] already has plenty of scratch, and is also quite fun to play, but many of the scratch keysounds are not used in the chart. I wanted to try making a chart that makes use of most of these scratch keysounds.<br><br>I started by moving all of the scratch keysounds (vocals, scratch sounds etc) to the scratch lane. This is so that I don't miss any scratch keysounds later. When making the chart, I would move notes from the scratch lane back to the B lanes if the scratches are not appropriate.<br><br>When I start charting the notes, I quickly realized that while the song is great, the keysounding of this BMS is horrible. All of the labels 01-ZZ are used, and it seems like many of the keysounds were left uncut because they ran out of keysound labels. Also, it seems like all of the hat_###.ogg and snare2_###.ogg keysounds (N4~M2) are not present in the song folder, so there are a lot of silent keysounds in the song. I wonder if those keysounds were intentionally removed, or the artist forgot to include the keysounds in the download. There are also very few useable keysound objects for charting, so I tried to make tricky patterns with few notes.<br><br>I have a rule when using blank keysounds. I will only use blank keysounds to make chords larger. However, because all keysound labels (01-ZZ) are already used, it was difficult for me to use blank keysounds. After a bit of searching, I noticed keysound M9=snare2_000.ogg is not used anywhere in the chart. So I deleted the definition #WAVM9 snare2_000.ogg and used M9 for blank keysounds. This way, the chart passes the keysound misalignment check.<br><br>I still don't have a lot of experience when designing good scratch charts, but I have a few theories.<br>1. There should be breaks in the scratch patterns. If there are no breaks, it would be difficult to recover from a single BAD chain. It is also good to allow the player to \"reset\" their hand position on the turntable.<br>2. Scratch is difficult for timing, so I think having a few regular notes makes timing easier.<br>3. Memorizing scratch rhythms is common. It is important for the scratch rhythm to match the music well, so that the player can learn the rhythm easily.<br><br>To make the chart fun to play, in the gaps between scratch chains, I tried to use patterns that are played with both hands (LN or large chords). During scratch chains, I often use patterns that can be played with one hand. I think switching between 1-hand and 2-hand playstyles is fun.<br><br>Overall, it was a tricky chart to make, but I hope the final chart is fun.<br><br>I am not sure how to rate the difficulty of this chart. Probably somewhere between ★5 and ★8.<br><br>Time spent: ~1 week"
+  },
+  {
+    "ds_anchor": "A10",
+    "ds_h2": "初級者IR（カーテン）",
+    "ds_h4": "Rai - Fire eyes -IR-",
+    "ds_video": "lyQwWK5V-0E",
+    "url": "https://drive.google.com/file/d/1uqFhiYDHC58VyucZP-OjQKsBoW2z4ego/view?usp=sharing",
+    "url_diff": "../sabun/A10_Fire_eyes_sera.zip",
+    "nickname": "sera",
+    "comment": "A somewhat straightforward curtain chart with strong hand bias. Cruel for BM. Beware the scratches!"
+  },
+  {
+    "ds_anchor": "A11",
+    "ds_h2": "初級者IR（2鍵）",
+    "ds_h4": "sctl - Legend of Eastern Rabbit -SKY DEFENDER- [2KEYS]",
+    "ds_video": "evhnBtc-rLU",
+    "url": "https://drive.usercontent.google.com/download?id=1bsdN0dFwsVfHxNxsBstCEUG7QozHXlkk&export=download",
+    "url_diff": "../sabun/A11_LegendOfEasternRabbit_w.zip",
+    "nickname": "w",
+    "comment": "The 2KEYS tag was inspired by 甘でラッシュ！ by U咲 in BOFU2016. This entry had the standard N/H/A charts, plus a [2KEYS] chart. I played the 2KEYS chart out of curiosity, and it turned out to be the most fun default chart for the song. <br><br>Setting constraints fosters creativity. I've always wanted to try this for myself, to see whether I could make an interesting chart using only two keys. After all, 甘でラッシュ！ could do it, Muse Dash could do it. I think 2KEYS charts are fun because the player can focus their index fingers to jack the two keys (it is easier to enjoy jacks when there is no worry about other lanes). I found that my most stable stance is to join my index and middle fingers to press the button together.<br><br>It seems like the most suitable songs for 2KEYS charts are songs that are relatively fast, and have complex/varied rhythms. The Legend of Eastern Rabbit is one of my favorite songs from PABAT!2020. It's fast, exciting, has crazy rhythms, and I absolutely love the BGA. It is extremely fun to listen to and play. I was excited when this song was introduced to Muse Dash, but they used a cut version of the song which removed many of the exciting parts. I think the BMS version is much better.<br><br>I think the fast rhythms in the background (from the oriental string instrument I can't identify) could make for some very fun jacks. I was considering making a sabun for it, but DK made one (★7) before I could. The chart was fun, though it didn't have as many jacks as I hoped.<br><br>With 2KEYS, the patterns I have to work with are basically jacks, trills and LNs. Most of the difficulty will have to come from jacks, which is perfect for this song. Oriental string instrument = jacks, fast guitar = trills, long guitar = LNs.<br><br>With two lanes, I have two options to make patterns:<br>1. Use both lanes to represent one instrument<br>2. Put a different instrument on each lane<br>The chart is tricky to make because I can only represent one or two instruments at a time. More instrumentally complex sections will have to be simplified, by choosing which instrument I want to focus on.<br>If I want to make a trill (e.g. fast guitar), I have to use both lanes for this one instrument. If I am making jacks, I can use one instrument on each lane. So jacks are much easier to make than trills.<br><br>I think using Long Notes is good for emphasising the more prominent guitar sounds. However, using a long note means I only have one lane left for the other instrument. I can do LN+jack, but I don't have enough lanes for LN+trill, so it is difficult to chart patterns which are long guitar + fast guitar.<br><br>One more thing I did was include jacks in my trills to make the trills more interesting (e.g. 17117111771 instead of 17171717171). I listened to each of the fast guitar riffs individually, figure out how I could mix in jacks into the pattern. For example, in a melody, a note can have a higher or lower pitch than the previous. If we decrease in pitch twice in a row, I might make it a jack. If it switches from decreasing to increasing, I switch to the other lane.<br><br>Hopefully I have made a chart that is fun to play and represents the music well.<br><br>Time spent: ~1-2 weeks"
+  },
+  {
+    "ds_anchor": "A12",
+    "ds_h2": "初級者IR（ギミック）",
+    "ds_h4": "Se-U-Ra - Traveler ~stand aloof~ -the absolute-",
+    "ds_video": "OxsAHbHNcFw",
+    "url": "https://venue.bmssearch.net/bmsshuin2/29",
+    "url_diff": "../sabun/A12_Traveler_1008.zip",
+    "nickname": "1008",
+    "comment": "いつもよりは地力寄りのギミック譜面です。より良いクリアランプを狙ってほしさの点数式です。<br>そこそこ覚える要素が多いので回数をこなしましょう。回数を稼ぐことは悪いことではないですぞ。"
+  },
+  {
+    "ds_anchor": "A13",
+    "ds_h2": "初級者IR（DARKSABUN）",
+    "ds_h4": "Ryo Ohnuki - WORLD END [The Show Must Go On]",
+    "ds_video": "2X4QpdW-sTs",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=1&event=54",
+    "url_diff": "../sabun/A13_WorldEnd_parksu.zip",
+    "nickname": "И",
+    "comment": "追加音源あり"
+  },
+  {
+    "ds_anchor": "A15",
+    "ds_h2": "初級者IR（バラエティ）",
+    "ds_h4": "矢立肇 - God Morning -Another mix- [皿-LN-W]",
+    "ds_video": "T8RyDNkRWe8",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=305&event=133",
+    "url_diff": "../sabun/A15_GodMorning_w.zip",
+    "nickname": "w",
+    "comment": "Recommend MAX BPM FIX<br><br>The \"variety\" tag is quite straightforward to understand. It's what I like to do - have many different elements in my charts, like LN, scratch and jacks. I find that many of my recent charts would satisfy the \"Variety\" requirement.<br><br>God Morning - Jacks, Scratch, Soflan, LN<br>Gimme All The Cocaine - Scratch, Soflan, LN, Long Trill<br>THz - Jacks, Scratch, LN<br><br>Because my charts usually satisfy the \"variety\" requirement, it didn't feel like I really did anything special for this chart. It just feels like what I would normally do. I tried to add more LN and scratch than usual though. It has plenty of LN and scratch, but I don't know if it really has enough to qualify as an LN chart, or a 皿 chart. It's just... in the middle of everything, so I'm not really sure what this chart is for.<br><br>It seems like many BMS patterns focus only on chordstreams and chords (and sometimes jacks and zure). There is a tendency to remove \"unique\" patterns like LN and scratch when making a sabun from a default chart, which can make a song lose part of what makes it interesting. I think this charting meta creates a playerbase with unbalanced skillsets - strong at density, weak at everything else (scratch, LN, trills, soflan etc). I wish modern tables would contain more charts that are good for practicing varied skill sets.<br><br>I tried experimenting with some LN + scratch patterns in this song. They are quite tricky to make, because they have the potential to form unreachable patterns. My main trick is to keep LNs short, and try to put LNs between, not during scratches. I think the LNs give the effect of \"jumping\" your hand between the keys and the turntable.<br><br>Another idea I experiment with here is the \"low scroll speed BSS\" section. When playing a BSS note on a controller, the player only has one hand to play all seven keys. Most players are not good with playing complex patterns with only one hand. My experiment here is to make a 1-handed pattern, but at a low scroll speed (105bpm = 60% scroll) in measure #80-81. A slower scroll speed should give an inexperienced one-hand player more time to prepare.<br><br>One pattern I used twice in this chart is the \"fast scratch + trill\" burst pattern (measures #55, #97). I personally find this pattern fun and tricky to do, and previously used it in my S≠M [BUNNY EXTINCTION] chart. I think many people may not like this pattern though, because it is difficult to play. I like the pattern, so I decided to keep it.<br><br>This was the first chart I made for IR battle, but I wasn't satisfied with it, and just left it there to slowly make adjustments over the past four weeks.<br>Overall, I think this was an okay chart. I think I could have done better, because this is such a good, varied and interesting song."
+  },
+  {
+    "ds_anchor": "A16",
+    "ds_h2": "初級者IR（総合力）",
+    "ds_h4": "careless - ENTER VISION [IR]",
+    "ds_video": "em3JEz6xToA",
+    "url": "https://web.archive.org/web/20030609231459/http://careless.hp.infoseek.co.jp:80/e_vision.rar",
+    "url_diff": "../sabun/A16_enterVision_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "난타, 연타, 트릴, 고속계단의 종합력 차분입니다.<br>초급자를 위한 차분인지는 잘 모르겠습니다."
+  },
+  {
+    "ds_anchor": "A17",
+    "ds_h2": "初級者IR（カオス）",
+    "ds_h4": "amorphinism - C r o n u s [ ]",
+    "ds_video": "aDFJAGj0RlU",
+    "url": "https://drive.google.com/file/d/1FqNqBVR4hcYyYPw0F8JtOCF7EiCRd_Qa/view?usp=sharing",
+    "url_diff": "../sabun/A17_Cronus_sera.zip",
+    "nickname": "sera",
+    "comment": "Let'S KF!<br>Hard clear is MUCH harder, but normal is reasonable(?)"
+  },
+  {
+    "ds_anchor": "A18",
+    "ds_h2": "初級者IR（NORMAL判定）",
+    "ds_h4": "梅干茶漬け - 「ほしのおうじさま」 [A18] ",
+    "ds_video": "JJrvjvLFB24",
+    "url": "https://dl.dropboxusercontent.com/scl/fi/2vpo9ygwba06imimg3n78/hoshi_no_oujisama_ogg.zip?rlkey=gjf4qvfb3qaj2yn9dpp5n455k",
+    "url_diff": "../sabun/A18_hoshi_triforce.zip",
+    "nickname": "Triforce",
+    "comment": "연타 1라인에 다른 노트가 섞여나오는 까다로운 패턴을 NORMAL판정으로 얼마나 잘 처리할 수 있는지 확인할 수 있습니다. 순간발광적인 요소가 강해, BP의 카운트가 높게 들어갑니다."
+  },
+  {
+    "ds_anchor": "A19",
+    "ds_h2": "初級者IR（HARD判定）",
+    "ds_h4": "EXCITECH - Hypertext Transfer Protocol -418-",
+    "ds_video": "wj4GqZw1fJ0",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=353&event=83",
+    "url_diff": "../sabun/A19_http_marie.zip",
+    "nickname": "marie",
+    "comment": "I wanted to make a fairly straight forward chart, yet still challenging in its own way.<br>The polyrhythms in this song lend themselves to hard judge very well I think!"
+  },
+  {
+    "ds_anchor": "A20",
+    "ds_h2": "初級者IR（VERYHARD判定）",
+    "ds_h4": "crNEET.ahg - Childhood (オサレ)",
+    "ds_video": "Ks2aBs0DiE0",
+    "url": "https://web.archive.org/web/20140409113519/http://www.geocities.jp/yuzuru0024/BMS/ori02.zip",
+    "url_diff": "../sabun/A20_Childhood_Mary_Sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "TOTALが高いのでVERYHARD判定の差分としては入門レベルかなぁ"
+  },
+  {
+    "ds_anchor": "A21",
+    "ds_h2": "初級者IR（低BPM）",
+    "ds_h4": "scytheleg - Sphagnum squarrosum [IR]",
+    "ds_video": "BRpzTliu4Ws",
+    "url": "http://scytheleg.sakura.ne.jp/tempyou/bms/bms/stl_pmc-ss.rar",
+    "url_diff": "../sabun/A21_Sphagnum squarrosum_onzonium.zip",
+    "nickname": "onzonium",
+    "comment": "ANOTHER基準で作らなくてよかったと思ってる"
+  },
+  {
+    "ds_anchor": "A23",
+    "ds_h2": "初級者IR（長尺）",
+    "ds_h4": "NAGI - larua [malicious]",
+    "ds_video": "KApkmXj-JqU",
+    "url": "https://drive.google.com/file/d/1uEvZtfypbEbeMnhQjxYyUCrCT_Wtd7Ie/view?usp=sharing",
+    "url_diff": "../sabun/A23_larua_sera.zip",
+    "nickname": "sera",
+    "comment": "Combo is all you need.<br>Patterning is focused on melody and percussion renda is scattered around. Hopefully this one is actually not difficult...<br><br>Thanks for LuvTek for suggesting this song."
+  },
+  {
+    "ds_anchor": "A24",
+    "ds_h2": "初級者IR（超長尺）",
+    "ds_h4": "P.E. - Grid World (Full-Length)",
+    "ds_video": "m92vHg8OjxM",
+    "url": "https://drive.google.com/file/d/16mo8K6LzlxE8WOStr44rCjdtNqVvnvZG/view?usp=sharing",
+    "url_diff": "../sabun/A24_Grid_World_1008.zip",
+    "nickname": "1008",
+    "comment": "フル尺はこちら(<a href='https://www.nicovideo.jp/watch/sm14724683'>https://www.nicovideo.jp/watch/sm14724683</a>)を参考に作りました。<br>そもそも差分もほとんど無い曲ですが、差分が作られることを願って、あえて、フル尺で作ってみました。<br>同梱譜面からコンボカッター満載なので、マックスコンボ勝負な譜面にしてみました。<br><br>0notes譜面も同梱しています。使いたい方はご自由にお使いください。"
+  },
+  {
+    "ds_anchor": "B00",
+    "ds_h2": "中級者IR（主催）",
+    "ds_h4": "POM - Angel(IR Battle edition)",
+    "ds_video": "27MgKJxZtqI",
+    "url": "https://mega.nz/folder/sZMTGZqZ#YZH2Xy6jBMMNl3MvQ_pp-A/file/YU0kGRqT",
+    "url_diff": "../sabun/B00_Angel_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "IR Battle Edition이지만 키음을 자른 것 외에 변화는 없습니다.<br>뒤로 갈수록 어려워지는 구성이라 밸런스는 나쁠 수 있지만, 곡 특성상 어쩔 수 없었습니다(?)<br>원래는 자체 어레인지 버전을 만들었지만 밸런스가 더 나빠서 공개를 보류했습니다."
+  },
+  {
+    "ds_anchor": "B01",
+    "ds_h2": "中級者IR（微連打）",
+    "ds_h4": "qurter - summer festival [snowflakes]",
+    "ds_video": "e8MNE9Nu-uU",
+    "url": "https://web.archive.org/web/20040630162229/http://www.ismusic.ne.jp/qurter/sound/summer%20festival.rar",
+    "url_diff": "../sabun/B01_summerFestival_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "Recommended for 微連打入門<br>잡연타 입문 느낌으로 만든 패턴입니다.<br>제가 준비한 summer festival인 이 이벤트를 모두들 즐겨주셨으면 합니다."
+  },
+  {
+    "ds_anchor": "B04",
+    "ds_h2": "中級者IR（ガチ押し）",
+    "ds_h4": "【躾】ますたー & MilkT - 変人店～あの町にチェーンを広げよ～ -IR-",
+    "ds_video": "MV-TRJ6RGd0",
+    "url": "https://drive.usercontent.google.com/uc?id=1gyNMSlnd24qfc2-nRn879wOUnI8eiCyg&export=download",
+    "url_diff": "../sabun/B04_henjin_marie.zip",
+    "nickname": "marie",
+    "comment": "The less BP you have the less ex score matters, but 100% ex score will always give you 100 points so try to optimise both!<br><br>This was pretty tricky to chart as I'm always unsure about how to do low level gachi."
+  },
+  {
+    "ds_anchor": "B05",
+    "ds_h2": "中級者IR（高速乱打）",
+    "ds_h4": "hard - EMOTIONAL POLARIZATION",
+    "ds_video": "18vjb4j3qds",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=79&event=135",
+    "url_diff": "../sabun/B05_emotinal_polarization_marquee.zip",
+    "nickname": "marquee",
+    "comment": "순수 지력계로 만들어 보았습니다."
+  },
+  {
+    "ds_anchor": "B07",
+    "ds_h2": "中級者IR（ズレ）",
+    "ds_h4": "Lapis Lazul - 踊り子,飛行機のプロペラ,海 -IR-",
+    "ds_video": "gFqofPJSWEk",
+    "url": "https://web.archive.org/web/20041204023702/http://www.rinku.zaq.ne.jp/makky/pro.zip",
+    "url_diff": "../sabun/B07_DancerPropellerSea_nanami.zip",
+    "nickname": "七海",
+    "comment": "1ms以下のズレがありますが、問題はなし"
+  },
+  {
+    "ds_anchor": "B08",
+    "ds_h2": "中級者IR（スクラッチ）",
+    "ds_h4": "czardas - assemblage -IR-",
+    "ds_video": "kvza3hm6eig",
+    "url": "https://drive.google.com/file/d/1SxIwnsL4jI4XrwuezsJwr5m0poG5XJQy/view?usp=sharing",
+    "url_diff": "../sabun/B08_assemblage_hex.zip",
+    "nickname": "hex",
+    "comment": "正規譜面で皿を回しやすい配置にしているので、正規（ミラー）推奨です。<br>おまけで不可視ノーツをすべて可視化したバージョンも同梱しています。<br>物足りない方はプレイしてみてください。"
+  },
+  {
+    "ds_anchor": "B10",
+    "ds_h2": "中級者IR（カーテン）",
+    "ds_h4": "qfeileadh&レゾナンスもえこ - Psalms ～魂の還るばしょ～ 〈天使の階段〉",
+    "ds_video": "QEVcAKgeUm8",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&event=133&num=128",
+    "url_diff": "../sabun/B10_Psalms_1008.zip",
+    "nickname": "1008",
+    "comment": "もっとLN譜面を。"
+  },
+  {
+    "ds_anchor": "B11",
+    "ds_h2": "中級者IR（2鍵）",
+    "ds_h4": "Cyclone Area (CYA) - Joking Media (1P 2KEYS)",
+    "ds_video": "aIJu66IKp68",
+    "url": "https://web.archive.org/web/20030223034539/http://cyclonearea.uhome.net:80/download/bms/media.exe",
+    "url_diff": "../sabun/B11_JokingMedia_parksu.zip",
+    "nickname": "И",
+    "comment": "Just Kidding~"
+  },
+  {
+    "ds_anchor": "B13",
+    "ds_h2": "中級者IR（DARKSABUN）",
+    "ds_h4": "Yosk! - Little Snowizard -IR-",
+    "ds_video": "DXUN-NNa0X4",
+    "url": "https://yosk.ojaru.jp/bmsyosk2.html#105",
+    "url_diff": "../sabun/B13_Little_Snowizard_parksu.zip",
+    "nickname": "И",
+    "comment": "元々はスイングでした…"
+  },
+  {
+    "ds_anchor": "B14",
+    "ds_h2": "中級者IR（やさしいソフラン）",
+    "ds_h4": "Futami - Gimme All The Cocaine [W]",
+    "ds_video": "EQsRZMTq8Hc",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=40&event=131",
+    "url_diff": "../sabun/B14_GimmeAllTheCocaine_w.zip",
+    "nickname": "w",
+    "comment": "Recommend MAX BPM FIX<br><br>Soflan is a strange thing. For example, this song (Gimme All The Cocaine) is 96-198bpm. The first half of the song is in 96bpm, and the second half is 198bpm. Reading at 0.5x scroll speed is very difficult, but this song becomes very easy if you gear change between the first and second halves of the song. Because there is no need to read at 0.5x scroll, it doesn't feel like a soflan song at all.<br><br>I think soflan patterns can be cool when the chart suddenly speeds up or slows down, like a rollercoaster. Soflan gives a lot of emphasis to intense or slow parts of the song, which can make the chart very exciting to watch and play. However, soflan is often annoying to the average player, because they may need to memorize gear changes to play the chart properly. Also, most soflan are 0.5x or 2.0x speed (like 100-200-400bpm), which can be quite difficult to read without a gear change.<br><br>The concept for the \"Gentle Soflan (やさしいソフラン)\" tag is to create a soflan chart that is easy for the average player to play, without needing to memorize gear changes. The two main ideas are:<br>- BPM changes are slight (not 0.5x or 2.0x), so the average player can still read the slow patterns without a gear change.<br>- The BPM changes often, so that gear changing is not a good strategy.<br>My objective is to create a soflan chart that is comfortable for first-time play.<br>Also, the player is encouraged to read slow notes, instead of using gear changes.<br><br>The final chart is 140~196bpm. I use a few different BPMs: 140,154,168,182,196, which are 10/14=71.4%, 11/14, 12/14, 13/14, 14/14=100% scroll speed respectively. I use a time signature trick to ensure the song stays the same: For example, if I want 11/14 scroll speed, I will set the BPM to 154, and set the time signature of the measure to 11/14=0.7857142857142857 by editing the bms in a text editor. I only change scroll speed at the start of the measure, because otherwise it would be too complicated.<br><br>I used a Python script to generate the \"BPM charging\" effect during the starting and ending BSS note.<br><br>I made most of the chart while streaming on Twitch. However, even though I had finished charting every part of the song at the end of the broadcast, it doesn't mean my chart is complete. Most of the time is spent on checking and test playing. I think it is important to repeatedly visually check the patterns by watching the autoplay and test play the chart, so I can make adjustments.<br><br>For example, I made plenty of adjustments to the chordstream sections of the chart offline. When I initially make the chordstream sections, I tend to arbitrarily place notes because it is faster to do. However, arbitrarily placed chordstreams tend to be uninteresting to play. Later on, what I like to do is to listen to the music and watch the chart over and over again, and try to adjust the patterns in the chordstream to more closely fit the flow of the music. For this chart, I added gaps, gachi and large chords in the streams to emphasize big sounds, and changed some of the streams to trills to emphasize the wobble bass. <br><br>I think the most obvious feature of this chart is the long trill. The long trill plays at 196bpm, but it displays 168bpm because it is moving at 85.7% scroll speed. This was something I made in the beginning. It was supposed to be a temporary pattern, because I know many people don't like long trills. But it turned out to be incredibly fun to play (for me).<br>After playing it lots of times, on different randoms, on both keyboard and controller, without FAST/SLOW on, I decided that it's not difficult at all...? Or do I just have a strange skill set?<br><br>I find that it's easy to position your hands to get ready for the trill, because the measure before the trill scrolls slowly at 140bpm (~71.4% scroll), so you have time to see which two buttons the trill is on and get ready. On controller, I usually use two hands to do the trill. But if the trill is on keys 2+4 (I'm P2), I will use my middle and index finger on one hand. On keyboard, I will use my index and middle finger on one hand to do the trill if I get 1+2 or 6+7 (I play SDF space L:\").<br><br>Other than the trill, I think this chart should be quite comfortable to play. Hopefully it is fun and exciting like a good soflan chart should be."
+  },
+  {
+    "ds_anchor": "B16",
+    "ds_h2": "中級者IR（総合力）",
+    "ds_h4": "ETIA. feat. Jenga - On And On!!",
+    "ds_video": "NyCVNn6zaMk",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=6&event=123",
+    "url_diff": "../sabun/B16_on_and_on_marquee.zip",
+    "nickname": "marquee",
+    "comment": "난타, 동시치기, 짧은 연타, 스크래치 등 여러가지 요소가 담겨있습니다."
+  },
+  {
+    "ds_anchor": "B17",
+    "ds_h2": "中級者IR（カオス）",
+    "ds_h4": "猫蟹丸 - 5.1.1(ReMix)[Improper Reinterpretation]",
+    "ds_video": "okfgEbax55k",
+    "url": "https://web.archive.org/web/20070107082819/http://yoshinoya.dnsalias.com:8888/knm/2005_511.lzh",
+    "url_diff": "../sabun/B17_511Remix_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "과거에 만들었던 5키 차분을 재해석한 것으로, Genocide Reinterpretation에 제출하려 했던 패턴입니다.<br>원래는 카오스 태그를 제안하면서, 카오스 태그의 최상급자 차분을 제작하려 했으나, 중급자로 변경해 IR Battle에 제출하게 되었습니다."
+  },
+  {
+    "ds_anchor": "B18",
+    "ds_h2": "中級者IR（NORMAL判定）",
+    "ds_h4": "X JAPONICA - Spirit of glasses [MONOCLE]",
+    "ds_video": "V4Tj_jG5md4",
+    "url": "http://iimode-do.jp/obj/m/m06_sog.rar",
+    "url_diff": "../sabun/B18_Spirit of glasses_onzonium.zip",
+    "nickname": "onzonium",
+    "comment": "モノクルも眼鏡の一種(片眼鏡)"
+  },
+  {
+    "ds_anchor": "B19",
+    "ds_h2": "中級者IR（HARD判定）",
+    "ds_h4": "Qwesta - NO MERCY (CHUCHA_style_(∪^ω^)VERYFUCK(^ω^∪))",
+    "ds_video": "KK6v8FehPjs",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=314&event=133\r\n",
+    "url_diff": "../sabun/B19_nomercy_chucha.zip",
+    "nickname": "チュチャムスメ",
+    "comment": "ということでタイミングゲーにした～　（U^ω^）<br><br><br><br><br>ちなみに見れば分かるけどラストのアレって<br>明らかに意図的なんだろうね<br><br>同梱穴のアレを馬鹿にしただけだから・・・"
+  },
+  {
+    "ds_anchor": "B20",
+    "ds_h2": "中級者IR（VERYHARD判定）",
+    "ds_h4": "COWBELL MASTER 心愛 -COCOA- - GET ON WiTH FUNKOT [SP 0% ITEM RUN]",
+    "ds_video": "BMLEQddN4wY",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=80&event=133",
+    "url_diff": "../sabun/B20_GOWF_nanami.zip",
+    "nickname": "七海",
+    "comment": "SPHARDとズレなし"
+  },
+  {
+    "ds_anchor": "B22",
+    "ds_h2": "中級者IR（高BPM）",
+    "ds_h4": "立秋 feat.ちょこ - プナイプナイげんそう [IMMORTAL]",
+    "ds_video": "54gyShd7mnc",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=249&event=127",
+    "url_diff": "../sabun/B22_punaipunai_genso_nozomi.zip",
+    "nickname": "nozomi",
+    "comment": "노트수도 푸나이, 토탈치도 푸나이 (노트수도 2271, 토탈치도 271)"
+  },
+  {
+    "ds_anchor": "B23",
+    "ds_h2": "中級者IR（長尺）",
+    "ds_h4": "しらいし - Painful Act [IR]",
+    "ds_video": "emzFsHQ3aWA",
+    "url": "https://drive.google.com/file/d/19kbArEiaoif_YKlIXCaQUxGbzYWk1qPl/view?usp=sharing",
+    "url_diff": "../sabun/B23_Painful Act_onzonium.zip",
+    "nickname": "onzonium",
+    "comment": "曲が格好良くて惚れた"
+  },
+  {
+    "ds_anchor": "B24",
+    "ds_h2": "中級者IR（超長尺）",
+    "ds_h4": "KeN & Eu-ta - ENDLESS RAIN [Endless Torture]",
+    "ds_video": "t-ZZVlLoUxc",
+    "url": "https://web.archive.org/web/20010826190237/http://www.ab.aeonnet.ne.jp:80/~ken-x/bms/ENDLESS-RAIN_FULL.exe",
+    "url_diff": "../sabun/B24_EndlessRain_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "익명 아닌 익명 투고"
+  },
+  {
+    "ds_anchor": "B26",
+    "ds_h2": "中級者IR（Battle）",
+    "ds_h4": "RUHoo - Piano Battle [Let's Battle!]",
+    "ds_video": "OJze7O4KPL4",
+    "url": "https://mega.nz/file/QfwzgABZ#MJ3z2RcCKlcQIOihargB195MZwZy90j5FuJsCRwgAXw",
+    "url_diff": "../sabun/B26_Piano_Battle_parksu.zip",
+    "nickname": "И",
+    "comment": "<a href='https://www.youtube.com/watch?v=G-FdX1D5hVg'>JUST WATCH</a>"
+  },
+  {
+    "ds_anchor": "C00",
+    "ds_h2": "上級者IR（主催）",
+    "ds_h4": "S.C.X - T/U ～chemical beats Selection MIX～ [Chemical Engineering]",
+    "ds_video": "qrOpfObjJc0",
+    "url": "https://web.archive.org/web/20040327210651/http://in-bpms.hp.infoseek.co.jp/Bmse/TU.lzh",
+    "url_diff": "../sabun/C00_TU_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "화학공학 전공을 학부 4년동안 이수했지만, 정작 무얼 배웠는지는 모르겠습니다."
+  },
+  {
+    "ds_anchor": "C01",
+    "ds_h2": "上級者IR（微連打）",
+    "ds_h4": "maxXx65535 - Crystal Wind [IR]",
+    "ds_video": "HquqhTS9CnM",
+    "url": "https://onedrive.live.com/?id=26D9698EC1CEC044%21212&cid=26D9698EC1CEC044",
+    "url_diff": "../sabun/C01_CrystalWind_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "★14의 Crystal Wind [UV]를 보고, UV 말고 IR도 있으면 어떨까 해서 만들었습니다.<br>처음에는 키음을 거의 다 사용해서 ★24 상급의 패턴이 나왔지만, 난이도의 인플레이션을 우려해 누구나 즐길 수 있을 정도로 약화했습니다.<br>광자 하나의 에너지는 UV가 IR보다 크지만, 어찌하다 보니 UV보다 더 어려운 IR이 되었습니다."
+  },
+  {
+    "ds_anchor": "C02",
+    "ds_h2": "上級者IR（連打複合）",
+    "ds_h4": "天音 - その斯くも美しき紅に -IR-",
+    "ds_video": "mqC93j0I8jk",
+    "url": "https://web.archive.org/web/20120507144453/http://youzyo.net/bms/ama03_kakumo.zip",
+    "url_diff": "../sabun/C02_kourou_qtp13.zip",
+    "nickname": "qtp13",
+    "comment": "It was shone on in the skies... that...<br>beautiful bright scarlet moon,<br>and one girl kept seeing the fate of the eternity and<br>this world that was able to be said.<br><br>I usually attacked it.<br>However, you previously attacked it.<br>You are crazy.<br><br>Though the moon is bright red so.<br>A happy night might come.<br>A long night might come.<br><br>Well...<br>The cooking method that<br>easily removes All of life material...<br><br>Luna Dial :<br>Your time is mine...<br>An antique watch doesn't have the winning(?)<br>Choose<br><br>Only human<br>Needing a brain sample scientific idea comes(?)<br>Human is interested, but aren't you human?"
+  },
+  {
+    "ds_anchor": "C03",
+    "ds_h2": "上級者IR（縦連打）",
+    "ds_h4": "2:00 - martyr -IR-",
+    "ds_video": "AK39A_arH6U",
+    "url": "https://www.mediafire.com/file/d1qa4ntxws1tjto/7_200_martyr.zip/file",
+    "url_diff": "../sabun/C03_martyr_hex.zip",
+    "nickname": "hex",
+    "comment": "縦連打譜面です。基本的に左右に割れているので正規推奨です。<br>自分がプレイして、しんどいと思わない程度に休憩を入れています。<br>個人的にはプレイしやすい連打譜面になったと思います。"
+  },
+  {
+    "ds_anchor": "C04",
+    "ds_h2": "上級者IR（ガチ押し）",
+    "ds_h4": "山田名人 - Tangerine Dawn -IR-",
+    "ds_video": "saFqke_7gb4",
+    "url": "https://drive.google.com/file/d/1YyhoIQEKT930DfZpVOwGIPCdLVKvVOzS/view?usp=sharing",
+    "url_diff": "../sabun/C04_tangerine_dawn_hex.zip",
+    "nickname": "hex",
+    "comment": "目指せムキムキボディ！"
+  },
+  {
+    "ds_anchor": "C05",
+    "ds_h2": "上級者IR（高速乱打）",
+    "ds_h4": "Endigo - BIG CHUNGUS -IR-",
+    "ds_video": "zKtZtVdICAk",
+    "url": "https://drive.google.com/file/d/1iKZ3BavYnb-g08uUWDmqq3UAE2S6JBpw/view?usp=sharing",
+    "url_diff": "../sabun/C05_chungus_chucha.zip",
+    "nickname": "チュチャムスメ",
+    "comment": "（あれ？一部はなんか見たことある。気のせいか・・・）<br><br><br><br>なお、同梱譜面にはいくつかの問題（キー音重なり、著作権を違反するサンプリング、IR登録不可など）があったせいで、<br>BMS作者ご本人の許可を受けて色々な意味でBMSそのものを改造しました。<br><br>だからこそ、<br><br>曲変更差分であるため、ズレの全部は意図的です。<br><br>・・・念のためですが、繰り返して言います。<br><br>曲変更差分であるため、ズレの全部は意図的です。<br><br><br><br><br><br>では。頑張ってね～　（U^ω^）"
+  },
+  {
+    "ds_anchor": "C06",
+    "ds_h2": "上級者IR（ディレイ）",
+    "ds_h4": "Tetrajectory feat. Ctymax - Cipher : /2&//〈|0[/〉/w/&lt;/]",
+    "ds_video": "K9zlaXbwKIk",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=297&event=123",
+    "url_diff": "../sabun/C06_Cipher_tyrcs.zip",
+    "nickname": "tyrcs",
+    "comment": "No misalignment compared with cipher_7N.bms"
+  },
+  {
+    "ds_anchor": "C07",
+    "ds_h2": "上級者IR（ズレ）",
+    "ds_h4": "Loreley - おわりのうた -終わる世界とバースデイ-",
+    "ds_video": "CXxRj6DjRdI",
+    "url": "https://drive.usercontent.google.com/uc?id=1yB4Pz_gRwIuzgXZaDWX8-og-4IvRFIYN&export=download",
+    "url_diff": "../sabun/C07_owarinouta_nanami_fix.zip",
+    "nickname": "七海",
+    "comment": "曲がすごい！"
+  },
+  {
+    "ds_anchor": "C08",
+    "ds_h2": "上級者IR（スクラッチ）",
+    "ds_h4": "AQUA & REONA - flowers of the light 〈BGA ^ ^〉",
+    "ds_video": "aPEpWErCSFU",
+    "url": "https://mega.nz/file/GK4WhI6Z#FiuxYQXTFu5cct0rhMdcLjFrVMO38vNKOfgB8UtbhGo",
+    "url_diff": "../sabun/C08_FOL_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "Not respect for Rainy Heart -IR-"
+  },
+  {
+    "ds_anchor": "C09",
+    "ds_h2": "上級者IR（スイング）",
+    "ds_h4": "SANY-ON(a.k.a. 3034) - passion flower -IR-",
+    "ds_video": "zD6Wp5GgPIc",
+    "url": "https://drive.usercontent.google.com/download?id=1Uonu8w_y0jUJhp9J0cR5Xe5ZH_-yRINt&export=download",
+    "url_diff": "../sabun/C09_passionflower_hex.zip",
+    "nickname": "hex",
+    "comment": "スイングでガチ押ししてみたかった。"
+  },
+  {
+    "ds_anchor": "C10",
+    "ds_h2": "上級者IR（カーテン）",
+    "ds_h4": "Sentire - ゴフェルの木棺 -IR-",
+    "ds_video": "9PTdAhVMVTs",
+    "url": "https://drive.usercontent.google.com/download?id=1-GXrhUE_xYGDDuG8vSBkinyc_LUxXPqd&export=download",
+    "url_diff": "../sabun/C10_gofel_sera.zip",
+    "nickname": "sera",
+    "comment": "Very scale-y and BS fumen with a bit of randa inverse. The ending is hard and there's little recovery, but if you can clear at all, you can get a lot of points...<br>May or may not be good with random.<br>Takes a lot of pattern bases from the original Normal."
+  },
+  {
+    "ds_anchor": "C11",
+    "ds_h2": "上級者IR（2鍵）",
+    "ds_h4": "fkRadish - ironic sea -IR-",
+    "ds_video": "XXEqiVprzg8",
+    "url": "https://beatmaniauet.wixsite.com/kusekorebmspack2020",
+    "url_diff": "../sabun/C11_ironic sea_sera.zip",
+    "nickname": "sera",
+    "comment": "A lazy chart? GOOD luck"
+  },
+  {
+    "ds_anchor": "C12",
+    "ds_h2": "上級者IR（ギミック）",
+    "ds_h4": "牧野 - From Megalopolis with Love [Randomizer?]",
+    "ds_video": "k-R1Qx5Qzkg",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=9&event=124",
+    "url_diff": "../sabun/C12_From_Megalopolis_with_Love_parksu.zip",
+    "nickname": "И",
+    "comment": "追加音源あり"
+  },
+  {
+    "ds_anchor": "C13",
+    "ds_h2": "上級者IR（DARKSABUN）",
+    "ds_h4": "gmtn. - OneviA 〈IR〉",
+    "ds_video": "DrmUzVuxGV8",
+    "url": "https://extrose.stoicsounds.jp/_data/bms/gmtn/%2333%20%5BOTOGETIC%20RAVE%20TRAP%20AGGRESSIVE%20HARDCORE%5D%20OneviA.zip",
+    "url_diff": "../sabun/C13_OneviA_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "오랜만에 만들어보는 정통파(?) 변속 차분입니다.<br>변속 처리력 복구를 위한 차분으로, 노트 난이도 및 기믹 모두 아주 어렵게 만들지는 않았습니다."
+  },
+  {
+    "ds_anchor": "C14",
+    "ds_h2": "上級者IR（やさしいソフラン）",
+    "ds_h4": "DJ Poentia(Micelle) - teonanacatl [MARYTHER]",
+    "ds_video": "U5gF7K97row",
+    "url": "https://spirea3cross.wixsite.com/citadel/teonanacatl",
+    "url_diff": "../sabun/C14_teonanacatl_Mary_Sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "Too late"
+  },
+  {
+    "ds_anchor": "C16",
+    "ds_h2": "上級者IR（総合力）",
+    "ds_h4": "Cataclysmic Order - VENDeTTA [Un diavolo scaccia l'atro]",
+    "ds_video": "ZssYr0CEleI",
+    "url": "http://starkey.ivory.ne.jp/mf/mf2/detail/view/21/",
+    "url_diff": "../sabun/C16_VENDeTTA_nozomi.zip",
+    "nickname": "nozomi",
+    "comment": "난타+동시치기+폴라리듬+12비트 끊어치기+후살+알약<br><br>sl11 INSANE과 st7의 Alterego의 지나친 차이를 막기 위해 추가된 패턴입니다.<br><br>\"모두 빈첸초(정복자)가 되어서, 스텔라의 개인차를 척결하자!!\""
+  },
+  {
+    "ds_anchor": "C17",
+    "ds_h2": "上級者IR（カオス）",
+    "ds_h4": "kyou1110 + Takuya Namba - 7/8→6/8→7/8→6/8→7/8→6/8→17/16→... [オサレ]",
+    "ds_video": "y_2sRW2AfHM",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=120&event=127",
+    "url_diff": "../sabun/C17_kyou1110_TakuyaNamba_very_long_title_Mary_Sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "曲名長いな…"
+  },
+  {
+    "ds_anchor": "C18",
+    "ds_h2": "上級者IR（NORMAL判定）",
+    "ds_h4": "Mer - sekilishuken -IR-",
+    "ds_video": "VEaL9HsC5j0",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=210&event=74",
+    "url_diff": "../sabun/C18_sekilishuken_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "밸런스가 안 맞는듯 맞는 패턴을 목표로 했습니다.<br>정확한 판정을 연습합시다."
+  },
+  {
+    "ds_anchor": "C19",
+    "ds_h2": "上級者IR（HARD判定）",
+    "ds_h4": "シィナ × A.M. - シュリ [オシャレ]",
+    "ds_video": "nUd3XdGlKdc",
+    "url": "https://web.archive.org/web/20200607062139/http://sunaneko.iptime.org/BMS_Library/%E3%82%B7%E3%83%A5%E3%83%AA%20(by%20%E3%82%B7%E3%82%A3%E3%83%8A%20%C3%97%20A.M.).rar",
+    "url_diff": "../sabun/C19_Syuri_Mary_Sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "イージー判定シュリ：<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsid=287083'>Click</a><br>ノーマル判定シュリ：<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsid=287082'>Click</a><br>ハード判定シュリ：これ<br>ベリーハード判定シュリ：<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsid=287081'>Click</a><br>シュリコンプリート"
+  },
+  {
+    "ds_anchor": "C20",
+    "ds_h2": "上級者IR（VERYHARD判定）",
+    "ds_h4": "国立映画製作所 - 大韓ニュース　第1661号 [ソウルオリンピック]",
+    "ds_video": "MQdUd6fSpt0",
+    "url": "https://mega.nz/file/5bYHyZJb#VgNeUn66snZUwkqia6MOETpGEMddxDLAVXsmUvW83IU",
+    "nickname": "DARKSABUN",
+    "comment": "Sliced by DAC, Obj by DARKSABUN"
+  },
+  {
+    "ds_anchor": "C21",
+    "ds_h2": "上級者IR（低BPM）",
+    "ds_h4": "佐倉翔一 - メルヘニア -malchenia- [Maryther]",
+    "ds_video": "k5qgPdnhWxQ",
+    "url": "http://leafbms.web.fc2.com/song.html",
+    "url_diff": "../sabun/C21_malchenia_Mary_Sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "終盤が一番易しいのでGROOVE GAUGEおすすめ"
+  },
+  {
+    "ds_anchor": "C22",
+    "ds_h2": "上級者IR（高BPM）",
+    "ds_h4": "dj koishi - Hard Spice [Maryther]",
+    "ds_video": "cuIiFlwgqrA",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=599&event=110",
+    "url_diff": "../sabun/C22_Hard Spice_Mary_Sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "BGA GIRLS KAWAII"
+  },
+  {
+    "ds_anchor": "C23",
+    "ds_h2": "上級者IR（長尺）",
+    "ds_h4": "dj MASTER feat. 埜明 - 大豆の国の☆ソイデレラ☆は豆乳パワー↑↑でたゆんたゆんの夢を見る [Maryther]",
+    "ds_video": "6HCTwCw10EI",
+    "url": "https://venue.bmssearch.net/3/20?event=3&id=20",
+    "url_diff": "../sabun/C23_Soyderella_Mary_Sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "えび！ばてぃ！せい！ソイ！！<a href='https://soundcloud.com/master223-0p/to-nyu-power'>Click</a>←必聴"
+  },
+  {
+    "ds_anchor": "C24",
+    "ds_h2": "上級者IR（超長尺）",
+    "ds_h4": "K.V.C. / nixx - Spangle+Ihika -IR-",
+    "ds_video": "sODc9orjvoo",
+    "url": "https://drive.google.com/file/d/0B8ehZs0hpDdUZXgtN0U2NGRXd3c/view?usp=sharing&resourcekey=0-xxMae1OX0fjgoJsNWzwkQA",
+    "url_diff": "../sabun/C24_spangle_Ihika_hex.zip",
+    "nickname": "hex",
+    "comment": "配置自体は★20もないですが、ポイントを得るにはコンボを繋ぐ必要があるという点で上級者としました。"
+  },
+  {
+    "ds_anchor": "C25",
+    "ds_h2": "上級者IR（キー音アレンジ）",
+    "ds_h4": "LV.4 / Remixed M.H. - Angel Re-Factory (IR Battle Edit)",
+    "ds_video": "6t8XILqpREw",
+    "url": "https://onedrive.live.com/?id=FC95A680740CA8C9%21111&cid=FC95A680740CA8C9",
+    "url_diff": "../sabun/C25_Angeldust_parksu.zip",
+    "nickname": "И",
+    "comment": "<a href='https://youtu.be/RVAKhDHCMds?t=85'>Re</a>-<a href='https://youtu.be/tse7VLHlI3c?t=93'>Factory</a>"
+  },
+  {
+    "ds_anchor": "C26",
+    "ds_h2": "上級者IR（Battle）",
+    "ds_h4": "一次元 - PAST FUTURE!!! [Maryther]",
+    "ds_video": "0GzTlD6dvkc",
+    "url": "https://drive.usercontent.google.com/uc?id=1bmCZrovwyj_1nhlvxcCNu5rjjwNbL0R5&export=download",
+    "url_diff": "../sabun/C26_PAST_FUTURE_Mary_Sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "これが、一次元。"
+  },
+  {
+    "ds_anchor": "D00",
+    "ds_h2": "(^^)IR（主催）",
+    "ds_h4": "Juno - Reason [without reason]",
+    "ds_video": "GPx_C5boHOI",
+    "url": "https://dropbox.bms.ms/u/59988778/Juno%20-%20Reason.zip",
+    "url_diff": "../sabun/D00_reason_LuvTek.zip",
+    "nickname": "LuvTek + И",
+    "comment": "beyond the reason"
+  },
+  {
+    "ds_anchor": "D01",
+    "ds_h2": "(^^)IR（微連打）",
+    "ds_h4": "削除 - VALLISTA [IR]",
+    "ds_video": "HEpc1c43NNo",
+    "url": "http://uploader.bms.ms/data/bof2011/sakuzyo_vallista_ogg.zip",
+    "url_diff": "../sabun/D01_vallista_extra.zip",
+    "nickname": "extra",
+    "comment": "You better like mini jacks<br>あなたは微連打が好きでなければなりません"
+  },
+  {
+    "ds_anchor": "D02",
+    "ds_h2": "(^^)IR（連打複合）",
+    "ds_h4": "BIG O - Negotiation Failure [sp Xpert:PRO]",
+    "ds_video": "C2gnU76VAok",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=262&event=133",
+    "url_diff": "../sabun/D02_NegotiationFailure_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "PRO is an abb. for Prototype"
+  },
+  {
+    "ds_anchor": "D04",
+    "ds_h2": "(^^)IR（ガチ押し）",
+    "ds_h4": "yassu - dolosus [colossus]",
+    "ds_video": "l8dylv6p92c",
+    "url": "https://sound.jp/brilliantharmony/",
+    "url_diff": "../sabun/D04_dolosus_realize.zip",
+    "nickname": "2RLZ",
+    "comment": "がんばれ<br>(Object by 2RLZ + И)"
+  },
+  {
+    "ds_anchor": "D05",
+    "ds_h2": "(^^)IR（高速乱打）",
+    "ds_h4": "plastic feat.サキト - ひつぎとふたご [ ]",
+    "ds_video": "KJPGBRgQXH8",
+    "url": "https://web.archive.org/web/20110719063532/http://placase.bms.ms/data/bms/pla_futago.rar",
+    "url_diff": "../sabun/D05_HitsugiToFutago_Razryn.zip",
+    "nickname": "Razryn",
+    "comment": "weird thing again"
+  },
+  {
+    "ds_anchor": "D06",
+    "ds_h2": "(^^)IR（ディレイ）",
+    "ds_h4": "sky_delta - Kreuz [Fate & Destiny]",
+    "ds_video": "PTD8omWoi6E",
+    "url": "https://www.axfc.net/u/3345090",
+    "url_diff": "../sabun/D06_Kreuz_qtp13.zip",
+    "nickname": "qtp13",
+    "comment": "Apologies for any kind of pain it may cause."
+  },
+  {
+    "ds_anchor": "D07",
+    "ds_h2": "(^^)IR（ズレ）",
+    "ds_h4": "Neun_jack - Convallatoxin [Maryther]",
+    "ds_video": "yBiDbYQfrgg",
+    "url": "https://dropbox.bms.ms/u/60346274/Neunjack/Convalla_ogg.zip",
+    "url_diff": "../sabun/D07_Convallatoxin_Mary_Sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "運動になる易しい譜面ですわ"
+  },
+  {
+    "ds_anchor": "D08",
+    "ds_h2": "(^^)IR（スクラッチ）",
+    "ds_h4": "nitro - [line:theta] -IR-",
+    "ds_video": "a2A2C0T-upY",
+    "url": "https://dl.dropboxusercontent.com/scl/fi/sb9jpqcrl4781557u0juw/line-theta-by-nitro.rar?rlkey=dauz5tr7wuvng8fm7d2v0xrtl",
+    "url_diff": "../sabun/D08_[line-theta]_AXION.zip",
+    "nickname": "AXION",
+    "comment": "NOW LET ME SEE YOU<br>for scratch + chordstream enthousiasts"
+  },
+  {
+    "ds_anchor": "D09",
+    "ds_h2": "(^^)IR（スイング）",
+    "ds_h4": "Namahamu - Midnight Graveyard",
+    "ds_video": "H0lr2Ppv9m4",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=390&event=133",
+    "url_diff": "../sabun/D09_MidnightGraveyard_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "플레이는 짧고 굵게"
+  },
+  {
+    "ds_anchor": "D11",
+    "ds_h2": "(^^)IR（2鍵）",
+    "ds_h4": "bugs (Ryo Ohnuki + Yu Ohnuki) - relife, suicide, groundrainbow [2KEYS]",
+    "ds_video": "KplqFkN3QN4",
+    "url": "https://web.archive.org/web/20120623132756/http://diverse.jp/download/rsgr.rar",
+    "url_diff": "../sabun/D11_rsgr_parksu.zip",
+    "nickname": "И",
+    "comment": "OPEN YOUR EYES...AND FOCUS!"
+  },
+  {
+    "ds_anchor": "D13",
+    "ds_h2": "(^^)IR（DARKSABUN）",
+    "ds_h4": "ねこみりん feat.小宮真央 - あい☆こんぷりーと [平凡な女の子の百番目の譜面]",
+    "ds_video": "enzbnNBiZk8",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=34&event=84",
+    "url_diff": "../sabun/D13_AICOMPLETE_Mary_Sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "なんと百番目の譜面だよ！今までありがとうございました！これからもよろしくお願いします！"
+  },
+  {
+    "ds_anchor": "D15",
+    "ds_h2": "(^^)IR（バラエティ）",
+    "ds_h4": "「Yﾌ - B.L.S.M.C.S. - MARYTHER",
+    "ds_video": "2H7hSEesJK0",
+    "url": "http://d11x.sakura.ne.jp/asdf/?p=304",
+    "url_diff": "../sabun/D15_BLSMCS_Mary_Sue.zip",
+    "nickname": "Mary_Sue",
+    "comment": "予想より難しかったです。ごめんねぇー　…そんなに難しそうじゃなかったけどね"
+  },
+  {
+    "ds_anchor": "D16",
+    "ds_h2": "(^^)IR（総合力）",
+    "ds_h4": "Ritsu - hverfa [never cleared]",
+    "ds_video": "NnS_003sFNc",
+    "url": "http://uploader.bms.ms/data/bof2009/kenkyo/ritsu06_hverfa_ogg.zip",
+    "url_diff": "../sabun/D16_hverfa_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "2021년 3월에 완성했지만, 난이도가 너무 높아 공개를 보류한 차분입니다.<br>이지 난이도는 st9 Prog-M보다 높은 것 같지만 그래도 st9로 추정합니다.<br>클리어 될 것 같은데 안되네"
+  },
+  {
+    "ds_anchor": "D17",
+    "ds_h2": "(^^)IR（カオス）",
+    "ds_h4": "椎名まゆり - 星屑アポトーシス 星屑アポトーシス",
+    "ds_video": "-qYf-qujLCE",
+    "url": "https://1drv.ms/u/s!AkHILFwfHSyzgQ4rrP7WIsDKU3Og",
+    "url_diff": "../sabun/D17_hoshikuzu_1008.zip",
+    "nickname": "1008",
+    "comment": "申し訳ございませんが、これは悪いネタ譜面です。"
+  },
+  {
+    "ds_anchor": "D18",
+    "ds_h2": "(^^)IR（NORMAL判定）",
+    "ds_h4": "BilliumMoto - The Villager [D18]",
+    "ds_video": "eC9_nteSn90",
+    "url": "https://drive.google.com/file/d/1oF6NjrPjQaF13vt__eq6okLrNPcYgvm_/view?usp=sharing",
+    "url_diff": "../sabun/D18_Villager_Triforce.zip",
+    "nickname": "Triforce",
+    "comment": "초보자용 판정연습 고BPM 폭타곡을 만들려고 하다가 고수도 판정연습 못한 고BPM 32비트 딜레이가 나왔습니다. 난몰라 알아서해"
+  },
+  {
+    "ds_anchor": "D19",
+    "ds_h2": "(^^)IR（HARD判定）",
+    "ds_h4": "裏 吉 川 - A c i - L - A l t",
+    "ds_video": "bxvosflpo1I",
+    "url": "http://malie.noor.jp/archive/archive.html",
+    "url_diff": "../sabun/D19_A_c_i_-_L_extra.zip",
+    "nickname": "extra",
+    "comment": "- 4 5 ?"
+  },
+  {
+    "ds_anchor": "D23",
+    "ds_h2": "(^^)IR（長尺）",
+    "ds_h4": "Kyuu/Yossy - Snowflakes [Summer festival]",
+    "ds_video": "szqL5X-j5vI",
+    "url": "https://web.archive.org/web/20021227011400/http://www.ismusic.ne.jp/yossy/music_data/bms/k_snow.rar",
+    "url_diff": "../sabun/D23_Snowflakes_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "난이도 표기는 24이지만, 24치곤 강하기에 (^^)IR에 투고합니다.<br>마지막 회복이 많아서 클리어 자체는 싱거울지도 모르겠네요."
+  },
+  {
+    "ds_anchor": "D24",
+    "ds_h2": "(^^)IR（超長尺）",
+    "ds_h4": "TOM SCRIPTS LTDA. Devster Specialties - CRAZYBUS Title Screen [Desert Bus Simulation]",
+    "ds_video": "X2E1O0Yt2Kg",
+    "url": "https://drive.google.com/file/d/1e7qn38WEloRhhIatg5vPbSEabWVKrquW/view?usp=sharing",
+    "url_diff": "../sabun/D24_CrazyBusTitleScreen_LuvTek.zip",
+    "nickname": "LuvTek",
+    "comment": "It will take a very long time to load the chart, so be careful.<br>Your bus travels Tucson to Las Vegas at 40-45 mph and it is marked with BPM.<br>The distance is 360 miles, and a measure corresponds to one mile.<br>For simplicity, all the FX sounds are removed, but the title screen of Crazy Bus will be with you."
+  },
+  {
+    "ds_anchor": "D25",
+    "ds_h2": "(^^)IR（キー音アレンジ）",
+    "ds_h4": "Urban Techno Cafe - Airflow [Marathon]",
+    "ds_video": "I9KmINL1b1s",
+    "url": "http://otafukun.s1009.xrea.com/bms.html",
+    "url_diff": "../sabun/D25_Airflow_parksu.zip",
+    "nickname": "И",
+    "comment": "元々の目標は上級者IRでした…"
+  }
+]

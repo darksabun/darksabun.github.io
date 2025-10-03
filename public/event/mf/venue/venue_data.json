@@ -1,0 +1,182 @@
+﻿[
+  {
+    "ds_anchor": "mf1_csc",
+    "ds_h2": "Crude Sound Cutter",
+    "ds_h4": "Simfy&Clean Tears - Mythical Magic [Miaplacidus]",
+    "ds_video": "OTc9n4x0W1Q",
+    "url": "https://web.archive.org/web/20040602232520/http://in-bpms.hp.infoseek.co.jp/Bmse/mys.lzh",
+    "url_diff": "../sabun/MythicalMagic_CrudeSoundCutter.zip",
+    "nickname": "Crude Sound Cutter",
+    "comment": "★23? 追加音源あり"
+  },
+  {
+    "ds_anchor": "mf1_quirk",
+    "ds_h2": "quirk",
+    "ds_h4": "CELLON. - 零ファイター [S]",
+    "ds_video": "pXA82oSm8lY",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=155&event=96",
+    "url_diff": "../sabun/reifaitaa_quirk.zip",
+    "nickname": "quirk",
+    "comment": "◆14?"
+  },
+  {
+    "ds_anchor": "mf1_sphere",
+    "ds_h2": "Sphere",
+    "ds_h4": "Ino loves みずたま & 加藤裕幸(sweez) - ナツイノ [涼風]",
+    "ds_video": "4fe0e0dezWI",
+    "url": "https://dropbox.bms.ms/u/53751238/Ino_BOFU2016_Natsuino_OGG.zip",
+    "url_diff": "../sabun/Natsuino_Sphere.zip",
+    "nickname": "Sphere",
+    "comment": "<b>* 検出されるズレについて</b><br>本譜面は同梱 Another 譜面を元に作成しています．<br>ズレチェックを行うと以下の3つの音でズレが検出されます．<br>&nbsp;&nbsp;#WAV0D _Dr_pi_001.wav<br>&nbsp;&nbsp;#WAV0J _Dr_Triangle_001.wav<br>&nbsp;&nbsp;#WAVI8 G_Piano_bgm_-192.wav<br>このズレは上記のBGMとして使用されている音を本体に同梱されている音切り済みの音で置き換えているために発生しています．<br>実際に音ズレが発生しているわけではありません．<br>念の為上記の音を置き換えた未配置譜面を同梱します．(Natsuino_0note_sphere.bmx)"
+  },
+  {
+    "ds_anchor": "mf1_tachyon",
+    "ds_h2": "∇·tachyon",
+    "ds_h4": "Neun_jack - Future Teknology [500kV]",
+    "ds_video": "VjefdHxzsNo",
+    "url": "https://dropbox.bms.ms/u/60346274/BOFU2015/Neun_jack_Future_Teknology_ogg.zip",
+    "url_diff": "../sabun/future_teknology_gradient_tachyon.zip",
+    "nickname": "∇·tachyon",
+    "comment": "sl11(insane 20)"
+  },
+  {
+    "ds_anchor": "mf1_yuunagi",
+    "ds_h2": "★11夕凪の丘S乱に失敗した猫さん",
+    "ds_h4": "Vanilla Flavor - Citrus Sunset [meow]",
+    "ds_video": "iZC-DmSycww",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=10&event=109",
+    "url_diff": "../sabun/citrussunset_11yuunagi.zip",
+    "nickname": "★11夕凪の丘S乱に失敗した猫さん",
+    "comment": "★1~2"
+  },
+  {
+    "ds_anchor": "mf1_imamura",
+    "ds_h2": "今村水産市場",
+    "ds_h4": "Kyuzo Sameura vs Kanata.S feat.きりたん - Sea blue, sky blue -summer vacation-",
+    "ds_video": "5_WxeqP2qBQ",
+    "url": "https://venue.bmssearch.net/mutualfaith3/2",
+    "url_diff": "../sabun/seablueskyblue_imamura.zip",
+    "nickname": "今村水産市場",
+    "comment": "★14~15?"
+  },
+  {
+    "ds_anchor": "mf1_miraisabun",
+    "ds_h2": "未来差分研究所",
+    "ds_h4": "Junk - Life is PIANO [未来差分研究所]",
+    "ds_video": "sKjO5x6BVv8",
+    "url": "http://www.junk-channel.com/junk_g2r2018_ogg.rar",
+    "url_diff": "../sabun/Life_is_PIANO_MiraiSabun.zip",
+    "nickname": "未来差分研究所",
+    "comment": "★11~12"
+  },
+  {
+    "ds_anchor": "mf1_sizuku",
+    "ds_h2": "雫",
+    "ds_h4": "TiS underground - XROSS DIMENSION (相互交差)",
+    "ds_video": "MrYnFCxIpkE",
+    "url": "http://cineraria-studio.com/?page_id=53",
+    "url_diff": "../sabun/xrossdimension_sizuku.zip",
+    "nickname": "雫",
+    "comment": "st1?"
+  },
+  {
+    "ds_anchor": "mf2_csc",
+    "ds_h2": "Crude Sound Cutter",
+    "ds_h4": "saikoro - ad infinitum (complex forces mix) [recall]",
+    "ds_video": "3Qcq2MViP0g",
+    "url": "https://www.mediafire.com/file/jwjjhmn25h2/saikoro_ad_infinitum.rar/file",
+    "url_diff": "../sabun/ad_infinitum_CrudeSoundCutter.zip",
+    "nickname": "Crude Sound Cutter",
+    "comment": "★23? 追加音源あり main work"
+  },
+  {
+    "ds_anchor": "mf2_csc_2",
+    "ds_h2": "Crude Sound Cutter",
+    "ds_h4": "ridis(Rai) - 時計仕掛けの少女 [メトロノーム]",
+    "ds_video": "p2-xlxJEGY8",
+    "url": "https://www.mediafire.com/file/5x7aeezm20yvlgq/tokeizikake.rar/file",
+    "url_diff": "../sabun/tokeizikake_CrudeSoundCutter.zip",
+    "nickname": "Crude Sound Cutter",
+    "comment": "★21? 追加音源あり"
+  },
+  {
+    "ds_anchor": "mf2_quirk",
+    "ds_h2": "quirk",
+    "ds_h4": "天使真央 - feeling(bms edit) [L]",
+    "ds_video": "G0CmgcbWxHo",
+    "url": "https://www.mediafire.com/file/89ypy7ik4zajsn0/%255Bgj-bu%255Dfeeling.rar/file",
+    "url_diff": "../sabun/feelingbms_edit_quirk.zip",
+    "nickname": "quirk",
+    "comment": "st5? SPNの配置を基本に、SPAの配置を使用した部分がある。"
+  },
+  {
+    "ds_anchor": "mf2_sphere",
+    "ds_h2": "Sphere",
+    "ds_h4": "oxygen - Animatronics [Freddy]",
+    "ds_video": "_pU-pJqxGMo",
+    "url": "https://www.mediafire.com/file/akl2hdr99ss8ubd/ox_animatronics.zip/file",
+    "url_diff": "../sabun/Animatronics_Sphere.zip",
+    "nickname": "Sphere",
+    "comment": "追加されている不可視オブジェクトは意図的なものです。<br>通常にプレイすれば原曲とのズレは発生しません。"
+  },
+  {
+    "ds_anchor": "mf2_sphere_2",
+    "ds_h2": "Sphere",
+    "ds_h4": "TO-MAX remixed by LU - contact force sense(remix)",
+    "ds_video": "qfqK9MDm0s8",
+    "url": "http://gensoukyousoukyoku.nekokan.dyndns.info/9-TOMAX_remixed_by_LU-contact_force_sence.rar",
+    "url_diff": "../sabun/ContactForceSense_Sphere.zip",
+    "nickname": "Sphere",
+    "comment": "st7(★★5)?"
+  },
+  {
+    "ds_anchor": "mf2_tachyon",
+    "ds_h2": "∇·tachyon",
+    "ds_h4": "7mai - Boxel Adventure [Null]",
+    "ds_video": "xg7QrcH3DsY",
+    "url": "https://dl.dropboxusercontent.com/scl/fi/f6hwglfpfxhck2o498o9e/7mai_BoxelAdventure.rar?rlkey=yxnp38ys2ullje2fagce6zqb5",
+    "url_diff": "../sabun/BoxelA_gradient_tachyon_fix.zip",
+    "nickname": "∇·tachyon",
+    "comment": "半分死ね"
+  },
+  {
+    "ds_anchor": "mf2_yuunagi",
+    "ds_h2": "★11夕凪の丘S乱に失敗した猫さん",
+    "ds_h4": "LisicA - テウメッサ [にゃーん]",
+    "ds_video": "0fYAyk0glGc",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=87&event=127",
+    "url_diff": "../sabun/teumessia_yuunagi.zip",
+    "nickname": "★11夕凪の丘S乱に失敗した猫さん",
+    "comment": "★16~18"
+  },
+  {
+    "ds_anchor": "mf2_imamura",
+    "ds_h2": "今村水産市場",
+    "ds_h4": "QH. - SpringField [end of spring]",
+    "ds_video": "fEc2ij10rck",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=87&event=127",
+    "url_diff": "../sabun/springfield_imamura.zip",
+    "nickname": "今村水産市場",
+    "comment": "★24?"
+  },
+  {
+    "ds_anchor": "mf2_miraisabun",
+    "ds_h2": "未来差分研究所",
+    "ds_h4": "r - Banhotta [未来差分研究所]",
+    "ds_video": "OA3QjYPAylM",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=141&event=127",
+    "url_diff": "../sabun/Banhotta_MiraiSabun.zip",
+    "nickname": "未来差分研究所",
+    "comment": "★12~13"
+  },
+  {
+    "ds_anchor": "mf2_sizuku",
+    "ds_h2": "雫",
+    "ds_h4": "MR Cannon - EAST GOLD (東金)",
+    "ds_video": "pVkS6xd0LIA",
+    "url": "https://venue.bmssearch.net/mutualfaith3/7",
+    "url_diff": "../sabun/EASTGOLD_sizuku.zip",
+    "nickname": "雫",
+    "comment": "st1?"
+  }
+]

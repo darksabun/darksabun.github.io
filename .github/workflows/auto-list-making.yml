@@ -6,8 +6,8 @@ name: Auto list making with python
 on:
   push:
     paths:
-      - "docs/sabun/**"
-      - "docs/songs/**"
+      - "public/sabun/**"
+      - "public/songs/**"
 
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
           python-version: 3.8
       - name: Auto list making
         run: |
-          cd docs
+          cd public
           python ../.apindex/apindex.py ./sabun
           python ../.apindex/apindex.py ./songs
       - name: Commit files
