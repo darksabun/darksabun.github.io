@@ -115,6 +115,11 @@ const tableData = {
     return `${mark}${data}`;
   },
 
+  tableMinIR: function (data) {
+    const scoreBaseURL = `https://www.gaftalk.com/minir/#/viewer/song/${data}/0`;
+    return `<a href="${scoreBaseURL}" target="_blank">MinIR</a>`;
+  },
+
   tableTitle: function (data, type, row) {
     const lr2irBaseURL = `http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=${row.md5}`;
     return `<a href="${lr2irBaseURL}" target="_blank">${data}</a>`;
