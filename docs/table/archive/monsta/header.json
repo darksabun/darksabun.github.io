@@ -1,0 +1,8 @@
+﻿{
+  "name": "MonstaJoy",
+  "symbol": "モ",
+  "level_order": ["0", "1", "2", "3", "4", "5", "6", "7"],
+  "data_url": "data.json",
+  "original_url": "https://web.archive.org/web/20200306155444/http://3228monsta.web.fc2.com/monstajoy.html",
+  "last_update": "2020.03.29"
+}

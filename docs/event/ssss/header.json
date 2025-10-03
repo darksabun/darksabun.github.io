@@ -1,0 +1,8 @@
+{
+  "name": "Sabun-Shuffle Summer Season",
+  "symbol": "SSSS",
+  "compat_prefix": "SSSS ",
+  "level_order": ["R1", "R2", "Free"],
+  "enum_level_order": ["Round 1", "Round 2", "Freeroll"],
+  "data_url": "data.json"
+}
