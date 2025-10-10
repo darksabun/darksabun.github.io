@@ -21,12 +21,13 @@ jobs:
           python-version: 3.8
       - name: Auto list making
         run: |
+          export TZ='Asia/Seoul'
           cd docs
           python ../.apindex/apindex.py ./sabun
           python ../.apindex/apindex.py ./songs
       - name: Commit files
         run: |
-          git config --local user.email "62116388+darksabun@users.noreply.github.com"
+          git config --local user.email "${{ secrets.COMMIT_EMAIL }}"
           git config --local user.name "GitHub Action"
           git commit -m "DARKSABUN | Automatically update the file list" -a
       - name: Push changes
