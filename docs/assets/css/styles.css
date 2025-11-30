@@ -5109,6 +5109,9 @@ fieldset:disabled .btn {
   list-style: none;
   background-color: var(--bs-breadcrumb-bg);
   border-radius: var(--bs-breadcrumb-border-radius);
+  /* Fixed by DARKSABUN */
+  white-space: nowrap;
+  /* Fixed by DARKSABUN */
 }
 
 .breadcrumb-item + .breadcrumb-item {
