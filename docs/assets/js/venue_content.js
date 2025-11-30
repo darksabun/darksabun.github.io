@@ -194,16 +194,20 @@ async function fetchJson() {
       courseTh3.textContent = "Score";
 
       const courseTh4 = document.createElement("th");
-      courseTh4.setAttribute("style", "width: 10%");
-      courseTh4.textContent = "Title";
+      courseTh4.setAttribute("style", "width: 1%");
+      courseTh4.textContent = "MinIR";
 
       const courseTh5 = document.createElement("th");
       courseTh5.setAttribute("style", "width: 10%");
-      courseTh5.textContent = "Artist";
+      courseTh5.textContent = "Title\n(LR2IR)";
 
       const courseTh6 = document.createElement("th");
       courseTh6.setAttribute("style", "width: 10%");
-      courseTh6.textContent = "Maker";
+      courseTh6.textContent = "Artist\n(BMS DL)";
+
+      const courseTh7 = document.createElement("th");
+      courseTh7.setAttribute("style", "width: 10%");
+      courseTh7.textContent = "Maker";
 
       courseThead.appendChild(courseTheadTr);
       courseTheadTr.appendChild(courseTh1);
@@ -212,6 +216,7 @@ async function fetchJson() {
       courseTheadTr.appendChild(courseTh4);
       courseTheadTr.appendChild(courseTh5);
       courseTheadTr.appendChild(courseTh6);
+      courseTheadTr.appendChild(courseTh7);
 
       const courseTbody = document.createElement("tbody");
       courseTable.appendChild(courseTbody);
@@ -225,6 +230,7 @@ async function fetchJson() {
         const stage = i.course[j].stage;
         const video = i.course[j].video;
         const md5 = i.course[j].md5;
+        const sha256 = i.course[j].sha256;
         const title = i.course[j].title;
         const url = i.course[j].bms_url;
         const artist = i.course[j].artist;
@@ -250,21 +256,28 @@ async function fetchJson() {
         courseTd3.appendChild(courseScoreUrl);
 
         const courseTd4 = document.createElement("td");
+        const courseMinirUrl = document.createElement("a");
+        courseMinirUrl.href =
+          "https://www.gaftalk.com/minir/#/viewer/song/" + sha256 + "/0";
+        courseMinirUrl.textContent = "MinIR";
+        courseTd4.appendChild(courseMinirUrl);
+
+        const courseTd5 = document.createElement("td");
         const courseLr2irUrl = document.createElement("a");
         courseLr2irUrl.href =
           "http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" +
           md5;
         courseLr2irUrl.textContent = title;
-        courseTd4.appendChild(courseLr2irUrl);
+        courseTd5.appendChild(courseLr2irUrl);
 
-        const courseTd5 = document.createElement("td");
+        const courseTd6 = document.createElement("td");
         const courseArtistUrl = document.createElement("a");
         courseArtistUrl.href = url;
         courseArtistUrl.textContent = artist;
-        courseTd5.appendChild(courseArtistUrl);
+        courseTd6.appendChild(courseArtistUrl);
 
-        const courseTd6 = document.createElement("td");
-        courseTd6.textContent = chartMaker;
+        const courseTd7 = document.createElement("td");
+        courseTd7.textContent = chartMaker;
 
         courseTbody.appendChild(courseTbodyTr);
         courseTbodyTr.appendChild(courseTd1);
@@ -273,6 +286,7 @@ async function fetchJson() {
         courseTbodyTr.appendChild(courseTd4);
         courseTbodyTr.appendChild(courseTd5);
         courseTbodyTr.appendChild(courseTd6);
+        courseTbodyTr.appendChild(courseTd7);
       });
     }
 
