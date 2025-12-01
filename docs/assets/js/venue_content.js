@@ -123,7 +123,7 @@ async function fetchJson() {
 
     const h4BmsDL = document.createElement("h4");
     if (i.course) {
-      h4BmsDL.textContent = "Download Course";
+      h4BmsDL.textContent = "Download Course & Charts";
     } else if (i.free_button_name) {
       h4BmsDL.textContent = i.free_button_name;
     } else {
@@ -144,13 +144,21 @@ async function fetchJson() {
       div2.appendChild(divChartURL);
 
       const h4ChartDL = document.createElement("h4");
-      h4ChartDL.textContent = "Download Chart";
+      if (i.course) {
+        h4ChartDL.textContent = "for Beatoraja";
+      } else {
+        h4ChartDL.textContent = "Download Chart";
+      }
       divChartURL.appendChild(h4ChartDL);
 
       const chartDownLink = document.createElement("a");
       chartDownLink.href = i.url_diff;
       chartDownLink.classList.add("mt-2", "mb-4", "btn", "btn-dark", "btn-lg");
-      chartDownLink.textContent = "Download";
+      if (i.course) {
+        chartDownLink.textContent = "Click";
+      } else {
+        chartDownLink.textContent = "Download";
+      }
       divChartURL.appendChild(chartDownLink);
     } else {
       divSongURL.classList.remove("col-md-6");
@@ -343,11 +351,13 @@ async function fetchJson() {
 //     "ds_h4": "Level or Team name",
 //     "ds_video": "Course autoplay video",
 //     "url": "Download URL",
+//     "url_diff": "for Beatoraja Course",
 //     "course": [
 //       {
 //         "stage": "Stage number",
 //         "video": "Autoplay video link (youtube) | ex -> (o5WcoAckg7U&t=189s)",
 //         "md5": "BMS md5",
+//         "sha256": "BMS sha256",
 //         "title": "BMS title",
 //         "bms_url": "BMS download URL",
 //         "artist": "Composer",
