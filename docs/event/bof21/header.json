@@ -2,6 +2,7 @@
   "name": "BOF21差分企画",
   "symbol": "21差分 ",
   "level_order": [
+    "0",
     "1",
     "2",
     "3",
@@ -14,7 +15,9 @@
     "10",
     "11",
     "12",
-    "DP"
+    "5K",
+    "DP",
+    "TEST"
   ],
   "data_url": "https://script.google.com/macros/s/AKfycbwRseW0wJovdMdWyfxgRWbZ7cKTlvMpPGhBsYrY1kp0md-kW5o0W1GCiGMFUCmdPR05/exec"
 }
