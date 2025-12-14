@@ -15,9 +15,26 @@
     "10",
     "11",
     "12",
-    "5K",
     "DP",
-    "TEST"
+    "五鍵"
   ],
-  "data_url": "https://script.google.com/macros/s/AKfycbwRseW0wJovdMdWyfxgRWbZ7cKTlvMpPGhBsYrY1kp0md-kW5o0W1GCiGMFUCmdPR05/exec"
+  "data_url": "https://script.google.com/macros/s/AKfycbwRseW0wJovdMdWyfxgRWbZ7cKTlvMpPGhBsYrY1kp0md-kW5o0W1GCiGMFUCmdPR05/exec",
+  "course": [
+    [
+      {
+        "name": "Chapter of Trial",
+        "constraint": ["grade_random", "gauge_lr2", "ln"],
+        "trophy": [
+          { "name": "silvermedal", "missrate": 5.0, "scorerate": 70.0 },
+          { "name": "goldmedal", "missrate": 2.5, "scorerate": 85.0 }
+        ],
+        "md5": [
+          "5d8058ec76ef534409518ff811fce093",
+          "86c3021f46925ec05c3bfc3b006c190c",
+          "01980244cfcf5622cbe94db2043d22d7",
+          "10f6a6b186c364c6e87d7c03de20eadd"
+        ]
+      }
+    ]
+  ]
 }
