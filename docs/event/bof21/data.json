@@ -742,19 +742,6 @@
   },
   {
     "level": "5",
-    "title": "passage [for some reason]",
-    "comment": "st3",
-    "name_diff": "LuvTek",
-    "md5": "cb4c890c6fe24634c6d56bf07c85b7a2",
-    "sha256": "fd431fd36736ae31ac9a83d30377c5c794091dca3fe5f9f37150ffe5babb4c89",
-    "movie_link": "https://youtu.be/IOXd6PabZJE",
-    "artist": "devthefox",
-    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=320&event=149",
-    "url_diff": "https://darksabun.club/event/bof21/sabun/320_st3_LuvTek.zip",
-    "url_pack": ""
-  },
-  {
-    "level": "5",
     "title": "IDENCY [Epigenetics]",
     "comment": "st3",
     "name_diff": "meta",
@@ -777,6 +764,19 @@
     "artist": "くるやのぶ",
     "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=25&event=149",
     "url_diff": "https://darksabun.club/event/bof21/sabun/025_st3_potechang.zip",
+    "url_pack": ""
+  },
+  {
+    "level": "6",
+    "title": "passage [for some reason]",
+    "comment": "st3+",
+    "name_diff": "LuvTek",
+    "md5": "cb4c890c6fe24634c6d56bf07c85b7a2",
+    "sha256": "fd431fd36736ae31ac9a83d30377c5c794091dca3fe5f9f37150ffe5babb4c89",
+    "movie_link": "https://youtu.be/IOXd6PabZJE",
+    "artist": "devthefox",
+    "url": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=320&event=149",
+    "url_diff": "https://darksabun.club/event/bof21/sabun/320_st3_LuvTek.zip",
     "url_pack": ""
   },
   {
