@@ -1,5 +1,12 @@
 var countDownTimer = function (id, date) {
-  var _vDate = new Date(date);
+  var parts = date.split("/");
+  var yyyy = parts[0];
+  var mm = parts[1];
+  var dd = parts[2];
+
+  var kstDateString = yyyy + "-" + mm + "-" + dd + "T00:00:00+09:00";
+  var _vDate = new Date(kstDateString);
+
   var _second = 1000;
   var _minute = _second * 60;
   var _hour = _minute * 60;
@@ -47,6 +54,6 @@ var countDownTimer = function (id, date) {
 
 // Usage
 // <script src="/assets/js/countdown_timer.js"></script>
-// <script>countDownTimer("Timer", "MM/DD/YYYY");</script>
+// <script>countDownTimer("Timer", "YYYY/MM/DD");</script>
 // and put this
 // <p id="Timer"></p>
