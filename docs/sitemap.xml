@@ -89,6 +89,9 @@
 		<loc>https://darksabun.club/event/bof21/table.html</loc>
 	</url>
 	<url>
+		<loc>https://darksabun.club/event/bof21/venue/</loc>
+	</url>
+	<url>
 		<loc>https://darksabun.club/event/bofet/</loc>
 	</url>
 	<url>
@@ -195,6 +198,9 @@
 	</url>
 	<url>
 		<loc>https://darksabun.club/event/renewal/venue/</loc>
+	</url>
+	<url>
+		<loc>https://darksabun.club/event/renewal2/</loc>
 	</url>
 	<url>
 		<loc>https://darksabun.club/event/rof2022/</loc>
