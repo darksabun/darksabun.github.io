@@ -3,5 +3,6 @@
   "symbol": "Ss+",
   "level_order": ["5KEYS", "7KEYS", "10KEYS", "14KEYS", "9KEYS"],
   "data_url": "data.json",
+  "original_url": "http://sunset.getonpictochat.com/",
   "last_update": "2025.09.13"
 }
