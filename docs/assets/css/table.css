@@ -74,6 +74,10 @@
   text-align: center !important;
 }
 
+.one-percent-column {
+  width: 1% !important;
+}
+
 /* etc */
 .scale-frame {
   table-layout: fixed;

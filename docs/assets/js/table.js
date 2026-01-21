@@ -5,7 +5,7 @@ let makeBMSLevelFilter = 1;
 document.addEventListener("DOMContentLoaded", function () {
   async function getJSON() {
     const response = await fetch(
-      document.querySelector("meta[name=bmstable]").getAttribute("content")
+      document.querySelector("meta[name=bmstable]").getAttribute("content"),
     );
     const header = await response.json();
     if (header.symbol) mark = header.symbol;
@@ -234,7 +234,7 @@ const defaultColumns = [
     title: "DL",
     width: "1%",
     data: "name_diff",
-    className: "text-nowrap",
+    className: "text-nowrap one-percent-column",
     orderable: false,
     render: tableData.tableChart,
   },
