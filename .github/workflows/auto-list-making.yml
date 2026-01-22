@@ -67,7 +67,7 @@ jobs:
                               <th style="text-align: left;">Size</th>
                           </tr>
                           #GEN_DIRS
-                          #GEN_FILESs
+                          #GEN_FILES
                       </table>
                   <hr>
                   <span>
